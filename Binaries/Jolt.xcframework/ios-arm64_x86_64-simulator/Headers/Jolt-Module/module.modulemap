@@ -1,0 +1,6 @@
+module Jolt {
+    requires cplusplus17
+    header "../Jolt/Jolt.h"
+
+    export *
+}

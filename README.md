@@ -1,6 +1,6 @@
 #  JoltPhysics
 
-This repository provides a precompiled **JoltPhysics** (built with the Distribution configuration) library packaged as an **XCFramework** for **macOS**, **iOS**, **tvOS**, and **visionOS**.  
+This repository provides a precompiled **JoltPhysics** (built with the Distribution configuration) library packaged as an **XCFramework** for the latest releases of **macOS**, **iOS**, **tvOS**, and **visionOS**.  
 It enables easy integration of the high-performance **Jolt Physics Engine** into native Apple platform projects, including those built with Swift, Objective-C, or C++. Other platforms like Windows, Linux, Android, WASM are expected to be also included in the future when [Binary Static Library Dependencies](https://github.com/swiftlang/swift-evolution/blob/main/proposals/0482-swiftpm-static-library-binary-target-non-apple-platforms.md) will be implemented.
 
 ## About JoltPhysics
@@ -17,18 +17,19 @@ This package includes a port of JoltPhysics compiled for Apple platforms, distri
 - Includes **device** and **simulator** slices
 - Distributed as an **XCFramework** via Swift Package Manager
 - Compatible with **C++17** and higher
-- Ready for integration into Swift or C++ projects
+- Ready for integration into C++ projects
 
 
 ## Integration
 
 You can add this package directly to your Xcode project:
 
-1. In Xcode, open **File -> Add Packages...**
+1. In Xcode, open **File -> Add Package Dependencies...**
 2. Enter the package URL: 
 ```plain
 https://github.com/EvgenijLutz/JoltPhysics.git
 ```
+3. Choose your dependency rule and you're good to go!
 
 Currently, only C++ is the way to access this library's API, due to project's `#include` conventions. You can include Jolt headers in your C++ code as follows:
 

@@ -1,4 +1,4 @@
-// swift-tools-version: 6.2
+// swift-tools-version: 6.3
 // The swift-tools-version declares the minimum version of Swift required to build this package.
 
 import PackageDescription
@@ -6,10 +6,11 @@ import PackageDescription
 let package = Package(
     name: "JoltPhysics",
     platforms: [
-        .macOS(.v26),
-        .iOS(.v26),
-        .tvOS(.v26),
-        .visionOS(.v26)
+        .macOS(.v10_13),
+        .iOS(.v12),
+        .tvOS(.v12),
+        //.watchOS(.v8),
+        .visionOS(.v1),
     ],
     products: [
         .library(

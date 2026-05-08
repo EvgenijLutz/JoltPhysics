@@ -7,34 +7,31 @@
 # Exit on any error
 set -e
 
-
-# Copy headers from the Jolt directory into the Headers directory:
-# bash copy_headers.sh Jolt Headers/Jolt
-# Copy the module.modulemap into the Headers/Jolt-Module to create a headers folder for the framework
-
-# Add these flags to the "cmake_xcode_macos.sh" and the "cmake_xcode_ios.sh" scripts in the Build folder:
-# -D"INTERPROCEDURAL_OPTIMIZATION=OFF" -D"GENERATE_DEBUG_SYMBOLS=OFF"
-
 cd Build
 
-# Generate Xcode projects for macOS and iOS, iOS project will be also used for tvOS and visionOS
+# Add these flags to the following scripts below for the cmake command and execute the scripts:
+# -D"INTERPROCEDURAL_OPTIMIZATION=OFF" -D"GENERATE_DEBUG_SYMBOLS=OFF"
+# Otherwise the framework creation will fail at the last step
 bash cmake_xcode_macos.sh
 bash cmake_xcode_ios.sh
 
 cd XCode_MacOS
-xcodebuild -project JoltPhysics.xcodeproj -target Jolt -configuration Distribution -sdk macosx26.0
+xcodebuild -project JoltPhysics.xcodeproj -target Jolt -configuration Distribution -sdk macosx26.4 MACOSX_DEPLOYMENT_TARGET=10.13
+cd ..
 
-cd ../XCode_iOS
-xcodebuild -project JoltPhysics.xcodeproj -target Jolt -configuration Distribution -sdk iphoneos26.0
-xcodebuild -project JoltPhysics.xcodeproj -target Jolt -configuration Distribution -sdk iphonesimulator26.0
-xcodebuild -project JoltPhysics.xcodeproj -target Jolt -configuration Distribution -sdk appletvos26.0
-xcodebuild -project JoltPhysics.xcodeproj -target Jolt -configuration Distribution -sdk appletvsimulator26.0
-xcodebuild -project JoltPhysics.xcodeproj -target Jolt -configuration Distribution -sdk xros26.0
-xcodebuild -project JoltPhysics.xcodeproj -target Jolt -configuration Distribution -sdk xrsimulator26.0
-cd ../..
+cd XCode_iOS
+xcodebuild -project JoltPhysics.xcodeproj -target Jolt -configuration Distribution -sdk iphoneos26.4 IPHONEOS_DEPLOYMENT_TARGET=12.0
+xcodebuild -project JoltPhysics.xcodeproj -target Jolt -configuration Distribution -sdk iphonesimulator26.4 IPHONEOS_DEPLOYMENT_TARGET=12.0
+xcodebuild -project JoltPhysics.xcodeproj -target Jolt -configuration Distribution -sdk appletvos26.4 TVOS_DEPLOYMENT_TARGET=12.0
+xcodebuild -project JoltPhysics.xcodeproj -target Jolt -configuration Distribution -sdk appletvsimulator26.4 TVOS_DEPLOYMENT_TARGET=12.0
+xcodebuild -project JoltPhysics.xcodeproj -target Jolt -configuration Distribution -sdk xros26.4 XROS_DEPLOYMENT_TARGET=1.0
+xcodebuild -project JoltPhysics.xcodeproj -target Jolt -configuration Distribution -sdk xrsimulator26.4 XROS_DEPLOYMENT_TARGET=1.0
+cd ..
 
+cd ..
+bash copy_headers.sh Jolt Headers/Jolt
 
-# Generate a framework
+rm -rf xcframework/Jolt.xcframework
 xcodebuild -create-xcframework \
     -output xcframework/Jolt.xcframework \
     -library Build/XCode_MacOS/Distribution/libJolt.a                  -headers Headers \
@@ -46,7 +43,5 @@ xcodebuild -create-xcframework \
     -library Build/XCode_iOS/Distribution-xrsimulator/libJolt.a        -headers Headers \
 
 # And sign the framework
-codesign --timestamp -s "YOUR_SIGNING_KEY" xcframework/Jolt.xcframework
-
-echo
-echo "✅ Framework generated successfully!"
+codesign --timestamp -s 070BA25D98F2A17A61E3E27E31BE64C06F901016 xcframework/Jolt.xcframework
+echo "✅ XCFramework created successfully!"

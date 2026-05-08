@@ -19,12 +19,14 @@ if [ -z "$SRC_DIR" ] || [ -z "$DEST_DIR" ]; then
     exit 1
 fi
 
-# Normalize paths
-SRC_DIR=$(cd "$SRC_DIR"; pwd)
-DEST_DIR=$(cd "$DEST_DIR"; pwd)
+echo $DEST_DIR
 
 # Create destination directory if it doesn’t exist
 mkdir -p "$DEST_DIR"
+
+# Normalize paths
+SRC_DIR=$(cd "$SRC_DIR"; pwd)
+DEST_DIR=$(cd "$DEST_DIR"; pwd)
 
 echo "Copying headers from:"
 echo "  Source: $SRC_DIR"

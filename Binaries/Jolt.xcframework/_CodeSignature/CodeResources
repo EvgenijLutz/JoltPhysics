@@ -4,33 +4,9 @@
 <dict>
 	<key>files</key>
 	<dict>
-		<key>.DS_Store</key>
-		<data>
-		F74xxcCNFJ5etq3A95JP5GC90tA=
-		</data>
-		<key>ios-arm64/.DS_Store</key>
-		<data>
-		/lWt40Fd7n8Md10aVX4kUM8soC4=
-		</data>
-		<key>ios-arm64/Headers/.DS_Store</key>
-		<data>
-		cjZykeSls21OF5EeHMhTfrH6sLE=
-		</data>
-		<key>ios-arm64/Headers/Jolt-Module/module.modulemap</key>
-		<data>
-		JYi8hSaxh7WOQtbMf/9QQnQamIQ=
-		</data>
-		<key>ios-arm64/Headers/Jolt/.DS_Store</key>
-		<data>
-		P6snEeODGxX9kq7+XQ7cGNtClTk=
-		</data>
-		<key>ios-arm64/Headers/Jolt/AABBTree/.DS_Store</key>
-		<data>
-		gRY5Bye2wn6qi/6t7nGZea/ra/k=
-		</data>
 		<key>ios-arm64/Headers/Jolt/AABBTree/AABBTreeBuilder.h</key>
 		<data>
-		5pyuZWdbIZN0AqMEHC9N+xZg0FU=
+		lJm9MjUKHGFkhZiU4nekwFBg2Nk=
 		</data>
 		<key>ios-arm64/Headers/Jolt/AABBTree/AABBTreeToBuffer.h</key>
 		<data>
@@ -46,7 +22,7 @@
 		</data>
 		<key>ios-arm64/Headers/Jolt/ConfigurationString.h</key>
 		<data>
-		B9CFKPh1SGVPX8ffzH88FE0ivfo=
+		8NoUHQeGfubjraZUoNfyQBDP6gM=
 		</data>
 		<key>ios-arm64/Headers/Jolt/Core/ARMNeon.h</key>
 		<data>
@@ -54,7 +30,7 @@
 		</data>
 		<key>ios-arm64/Headers/Jolt/Core/Array.h</key>
 		<data>
-		cIjeBdepD/8OxId7IklGgtcCX4A=
+		xWGa5YbK/Q71COqleGOSiXHK6BI=
 		</data>
 		<key>ios-arm64/Headers/Jolt/Core/Atomics.h</key>
 		<data>
@@ -70,11 +46,11 @@
 		</data>
 		<key>ios-arm64/Headers/Jolt/Core/Color.h</key>
 		<data>
-		sMsYZqRMZJXMDGc4BXI4BVku+gA=
+		8W5NaOoaoGvPKsIEZvZNfKbj1MQ=
 		</data>
 		<key>ios-arm64/Headers/Jolt/Core/Core.h</key>
 		<data>
-		CQPHfzJPHJxq8gcCieMR9oQu3ks=
+		UIJ9pvCvSDa5YMvHk7UgVj8CFWM=
 		</data>
 		<key>ios-arm64/Headers/Jolt/Core/FPControlWord.h</key>
 		<data>
@@ -106,7 +82,7 @@
 		</data>
 		<key>ios-arm64/Headers/Jolt/Core/HashTable.h</key>
 		<data>
-		kclgdI3kKkaNkdI65yh23/UMRqM=
+		ou8y5t3Cecqyh82MjAWva8O5wW0=
 		</data>
 		<key>ios-arm64/Headers/Jolt/Core/InsertionSort.h</key>
 		<data>
@@ -150,7 +126,7 @@
 		</data>
 		<key>ios-arm64/Headers/Jolt/Core/Memory.h</key>
 		<data>
-		hCOmn1l2CAoFdQjmV6SFzqOFLLY=
+		4dmF18tlKJLc2RrF4cDe1Sp173g=
 		</data>
 		<key>ios-arm64/Headers/Jolt/Core/Mutex.h</key>
 		<data>
@@ -166,7 +142,7 @@
 		</data>
 		<key>ios-arm64/Headers/Jolt/Core/Profiler.h</key>
 		<data>
-		wLrQLA1AdIZIR0itHk3hLpJImA0=
+		nlvQ9CtUcoxTLhoGrHkkh6LVVN8=
 		</data>
 		<key>ios-arm64/Headers/Jolt/Core/Profiler.inl</key>
 		<data>
@@ -194,7 +170,7 @@
 		</data>
 		<key>ios-arm64/Headers/Jolt/Core/STLAllocator.h</key>
 		<data>
-		oXrnsZNOG5jD9sLo+NFjvGsfoCE=
+		mz028/yN4XT0T/yE1iNYQEUcHT0=
 		</data>
 		<key>ios-arm64/Headers/Jolt/Core/STLLocalAllocator.h</key>
 		<data>
@@ -242,11 +218,11 @@
 		</data>
 		<key>ios-arm64/Headers/Jolt/Core/TempAllocator.h</key>
 		<data>
-		uBAmuqYSfH5vG6qbCHWYZdomo0c=
+		dQ8X+7xa1KIW2PIaYX8rTpPC5GU=
 		</data>
 		<key>ios-arm64/Headers/Jolt/Core/TickCounter.h</key>
 		<data>
-		GVm3aIEvYmibKBxj8AJ5edaowLQ=
+		owswZ3+ct74Uj2ulvpo9mCz2vek=
 		</data>
 		<key>ios-arm64/Headers/Jolt/Core/UnorderedMap.h</key>
 		<data>
@@ -290,7 +266,7 @@
 		</data>
 		<key>ios-arm64/Headers/Jolt/Geometry/EPAPenetrationDepth.h</key>
 		<data>
-		vhAg9LQs9vCfoXJchpqr+HHomD8=
+		u6ZhHzmGkjgYBV9Tc22Ek4JDyPs=
 		</data>
 		<key>ios-arm64/Headers/Jolt/Geometry/Ellipse.h</key>
 		<data>
@@ -466,7 +442,7 @@
 		</data>
 		<key>ios-arm64/Headers/Jolt/Math/Vec3.inl</key>
 		<data>
-		E0jVpAo4yQp4QBfNTO1CXXZLTo4=
+		ZfltiNukIz32suDrSqXp0YPzMh8=
 		</data>
 		<key>ios-arm64/Headers/Jolt/Math/Vec4.h</key>
 		<data>
@@ -474,7 +450,7 @@
 		</data>
 		<key>ios-arm64/Headers/Jolt/Math/Vec4.inl</key>
 		<data>
-		+gn6q44KlT7Y7lwIupOgyTZJKHI=
+		NO9936UeQrXcI0mGw9FvVv+4Jww=
 		</data>
 		<key>ios-arm64/Headers/Jolt/Math/Vector.h</key>
 		<data>
@@ -542,7 +518,7 @@
 		</data>
 		<key>ios-arm64/Headers/Jolt/Physics/Body/Body.h</key>
 		<data>
-		kFvYRWMM3Yu7DGzzRF3Xaw1cJ/M=
+		pyRe0xA2CinOAhm4qF6vvdqKKyA=
 		</data>
 		<key>ios-arm64/Headers/Jolt/Physics/Body/Body.inl</key>
 		<data>
@@ -558,7 +534,7 @@
 		</data>
 		<key>ios-arm64/Headers/Jolt/Physics/Body/BodyCreationSettings.h</key>
 		<data>
-		fzu3L+P/krVHxgDODLBsSrEG3p4=
+		KJPIQQY6lgAbPLKNANYbRxC5cJg=
 		</data>
 		<key>ios-arm64/Headers/Jolt/Physics/Body/BodyFilter.h</key>
 		<data>
@@ -570,7 +546,7 @@
 		</data>
 		<key>ios-arm64/Headers/Jolt/Physics/Body/BodyInterface.h</key>
 		<data>
-		jKhukPN4mFNUszb3AQQgTmSi/+Q=
+		Z204BkhSAc7ocwzIuQEl7wmJwVQ=
 		</data>
 		<key>ios-arm64/Headers/Jolt/Physics/Body/BodyLock.h</key>
 		<data>
@@ -586,7 +562,7 @@
 		</data>
 		<key>ios-arm64/Headers/Jolt/Physics/Body/BodyManager.h</key>
 		<data>
-		f6FgBS/9h/npXam7y1QyqIXQUdg=
+		ViC+VV9Ty5/LsqefzlzsoUqfNYE=
 		</data>
 		<key>ios-arm64/Headers/Jolt/Physics/Body/BodyPair.h</key>
 		<data>
@@ -602,7 +578,7 @@
 		</data>
 		<key>ios-arm64/Headers/Jolt/Physics/Body/MotionProperties.h</key>
 		<data>
-		kHrGjCt97kjuKeeSFMT/M0NSXcU=
+		YQCQQNtXOQAjU+n+OVUeU3x29Fg=
 		</data>
 		<key>ios-arm64/Headers/Jolt/Physics/Body/MotionProperties.inl</key>
 		<data>
@@ -630,7 +606,7 @@
 		</data>
 		<key>ios-arm64/Headers/Jolt/Physics/Character/CharacterVirtual.h</key>
 		<data>
-		lRjtawsK7228uSAfoGWRztWuK94=
+		XPBoN8ea8J3AGpWPwOYT2u/g5M8=
 		</data>
 		<key>ios-arm64/Headers/Jolt/Physics/Collision/AABoxCast.h</key>
 		<data>
@@ -650,7 +626,7 @@
 		</data>
 		<key>ios-arm64/Headers/Jolt/Physics/Collision/BroadPhase/BroadPhase.h</key>
 		<data>
-		+kbHbonOuFj32y3HhoPYMRI42EU=
+		RaYGcMJgTfROFUFCkP/+cFdp3uk=
 		</data>
 		<key>ios-arm64/Headers/Jolt/Physics/Collision/BroadPhase/BroadPhaseBruteForce.h</key>
 		<data>
@@ -674,7 +650,7 @@
 		</data>
 		<key>ios-arm64/Headers/Jolt/Physics/Collision/BroadPhase/BroadPhaseQuery.h</key>
 		<data>
-		MPCrga2iDz/NRWF7awbs8F6TZvU=
+		bp9oSi/4+8nyCAnofIEi3yqHk0I=
 		</data>
 		<key>ios-arm64/Headers/Jolt/Physics/Collision/BroadPhase/ObjectVsBroadPhaseLayerFilterMask.h</key>
 		<data>
@@ -718,7 +694,7 @@
 		</data>
 		<key>ios-arm64/Headers/Jolt/Physics/Collision/CollideShapeVsShapePerLeaf.h</key>
 		<data>
-		6KQMytcW+n2Zle6j+4Gsbcq+1ck=
+		kEzVMzisIQmvv0t2sFocu+hAXUI=
 		</data>
 		<key>ios-arm64/Headers/Jolt/Physics/Collision/CollideSoftBodyVertexIterator.h</key>
 		<data>
@@ -726,7 +702,7 @@
 		</data>
 		<key>ios-arm64/Headers/Jolt/Physics/Collision/CollideSoftBodyVerticesVsTriangles.h</key>
 		<data>
-		64cjgAaf7DLGEynziTui8CAY3PY=
+		v3NcNNF+qbfobx3Cl13eOFie2zs=
 		</data>
 		<key>ios-arm64/Headers/Jolt/Physics/Collision/CollideSphereVsTriangles.h</key>
 		<data>
@@ -806,7 +782,7 @@
 		</data>
 		<key>ios-arm64/Headers/Jolt/Physics/Collision/Shape/BoxShape.h</key>
 		<data>
-		DV2EmbgzU0wo66Q8f/JuUzmYpK4=
+		ANj/Q8fjAmyZZhANB38Avu//aLc=
 		</data>
 		<key>ios-arm64/Headers/Jolt/Physics/Collision/Shape/CapsuleShape.h</key>
 		<data>
@@ -814,7 +790,7 @@
 		</data>
 		<key>ios-arm64/Headers/Jolt/Physics/Collision/Shape/CompoundShape.h</key>
 		<data>
-		4GYHDLbmW7ZvzBdS91tsgPmkhOg=
+		iNZUd8sRoqILcNW4L5HdVcKWtkA=
 		</data>
 		<key>ios-arm64/Headers/Jolt/Physics/Collision/Shape/CompoundShapeVisitors.h</key>
 		<data>
@@ -822,7 +798,7 @@
 		</data>
 		<key>ios-arm64/Headers/Jolt/Physics/Collision/Shape/ConvexHullShape.h</key>
 		<data>
-		LpppeGXsy0/RFMZ6gTA6Gh7JXd4=
+		h/49g3gzM9BRCavqi7vUb71A7BU=
 		</data>
 		<key>ios-arm64/Headers/Jolt/Physics/Collision/Shape/ConvexShape.h</key>
 		<data>
@@ -850,7 +826,7 @@
 		</data>
 		<key>ios-arm64/Headers/Jolt/Physics/Collision/Shape/MeshShape.h</key>
 		<data>
-		Nlow74k8Qi/fARhqdUvlGrdcfRk=
+		E/gV6ozyQuT9T5iquMn10kRQP0g=
 		</data>
 		<key>ios-arm64/Headers/Jolt/Physics/Collision/Shape/MutableCompoundShape.h</key>
 		<data>
@@ -862,7 +838,7 @@
 		</data>
 		<key>ios-arm64/Headers/Jolt/Physics/Collision/Shape/PlaneShape.h</key>
 		<data>
-		Ydt7WMldu0JSJBJJ9YnvVDvMEbY=
+		bqS9oPxgX5LELCtl92uZQmW833s=
 		</data>
 		<key>ios-arm64/Headers/Jolt/Physics/Collision/Shape/PolyhedronSubmergedVolumeCalculator.h</key>
 		<data>
@@ -886,7 +862,7 @@
 		</data>
 		<key>ios-arm64/Headers/Jolt/Physics/Collision/Shape/SphereShape.h</key>
 		<data>
-		cwsKBgPasUPzXxyWGcG3vhSoL/U=
+		f/e2G5d4NWURuIQdIWQYdV+CF1o=
 		</data>
 		<key>ios-arm64/Headers/Jolt/Physics/Collision/Shape/StaticCompoundShape.h</key>
 		<data>
@@ -934,11 +910,11 @@
 		</data>
 		<key>ios-arm64/Headers/Jolt/Physics/Collision/TransformedShape.h</key>
 		<data>
-		yO+5DWPKGU/s7D77/pm/TZhSsRg=
+		TMx5+oJN/IEACVCS92AbSwrVknE=
 		</data>
 		<key>ios-arm64/Headers/Jolt/Physics/Constraints/CalculateSolverSteps.h</key>
 		<data>
-		V2fElAktRVZfWg/d5WtqKfHtyNM=
+		yJIH+jHfHf4PCz1rGHFTDtRgneU=
 		</data>
 		<key>ios-arm64/Headers/Jolt/Physics/Constraints/ConeConstraint.h</key>
 		<data>
@@ -946,11 +922,11 @@
 		</data>
 		<key>ios-arm64/Headers/Jolt/Physics/Constraints/Constraint.h</key>
 		<data>
-		928Lzzp7wJs48ae0oKXKgoxnF/o=
+		64zOUStV3IpFZWofk/vXNSimIx4=
 		</data>
 		<key>ios-arm64/Headers/Jolt/Physics/Constraints/ConstraintManager.h</key>
 		<data>
-		gVLaPUi16ADpHtg/tWC/24q0kMI=
+		ZZTPkrEHzmDIltdz2duYBwdDsRA=
 		</data>
 		<key>ios-arm64/Headers/Jolt/Physics/Constraints/ConstraintPart/AngleConstraintPart.h</key>
 		<data>
@@ -986,7 +962,7 @@
 		</data>
 		<key>ios-arm64/Headers/Jolt/Physics/Constraints/ConstraintPart/RotationEulerConstraintPart.h</key>
 		<data>
-		cnuaIIOvOKY050XyyOm6SF9RTp8=
+		lksRccEpipj5vwiYCg+9+tBz1iE=
 		</data>
 		<key>ios-arm64/Headers/Jolt/Physics/Constraints/ConstraintPart/RotationQuatConstraintPart.h</key>
 		<data>
@@ -1002,7 +978,7 @@
 		</data>
 		<key>ios-arm64/Headers/Jolt/Physics/Constraints/ContactConstraintManager.h</key>
 		<data>
-		El4XINlGVwhKhBCEJO0aAdRi8E4=
+		0a54wtgM9MSETlf6G5Lq+73jPnU=
 		</data>
 		<key>ios-arm64/Headers/Jolt/Physics/Constraints/DistanceConstraint.h</key>
 		<data>
@@ -1082,11 +1058,11 @@
 		</data>
 		<key>ios-arm64/Headers/Jolt/Physics/IslandBuilder.h</key>
 		<data>
-		aE2/578M9UineUDTPlN1TuRzzFE=
+		lMbsK2wrnecl1UfZlXEjHy8WuIQ=
 		</data>
 		<key>ios-arm64/Headers/Jolt/Physics/LargeIslandSplitter.h</key>
 		<data>
-		WT/OcgSNOO8H/AE3+aWO4B0TdwU=
+		gLopU91A7+TqZuEm267MisnQhdc=
 		</data>
 		<key>ios-arm64/Headers/Jolt/Physics/PhysicsLock.h</key>
 		<data>
@@ -1106,15 +1082,15 @@
 		</data>
 		<key>ios-arm64/Headers/Jolt/Physics/PhysicsSystem.h</key>
 		<data>
-		hjPNQ95Ubg6CYy9RT984iLqWYxs=
+		WkOWwARpcBtcp+ZTCw4w8W75v1M=
 		</data>
 		<key>ios-arm64/Headers/Jolt/Physics/PhysicsUpdateContext.h</key>
 		<data>
-		p+WO2h28mxa46SSDnkZePzyE8iE=
+		1FClBjhEWVMqJ1ePn9b4TVxli2c=
 		</data>
 		<key>ios-arm64/Headers/Jolt/Physics/Ragdoll/Ragdoll.h</key>
 		<data>
-		9vskM4TYNEEcm+oQ4vcTPYoR2n4=
+		/qjxRX2qX7bPjYdw+T4gWlY+5gw=
 		</data>
 		<key>ios-arm64/Headers/Jolt/Physics/SoftBody/SoftBodyContactListener.h</key>
 		<data>
@@ -1122,7 +1098,7 @@
 		</data>
 		<key>ios-arm64/Headers/Jolt/Physics/SoftBody/SoftBodyCreationSettings.h</key>
 		<data>
-		w8G8NlChiS8hu6sgn+TW1i4ozUM=
+		TxLa7Ve/4hdwz1UO326J5aUxGxM=
 		</data>
 		<key>ios-arm64/Headers/Jolt/Physics/SoftBody/SoftBodyManifold.h</key>
 		<data>
@@ -1138,11 +1114,11 @@
 		</data>
 		<key>ios-arm64/Headers/Jolt/Physics/SoftBody/SoftBodySharedSettings.h</key>
 		<data>
-		JkNkqIxr2zOHhKsmtPVJc3sBlc0=
+		N/lEX5OwWVZk6M9720WtkXl0rJ8=
 		</data>
 		<key>ios-arm64/Headers/Jolt/Physics/SoftBody/SoftBodyUpdateContext.h</key>
 		<data>
-		tn8LqcrY01HhGpAQ6UoVB+OD1N0=
+		Os8ubTTN4i9Aa7af4QmXzqo6bec=
 		</data>
 		<key>ios-arm64/Headers/Jolt/Physics/SoftBody/SoftBodyVertex.h</key>
 		<data>
@@ -1170,7 +1146,7 @@
 		</data>
 		<key>ios-arm64/Headers/Jolt/Physics/Vehicle/VehicleCollisionTester.h</key>
 		<data>
-		BKIozepvHKrqaGfvYOwViKDLV4c=
+		EOfXLcX16cM95O14QPYIVxzReog=
 		</data>
 		<key>ios-arm64/Headers/Jolt/Physics/Vehicle/VehicleConstraint.h</key>
 		<data>
@@ -1186,7 +1162,7 @@
 		</data>
 		<key>ios-arm64/Headers/Jolt/Physics/Vehicle/VehicleEngine.h</key>
 		<data>
-		+EtyPOOqxcNdCaurncL/ZR9O8lI=
+		Wt6rbCxYDQi9lNM+DFZMHWxra+0=
 		</data>
 		<key>ios-arm64/Headers/Jolt/Physics/Vehicle/VehicleTrack.h</key>
 		<data>
@@ -1202,7 +1178,7 @@
 		</data>
 		<key>ios-arm64/Headers/Jolt/Physics/Vehicle/WheeledVehicleController.h</key>
 		<data>
-		gdRta6f23g6iQHDIliGD8V4d0aI=
+		1TUPvWb9JAW9l1b+wY+71qDumVs=
 		</data>
 		<key>ios-arm64/Headers/Jolt/RegisterTypes.h</key>
 		<data>
@@ -1254,27 +1230,11 @@
 		</data>
 		<key>ios-arm64/libJolt.a</key>
 		<data>
-		u+CyIHsoUoHCouOErwxfHtkqjT4=
-		</data>
-		<key>ios-arm64_x86_64-simulator/Headers/.DS_Store</key>
-		<data>
-		cjZykeSls21OF5EeHMhTfrH6sLE=
-		</data>
-		<key>ios-arm64_x86_64-simulator/Headers/Jolt-Module/module.modulemap</key>
-		<data>
-		JYi8hSaxh7WOQtbMf/9QQnQamIQ=
-		</data>
-		<key>ios-arm64_x86_64-simulator/Headers/Jolt/.DS_Store</key>
-		<data>
-		P6snEeODGxX9kq7+XQ7cGNtClTk=
-		</data>
-		<key>ios-arm64_x86_64-simulator/Headers/Jolt/AABBTree/.DS_Store</key>
-		<data>
-		gRY5Bye2wn6qi/6t7nGZea/ra/k=
+		zKi7uBWteh+72MbKWfUUswMOcTU=
 		</data>
 		<key>ios-arm64_x86_64-simulator/Headers/Jolt/AABBTree/AABBTreeBuilder.h</key>
 		<data>
-		5pyuZWdbIZN0AqMEHC9N+xZg0FU=
+		lJm9MjUKHGFkhZiU4nekwFBg2Nk=
 		</data>
 		<key>ios-arm64_x86_64-simulator/Headers/Jolt/AABBTree/AABBTreeToBuffer.h</key>
 		<data>
@@ -1290,7 +1250,7 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/Headers/Jolt/ConfigurationString.h</key>
 		<data>
-		B9CFKPh1SGVPX8ffzH88FE0ivfo=
+		8NoUHQeGfubjraZUoNfyQBDP6gM=
 		</data>
 		<key>ios-arm64_x86_64-simulator/Headers/Jolt/Core/ARMNeon.h</key>
 		<data>
@@ -1298,7 +1258,7 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/Headers/Jolt/Core/Array.h</key>
 		<data>
-		cIjeBdepD/8OxId7IklGgtcCX4A=
+		xWGa5YbK/Q71COqleGOSiXHK6BI=
 		</data>
 		<key>ios-arm64_x86_64-simulator/Headers/Jolt/Core/Atomics.h</key>
 		<data>
@@ -1314,11 +1274,11 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/Headers/Jolt/Core/Color.h</key>
 		<data>
-		sMsYZqRMZJXMDGc4BXI4BVku+gA=
+		8W5NaOoaoGvPKsIEZvZNfKbj1MQ=
 		</data>
 		<key>ios-arm64_x86_64-simulator/Headers/Jolt/Core/Core.h</key>
 		<data>
-		CQPHfzJPHJxq8gcCieMR9oQu3ks=
+		UIJ9pvCvSDa5YMvHk7UgVj8CFWM=
 		</data>
 		<key>ios-arm64_x86_64-simulator/Headers/Jolt/Core/FPControlWord.h</key>
 		<data>
@@ -1350,7 +1310,7 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/Headers/Jolt/Core/HashTable.h</key>
 		<data>
-		kclgdI3kKkaNkdI65yh23/UMRqM=
+		ou8y5t3Cecqyh82MjAWva8O5wW0=
 		</data>
 		<key>ios-arm64_x86_64-simulator/Headers/Jolt/Core/InsertionSort.h</key>
 		<data>
@@ -1394,7 +1354,7 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/Headers/Jolt/Core/Memory.h</key>
 		<data>
-		hCOmn1l2CAoFdQjmV6SFzqOFLLY=
+		4dmF18tlKJLc2RrF4cDe1Sp173g=
 		</data>
 		<key>ios-arm64_x86_64-simulator/Headers/Jolt/Core/Mutex.h</key>
 		<data>
@@ -1410,7 +1370,7 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/Headers/Jolt/Core/Profiler.h</key>
 		<data>
-		wLrQLA1AdIZIR0itHk3hLpJImA0=
+		nlvQ9CtUcoxTLhoGrHkkh6LVVN8=
 		</data>
 		<key>ios-arm64_x86_64-simulator/Headers/Jolt/Core/Profiler.inl</key>
 		<data>
@@ -1438,7 +1398,7 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/Headers/Jolt/Core/STLAllocator.h</key>
 		<data>
-		oXrnsZNOG5jD9sLo+NFjvGsfoCE=
+		mz028/yN4XT0T/yE1iNYQEUcHT0=
 		</data>
 		<key>ios-arm64_x86_64-simulator/Headers/Jolt/Core/STLLocalAllocator.h</key>
 		<data>
@@ -1486,11 +1446,11 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/Headers/Jolt/Core/TempAllocator.h</key>
 		<data>
-		uBAmuqYSfH5vG6qbCHWYZdomo0c=
+		dQ8X+7xa1KIW2PIaYX8rTpPC5GU=
 		</data>
 		<key>ios-arm64_x86_64-simulator/Headers/Jolt/Core/TickCounter.h</key>
 		<data>
-		GVm3aIEvYmibKBxj8AJ5edaowLQ=
+		owswZ3+ct74Uj2ulvpo9mCz2vek=
 		</data>
 		<key>ios-arm64_x86_64-simulator/Headers/Jolt/Core/UnorderedMap.h</key>
 		<data>
@@ -1534,7 +1494,7 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/Headers/Jolt/Geometry/EPAPenetrationDepth.h</key>
 		<data>
-		vhAg9LQs9vCfoXJchpqr+HHomD8=
+		u6ZhHzmGkjgYBV9Tc22Ek4JDyPs=
 		</data>
 		<key>ios-arm64_x86_64-simulator/Headers/Jolt/Geometry/Ellipse.h</key>
 		<data>
@@ -1710,7 +1670,7 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/Headers/Jolt/Math/Vec3.inl</key>
 		<data>
-		E0jVpAo4yQp4QBfNTO1CXXZLTo4=
+		ZfltiNukIz32suDrSqXp0YPzMh8=
 		</data>
 		<key>ios-arm64_x86_64-simulator/Headers/Jolt/Math/Vec4.h</key>
 		<data>
@@ -1718,7 +1678,7 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/Headers/Jolt/Math/Vec4.inl</key>
 		<data>
-		+gn6q44KlT7Y7lwIupOgyTZJKHI=
+		NO9936UeQrXcI0mGw9FvVv+4Jww=
 		</data>
 		<key>ios-arm64_x86_64-simulator/Headers/Jolt/Math/Vector.h</key>
 		<data>
@@ -1786,7 +1746,7 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/Headers/Jolt/Physics/Body/Body.h</key>
 		<data>
-		kFvYRWMM3Yu7DGzzRF3Xaw1cJ/M=
+		pyRe0xA2CinOAhm4qF6vvdqKKyA=
 		</data>
 		<key>ios-arm64_x86_64-simulator/Headers/Jolt/Physics/Body/Body.inl</key>
 		<data>
@@ -1802,7 +1762,7 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/Headers/Jolt/Physics/Body/BodyCreationSettings.h</key>
 		<data>
-		fzu3L+P/krVHxgDODLBsSrEG3p4=
+		KJPIQQY6lgAbPLKNANYbRxC5cJg=
 		</data>
 		<key>ios-arm64_x86_64-simulator/Headers/Jolt/Physics/Body/BodyFilter.h</key>
 		<data>
@@ -1814,7 +1774,7 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/Headers/Jolt/Physics/Body/BodyInterface.h</key>
 		<data>
-		jKhukPN4mFNUszb3AQQgTmSi/+Q=
+		Z204BkhSAc7ocwzIuQEl7wmJwVQ=
 		</data>
 		<key>ios-arm64_x86_64-simulator/Headers/Jolt/Physics/Body/BodyLock.h</key>
 		<data>
@@ -1830,7 +1790,7 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/Headers/Jolt/Physics/Body/BodyManager.h</key>
 		<data>
-		f6FgBS/9h/npXam7y1QyqIXQUdg=
+		ViC+VV9Ty5/LsqefzlzsoUqfNYE=
 		</data>
 		<key>ios-arm64_x86_64-simulator/Headers/Jolt/Physics/Body/BodyPair.h</key>
 		<data>
@@ -1846,7 +1806,7 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/Headers/Jolt/Physics/Body/MotionProperties.h</key>
 		<data>
-		kHrGjCt97kjuKeeSFMT/M0NSXcU=
+		YQCQQNtXOQAjU+n+OVUeU3x29Fg=
 		</data>
 		<key>ios-arm64_x86_64-simulator/Headers/Jolt/Physics/Body/MotionProperties.inl</key>
 		<data>
@@ -1874,7 +1834,7 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/Headers/Jolt/Physics/Character/CharacterVirtual.h</key>
 		<data>
-		lRjtawsK7228uSAfoGWRztWuK94=
+		XPBoN8ea8J3AGpWPwOYT2u/g5M8=
 		</data>
 		<key>ios-arm64_x86_64-simulator/Headers/Jolt/Physics/Collision/AABoxCast.h</key>
 		<data>
@@ -1894,7 +1854,7 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/Headers/Jolt/Physics/Collision/BroadPhase/BroadPhase.h</key>
 		<data>
-		+kbHbonOuFj32y3HhoPYMRI42EU=
+		RaYGcMJgTfROFUFCkP/+cFdp3uk=
 		</data>
 		<key>ios-arm64_x86_64-simulator/Headers/Jolt/Physics/Collision/BroadPhase/BroadPhaseBruteForce.h</key>
 		<data>
@@ -1918,7 +1878,7 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/Headers/Jolt/Physics/Collision/BroadPhase/BroadPhaseQuery.h</key>
 		<data>
-		MPCrga2iDz/NRWF7awbs8F6TZvU=
+		bp9oSi/4+8nyCAnofIEi3yqHk0I=
 		</data>
 		<key>ios-arm64_x86_64-simulator/Headers/Jolt/Physics/Collision/BroadPhase/ObjectVsBroadPhaseLayerFilterMask.h</key>
 		<data>
@@ -1962,7 +1922,7 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/Headers/Jolt/Physics/Collision/CollideShapeVsShapePerLeaf.h</key>
 		<data>
-		6KQMytcW+n2Zle6j+4Gsbcq+1ck=
+		kEzVMzisIQmvv0t2sFocu+hAXUI=
 		</data>
 		<key>ios-arm64_x86_64-simulator/Headers/Jolt/Physics/Collision/CollideSoftBodyVertexIterator.h</key>
 		<data>
@@ -1970,7 +1930,7 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/Headers/Jolt/Physics/Collision/CollideSoftBodyVerticesVsTriangles.h</key>
 		<data>
-		64cjgAaf7DLGEynziTui8CAY3PY=
+		v3NcNNF+qbfobx3Cl13eOFie2zs=
 		</data>
 		<key>ios-arm64_x86_64-simulator/Headers/Jolt/Physics/Collision/CollideSphereVsTriangles.h</key>
 		<data>
@@ -2050,7 +2010,7 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/Headers/Jolt/Physics/Collision/Shape/BoxShape.h</key>
 		<data>
-		DV2EmbgzU0wo66Q8f/JuUzmYpK4=
+		ANj/Q8fjAmyZZhANB38Avu//aLc=
 		</data>
 		<key>ios-arm64_x86_64-simulator/Headers/Jolt/Physics/Collision/Shape/CapsuleShape.h</key>
 		<data>
@@ -2058,7 +2018,7 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/Headers/Jolt/Physics/Collision/Shape/CompoundShape.h</key>
 		<data>
-		4GYHDLbmW7ZvzBdS91tsgPmkhOg=
+		iNZUd8sRoqILcNW4L5HdVcKWtkA=
 		</data>
 		<key>ios-arm64_x86_64-simulator/Headers/Jolt/Physics/Collision/Shape/CompoundShapeVisitors.h</key>
 		<data>
@@ -2066,7 +2026,7 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/Headers/Jolt/Physics/Collision/Shape/ConvexHullShape.h</key>
 		<data>
-		LpppeGXsy0/RFMZ6gTA6Gh7JXd4=
+		h/49g3gzM9BRCavqi7vUb71A7BU=
 		</data>
 		<key>ios-arm64_x86_64-simulator/Headers/Jolt/Physics/Collision/Shape/ConvexShape.h</key>
 		<data>
@@ -2094,7 +2054,7 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/Headers/Jolt/Physics/Collision/Shape/MeshShape.h</key>
 		<data>
-		Nlow74k8Qi/fARhqdUvlGrdcfRk=
+		E/gV6ozyQuT9T5iquMn10kRQP0g=
 		</data>
 		<key>ios-arm64_x86_64-simulator/Headers/Jolt/Physics/Collision/Shape/MutableCompoundShape.h</key>
 		<data>
@@ -2106,7 +2066,7 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/Headers/Jolt/Physics/Collision/Shape/PlaneShape.h</key>
 		<data>
-		Ydt7WMldu0JSJBJJ9YnvVDvMEbY=
+		bqS9oPxgX5LELCtl92uZQmW833s=
 		</data>
 		<key>ios-arm64_x86_64-simulator/Headers/Jolt/Physics/Collision/Shape/PolyhedronSubmergedVolumeCalculator.h</key>
 		<data>
@@ -2130,7 +2090,7 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/Headers/Jolt/Physics/Collision/Shape/SphereShape.h</key>
 		<data>
-		cwsKBgPasUPzXxyWGcG3vhSoL/U=
+		f/e2G5d4NWURuIQdIWQYdV+CF1o=
 		</data>
 		<key>ios-arm64_x86_64-simulator/Headers/Jolt/Physics/Collision/Shape/StaticCompoundShape.h</key>
 		<data>
@@ -2178,11 +2138,11 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/Headers/Jolt/Physics/Collision/TransformedShape.h</key>
 		<data>
-		yO+5DWPKGU/s7D77/pm/TZhSsRg=
+		TMx5+oJN/IEACVCS92AbSwrVknE=
 		</data>
 		<key>ios-arm64_x86_64-simulator/Headers/Jolt/Physics/Constraints/CalculateSolverSteps.h</key>
 		<data>
-		V2fElAktRVZfWg/d5WtqKfHtyNM=
+		yJIH+jHfHf4PCz1rGHFTDtRgneU=
 		</data>
 		<key>ios-arm64_x86_64-simulator/Headers/Jolt/Physics/Constraints/ConeConstraint.h</key>
 		<data>
@@ -2190,11 +2150,11 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/Headers/Jolt/Physics/Constraints/Constraint.h</key>
 		<data>
-		928Lzzp7wJs48ae0oKXKgoxnF/o=
+		64zOUStV3IpFZWofk/vXNSimIx4=
 		</data>
 		<key>ios-arm64_x86_64-simulator/Headers/Jolt/Physics/Constraints/ConstraintManager.h</key>
 		<data>
-		gVLaPUi16ADpHtg/tWC/24q0kMI=
+		ZZTPkrEHzmDIltdz2duYBwdDsRA=
 		</data>
 		<key>ios-arm64_x86_64-simulator/Headers/Jolt/Physics/Constraints/ConstraintPart/AngleConstraintPart.h</key>
 		<data>
@@ -2230,7 +2190,7 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/Headers/Jolt/Physics/Constraints/ConstraintPart/RotationEulerConstraintPart.h</key>
 		<data>
-		cnuaIIOvOKY050XyyOm6SF9RTp8=
+		lksRccEpipj5vwiYCg+9+tBz1iE=
 		</data>
 		<key>ios-arm64_x86_64-simulator/Headers/Jolt/Physics/Constraints/ConstraintPart/RotationQuatConstraintPart.h</key>
 		<data>
@@ -2246,7 +2206,7 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/Headers/Jolt/Physics/Constraints/ContactConstraintManager.h</key>
 		<data>
-		El4XINlGVwhKhBCEJO0aAdRi8E4=
+		0a54wtgM9MSETlf6G5Lq+73jPnU=
 		</data>
 		<key>ios-arm64_x86_64-simulator/Headers/Jolt/Physics/Constraints/DistanceConstraint.h</key>
 		<data>
@@ -2326,11 +2286,11 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/Headers/Jolt/Physics/IslandBuilder.h</key>
 		<data>
-		aE2/578M9UineUDTPlN1TuRzzFE=
+		lMbsK2wrnecl1UfZlXEjHy8WuIQ=
 		</data>
 		<key>ios-arm64_x86_64-simulator/Headers/Jolt/Physics/LargeIslandSplitter.h</key>
 		<data>
-		WT/OcgSNOO8H/AE3+aWO4B0TdwU=
+		gLopU91A7+TqZuEm267MisnQhdc=
 		</data>
 		<key>ios-arm64_x86_64-simulator/Headers/Jolt/Physics/PhysicsLock.h</key>
 		<data>
@@ -2350,15 +2310,15 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/Headers/Jolt/Physics/PhysicsSystem.h</key>
 		<data>
-		hjPNQ95Ubg6CYy9RT984iLqWYxs=
+		WkOWwARpcBtcp+ZTCw4w8W75v1M=
 		</data>
 		<key>ios-arm64_x86_64-simulator/Headers/Jolt/Physics/PhysicsUpdateContext.h</key>
 		<data>
-		p+WO2h28mxa46SSDnkZePzyE8iE=
+		1FClBjhEWVMqJ1ePn9b4TVxli2c=
 		</data>
 		<key>ios-arm64_x86_64-simulator/Headers/Jolt/Physics/Ragdoll/Ragdoll.h</key>
 		<data>
-		9vskM4TYNEEcm+oQ4vcTPYoR2n4=
+		/qjxRX2qX7bPjYdw+T4gWlY+5gw=
 		</data>
 		<key>ios-arm64_x86_64-simulator/Headers/Jolt/Physics/SoftBody/SoftBodyContactListener.h</key>
 		<data>
@@ -2366,7 +2326,7 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/Headers/Jolt/Physics/SoftBody/SoftBodyCreationSettings.h</key>
 		<data>
-		w8G8NlChiS8hu6sgn+TW1i4ozUM=
+		TxLa7Ve/4hdwz1UO326J5aUxGxM=
 		</data>
 		<key>ios-arm64_x86_64-simulator/Headers/Jolt/Physics/SoftBody/SoftBodyManifold.h</key>
 		<data>
@@ -2382,11 +2342,11 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/Headers/Jolt/Physics/SoftBody/SoftBodySharedSettings.h</key>
 		<data>
-		JkNkqIxr2zOHhKsmtPVJc3sBlc0=
+		N/lEX5OwWVZk6M9720WtkXl0rJ8=
 		</data>
 		<key>ios-arm64_x86_64-simulator/Headers/Jolt/Physics/SoftBody/SoftBodyUpdateContext.h</key>
 		<data>
-		tn8LqcrY01HhGpAQ6UoVB+OD1N0=
+		Os8ubTTN4i9Aa7af4QmXzqo6bec=
 		</data>
 		<key>ios-arm64_x86_64-simulator/Headers/Jolt/Physics/SoftBody/SoftBodyVertex.h</key>
 		<data>
@@ -2414,7 +2374,7 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/Headers/Jolt/Physics/Vehicle/VehicleCollisionTester.h</key>
 		<data>
-		BKIozepvHKrqaGfvYOwViKDLV4c=
+		EOfXLcX16cM95O14QPYIVxzReog=
 		</data>
 		<key>ios-arm64_x86_64-simulator/Headers/Jolt/Physics/Vehicle/VehicleConstraint.h</key>
 		<data>
@@ -2430,7 +2390,7 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/Headers/Jolt/Physics/Vehicle/VehicleEngine.h</key>
 		<data>
-		+EtyPOOqxcNdCaurncL/ZR9O8lI=
+		Wt6rbCxYDQi9lNM+DFZMHWxra+0=
 		</data>
 		<key>ios-arm64_x86_64-simulator/Headers/Jolt/Physics/Vehicle/VehicleTrack.h</key>
 		<data>
@@ -2446,7 +2406,7 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/Headers/Jolt/Physics/Vehicle/WheeledVehicleController.h</key>
 		<data>
-		gdRta6f23g6iQHDIliGD8V4d0aI=
+		1TUPvWb9JAW9l1b+wY+71qDumVs=
 		</data>
 		<key>ios-arm64_x86_64-simulator/Headers/Jolt/RegisterTypes.h</key>
 		<data>
@@ -2498,27 +2458,11 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/libJolt.a</key>
 		<data>
-		QXu3MDDKDrePUsJlbAMYoInn2NA=
-		</data>
-		<key>macos-arm64_x86_64/Headers/.DS_Store</key>
-		<data>
-		cjZykeSls21OF5EeHMhTfrH6sLE=
-		</data>
-		<key>macos-arm64_x86_64/Headers/Jolt-Module/module.modulemap</key>
-		<data>
-		JYi8hSaxh7WOQtbMf/9QQnQamIQ=
-		</data>
-		<key>macos-arm64_x86_64/Headers/Jolt/.DS_Store</key>
-		<data>
-		P6snEeODGxX9kq7+XQ7cGNtClTk=
-		</data>
-		<key>macos-arm64_x86_64/Headers/Jolt/AABBTree/.DS_Store</key>
-		<data>
-		gRY5Bye2wn6qi/6t7nGZea/ra/k=
+		ZLnHzg2BBWbJuxFXNvHxpmVrhoI=
 		</data>
 		<key>macos-arm64_x86_64/Headers/Jolt/AABBTree/AABBTreeBuilder.h</key>
 		<data>
-		5pyuZWdbIZN0AqMEHC9N+xZg0FU=
+		lJm9MjUKHGFkhZiU4nekwFBg2Nk=
 		</data>
 		<key>macos-arm64_x86_64/Headers/Jolt/AABBTree/AABBTreeToBuffer.h</key>
 		<data>
@@ -2534,7 +2478,7 @@
 		</data>
 		<key>macos-arm64_x86_64/Headers/Jolt/ConfigurationString.h</key>
 		<data>
-		B9CFKPh1SGVPX8ffzH88FE0ivfo=
+		8NoUHQeGfubjraZUoNfyQBDP6gM=
 		</data>
 		<key>macos-arm64_x86_64/Headers/Jolt/Core/ARMNeon.h</key>
 		<data>
@@ -2542,7 +2486,7 @@
 		</data>
 		<key>macos-arm64_x86_64/Headers/Jolt/Core/Array.h</key>
 		<data>
-		cIjeBdepD/8OxId7IklGgtcCX4A=
+		xWGa5YbK/Q71COqleGOSiXHK6BI=
 		</data>
 		<key>macos-arm64_x86_64/Headers/Jolt/Core/Atomics.h</key>
 		<data>
@@ -2558,11 +2502,11 @@
 		</data>
 		<key>macos-arm64_x86_64/Headers/Jolt/Core/Color.h</key>
 		<data>
-		sMsYZqRMZJXMDGc4BXI4BVku+gA=
+		8W5NaOoaoGvPKsIEZvZNfKbj1MQ=
 		</data>
 		<key>macos-arm64_x86_64/Headers/Jolt/Core/Core.h</key>
 		<data>
-		CQPHfzJPHJxq8gcCieMR9oQu3ks=
+		UIJ9pvCvSDa5YMvHk7UgVj8CFWM=
 		</data>
 		<key>macos-arm64_x86_64/Headers/Jolt/Core/FPControlWord.h</key>
 		<data>
@@ -2594,7 +2538,7 @@
 		</data>
 		<key>macos-arm64_x86_64/Headers/Jolt/Core/HashTable.h</key>
 		<data>
-		kclgdI3kKkaNkdI65yh23/UMRqM=
+		ou8y5t3Cecqyh82MjAWva8O5wW0=
 		</data>
 		<key>macos-arm64_x86_64/Headers/Jolt/Core/InsertionSort.h</key>
 		<data>
@@ -2638,7 +2582,7 @@
 		</data>
 		<key>macos-arm64_x86_64/Headers/Jolt/Core/Memory.h</key>
 		<data>
-		hCOmn1l2CAoFdQjmV6SFzqOFLLY=
+		4dmF18tlKJLc2RrF4cDe1Sp173g=
 		</data>
 		<key>macos-arm64_x86_64/Headers/Jolt/Core/Mutex.h</key>
 		<data>
@@ -2654,7 +2598,7 @@
 		</data>
 		<key>macos-arm64_x86_64/Headers/Jolt/Core/Profiler.h</key>
 		<data>
-		wLrQLA1AdIZIR0itHk3hLpJImA0=
+		nlvQ9CtUcoxTLhoGrHkkh6LVVN8=
 		</data>
 		<key>macos-arm64_x86_64/Headers/Jolt/Core/Profiler.inl</key>
 		<data>
@@ -2682,7 +2626,7 @@
 		</data>
 		<key>macos-arm64_x86_64/Headers/Jolt/Core/STLAllocator.h</key>
 		<data>
-		oXrnsZNOG5jD9sLo+NFjvGsfoCE=
+		mz028/yN4XT0T/yE1iNYQEUcHT0=
 		</data>
 		<key>macos-arm64_x86_64/Headers/Jolt/Core/STLLocalAllocator.h</key>
 		<data>
@@ -2730,11 +2674,11 @@
 		</data>
 		<key>macos-arm64_x86_64/Headers/Jolt/Core/TempAllocator.h</key>
 		<data>
-		uBAmuqYSfH5vG6qbCHWYZdomo0c=
+		dQ8X+7xa1KIW2PIaYX8rTpPC5GU=
 		</data>
 		<key>macos-arm64_x86_64/Headers/Jolt/Core/TickCounter.h</key>
 		<data>
-		GVm3aIEvYmibKBxj8AJ5edaowLQ=
+		owswZ3+ct74Uj2ulvpo9mCz2vek=
 		</data>
 		<key>macos-arm64_x86_64/Headers/Jolt/Core/UnorderedMap.h</key>
 		<data>
@@ -2778,7 +2722,7 @@
 		</data>
 		<key>macos-arm64_x86_64/Headers/Jolt/Geometry/EPAPenetrationDepth.h</key>
 		<data>
-		vhAg9LQs9vCfoXJchpqr+HHomD8=
+		u6ZhHzmGkjgYBV9Tc22Ek4JDyPs=
 		</data>
 		<key>macos-arm64_x86_64/Headers/Jolt/Geometry/Ellipse.h</key>
 		<data>
@@ -2954,7 +2898,7 @@
 		</data>
 		<key>macos-arm64_x86_64/Headers/Jolt/Math/Vec3.inl</key>
 		<data>
-		E0jVpAo4yQp4QBfNTO1CXXZLTo4=
+		ZfltiNukIz32suDrSqXp0YPzMh8=
 		</data>
 		<key>macos-arm64_x86_64/Headers/Jolt/Math/Vec4.h</key>
 		<data>
@@ -2962,7 +2906,7 @@
 		</data>
 		<key>macos-arm64_x86_64/Headers/Jolt/Math/Vec4.inl</key>
 		<data>
-		+gn6q44KlT7Y7lwIupOgyTZJKHI=
+		NO9936UeQrXcI0mGw9FvVv+4Jww=
 		</data>
 		<key>macos-arm64_x86_64/Headers/Jolt/Math/Vector.h</key>
 		<data>
@@ -3030,7 +2974,7 @@
 		</data>
 		<key>macos-arm64_x86_64/Headers/Jolt/Physics/Body/Body.h</key>
 		<data>
-		kFvYRWMM3Yu7DGzzRF3Xaw1cJ/M=
+		pyRe0xA2CinOAhm4qF6vvdqKKyA=
 		</data>
 		<key>macos-arm64_x86_64/Headers/Jolt/Physics/Body/Body.inl</key>
 		<data>
@@ -3046,7 +2990,7 @@
 		</data>
 		<key>macos-arm64_x86_64/Headers/Jolt/Physics/Body/BodyCreationSettings.h</key>
 		<data>
-		fzu3L+P/krVHxgDODLBsSrEG3p4=
+		KJPIQQY6lgAbPLKNANYbRxC5cJg=
 		</data>
 		<key>macos-arm64_x86_64/Headers/Jolt/Physics/Body/BodyFilter.h</key>
 		<data>
@@ -3058,7 +3002,7 @@
 		</data>
 		<key>macos-arm64_x86_64/Headers/Jolt/Physics/Body/BodyInterface.h</key>
 		<data>
-		jKhukPN4mFNUszb3AQQgTmSi/+Q=
+		Z204BkhSAc7ocwzIuQEl7wmJwVQ=
 		</data>
 		<key>macos-arm64_x86_64/Headers/Jolt/Physics/Body/BodyLock.h</key>
 		<data>
@@ -3074,7 +3018,7 @@
 		</data>
 		<key>macos-arm64_x86_64/Headers/Jolt/Physics/Body/BodyManager.h</key>
 		<data>
-		f6FgBS/9h/npXam7y1QyqIXQUdg=
+		ViC+VV9Ty5/LsqefzlzsoUqfNYE=
 		</data>
 		<key>macos-arm64_x86_64/Headers/Jolt/Physics/Body/BodyPair.h</key>
 		<data>
@@ -3090,7 +3034,7 @@
 		</data>
 		<key>macos-arm64_x86_64/Headers/Jolt/Physics/Body/MotionProperties.h</key>
 		<data>
-		kHrGjCt97kjuKeeSFMT/M0NSXcU=
+		YQCQQNtXOQAjU+n+OVUeU3x29Fg=
 		</data>
 		<key>macos-arm64_x86_64/Headers/Jolt/Physics/Body/MotionProperties.inl</key>
 		<data>
@@ -3118,7 +3062,7 @@
 		</data>
 		<key>macos-arm64_x86_64/Headers/Jolt/Physics/Character/CharacterVirtual.h</key>
 		<data>
-		lRjtawsK7228uSAfoGWRztWuK94=
+		XPBoN8ea8J3AGpWPwOYT2u/g5M8=
 		</data>
 		<key>macos-arm64_x86_64/Headers/Jolt/Physics/Collision/AABoxCast.h</key>
 		<data>
@@ -3138,7 +3082,7 @@
 		</data>
 		<key>macos-arm64_x86_64/Headers/Jolt/Physics/Collision/BroadPhase/BroadPhase.h</key>
 		<data>
-		+kbHbonOuFj32y3HhoPYMRI42EU=
+		RaYGcMJgTfROFUFCkP/+cFdp3uk=
 		</data>
 		<key>macos-arm64_x86_64/Headers/Jolt/Physics/Collision/BroadPhase/BroadPhaseBruteForce.h</key>
 		<data>
@@ -3162,7 +3106,7 @@
 		</data>
 		<key>macos-arm64_x86_64/Headers/Jolt/Physics/Collision/BroadPhase/BroadPhaseQuery.h</key>
 		<data>
-		MPCrga2iDz/NRWF7awbs8F6TZvU=
+		bp9oSi/4+8nyCAnofIEi3yqHk0I=
 		</data>
 		<key>macos-arm64_x86_64/Headers/Jolt/Physics/Collision/BroadPhase/ObjectVsBroadPhaseLayerFilterMask.h</key>
 		<data>
@@ -3206,7 +3150,7 @@
 		</data>
 		<key>macos-arm64_x86_64/Headers/Jolt/Physics/Collision/CollideShapeVsShapePerLeaf.h</key>
 		<data>
-		6KQMytcW+n2Zle6j+4Gsbcq+1ck=
+		kEzVMzisIQmvv0t2sFocu+hAXUI=
 		</data>
 		<key>macos-arm64_x86_64/Headers/Jolt/Physics/Collision/CollideSoftBodyVertexIterator.h</key>
 		<data>
@@ -3214,7 +3158,7 @@
 		</data>
 		<key>macos-arm64_x86_64/Headers/Jolt/Physics/Collision/CollideSoftBodyVerticesVsTriangles.h</key>
 		<data>
-		64cjgAaf7DLGEynziTui8CAY3PY=
+		v3NcNNF+qbfobx3Cl13eOFie2zs=
 		</data>
 		<key>macos-arm64_x86_64/Headers/Jolt/Physics/Collision/CollideSphereVsTriangles.h</key>
 		<data>
@@ -3294,7 +3238,7 @@
 		</data>
 		<key>macos-arm64_x86_64/Headers/Jolt/Physics/Collision/Shape/BoxShape.h</key>
 		<data>
-		DV2EmbgzU0wo66Q8f/JuUzmYpK4=
+		ANj/Q8fjAmyZZhANB38Avu//aLc=
 		</data>
 		<key>macos-arm64_x86_64/Headers/Jolt/Physics/Collision/Shape/CapsuleShape.h</key>
 		<data>
@@ -3302,7 +3246,7 @@
 		</data>
 		<key>macos-arm64_x86_64/Headers/Jolt/Physics/Collision/Shape/CompoundShape.h</key>
 		<data>
-		4GYHDLbmW7ZvzBdS91tsgPmkhOg=
+		iNZUd8sRoqILcNW4L5HdVcKWtkA=
 		</data>
 		<key>macos-arm64_x86_64/Headers/Jolt/Physics/Collision/Shape/CompoundShapeVisitors.h</key>
 		<data>
@@ -3310,7 +3254,7 @@
 		</data>
 		<key>macos-arm64_x86_64/Headers/Jolt/Physics/Collision/Shape/ConvexHullShape.h</key>
 		<data>
-		LpppeGXsy0/RFMZ6gTA6Gh7JXd4=
+		h/49g3gzM9BRCavqi7vUb71A7BU=
 		</data>
 		<key>macos-arm64_x86_64/Headers/Jolt/Physics/Collision/Shape/ConvexShape.h</key>
 		<data>
@@ -3338,7 +3282,7 @@
 		</data>
 		<key>macos-arm64_x86_64/Headers/Jolt/Physics/Collision/Shape/MeshShape.h</key>
 		<data>
-		Nlow74k8Qi/fARhqdUvlGrdcfRk=
+		E/gV6ozyQuT9T5iquMn10kRQP0g=
 		</data>
 		<key>macos-arm64_x86_64/Headers/Jolt/Physics/Collision/Shape/MutableCompoundShape.h</key>
 		<data>
@@ -3350,7 +3294,7 @@
 		</data>
 		<key>macos-arm64_x86_64/Headers/Jolt/Physics/Collision/Shape/PlaneShape.h</key>
 		<data>
-		Ydt7WMldu0JSJBJJ9YnvVDvMEbY=
+		bqS9oPxgX5LELCtl92uZQmW833s=
 		</data>
 		<key>macos-arm64_x86_64/Headers/Jolt/Physics/Collision/Shape/PolyhedronSubmergedVolumeCalculator.h</key>
 		<data>
@@ -3374,7 +3318,7 @@
 		</data>
 		<key>macos-arm64_x86_64/Headers/Jolt/Physics/Collision/Shape/SphereShape.h</key>
 		<data>
-		cwsKBgPasUPzXxyWGcG3vhSoL/U=
+		f/e2G5d4NWURuIQdIWQYdV+CF1o=
 		</data>
 		<key>macos-arm64_x86_64/Headers/Jolt/Physics/Collision/Shape/StaticCompoundShape.h</key>
 		<data>
@@ -3422,11 +3366,11 @@
 		</data>
 		<key>macos-arm64_x86_64/Headers/Jolt/Physics/Collision/TransformedShape.h</key>
 		<data>
-		yO+5DWPKGU/s7D77/pm/TZhSsRg=
+		TMx5+oJN/IEACVCS92AbSwrVknE=
 		</data>
 		<key>macos-arm64_x86_64/Headers/Jolt/Physics/Constraints/CalculateSolverSteps.h</key>
 		<data>
-		V2fElAktRVZfWg/d5WtqKfHtyNM=
+		yJIH+jHfHf4PCz1rGHFTDtRgneU=
 		</data>
 		<key>macos-arm64_x86_64/Headers/Jolt/Physics/Constraints/ConeConstraint.h</key>
 		<data>
@@ -3434,11 +3378,11 @@
 		</data>
 		<key>macos-arm64_x86_64/Headers/Jolt/Physics/Constraints/Constraint.h</key>
 		<data>
-		928Lzzp7wJs48ae0oKXKgoxnF/o=
+		64zOUStV3IpFZWofk/vXNSimIx4=
 		</data>
 		<key>macos-arm64_x86_64/Headers/Jolt/Physics/Constraints/ConstraintManager.h</key>
 		<data>
-		gVLaPUi16ADpHtg/tWC/24q0kMI=
+		ZZTPkrEHzmDIltdz2duYBwdDsRA=
 		</data>
 		<key>macos-arm64_x86_64/Headers/Jolt/Physics/Constraints/ConstraintPart/AngleConstraintPart.h</key>
 		<data>
@@ -3474,7 +3418,7 @@
 		</data>
 		<key>macos-arm64_x86_64/Headers/Jolt/Physics/Constraints/ConstraintPart/RotationEulerConstraintPart.h</key>
 		<data>
-		cnuaIIOvOKY050XyyOm6SF9RTp8=
+		lksRccEpipj5vwiYCg+9+tBz1iE=
 		</data>
 		<key>macos-arm64_x86_64/Headers/Jolt/Physics/Constraints/ConstraintPart/RotationQuatConstraintPart.h</key>
 		<data>
@@ -3490,7 +3434,7 @@
 		</data>
 		<key>macos-arm64_x86_64/Headers/Jolt/Physics/Constraints/ContactConstraintManager.h</key>
 		<data>
-		El4XINlGVwhKhBCEJO0aAdRi8E4=
+		0a54wtgM9MSETlf6G5Lq+73jPnU=
 		</data>
 		<key>macos-arm64_x86_64/Headers/Jolt/Physics/Constraints/DistanceConstraint.h</key>
 		<data>
@@ -3570,11 +3514,11 @@
 		</data>
 		<key>macos-arm64_x86_64/Headers/Jolt/Physics/IslandBuilder.h</key>
 		<data>
-		aE2/578M9UineUDTPlN1TuRzzFE=
+		lMbsK2wrnecl1UfZlXEjHy8WuIQ=
 		</data>
 		<key>macos-arm64_x86_64/Headers/Jolt/Physics/LargeIslandSplitter.h</key>
 		<data>
-		WT/OcgSNOO8H/AE3+aWO4B0TdwU=
+		gLopU91A7+TqZuEm267MisnQhdc=
 		</data>
 		<key>macos-arm64_x86_64/Headers/Jolt/Physics/PhysicsLock.h</key>
 		<data>
@@ -3594,15 +3538,15 @@
 		</data>
 		<key>macos-arm64_x86_64/Headers/Jolt/Physics/PhysicsSystem.h</key>
 		<data>
-		hjPNQ95Ubg6CYy9RT984iLqWYxs=
+		WkOWwARpcBtcp+ZTCw4w8W75v1M=
 		</data>
 		<key>macos-arm64_x86_64/Headers/Jolt/Physics/PhysicsUpdateContext.h</key>
 		<data>
-		p+WO2h28mxa46SSDnkZePzyE8iE=
+		1FClBjhEWVMqJ1ePn9b4TVxli2c=
 		</data>
 		<key>macos-arm64_x86_64/Headers/Jolt/Physics/Ragdoll/Ragdoll.h</key>
 		<data>
-		9vskM4TYNEEcm+oQ4vcTPYoR2n4=
+		/qjxRX2qX7bPjYdw+T4gWlY+5gw=
 		</data>
 		<key>macos-arm64_x86_64/Headers/Jolt/Physics/SoftBody/SoftBodyContactListener.h</key>
 		<data>
@@ -3610,7 +3554,7 @@
 		</data>
 		<key>macos-arm64_x86_64/Headers/Jolt/Physics/SoftBody/SoftBodyCreationSettings.h</key>
 		<data>
-		w8G8NlChiS8hu6sgn+TW1i4ozUM=
+		TxLa7Ve/4hdwz1UO326J5aUxGxM=
 		</data>
 		<key>macos-arm64_x86_64/Headers/Jolt/Physics/SoftBody/SoftBodyManifold.h</key>
 		<data>
@@ -3626,11 +3570,11 @@
 		</data>
 		<key>macos-arm64_x86_64/Headers/Jolt/Physics/SoftBody/SoftBodySharedSettings.h</key>
 		<data>
-		JkNkqIxr2zOHhKsmtPVJc3sBlc0=
+		N/lEX5OwWVZk6M9720WtkXl0rJ8=
 		</data>
 		<key>macos-arm64_x86_64/Headers/Jolt/Physics/SoftBody/SoftBodyUpdateContext.h</key>
 		<data>
-		tn8LqcrY01HhGpAQ6UoVB+OD1N0=
+		Os8ubTTN4i9Aa7af4QmXzqo6bec=
 		</data>
 		<key>macos-arm64_x86_64/Headers/Jolt/Physics/SoftBody/SoftBodyVertex.h</key>
 		<data>
@@ -3658,7 +3602,7 @@
 		</data>
 		<key>macos-arm64_x86_64/Headers/Jolt/Physics/Vehicle/VehicleCollisionTester.h</key>
 		<data>
-		BKIozepvHKrqaGfvYOwViKDLV4c=
+		EOfXLcX16cM95O14QPYIVxzReog=
 		</data>
 		<key>macos-arm64_x86_64/Headers/Jolt/Physics/Vehicle/VehicleConstraint.h</key>
 		<data>
@@ -3674,7 +3618,7 @@
 		</data>
 		<key>macos-arm64_x86_64/Headers/Jolt/Physics/Vehicle/VehicleEngine.h</key>
 		<data>
-		+EtyPOOqxcNdCaurncL/ZR9O8lI=
+		Wt6rbCxYDQi9lNM+DFZMHWxra+0=
 		</data>
 		<key>macos-arm64_x86_64/Headers/Jolt/Physics/Vehicle/VehicleTrack.h</key>
 		<data>
@@ -3690,7 +3634,7 @@
 		</data>
 		<key>macos-arm64_x86_64/Headers/Jolt/Physics/Vehicle/WheeledVehicleController.h</key>
 		<data>
-		gdRta6f23g6iQHDIliGD8V4d0aI=
+		1TUPvWb9JAW9l1b+wY+71qDumVs=
 		</data>
 		<key>macos-arm64_x86_64/Headers/Jolt/RegisterTypes.h</key>
 		<data>
@@ -3742,27 +3686,11 @@
 		</data>
 		<key>macos-arm64_x86_64/libJolt.a</key>
 		<data>
-		GDRjAZPNxT7FBGGRqK/mpKsrbDo=
-		</data>
-		<key>tvos-arm64/Headers/.DS_Store</key>
-		<data>
-		cjZykeSls21OF5EeHMhTfrH6sLE=
-		</data>
-		<key>tvos-arm64/Headers/Jolt-Module/module.modulemap</key>
-		<data>
-		JYi8hSaxh7WOQtbMf/9QQnQamIQ=
-		</data>
-		<key>tvos-arm64/Headers/Jolt/.DS_Store</key>
-		<data>
-		P6snEeODGxX9kq7+XQ7cGNtClTk=
-		</data>
-		<key>tvos-arm64/Headers/Jolt/AABBTree/.DS_Store</key>
-		<data>
-		gRY5Bye2wn6qi/6t7nGZea/ra/k=
+		UMffIp5YA4NReH9UJraGvwjMcpA=
 		</data>
 		<key>tvos-arm64/Headers/Jolt/AABBTree/AABBTreeBuilder.h</key>
 		<data>
-		5pyuZWdbIZN0AqMEHC9N+xZg0FU=
+		lJm9MjUKHGFkhZiU4nekwFBg2Nk=
 		</data>
 		<key>tvos-arm64/Headers/Jolt/AABBTree/AABBTreeToBuffer.h</key>
 		<data>
@@ -3778,7 +3706,7 @@
 		</data>
 		<key>tvos-arm64/Headers/Jolt/ConfigurationString.h</key>
 		<data>
-		B9CFKPh1SGVPX8ffzH88FE0ivfo=
+		8NoUHQeGfubjraZUoNfyQBDP6gM=
 		</data>
 		<key>tvos-arm64/Headers/Jolt/Core/ARMNeon.h</key>
 		<data>
@@ -3786,7 +3714,7 @@
 		</data>
 		<key>tvos-arm64/Headers/Jolt/Core/Array.h</key>
 		<data>
-		cIjeBdepD/8OxId7IklGgtcCX4A=
+		xWGa5YbK/Q71COqleGOSiXHK6BI=
 		</data>
 		<key>tvos-arm64/Headers/Jolt/Core/Atomics.h</key>
 		<data>
@@ -3802,11 +3730,11 @@
 		</data>
 		<key>tvos-arm64/Headers/Jolt/Core/Color.h</key>
 		<data>
-		sMsYZqRMZJXMDGc4BXI4BVku+gA=
+		8W5NaOoaoGvPKsIEZvZNfKbj1MQ=
 		</data>
 		<key>tvos-arm64/Headers/Jolt/Core/Core.h</key>
 		<data>
-		CQPHfzJPHJxq8gcCieMR9oQu3ks=
+		UIJ9pvCvSDa5YMvHk7UgVj8CFWM=
 		</data>
 		<key>tvos-arm64/Headers/Jolt/Core/FPControlWord.h</key>
 		<data>
@@ -3838,7 +3766,7 @@
 		</data>
 		<key>tvos-arm64/Headers/Jolt/Core/HashTable.h</key>
 		<data>
-		kclgdI3kKkaNkdI65yh23/UMRqM=
+		ou8y5t3Cecqyh82MjAWva8O5wW0=
 		</data>
 		<key>tvos-arm64/Headers/Jolt/Core/InsertionSort.h</key>
 		<data>
@@ -3882,7 +3810,7 @@
 		</data>
 		<key>tvos-arm64/Headers/Jolt/Core/Memory.h</key>
 		<data>
-		hCOmn1l2CAoFdQjmV6SFzqOFLLY=
+		4dmF18tlKJLc2RrF4cDe1Sp173g=
 		</data>
 		<key>tvos-arm64/Headers/Jolt/Core/Mutex.h</key>
 		<data>
@@ -3898,7 +3826,7 @@
 		</data>
 		<key>tvos-arm64/Headers/Jolt/Core/Profiler.h</key>
 		<data>
-		wLrQLA1AdIZIR0itHk3hLpJImA0=
+		nlvQ9CtUcoxTLhoGrHkkh6LVVN8=
 		</data>
 		<key>tvos-arm64/Headers/Jolt/Core/Profiler.inl</key>
 		<data>
@@ -3926,7 +3854,7 @@
 		</data>
 		<key>tvos-arm64/Headers/Jolt/Core/STLAllocator.h</key>
 		<data>
-		oXrnsZNOG5jD9sLo+NFjvGsfoCE=
+		mz028/yN4XT0T/yE1iNYQEUcHT0=
 		</data>
 		<key>tvos-arm64/Headers/Jolt/Core/STLLocalAllocator.h</key>
 		<data>
@@ -3974,11 +3902,11 @@
 		</data>
 		<key>tvos-arm64/Headers/Jolt/Core/TempAllocator.h</key>
 		<data>
-		uBAmuqYSfH5vG6qbCHWYZdomo0c=
+		dQ8X+7xa1KIW2PIaYX8rTpPC5GU=
 		</data>
 		<key>tvos-arm64/Headers/Jolt/Core/TickCounter.h</key>
 		<data>
-		GVm3aIEvYmibKBxj8AJ5edaowLQ=
+		owswZ3+ct74Uj2ulvpo9mCz2vek=
 		</data>
 		<key>tvos-arm64/Headers/Jolt/Core/UnorderedMap.h</key>
 		<data>
@@ -4022,7 +3950,7 @@
 		</data>
 		<key>tvos-arm64/Headers/Jolt/Geometry/EPAPenetrationDepth.h</key>
 		<data>
-		vhAg9LQs9vCfoXJchpqr+HHomD8=
+		u6ZhHzmGkjgYBV9Tc22Ek4JDyPs=
 		</data>
 		<key>tvos-arm64/Headers/Jolt/Geometry/Ellipse.h</key>
 		<data>
@@ -4198,7 +4126,7 @@
 		</data>
 		<key>tvos-arm64/Headers/Jolt/Math/Vec3.inl</key>
 		<data>
-		E0jVpAo4yQp4QBfNTO1CXXZLTo4=
+		ZfltiNukIz32suDrSqXp0YPzMh8=
 		</data>
 		<key>tvos-arm64/Headers/Jolt/Math/Vec4.h</key>
 		<data>
@@ -4206,7 +4134,7 @@
 		</data>
 		<key>tvos-arm64/Headers/Jolt/Math/Vec4.inl</key>
 		<data>
-		+gn6q44KlT7Y7lwIupOgyTZJKHI=
+		NO9936UeQrXcI0mGw9FvVv+4Jww=
 		</data>
 		<key>tvos-arm64/Headers/Jolt/Math/Vector.h</key>
 		<data>
@@ -4274,7 +4202,7 @@
 		</data>
 		<key>tvos-arm64/Headers/Jolt/Physics/Body/Body.h</key>
 		<data>
-		kFvYRWMM3Yu7DGzzRF3Xaw1cJ/M=
+		pyRe0xA2CinOAhm4qF6vvdqKKyA=
 		</data>
 		<key>tvos-arm64/Headers/Jolt/Physics/Body/Body.inl</key>
 		<data>
@@ -4290,7 +4218,7 @@
 		</data>
 		<key>tvos-arm64/Headers/Jolt/Physics/Body/BodyCreationSettings.h</key>
 		<data>
-		fzu3L+P/krVHxgDODLBsSrEG3p4=
+		KJPIQQY6lgAbPLKNANYbRxC5cJg=
 		</data>
 		<key>tvos-arm64/Headers/Jolt/Physics/Body/BodyFilter.h</key>
 		<data>
@@ -4302,7 +4230,7 @@
 		</data>
 		<key>tvos-arm64/Headers/Jolt/Physics/Body/BodyInterface.h</key>
 		<data>
-		jKhukPN4mFNUszb3AQQgTmSi/+Q=
+		Z204BkhSAc7ocwzIuQEl7wmJwVQ=
 		</data>
 		<key>tvos-arm64/Headers/Jolt/Physics/Body/BodyLock.h</key>
 		<data>
@@ -4318,7 +4246,7 @@
 		</data>
 		<key>tvos-arm64/Headers/Jolt/Physics/Body/BodyManager.h</key>
 		<data>
-		f6FgBS/9h/npXam7y1QyqIXQUdg=
+		ViC+VV9Ty5/LsqefzlzsoUqfNYE=
 		</data>
 		<key>tvos-arm64/Headers/Jolt/Physics/Body/BodyPair.h</key>
 		<data>
@@ -4334,7 +4262,7 @@
 		</data>
 		<key>tvos-arm64/Headers/Jolt/Physics/Body/MotionProperties.h</key>
 		<data>
-		kHrGjCt97kjuKeeSFMT/M0NSXcU=
+		YQCQQNtXOQAjU+n+OVUeU3x29Fg=
 		</data>
 		<key>tvos-arm64/Headers/Jolt/Physics/Body/MotionProperties.inl</key>
 		<data>
@@ -4362,7 +4290,7 @@
 		</data>
 		<key>tvos-arm64/Headers/Jolt/Physics/Character/CharacterVirtual.h</key>
 		<data>
-		lRjtawsK7228uSAfoGWRztWuK94=
+		XPBoN8ea8J3AGpWPwOYT2u/g5M8=
 		</data>
 		<key>tvos-arm64/Headers/Jolt/Physics/Collision/AABoxCast.h</key>
 		<data>
@@ -4382,7 +4310,7 @@
 		</data>
 		<key>tvos-arm64/Headers/Jolt/Physics/Collision/BroadPhase/BroadPhase.h</key>
 		<data>
-		+kbHbonOuFj32y3HhoPYMRI42EU=
+		RaYGcMJgTfROFUFCkP/+cFdp3uk=
 		</data>
 		<key>tvos-arm64/Headers/Jolt/Physics/Collision/BroadPhase/BroadPhaseBruteForce.h</key>
 		<data>
@@ -4406,7 +4334,7 @@
 		</data>
 		<key>tvos-arm64/Headers/Jolt/Physics/Collision/BroadPhase/BroadPhaseQuery.h</key>
 		<data>
-		MPCrga2iDz/NRWF7awbs8F6TZvU=
+		bp9oSi/4+8nyCAnofIEi3yqHk0I=
 		</data>
 		<key>tvos-arm64/Headers/Jolt/Physics/Collision/BroadPhase/ObjectVsBroadPhaseLayerFilterMask.h</key>
 		<data>
@@ -4450,7 +4378,7 @@
 		</data>
 		<key>tvos-arm64/Headers/Jolt/Physics/Collision/CollideShapeVsShapePerLeaf.h</key>
 		<data>
-		6KQMytcW+n2Zle6j+4Gsbcq+1ck=
+		kEzVMzisIQmvv0t2sFocu+hAXUI=
 		</data>
 		<key>tvos-arm64/Headers/Jolt/Physics/Collision/CollideSoftBodyVertexIterator.h</key>
 		<data>
@@ -4458,7 +4386,7 @@
 		</data>
 		<key>tvos-arm64/Headers/Jolt/Physics/Collision/CollideSoftBodyVerticesVsTriangles.h</key>
 		<data>
-		64cjgAaf7DLGEynziTui8CAY3PY=
+		v3NcNNF+qbfobx3Cl13eOFie2zs=
 		</data>
 		<key>tvos-arm64/Headers/Jolt/Physics/Collision/CollideSphereVsTriangles.h</key>
 		<data>
@@ -4538,7 +4466,7 @@
 		</data>
 		<key>tvos-arm64/Headers/Jolt/Physics/Collision/Shape/BoxShape.h</key>
 		<data>
-		DV2EmbgzU0wo66Q8f/JuUzmYpK4=
+		ANj/Q8fjAmyZZhANB38Avu//aLc=
 		</data>
 		<key>tvos-arm64/Headers/Jolt/Physics/Collision/Shape/CapsuleShape.h</key>
 		<data>
@@ -4546,7 +4474,7 @@
 		</data>
 		<key>tvos-arm64/Headers/Jolt/Physics/Collision/Shape/CompoundShape.h</key>
 		<data>
-		4GYHDLbmW7ZvzBdS91tsgPmkhOg=
+		iNZUd8sRoqILcNW4L5HdVcKWtkA=
 		</data>
 		<key>tvos-arm64/Headers/Jolt/Physics/Collision/Shape/CompoundShapeVisitors.h</key>
 		<data>
@@ -4554,7 +4482,7 @@
 		</data>
 		<key>tvos-arm64/Headers/Jolt/Physics/Collision/Shape/ConvexHullShape.h</key>
 		<data>
-		LpppeGXsy0/RFMZ6gTA6Gh7JXd4=
+		h/49g3gzM9BRCavqi7vUb71A7BU=
 		</data>
 		<key>tvos-arm64/Headers/Jolt/Physics/Collision/Shape/ConvexShape.h</key>
 		<data>
@@ -4582,7 +4510,7 @@
 		</data>
 		<key>tvos-arm64/Headers/Jolt/Physics/Collision/Shape/MeshShape.h</key>
 		<data>
-		Nlow74k8Qi/fARhqdUvlGrdcfRk=
+		E/gV6ozyQuT9T5iquMn10kRQP0g=
 		</data>
 		<key>tvos-arm64/Headers/Jolt/Physics/Collision/Shape/MutableCompoundShape.h</key>
 		<data>
@@ -4594,7 +4522,7 @@
 		</data>
 		<key>tvos-arm64/Headers/Jolt/Physics/Collision/Shape/PlaneShape.h</key>
 		<data>
-		Ydt7WMldu0JSJBJJ9YnvVDvMEbY=
+		bqS9oPxgX5LELCtl92uZQmW833s=
 		</data>
 		<key>tvos-arm64/Headers/Jolt/Physics/Collision/Shape/PolyhedronSubmergedVolumeCalculator.h</key>
 		<data>
@@ -4618,7 +4546,7 @@
 		</data>
 		<key>tvos-arm64/Headers/Jolt/Physics/Collision/Shape/SphereShape.h</key>
 		<data>
-		cwsKBgPasUPzXxyWGcG3vhSoL/U=
+		f/e2G5d4NWURuIQdIWQYdV+CF1o=
 		</data>
 		<key>tvos-arm64/Headers/Jolt/Physics/Collision/Shape/StaticCompoundShape.h</key>
 		<data>
@@ -4666,11 +4594,11 @@
 		</data>
 		<key>tvos-arm64/Headers/Jolt/Physics/Collision/TransformedShape.h</key>
 		<data>
-		yO+5DWPKGU/s7D77/pm/TZhSsRg=
+		TMx5+oJN/IEACVCS92AbSwrVknE=
 		</data>
 		<key>tvos-arm64/Headers/Jolt/Physics/Constraints/CalculateSolverSteps.h</key>
 		<data>
-		V2fElAktRVZfWg/d5WtqKfHtyNM=
+		yJIH+jHfHf4PCz1rGHFTDtRgneU=
 		</data>
 		<key>tvos-arm64/Headers/Jolt/Physics/Constraints/ConeConstraint.h</key>
 		<data>
@@ -4678,11 +4606,11 @@
 		</data>
 		<key>tvos-arm64/Headers/Jolt/Physics/Constraints/Constraint.h</key>
 		<data>
-		928Lzzp7wJs48ae0oKXKgoxnF/o=
+		64zOUStV3IpFZWofk/vXNSimIx4=
 		</data>
 		<key>tvos-arm64/Headers/Jolt/Physics/Constraints/ConstraintManager.h</key>
 		<data>
-		gVLaPUi16ADpHtg/tWC/24q0kMI=
+		ZZTPkrEHzmDIltdz2duYBwdDsRA=
 		</data>
 		<key>tvos-arm64/Headers/Jolt/Physics/Constraints/ConstraintPart/AngleConstraintPart.h</key>
 		<data>
@@ -4718,7 +4646,7 @@
 		</data>
 		<key>tvos-arm64/Headers/Jolt/Physics/Constraints/ConstraintPart/RotationEulerConstraintPart.h</key>
 		<data>
-		cnuaIIOvOKY050XyyOm6SF9RTp8=
+		lksRccEpipj5vwiYCg+9+tBz1iE=
 		</data>
 		<key>tvos-arm64/Headers/Jolt/Physics/Constraints/ConstraintPart/RotationQuatConstraintPart.h</key>
 		<data>
@@ -4734,7 +4662,7 @@
 		</data>
 		<key>tvos-arm64/Headers/Jolt/Physics/Constraints/ContactConstraintManager.h</key>
 		<data>
-		El4XINlGVwhKhBCEJO0aAdRi8E4=
+		0a54wtgM9MSETlf6G5Lq+73jPnU=
 		</data>
 		<key>tvos-arm64/Headers/Jolt/Physics/Constraints/DistanceConstraint.h</key>
 		<data>
@@ -4814,11 +4742,11 @@
 		</data>
 		<key>tvos-arm64/Headers/Jolt/Physics/IslandBuilder.h</key>
 		<data>
-		aE2/578M9UineUDTPlN1TuRzzFE=
+		lMbsK2wrnecl1UfZlXEjHy8WuIQ=
 		</data>
 		<key>tvos-arm64/Headers/Jolt/Physics/LargeIslandSplitter.h</key>
 		<data>
-		WT/OcgSNOO8H/AE3+aWO4B0TdwU=
+		gLopU91A7+TqZuEm267MisnQhdc=
 		</data>
 		<key>tvos-arm64/Headers/Jolt/Physics/PhysicsLock.h</key>
 		<data>
@@ -4838,15 +4766,15 @@
 		</data>
 		<key>tvos-arm64/Headers/Jolt/Physics/PhysicsSystem.h</key>
 		<data>
-		hjPNQ95Ubg6CYy9RT984iLqWYxs=
+		WkOWwARpcBtcp+ZTCw4w8W75v1M=
 		</data>
 		<key>tvos-arm64/Headers/Jolt/Physics/PhysicsUpdateContext.h</key>
 		<data>
-		p+WO2h28mxa46SSDnkZePzyE8iE=
+		1FClBjhEWVMqJ1ePn9b4TVxli2c=
 		</data>
 		<key>tvos-arm64/Headers/Jolt/Physics/Ragdoll/Ragdoll.h</key>
 		<data>
-		9vskM4TYNEEcm+oQ4vcTPYoR2n4=
+		/qjxRX2qX7bPjYdw+T4gWlY+5gw=
 		</data>
 		<key>tvos-arm64/Headers/Jolt/Physics/SoftBody/SoftBodyContactListener.h</key>
 		<data>
@@ -4854,7 +4782,7 @@
 		</data>
 		<key>tvos-arm64/Headers/Jolt/Physics/SoftBody/SoftBodyCreationSettings.h</key>
 		<data>
-		w8G8NlChiS8hu6sgn+TW1i4ozUM=
+		TxLa7Ve/4hdwz1UO326J5aUxGxM=
 		</data>
 		<key>tvos-arm64/Headers/Jolt/Physics/SoftBody/SoftBodyManifold.h</key>
 		<data>
@@ -4870,11 +4798,11 @@
 		</data>
 		<key>tvos-arm64/Headers/Jolt/Physics/SoftBody/SoftBodySharedSettings.h</key>
 		<data>
-		JkNkqIxr2zOHhKsmtPVJc3sBlc0=
+		N/lEX5OwWVZk6M9720WtkXl0rJ8=
 		</data>
 		<key>tvos-arm64/Headers/Jolt/Physics/SoftBody/SoftBodyUpdateContext.h</key>
 		<data>
-		tn8LqcrY01HhGpAQ6UoVB+OD1N0=
+		Os8ubTTN4i9Aa7af4QmXzqo6bec=
 		</data>
 		<key>tvos-arm64/Headers/Jolt/Physics/SoftBody/SoftBodyVertex.h</key>
 		<data>
@@ -4902,7 +4830,7 @@
 		</data>
 		<key>tvos-arm64/Headers/Jolt/Physics/Vehicle/VehicleCollisionTester.h</key>
 		<data>
-		BKIozepvHKrqaGfvYOwViKDLV4c=
+		EOfXLcX16cM95O14QPYIVxzReog=
 		</data>
 		<key>tvos-arm64/Headers/Jolt/Physics/Vehicle/VehicleConstraint.h</key>
 		<data>
@@ -4918,7 +4846,7 @@
 		</data>
 		<key>tvos-arm64/Headers/Jolt/Physics/Vehicle/VehicleEngine.h</key>
 		<data>
-		+EtyPOOqxcNdCaurncL/ZR9O8lI=
+		Wt6rbCxYDQi9lNM+DFZMHWxra+0=
 		</data>
 		<key>tvos-arm64/Headers/Jolt/Physics/Vehicle/VehicleTrack.h</key>
 		<data>
@@ -4934,7 +4862,7 @@
 		</data>
 		<key>tvos-arm64/Headers/Jolt/Physics/Vehicle/WheeledVehicleController.h</key>
 		<data>
-		gdRta6f23g6iQHDIliGD8V4d0aI=
+		1TUPvWb9JAW9l1b+wY+71qDumVs=
 		</data>
 		<key>tvos-arm64/Headers/Jolt/RegisterTypes.h</key>
 		<data>
@@ -4986,27 +4914,11 @@
 		</data>
 		<key>tvos-arm64/libJolt.a</key>
 		<data>
-		3UP9YuSnVWdbz69JP1MSeg8o1ug=
-		</data>
-		<key>tvos-arm64_x86_64-simulator/Headers/.DS_Store</key>
-		<data>
-		cjZykeSls21OF5EeHMhTfrH6sLE=
-		</data>
-		<key>tvos-arm64_x86_64-simulator/Headers/Jolt-Module/module.modulemap</key>
-		<data>
-		JYi8hSaxh7WOQtbMf/9QQnQamIQ=
-		</data>
-		<key>tvos-arm64_x86_64-simulator/Headers/Jolt/.DS_Store</key>
-		<data>
-		P6snEeODGxX9kq7+XQ7cGNtClTk=
-		</data>
-		<key>tvos-arm64_x86_64-simulator/Headers/Jolt/AABBTree/.DS_Store</key>
-		<data>
-		gRY5Bye2wn6qi/6t7nGZea/ra/k=
+		vAK6Vt4tRqR1rWOhj7ynxxvs+AQ=
 		</data>
 		<key>tvos-arm64_x86_64-simulator/Headers/Jolt/AABBTree/AABBTreeBuilder.h</key>
 		<data>
-		5pyuZWdbIZN0AqMEHC9N+xZg0FU=
+		lJm9MjUKHGFkhZiU4nekwFBg2Nk=
 		</data>
 		<key>tvos-arm64_x86_64-simulator/Headers/Jolt/AABBTree/AABBTreeToBuffer.h</key>
 		<data>
@@ -5022,7 +4934,7 @@
 		</data>
 		<key>tvos-arm64_x86_64-simulator/Headers/Jolt/ConfigurationString.h</key>
 		<data>
-		B9CFKPh1SGVPX8ffzH88FE0ivfo=
+		8NoUHQeGfubjraZUoNfyQBDP6gM=
 		</data>
 		<key>tvos-arm64_x86_64-simulator/Headers/Jolt/Core/ARMNeon.h</key>
 		<data>
@@ -5030,7 +4942,7 @@
 		</data>
 		<key>tvos-arm64_x86_64-simulator/Headers/Jolt/Core/Array.h</key>
 		<data>
-		cIjeBdepD/8OxId7IklGgtcCX4A=
+		xWGa5YbK/Q71COqleGOSiXHK6BI=
 		</data>
 		<key>tvos-arm64_x86_64-simulator/Headers/Jolt/Core/Atomics.h</key>
 		<data>
@@ -5046,11 +4958,11 @@
 		</data>
 		<key>tvos-arm64_x86_64-simulator/Headers/Jolt/Core/Color.h</key>
 		<data>
-		sMsYZqRMZJXMDGc4BXI4BVku+gA=
+		8W5NaOoaoGvPKsIEZvZNfKbj1MQ=
 		</data>
 		<key>tvos-arm64_x86_64-simulator/Headers/Jolt/Core/Core.h</key>
 		<data>
-		CQPHfzJPHJxq8gcCieMR9oQu3ks=
+		UIJ9pvCvSDa5YMvHk7UgVj8CFWM=
 		</data>
 		<key>tvos-arm64_x86_64-simulator/Headers/Jolt/Core/FPControlWord.h</key>
 		<data>
@@ -5082,7 +4994,7 @@
 		</data>
 		<key>tvos-arm64_x86_64-simulator/Headers/Jolt/Core/HashTable.h</key>
 		<data>
-		kclgdI3kKkaNkdI65yh23/UMRqM=
+		ou8y5t3Cecqyh82MjAWva8O5wW0=
 		</data>
 		<key>tvos-arm64_x86_64-simulator/Headers/Jolt/Core/InsertionSort.h</key>
 		<data>
@@ -5126,7 +5038,7 @@
 		</data>
 		<key>tvos-arm64_x86_64-simulator/Headers/Jolt/Core/Memory.h</key>
 		<data>
-		hCOmn1l2CAoFdQjmV6SFzqOFLLY=
+		4dmF18tlKJLc2RrF4cDe1Sp173g=
 		</data>
 		<key>tvos-arm64_x86_64-simulator/Headers/Jolt/Core/Mutex.h</key>
 		<data>
@@ -5142,7 +5054,7 @@
 		</data>
 		<key>tvos-arm64_x86_64-simulator/Headers/Jolt/Core/Profiler.h</key>
 		<data>
-		wLrQLA1AdIZIR0itHk3hLpJImA0=
+		nlvQ9CtUcoxTLhoGrHkkh6LVVN8=
 		</data>
 		<key>tvos-arm64_x86_64-simulator/Headers/Jolt/Core/Profiler.inl</key>
 		<data>
@@ -5170,7 +5082,7 @@
 		</data>
 		<key>tvos-arm64_x86_64-simulator/Headers/Jolt/Core/STLAllocator.h</key>
 		<data>
-		oXrnsZNOG5jD9sLo+NFjvGsfoCE=
+		mz028/yN4XT0T/yE1iNYQEUcHT0=
 		</data>
 		<key>tvos-arm64_x86_64-simulator/Headers/Jolt/Core/STLLocalAllocator.h</key>
 		<data>
@@ -5218,11 +5130,11 @@
 		</data>
 		<key>tvos-arm64_x86_64-simulator/Headers/Jolt/Core/TempAllocator.h</key>
 		<data>
-		uBAmuqYSfH5vG6qbCHWYZdomo0c=
+		dQ8X+7xa1KIW2PIaYX8rTpPC5GU=
 		</data>
 		<key>tvos-arm64_x86_64-simulator/Headers/Jolt/Core/TickCounter.h</key>
 		<data>
-		GVm3aIEvYmibKBxj8AJ5edaowLQ=
+		owswZ3+ct74Uj2ulvpo9mCz2vek=
 		</data>
 		<key>tvos-arm64_x86_64-simulator/Headers/Jolt/Core/UnorderedMap.h</key>
 		<data>
@@ -5266,7 +5178,7 @@
 		</data>
 		<key>tvos-arm64_x86_64-simulator/Headers/Jolt/Geometry/EPAPenetrationDepth.h</key>
 		<data>
-		vhAg9LQs9vCfoXJchpqr+HHomD8=
+		u6ZhHzmGkjgYBV9Tc22Ek4JDyPs=
 		</data>
 		<key>tvos-arm64_x86_64-simulator/Headers/Jolt/Geometry/Ellipse.h</key>
 		<data>
@@ -5442,7 +5354,7 @@
 		</data>
 		<key>tvos-arm64_x86_64-simulator/Headers/Jolt/Math/Vec3.inl</key>
 		<data>
-		E0jVpAo4yQp4QBfNTO1CXXZLTo4=
+		ZfltiNukIz32suDrSqXp0YPzMh8=
 		</data>
 		<key>tvos-arm64_x86_64-simulator/Headers/Jolt/Math/Vec4.h</key>
 		<data>
@@ -5450,7 +5362,7 @@
 		</data>
 		<key>tvos-arm64_x86_64-simulator/Headers/Jolt/Math/Vec4.inl</key>
 		<data>
-		+gn6q44KlT7Y7lwIupOgyTZJKHI=
+		NO9936UeQrXcI0mGw9FvVv+4Jww=
 		</data>
 		<key>tvos-arm64_x86_64-simulator/Headers/Jolt/Math/Vector.h</key>
 		<data>
@@ -5518,7 +5430,7 @@
 		</data>
 		<key>tvos-arm64_x86_64-simulator/Headers/Jolt/Physics/Body/Body.h</key>
 		<data>
-		kFvYRWMM3Yu7DGzzRF3Xaw1cJ/M=
+		pyRe0xA2CinOAhm4qF6vvdqKKyA=
 		</data>
 		<key>tvos-arm64_x86_64-simulator/Headers/Jolt/Physics/Body/Body.inl</key>
 		<data>
@@ -5534,7 +5446,7 @@
 		</data>
 		<key>tvos-arm64_x86_64-simulator/Headers/Jolt/Physics/Body/BodyCreationSettings.h</key>
 		<data>
-		fzu3L+P/krVHxgDODLBsSrEG3p4=
+		KJPIQQY6lgAbPLKNANYbRxC5cJg=
 		</data>
 		<key>tvos-arm64_x86_64-simulator/Headers/Jolt/Physics/Body/BodyFilter.h</key>
 		<data>
@@ -5546,7 +5458,7 @@
 		</data>
 		<key>tvos-arm64_x86_64-simulator/Headers/Jolt/Physics/Body/BodyInterface.h</key>
 		<data>
-		jKhukPN4mFNUszb3AQQgTmSi/+Q=
+		Z204BkhSAc7ocwzIuQEl7wmJwVQ=
 		</data>
 		<key>tvos-arm64_x86_64-simulator/Headers/Jolt/Physics/Body/BodyLock.h</key>
 		<data>
@@ -5562,7 +5474,7 @@
 		</data>
 		<key>tvos-arm64_x86_64-simulator/Headers/Jolt/Physics/Body/BodyManager.h</key>
 		<data>
-		f6FgBS/9h/npXam7y1QyqIXQUdg=
+		ViC+VV9Ty5/LsqefzlzsoUqfNYE=
 		</data>
 		<key>tvos-arm64_x86_64-simulator/Headers/Jolt/Physics/Body/BodyPair.h</key>
 		<data>
@@ -5578,7 +5490,7 @@
 		</data>
 		<key>tvos-arm64_x86_64-simulator/Headers/Jolt/Physics/Body/MotionProperties.h</key>
 		<data>
-		kHrGjCt97kjuKeeSFMT/M0NSXcU=
+		YQCQQNtXOQAjU+n+OVUeU3x29Fg=
 		</data>
 		<key>tvos-arm64_x86_64-simulator/Headers/Jolt/Physics/Body/MotionProperties.inl</key>
 		<data>
@@ -5606,7 +5518,7 @@
 		</data>
 		<key>tvos-arm64_x86_64-simulator/Headers/Jolt/Physics/Character/CharacterVirtual.h</key>
 		<data>
-		lRjtawsK7228uSAfoGWRztWuK94=
+		XPBoN8ea8J3AGpWPwOYT2u/g5M8=
 		</data>
 		<key>tvos-arm64_x86_64-simulator/Headers/Jolt/Physics/Collision/AABoxCast.h</key>
 		<data>
@@ -5626,7 +5538,7 @@
 		</data>
 		<key>tvos-arm64_x86_64-simulator/Headers/Jolt/Physics/Collision/BroadPhase/BroadPhase.h</key>
 		<data>
-		+kbHbonOuFj32y3HhoPYMRI42EU=
+		RaYGcMJgTfROFUFCkP/+cFdp3uk=
 		</data>
 		<key>tvos-arm64_x86_64-simulator/Headers/Jolt/Physics/Collision/BroadPhase/BroadPhaseBruteForce.h</key>
 		<data>
@@ -5650,7 +5562,7 @@
 		</data>
 		<key>tvos-arm64_x86_64-simulator/Headers/Jolt/Physics/Collision/BroadPhase/BroadPhaseQuery.h</key>
 		<data>
-		MPCrga2iDz/NRWF7awbs8F6TZvU=
+		bp9oSi/4+8nyCAnofIEi3yqHk0I=
 		</data>
 		<key>tvos-arm64_x86_64-simulator/Headers/Jolt/Physics/Collision/BroadPhase/ObjectVsBroadPhaseLayerFilterMask.h</key>
 		<data>
@@ -5694,7 +5606,7 @@
 		</data>
 		<key>tvos-arm64_x86_64-simulator/Headers/Jolt/Physics/Collision/CollideShapeVsShapePerLeaf.h</key>
 		<data>
-		6KQMytcW+n2Zle6j+4Gsbcq+1ck=
+		kEzVMzisIQmvv0t2sFocu+hAXUI=
 		</data>
 		<key>tvos-arm64_x86_64-simulator/Headers/Jolt/Physics/Collision/CollideSoftBodyVertexIterator.h</key>
 		<data>
@@ -5702,7 +5614,7 @@
 		</data>
 		<key>tvos-arm64_x86_64-simulator/Headers/Jolt/Physics/Collision/CollideSoftBodyVerticesVsTriangles.h</key>
 		<data>
-		64cjgAaf7DLGEynziTui8CAY3PY=
+		v3NcNNF+qbfobx3Cl13eOFie2zs=
 		</data>
 		<key>tvos-arm64_x86_64-simulator/Headers/Jolt/Physics/Collision/CollideSphereVsTriangles.h</key>
 		<data>
@@ -5782,7 +5694,7 @@
 		</data>
 		<key>tvos-arm64_x86_64-simulator/Headers/Jolt/Physics/Collision/Shape/BoxShape.h</key>
 		<data>
-		DV2EmbgzU0wo66Q8f/JuUzmYpK4=
+		ANj/Q8fjAmyZZhANB38Avu//aLc=
 		</data>
 		<key>tvos-arm64_x86_64-simulator/Headers/Jolt/Physics/Collision/Shape/CapsuleShape.h</key>
 		<data>
@@ -5790,7 +5702,7 @@
 		</data>
 		<key>tvos-arm64_x86_64-simulator/Headers/Jolt/Physics/Collision/Shape/CompoundShape.h</key>
 		<data>
-		4GYHDLbmW7ZvzBdS91tsgPmkhOg=
+		iNZUd8sRoqILcNW4L5HdVcKWtkA=
 		</data>
 		<key>tvos-arm64_x86_64-simulator/Headers/Jolt/Physics/Collision/Shape/CompoundShapeVisitors.h</key>
 		<data>
@@ -5798,7 +5710,7 @@
 		</data>
 		<key>tvos-arm64_x86_64-simulator/Headers/Jolt/Physics/Collision/Shape/ConvexHullShape.h</key>
 		<data>
-		LpppeGXsy0/RFMZ6gTA6Gh7JXd4=
+		h/49g3gzM9BRCavqi7vUb71A7BU=
 		</data>
 		<key>tvos-arm64_x86_64-simulator/Headers/Jolt/Physics/Collision/Shape/ConvexShape.h</key>
 		<data>
@@ -5826,7 +5738,7 @@
 		</data>
 		<key>tvos-arm64_x86_64-simulator/Headers/Jolt/Physics/Collision/Shape/MeshShape.h</key>
 		<data>
-		Nlow74k8Qi/fARhqdUvlGrdcfRk=
+		E/gV6ozyQuT9T5iquMn10kRQP0g=
 		</data>
 		<key>tvos-arm64_x86_64-simulator/Headers/Jolt/Physics/Collision/Shape/MutableCompoundShape.h</key>
 		<data>
@@ -5838,7 +5750,7 @@
 		</data>
 		<key>tvos-arm64_x86_64-simulator/Headers/Jolt/Physics/Collision/Shape/PlaneShape.h</key>
 		<data>
-		Ydt7WMldu0JSJBJJ9YnvVDvMEbY=
+		bqS9oPxgX5LELCtl92uZQmW833s=
 		</data>
 		<key>tvos-arm64_x86_64-simulator/Headers/Jolt/Physics/Collision/Shape/PolyhedronSubmergedVolumeCalculator.h</key>
 		<data>
@@ -5862,7 +5774,7 @@
 		</data>
 		<key>tvos-arm64_x86_64-simulator/Headers/Jolt/Physics/Collision/Shape/SphereShape.h</key>
 		<data>
-		cwsKBgPasUPzXxyWGcG3vhSoL/U=
+		f/e2G5d4NWURuIQdIWQYdV+CF1o=
 		</data>
 		<key>tvos-arm64_x86_64-simulator/Headers/Jolt/Physics/Collision/Shape/StaticCompoundShape.h</key>
 		<data>
@@ -5910,11 +5822,11 @@
 		</data>
 		<key>tvos-arm64_x86_64-simulator/Headers/Jolt/Physics/Collision/TransformedShape.h</key>
 		<data>
-		yO+5DWPKGU/s7D77/pm/TZhSsRg=
+		TMx5+oJN/IEACVCS92AbSwrVknE=
 		</data>
 		<key>tvos-arm64_x86_64-simulator/Headers/Jolt/Physics/Constraints/CalculateSolverSteps.h</key>
 		<data>
-		V2fElAktRVZfWg/d5WtqKfHtyNM=
+		yJIH+jHfHf4PCz1rGHFTDtRgneU=
 		</data>
 		<key>tvos-arm64_x86_64-simulator/Headers/Jolt/Physics/Constraints/ConeConstraint.h</key>
 		<data>
@@ -5922,11 +5834,11 @@
 		</data>
 		<key>tvos-arm64_x86_64-simulator/Headers/Jolt/Physics/Constraints/Constraint.h</key>
 		<data>
-		928Lzzp7wJs48ae0oKXKgoxnF/o=
+		64zOUStV3IpFZWofk/vXNSimIx4=
 		</data>
 		<key>tvos-arm64_x86_64-simulator/Headers/Jolt/Physics/Constraints/ConstraintManager.h</key>
 		<data>
-		gVLaPUi16ADpHtg/tWC/24q0kMI=
+		ZZTPkrEHzmDIltdz2duYBwdDsRA=
 		</data>
 		<key>tvos-arm64_x86_64-simulator/Headers/Jolt/Physics/Constraints/ConstraintPart/AngleConstraintPart.h</key>
 		<data>
@@ -5962,7 +5874,7 @@
 		</data>
 		<key>tvos-arm64_x86_64-simulator/Headers/Jolt/Physics/Constraints/ConstraintPart/RotationEulerConstraintPart.h</key>
 		<data>
-		cnuaIIOvOKY050XyyOm6SF9RTp8=
+		lksRccEpipj5vwiYCg+9+tBz1iE=
 		</data>
 		<key>tvos-arm64_x86_64-simulator/Headers/Jolt/Physics/Constraints/ConstraintPart/RotationQuatConstraintPart.h</key>
 		<data>
@@ -5978,7 +5890,7 @@
 		</data>
 		<key>tvos-arm64_x86_64-simulator/Headers/Jolt/Physics/Constraints/ContactConstraintManager.h</key>
 		<data>
-		El4XINlGVwhKhBCEJO0aAdRi8E4=
+		0a54wtgM9MSETlf6G5Lq+73jPnU=
 		</data>
 		<key>tvos-arm64_x86_64-simulator/Headers/Jolt/Physics/Constraints/DistanceConstraint.h</key>
 		<data>
@@ -6058,11 +5970,11 @@
 		</data>
 		<key>tvos-arm64_x86_64-simulator/Headers/Jolt/Physics/IslandBuilder.h</key>
 		<data>
-		aE2/578M9UineUDTPlN1TuRzzFE=
+		lMbsK2wrnecl1UfZlXEjHy8WuIQ=
 		</data>
 		<key>tvos-arm64_x86_64-simulator/Headers/Jolt/Physics/LargeIslandSplitter.h</key>
 		<data>
-		WT/OcgSNOO8H/AE3+aWO4B0TdwU=
+		gLopU91A7+TqZuEm267MisnQhdc=
 		</data>
 		<key>tvos-arm64_x86_64-simulator/Headers/Jolt/Physics/PhysicsLock.h</key>
 		<data>
@@ -6082,15 +5994,15 @@
 		</data>
 		<key>tvos-arm64_x86_64-simulator/Headers/Jolt/Physics/PhysicsSystem.h</key>
 		<data>
-		hjPNQ95Ubg6CYy9RT984iLqWYxs=
+		WkOWwARpcBtcp+ZTCw4w8W75v1M=
 		</data>
 		<key>tvos-arm64_x86_64-simulator/Headers/Jolt/Physics/PhysicsUpdateContext.h</key>
 		<data>
-		p+WO2h28mxa46SSDnkZePzyE8iE=
+		1FClBjhEWVMqJ1ePn9b4TVxli2c=
 		</data>
 		<key>tvos-arm64_x86_64-simulator/Headers/Jolt/Physics/Ragdoll/Ragdoll.h</key>
 		<data>
-		9vskM4TYNEEcm+oQ4vcTPYoR2n4=
+		/qjxRX2qX7bPjYdw+T4gWlY+5gw=
 		</data>
 		<key>tvos-arm64_x86_64-simulator/Headers/Jolt/Physics/SoftBody/SoftBodyContactListener.h</key>
 		<data>
@@ -6098,7 +6010,7 @@
 		</data>
 		<key>tvos-arm64_x86_64-simulator/Headers/Jolt/Physics/SoftBody/SoftBodyCreationSettings.h</key>
 		<data>
-		w8G8NlChiS8hu6sgn+TW1i4ozUM=
+		TxLa7Ve/4hdwz1UO326J5aUxGxM=
 		</data>
 		<key>tvos-arm64_x86_64-simulator/Headers/Jolt/Physics/SoftBody/SoftBodyManifold.h</key>
 		<data>
@@ -6114,11 +6026,11 @@
 		</data>
 		<key>tvos-arm64_x86_64-simulator/Headers/Jolt/Physics/SoftBody/SoftBodySharedSettings.h</key>
 		<data>
-		JkNkqIxr2zOHhKsmtPVJc3sBlc0=
+		N/lEX5OwWVZk6M9720WtkXl0rJ8=
 		</data>
 		<key>tvos-arm64_x86_64-simulator/Headers/Jolt/Physics/SoftBody/SoftBodyUpdateContext.h</key>
 		<data>
-		tn8LqcrY01HhGpAQ6UoVB+OD1N0=
+		Os8ubTTN4i9Aa7af4QmXzqo6bec=
 		</data>
 		<key>tvos-arm64_x86_64-simulator/Headers/Jolt/Physics/SoftBody/SoftBodyVertex.h</key>
 		<data>
@@ -6146,7 +6058,7 @@
 		</data>
 		<key>tvos-arm64_x86_64-simulator/Headers/Jolt/Physics/Vehicle/VehicleCollisionTester.h</key>
 		<data>
-		BKIozepvHKrqaGfvYOwViKDLV4c=
+		EOfXLcX16cM95O14QPYIVxzReog=
 		</data>
 		<key>tvos-arm64_x86_64-simulator/Headers/Jolt/Physics/Vehicle/VehicleConstraint.h</key>
 		<data>
@@ -6162,7 +6074,7 @@
 		</data>
 		<key>tvos-arm64_x86_64-simulator/Headers/Jolt/Physics/Vehicle/VehicleEngine.h</key>
 		<data>
-		+EtyPOOqxcNdCaurncL/ZR9O8lI=
+		Wt6rbCxYDQi9lNM+DFZMHWxra+0=
 		</data>
 		<key>tvos-arm64_x86_64-simulator/Headers/Jolt/Physics/Vehicle/VehicleTrack.h</key>
 		<data>
@@ -6178,7 +6090,7 @@
 		</data>
 		<key>tvos-arm64_x86_64-simulator/Headers/Jolt/Physics/Vehicle/WheeledVehicleController.h</key>
 		<data>
-		gdRta6f23g6iQHDIliGD8V4d0aI=
+		1TUPvWb9JAW9l1b+wY+71qDumVs=
 		</data>
 		<key>tvos-arm64_x86_64-simulator/Headers/Jolt/RegisterTypes.h</key>
 		<data>
@@ -6230,27 +6142,11 @@
 		</data>
 		<key>tvos-arm64_x86_64-simulator/libJolt.a</key>
 		<data>
-		VjoKjze7hllh9El275mcFzyt42Q=
-		</data>
-		<key>xros-arm64/Headers/.DS_Store</key>
-		<data>
-		cjZykeSls21OF5EeHMhTfrH6sLE=
-		</data>
-		<key>xros-arm64/Headers/Jolt-Module/module.modulemap</key>
-		<data>
-		JYi8hSaxh7WOQtbMf/9QQnQamIQ=
-		</data>
-		<key>xros-arm64/Headers/Jolt/.DS_Store</key>
-		<data>
-		P6snEeODGxX9kq7+XQ7cGNtClTk=
-		</data>
-		<key>xros-arm64/Headers/Jolt/AABBTree/.DS_Store</key>
-		<data>
-		gRY5Bye2wn6qi/6t7nGZea/ra/k=
+		lgp3Q6l+shmcT2r8HQQVcfc7Z00=
 		</data>
 		<key>xros-arm64/Headers/Jolt/AABBTree/AABBTreeBuilder.h</key>
 		<data>
-		5pyuZWdbIZN0AqMEHC9N+xZg0FU=
+		lJm9MjUKHGFkhZiU4nekwFBg2Nk=
 		</data>
 		<key>xros-arm64/Headers/Jolt/AABBTree/AABBTreeToBuffer.h</key>
 		<data>
@@ -6266,7 +6162,7 @@
 		</data>
 		<key>xros-arm64/Headers/Jolt/ConfigurationString.h</key>
 		<data>
-		B9CFKPh1SGVPX8ffzH88FE0ivfo=
+		8NoUHQeGfubjraZUoNfyQBDP6gM=
 		</data>
 		<key>xros-arm64/Headers/Jolt/Core/ARMNeon.h</key>
 		<data>
@@ -6274,7 +6170,7 @@
 		</data>
 		<key>xros-arm64/Headers/Jolt/Core/Array.h</key>
 		<data>
-		cIjeBdepD/8OxId7IklGgtcCX4A=
+		xWGa5YbK/Q71COqleGOSiXHK6BI=
 		</data>
 		<key>xros-arm64/Headers/Jolt/Core/Atomics.h</key>
 		<data>
@@ -6290,11 +6186,11 @@
 		</data>
 		<key>xros-arm64/Headers/Jolt/Core/Color.h</key>
 		<data>
-		sMsYZqRMZJXMDGc4BXI4BVku+gA=
+		8W5NaOoaoGvPKsIEZvZNfKbj1MQ=
 		</data>
 		<key>xros-arm64/Headers/Jolt/Core/Core.h</key>
 		<data>
-		CQPHfzJPHJxq8gcCieMR9oQu3ks=
+		UIJ9pvCvSDa5YMvHk7UgVj8CFWM=
 		</data>
 		<key>xros-arm64/Headers/Jolt/Core/FPControlWord.h</key>
 		<data>
@@ -6326,7 +6222,7 @@
 		</data>
 		<key>xros-arm64/Headers/Jolt/Core/HashTable.h</key>
 		<data>
-		kclgdI3kKkaNkdI65yh23/UMRqM=
+		ou8y5t3Cecqyh82MjAWva8O5wW0=
 		</data>
 		<key>xros-arm64/Headers/Jolt/Core/InsertionSort.h</key>
 		<data>
@@ -6370,7 +6266,7 @@
 		</data>
 		<key>xros-arm64/Headers/Jolt/Core/Memory.h</key>
 		<data>
-		hCOmn1l2CAoFdQjmV6SFzqOFLLY=
+		4dmF18tlKJLc2RrF4cDe1Sp173g=
 		</data>
 		<key>xros-arm64/Headers/Jolt/Core/Mutex.h</key>
 		<data>
@@ -6386,7 +6282,7 @@
 		</data>
 		<key>xros-arm64/Headers/Jolt/Core/Profiler.h</key>
 		<data>
-		wLrQLA1AdIZIR0itHk3hLpJImA0=
+		nlvQ9CtUcoxTLhoGrHkkh6LVVN8=
 		</data>
 		<key>xros-arm64/Headers/Jolt/Core/Profiler.inl</key>
 		<data>
@@ -6414,7 +6310,7 @@
 		</data>
 		<key>xros-arm64/Headers/Jolt/Core/STLAllocator.h</key>
 		<data>
-		oXrnsZNOG5jD9sLo+NFjvGsfoCE=
+		mz028/yN4XT0T/yE1iNYQEUcHT0=
 		</data>
 		<key>xros-arm64/Headers/Jolt/Core/STLLocalAllocator.h</key>
 		<data>
@@ -6462,11 +6358,11 @@
 		</data>
 		<key>xros-arm64/Headers/Jolt/Core/TempAllocator.h</key>
 		<data>
-		uBAmuqYSfH5vG6qbCHWYZdomo0c=
+		dQ8X+7xa1KIW2PIaYX8rTpPC5GU=
 		</data>
 		<key>xros-arm64/Headers/Jolt/Core/TickCounter.h</key>
 		<data>
-		GVm3aIEvYmibKBxj8AJ5edaowLQ=
+		owswZ3+ct74Uj2ulvpo9mCz2vek=
 		</data>
 		<key>xros-arm64/Headers/Jolt/Core/UnorderedMap.h</key>
 		<data>
@@ -6510,7 +6406,7 @@
 		</data>
 		<key>xros-arm64/Headers/Jolt/Geometry/EPAPenetrationDepth.h</key>
 		<data>
-		vhAg9LQs9vCfoXJchpqr+HHomD8=
+		u6ZhHzmGkjgYBV9Tc22Ek4JDyPs=
 		</data>
 		<key>xros-arm64/Headers/Jolt/Geometry/Ellipse.h</key>
 		<data>
@@ -6686,7 +6582,7 @@
 		</data>
 		<key>xros-arm64/Headers/Jolt/Math/Vec3.inl</key>
 		<data>
-		E0jVpAo4yQp4QBfNTO1CXXZLTo4=
+		ZfltiNukIz32suDrSqXp0YPzMh8=
 		</data>
 		<key>xros-arm64/Headers/Jolt/Math/Vec4.h</key>
 		<data>
@@ -6694,7 +6590,7 @@
 		</data>
 		<key>xros-arm64/Headers/Jolt/Math/Vec4.inl</key>
 		<data>
-		+gn6q44KlT7Y7lwIupOgyTZJKHI=
+		NO9936UeQrXcI0mGw9FvVv+4Jww=
 		</data>
 		<key>xros-arm64/Headers/Jolt/Math/Vector.h</key>
 		<data>
@@ -6762,7 +6658,7 @@
 		</data>
 		<key>xros-arm64/Headers/Jolt/Physics/Body/Body.h</key>
 		<data>
-		kFvYRWMM3Yu7DGzzRF3Xaw1cJ/M=
+		pyRe0xA2CinOAhm4qF6vvdqKKyA=
 		</data>
 		<key>xros-arm64/Headers/Jolt/Physics/Body/Body.inl</key>
 		<data>
@@ -6778,7 +6674,7 @@
 		</data>
 		<key>xros-arm64/Headers/Jolt/Physics/Body/BodyCreationSettings.h</key>
 		<data>
-		fzu3L+P/krVHxgDODLBsSrEG3p4=
+		KJPIQQY6lgAbPLKNANYbRxC5cJg=
 		</data>
 		<key>xros-arm64/Headers/Jolt/Physics/Body/BodyFilter.h</key>
 		<data>
@@ -6790,7 +6686,7 @@
 		</data>
 		<key>xros-arm64/Headers/Jolt/Physics/Body/BodyInterface.h</key>
 		<data>
-		jKhukPN4mFNUszb3AQQgTmSi/+Q=
+		Z204BkhSAc7ocwzIuQEl7wmJwVQ=
 		</data>
 		<key>xros-arm64/Headers/Jolt/Physics/Body/BodyLock.h</key>
 		<data>
@@ -6806,7 +6702,7 @@
 		</data>
 		<key>xros-arm64/Headers/Jolt/Physics/Body/BodyManager.h</key>
 		<data>
-		f6FgBS/9h/npXam7y1QyqIXQUdg=
+		ViC+VV9Ty5/LsqefzlzsoUqfNYE=
 		</data>
 		<key>xros-arm64/Headers/Jolt/Physics/Body/BodyPair.h</key>
 		<data>
@@ -6822,7 +6718,7 @@
 		</data>
 		<key>xros-arm64/Headers/Jolt/Physics/Body/MotionProperties.h</key>
 		<data>
-		kHrGjCt97kjuKeeSFMT/M0NSXcU=
+		YQCQQNtXOQAjU+n+OVUeU3x29Fg=
 		</data>
 		<key>xros-arm64/Headers/Jolt/Physics/Body/MotionProperties.inl</key>
 		<data>
@@ -6850,7 +6746,7 @@
 		</data>
 		<key>xros-arm64/Headers/Jolt/Physics/Character/CharacterVirtual.h</key>
 		<data>
-		lRjtawsK7228uSAfoGWRztWuK94=
+		XPBoN8ea8J3AGpWPwOYT2u/g5M8=
 		</data>
 		<key>xros-arm64/Headers/Jolt/Physics/Collision/AABoxCast.h</key>
 		<data>
@@ -6870,7 +6766,7 @@
 		</data>
 		<key>xros-arm64/Headers/Jolt/Physics/Collision/BroadPhase/BroadPhase.h</key>
 		<data>
-		+kbHbonOuFj32y3HhoPYMRI42EU=
+		RaYGcMJgTfROFUFCkP/+cFdp3uk=
 		</data>
 		<key>xros-arm64/Headers/Jolt/Physics/Collision/BroadPhase/BroadPhaseBruteForce.h</key>
 		<data>
@@ -6894,7 +6790,7 @@
 		</data>
 		<key>xros-arm64/Headers/Jolt/Physics/Collision/BroadPhase/BroadPhaseQuery.h</key>
 		<data>
-		MPCrga2iDz/NRWF7awbs8F6TZvU=
+		bp9oSi/4+8nyCAnofIEi3yqHk0I=
 		</data>
 		<key>xros-arm64/Headers/Jolt/Physics/Collision/BroadPhase/ObjectVsBroadPhaseLayerFilterMask.h</key>
 		<data>
@@ -6938,7 +6834,7 @@
 		</data>
 		<key>xros-arm64/Headers/Jolt/Physics/Collision/CollideShapeVsShapePerLeaf.h</key>
 		<data>
-		6KQMytcW+n2Zle6j+4Gsbcq+1ck=
+		kEzVMzisIQmvv0t2sFocu+hAXUI=
 		</data>
 		<key>xros-arm64/Headers/Jolt/Physics/Collision/CollideSoftBodyVertexIterator.h</key>
 		<data>
@@ -6946,7 +6842,7 @@
 		</data>
 		<key>xros-arm64/Headers/Jolt/Physics/Collision/CollideSoftBodyVerticesVsTriangles.h</key>
 		<data>
-		64cjgAaf7DLGEynziTui8CAY3PY=
+		v3NcNNF+qbfobx3Cl13eOFie2zs=
 		</data>
 		<key>xros-arm64/Headers/Jolt/Physics/Collision/CollideSphereVsTriangles.h</key>
 		<data>
@@ -7026,7 +6922,7 @@
 		</data>
 		<key>xros-arm64/Headers/Jolt/Physics/Collision/Shape/BoxShape.h</key>
 		<data>
-		DV2EmbgzU0wo66Q8f/JuUzmYpK4=
+		ANj/Q8fjAmyZZhANB38Avu//aLc=
 		</data>
 		<key>xros-arm64/Headers/Jolt/Physics/Collision/Shape/CapsuleShape.h</key>
 		<data>
@@ -7034,7 +6930,7 @@
 		</data>
 		<key>xros-arm64/Headers/Jolt/Physics/Collision/Shape/CompoundShape.h</key>
 		<data>
-		4GYHDLbmW7ZvzBdS91tsgPmkhOg=
+		iNZUd8sRoqILcNW4L5HdVcKWtkA=
 		</data>
 		<key>xros-arm64/Headers/Jolt/Physics/Collision/Shape/CompoundShapeVisitors.h</key>
 		<data>
@@ -7042,7 +6938,7 @@
 		</data>
 		<key>xros-arm64/Headers/Jolt/Physics/Collision/Shape/ConvexHullShape.h</key>
 		<data>
-		LpppeGXsy0/RFMZ6gTA6Gh7JXd4=
+		h/49g3gzM9BRCavqi7vUb71A7BU=
 		</data>
 		<key>xros-arm64/Headers/Jolt/Physics/Collision/Shape/ConvexShape.h</key>
 		<data>
@@ -7070,7 +6966,7 @@
 		</data>
 		<key>xros-arm64/Headers/Jolt/Physics/Collision/Shape/MeshShape.h</key>
 		<data>
-		Nlow74k8Qi/fARhqdUvlGrdcfRk=
+		E/gV6ozyQuT9T5iquMn10kRQP0g=
 		</data>
 		<key>xros-arm64/Headers/Jolt/Physics/Collision/Shape/MutableCompoundShape.h</key>
 		<data>
@@ -7082,7 +6978,7 @@
 		</data>
 		<key>xros-arm64/Headers/Jolt/Physics/Collision/Shape/PlaneShape.h</key>
 		<data>
-		Ydt7WMldu0JSJBJJ9YnvVDvMEbY=
+		bqS9oPxgX5LELCtl92uZQmW833s=
 		</data>
 		<key>xros-arm64/Headers/Jolt/Physics/Collision/Shape/PolyhedronSubmergedVolumeCalculator.h</key>
 		<data>
@@ -7106,7 +7002,7 @@
 		</data>
 		<key>xros-arm64/Headers/Jolt/Physics/Collision/Shape/SphereShape.h</key>
 		<data>
-		cwsKBgPasUPzXxyWGcG3vhSoL/U=
+		f/e2G5d4NWURuIQdIWQYdV+CF1o=
 		</data>
 		<key>xros-arm64/Headers/Jolt/Physics/Collision/Shape/StaticCompoundShape.h</key>
 		<data>
@@ -7154,11 +7050,11 @@
 		</data>
 		<key>xros-arm64/Headers/Jolt/Physics/Collision/TransformedShape.h</key>
 		<data>
-		yO+5DWPKGU/s7D77/pm/TZhSsRg=
+		TMx5+oJN/IEACVCS92AbSwrVknE=
 		</data>
 		<key>xros-arm64/Headers/Jolt/Physics/Constraints/CalculateSolverSteps.h</key>
 		<data>
-		V2fElAktRVZfWg/d5WtqKfHtyNM=
+		yJIH+jHfHf4PCz1rGHFTDtRgneU=
 		</data>
 		<key>xros-arm64/Headers/Jolt/Physics/Constraints/ConeConstraint.h</key>
 		<data>
@@ -7166,11 +7062,11 @@
 		</data>
 		<key>xros-arm64/Headers/Jolt/Physics/Constraints/Constraint.h</key>
 		<data>
-		928Lzzp7wJs48ae0oKXKgoxnF/o=
+		64zOUStV3IpFZWofk/vXNSimIx4=
 		</data>
 		<key>xros-arm64/Headers/Jolt/Physics/Constraints/ConstraintManager.h</key>
 		<data>
-		gVLaPUi16ADpHtg/tWC/24q0kMI=
+		ZZTPkrEHzmDIltdz2duYBwdDsRA=
 		</data>
 		<key>xros-arm64/Headers/Jolt/Physics/Constraints/ConstraintPart/AngleConstraintPart.h</key>
 		<data>
@@ -7206,7 +7102,7 @@
 		</data>
 		<key>xros-arm64/Headers/Jolt/Physics/Constraints/ConstraintPart/RotationEulerConstraintPart.h</key>
 		<data>
-		cnuaIIOvOKY050XyyOm6SF9RTp8=
+		lksRccEpipj5vwiYCg+9+tBz1iE=
 		</data>
 		<key>xros-arm64/Headers/Jolt/Physics/Constraints/ConstraintPart/RotationQuatConstraintPart.h</key>
 		<data>
@@ -7222,7 +7118,7 @@
 		</data>
 		<key>xros-arm64/Headers/Jolt/Physics/Constraints/ContactConstraintManager.h</key>
 		<data>
-		El4XINlGVwhKhBCEJO0aAdRi8E4=
+		0a54wtgM9MSETlf6G5Lq+73jPnU=
 		</data>
 		<key>xros-arm64/Headers/Jolt/Physics/Constraints/DistanceConstraint.h</key>
 		<data>
@@ -7302,11 +7198,11 @@
 		</data>
 		<key>xros-arm64/Headers/Jolt/Physics/IslandBuilder.h</key>
 		<data>
-		aE2/578M9UineUDTPlN1TuRzzFE=
+		lMbsK2wrnecl1UfZlXEjHy8WuIQ=
 		</data>
 		<key>xros-arm64/Headers/Jolt/Physics/LargeIslandSplitter.h</key>
 		<data>
-		WT/OcgSNOO8H/AE3+aWO4B0TdwU=
+		gLopU91A7+TqZuEm267MisnQhdc=
 		</data>
 		<key>xros-arm64/Headers/Jolt/Physics/PhysicsLock.h</key>
 		<data>
@@ -7326,15 +7222,15 @@
 		</data>
 		<key>xros-arm64/Headers/Jolt/Physics/PhysicsSystem.h</key>
 		<data>
-		hjPNQ95Ubg6CYy9RT984iLqWYxs=
+		WkOWwARpcBtcp+ZTCw4w8W75v1M=
 		</data>
 		<key>xros-arm64/Headers/Jolt/Physics/PhysicsUpdateContext.h</key>
 		<data>
-		p+WO2h28mxa46SSDnkZePzyE8iE=
+		1FClBjhEWVMqJ1ePn9b4TVxli2c=
 		</data>
 		<key>xros-arm64/Headers/Jolt/Physics/Ragdoll/Ragdoll.h</key>
 		<data>
-		9vskM4TYNEEcm+oQ4vcTPYoR2n4=
+		/qjxRX2qX7bPjYdw+T4gWlY+5gw=
 		</data>
 		<key>xros-arm64/Headers/Jolt/Physics/SoftBody/SoftBodyContactListener.h</key>
 		<data>
@@ -7342,7 +7238,7 @@
 		</data>
 		<key>xros-arm64/Headers/Jolt/Physics/SoftBody/SoftBodyCreationSettings.h</key>
 		<data>
-		w8G8NlChiS8hu6sgn+TW1i4ozUM=
+		TxLa7Ve/4hdwz1UO326J5aUxGxM=
 		</data>
 		<key>xros-arm64/Headers/Jolt/Physics/SoftBody/SoftBodyManifold.h</key>
 		<data>
@@ -7358,11 +7254,11 @@
 		</data>
 		<key>xros-arm64/Headers/Jolt/Physics/SoftBody/SoftBodySharedSettings.h</key>
 		<data>
-		JkNkqIxr2zOHhKsmtPVJc3sBlc0=
+		N/lEX5OwWVZk6M9720WtkXl0rJ8=
 		</data>
 		<key>xros-arm64/Headers/Jolt/Physics/SoftBody/SoftBodyUpdateContext.h</key>
 		<data>
-		tn8LqcrY01HhGpAQ6UoVB+OD1N0=
+		Os8ubTTN4i9Aa7af4QmXzqo6bec=
 		</data>
 		<key>xros-arm64/Headers/Jolt/Physics/SoftBody/SoftBodyVertex.h</key>
 		<data>
@@ -7390,7 +7286,7 @@
 		</data>
 		<key>xros-arm64/Headers/Jolt/Physics/Vehicle/VehicleCollisionTester.h</key>
 		<data>
-		BKIozepvHKrqaGfvYOwViKDLV4c=
+		EOfXLcX16cM95O14QPYIVxzReog=
 		</data>
 		<key>xros-arm64/Headers/Jolt/Physics/Vehicle/VehicleConstraint.h</key>
 		<data>
@@ -7406,7 +7302,7 @@
 		</data>
 		<key>xros-arm64/Headers/Jolt/Physics/Vehicle/VehicleEngine.h</key>
 		<data>
-		+EtyPOOqxcNdCaurncL/ZR9O8lI=
+		Wt6rbCxYDQi9lNM+DFZMHWxra+0=
 		</data>
 		<key>xros-arm64/Headers/Jolt/Physics/Vehicle/VehicleTrack.h</key>
 		<data>
@@ -7422,7 +7318,7 @@
 		</data>
 		<key>xros-arm64/Headers/Jolt/Physics/Vehicle/WheeledVehicleController.h</key>
 		<data>
-		gdRta6f23g6iQHDIliGD8V4d0aI=
+		1TUPvWb9JAW9l1b+wY+71qDumVs=
 		</data>
 		<key>xros-arm64/Headers/Jolt/RegisterTypes.h</key>
 		<data>
@@ -7474,27 +7370,11 @@
 		</data>
 		<key>xros-arm64/libJolt.a</key>
 		<data>
-		D3AgnyK4QrUaiMScsvM3qhfzxYo=
-		</data>
-		<key>xros-arm64_x86_64-simulator/Headers/.DS_Store</key>
-		<data>
-		cjZykeSls21OF5EeHMhTfrH6sLE=
-		</data>
-		<key>xros-arm64_x86_64-simulator/Headers/Jolt-Module/module.modulemap</key>
-		<data>
-		JYi8hSaxh7WOQtbMf/9QQnQamIQ=
-		</data>
-		<key>xros-arm64_x86_64-simulator/Headers/Jolt/.DS_Store</key>
-		<data>
-		P6snEeODGxX9kq7+XQ7cGNtClTk=
-		</data>
-		<key>xros-arm64_x86_64-simulator/Headers/Jolt/AABBTree/.DS_Store</key>
-		<data>
-		gRY5Bye2wn6qi/6t7nGZea/ra/k=
+		DkmVMx+9bAjnMUR/noTFTVHwk+g=
 		</data>
 		<key>xros-arm64_x86_64-simulator/Headers/Jolt/AABBTree/AABBTreeBuilder.h</key>
 		<data>
-		5pyuZWdbIZN0AqMEHC9N+xZg0FU=
+		lJm9MjUKHGFkhZiU4nekwFBg2Nk=
 		</data>
 		<key>xros-arm64_x86_64-simulator/Headers/Jolt/AABBTree/AABBTreeToBuffer.h</key>
 		<data>
@@ -7510,7 +7390,7 @@
 		</data>
 		<key>xros-arm64_x86_64-simulator/Headers/Jolt/ConfigurationString.h</key>
 		<data>
-		B9CFKPh1SGVPX8ffzH88FE0ivfo=
+		8NoUHQeGfubjraZUoNfyQBDP6gM=
 		</data>
 		<key>xros-arm64_x86_64-simulator/Headers/Jolt/Core/ARMNeon.h</key>
 		<data>
@@ -7518,7 +7398,7 @@
 		</data>
 		<key>xros-arm64_x86_64-simulator/Headers/Jolt/Core/Array.h</key>
 		<data>
-		cIjeBdepD/8OxId7IklGgtcCX4A=
+		xWGa5YbK/Q71COqleGOSiXHK6BI=
 		</data>
 		<key>xros-arm64_x86_64-simulator/Headers/Jolt/Core/Atomics.h</key>
 		<data>
@@ -7534,11 +7414,11 @@
 		</data>
 		<key>xros-arm64_x86_64-simulator/Headers/Jolt/Core/Color.h</key>
 		<data>
-		sMsYZqRMZJXMDGc4BXI4BVku+gA=
+		8W5NaOoaoGvPKsIEZvZNfKbj1MQ=
 		</data>
 		<key>xros-arm64_x86_64-simulator/Headers/Jolt/Core/Core.h</key>
 		<data>
-		CQPHfzJPHJxq8gcCieMR9oQu3ks=
+		UIJ9pvCvSDa5YMvHk7UgVj8CFWM=
 		</data>
 		<key>xros-arm64_x86_64-simulator/Headers/Jolt/Core/FPControlWord.h</key>
 		<data>
@@ -7570,7 +7450,7 @@
 		</data>
 		<key>xros-arm64_x86_64-simulator/Headers/Jolt/Core/HashTable.h</key>
 		<data>
-		kclgdI3kKkaNkdI65yh23/UMRqM=
+		ou8y5t3Cecqyh82MjAWva8O5wW0=
 		</data>
 		<key>xros-arm64_x86_64-simulator/Headers/Jolt/Core/InsertionSort.h</key>
 		<data>
@@ -7614,7 +7494,7 @@
 		</data>
 		<key>xros-arm64_x86_64-simulator/Headers/Jolt/Core/Memory.h</key>
 		<data>
-		hCOmn1l2CAoFdQjmV6SFzqOFLLY=
+		4dmF18tlKJLc2RrF4cDe1Sp173g=
 		</data>
 		<key>xros-arm64_x86_64-simulator/Headers/Jolt/Core/Mutex.h</key>
 		<data>
@@ -7630,7 +7510,7 @@
 		</data>
 		<key>xros-arm64_x86_64-simulator/Headers/Jolt/Core/Profiler.h</key>
 		<data>
-		wLrQLA1AdIZIR0itHk3hLpJImA0=
+		nlvQ9CtUcoxTLhoGrHkkh6LVVN8=
 		</data>
 		<key>xros-arm64_x86_64-simulator/Headers/Jolt/Core/Profiler.inl</key>
 		<data>
@@ -7658,7 +7538,7 @@
 		</data>
 		<key>xros-arm64_x86_64-simulator/Headers/Jolt/Core/STLAllocator.h</key>
 		<data>
-		oXrnsZNOG5jD9sLo+NFjvGsfoCE=
+		mz028/yN4XT0T/yE1iNYQEUcHT0=
 		</data>
 		<key>xros-arm64_x86_64-simulator/Headers/Jolt/Core/STLLocalAllocator.h</key>
 		<data>
@@ -7706,11 +7586,11 @@
 		</data>
 		<key>xros-arm64_x86_64-simulator/Headers/Jolt/Core/TempAllocator.h</key>
 		<data>
-		uBAmuqYSfH5vG6qbCHWYZdomo0c=
+		dQ8X+7xa1KIW2PIaYX8rTpPC5GU=
 		</data>
 		<key>xros-arm64_x86_64-simulator/Headers/Jolt/Core/TickCounter.h</key>
 		<data>
-		GVm3aIEvYmibKBxj8AJ5edaowLQ=
+		owswZ3+ct74Uj2ulvpo9mCz2vek=
 		</data>
 		<key>xros-arm64_x86_64-simulator/Headers/Jolt/Core/UnorderedMap.h</key>
 		<data>
@@ -7754,7 +7634,7 @@
 		</data>
 		<key>xros-arm64_x86_64-simulator/Headers/Jolt/Geometry/EPAPenetrationDepth.h</key>
 		<data>
-		vhAg9LQs9vCfoXJchpqr+HHomD8=
+		u6ZhHzmGkjgYBV9Tc22Ek4JDyPs=
 		</data>
 		<key>xros-arm64_x86_64-simulator/Headers/Jolt/Geometry/Ellipse.h</key>
 		<data>
@@ -7930,7 +7810,7 @@
 		</data>
 		<key>xros-arm64_x86_64-simulator/Headers/Jolt/Math/Vec3.inl</key>
 		<data>
-		E0jVpAo4yQp4QBfNTO1CXXZLTo4=
+		ZfltiNukIz32suDrSqXp0YPzMh8=
 		</data>
 		<key>xros-arm64_x86_64-simulator/Headers/Jolt/Math/Vec4.h</key>
 		<data>
@@ -7938,7 +7818,7 @@
 		</data>
 		<key>xros-arm64_x86_64-simulator/Headers/Jolt/Math/Vec4.inl</key>
 		<data>
-		+gn6q44KlT7Y7lwIupOgyTZJKHI=
+		NO9936UeQrXcI0mGw9FvVv+4Jww=
 		</data>
 		<key>xros-arm64_x86_64-simulator/Headers/Jolt/Math/Vector.h</key>
 		<data>
@@ -8006,7 +7886,7 @@
 		</data>
 		<key>xros-arm64_x86_64-simulator/Headers/Jolt/Physics/Body/Body.h</key>
 		<data>
-		kFvYRWMM3Yu7DGzzRF3Xaw1cJ/M=
+		pyRe0xA2CinOAhm4qF6vvdqKKyA=
 		</data>
 		<key>xros-arm64_x86_64-simulator/Headers/Jolt/Physics/Body/Body.inl</key>
 		<data>
@@ -8022,7 +7902,7 @@
 		</data>
 		<key>xros-arm64_x86_64-simulator/Headers/Jolt/Physics/Body/BodyCreationSettings.h</key>
 		<data>
-		fzu3L+P/krVHxgDODLBsSrEG3p4=
+		KJPIQQY6lgAbPLKNANYbRxC5cJg=
 		</data>
 		<key>xros-arm64_x86_64-simulator/Headers/Jolt/Physics/Body/BodyFilter.h</key>
 		<data>
@@ -8034,7 +7914,7 @@
 		</data>
 		<key>xros-arm64_x86_64-simulator/Headers/Jolt/Physics/Body/BodyInterface.h</key>
 		<data>
-		jKhukPN4mFNUszb3AQQgTmSi/+Q=
+		Z204BkhSAc7ocwzIuQEl7wmJwVQ=
 		</data>
 		<key>xros-arm64_x86_64-simulator/Headers/Jolt/Physics/Body/BodyLock.h</key>
 		<data>
@@ -8050,7 +7930,7 @@
 		</data>
 		<key>xros-arm64_x86_64-simulator/Headers/Jolt/Physics/Body/BodyManager.h</key>
 		<data>
-		f6FgBS/9h/npXam7y1QyqIXQUdg=
+		ViC+VV9Ty5/LsqefzlzsoUqfNYE=
 		</data>
 		<key>xros-arm64_x86_64-simulator/Headers/Jolt/Physics/Body/BodyPair.h</key>
 		<data>
@@ -8066,7 +7946,7 @@
 		</data>
 		<key>xros-arm64_x86_64-simulator/Headers/Jolt/Physics/Body/MotionProperties.h</key>
 		<data>
-		kHrGjCt97kjuKeeSFMT/M0NSXcU=
+		YQCQQNtXOQAjU+n+OVUeU3x29Fg=
 		</data>
 		<key>xros-arm64_x86_64-simulator/Headers/Jolt/Physics/Body/MotionProperties.inl</key>
 		<data>
@@ -8094,7 +7974,7 @@
 		</data>
 		<key>xros-arm64_x86_64-simulator/Headers/Jolt/Physics/Character/CharacterVirtual.h</key>
 		<data>
-		lRjtawsK7228uSAfoGWRztWuK94=
+		XPBoN8ea8J3AGpWPwOYT2u/g5M8=
 		</data>
 		<key>xros-arm64_x86_64-simulator/Headers/Jolt/Physics/Collision/AABoxCast.h</key>
 		<data>
@@ -8114,7 +7994,7 @@
 		</data>
 		<key>xros-arm64_x86_64-simulator/Headers/Jolt/Physics/Collision/BroadPhase/BroadPhase.h</key>
 		<data>
-		+kbHbonOuFj32y3HhoPYMRI42EU=
+		RaYGcMJgTfROFUFCkP/+cFdp3uk=
 		</data>
 		<key>xros-arm64_x86_64-simulator/Headers/Jolt/Physics/Collision/BroadPhase/BroadPhaseBruteForce.h</key>
 		<data>
@@ -8138,7 +8018,7 @@
 		</data>
 		<key>xros-arm64_x86_64-simulator/Headers/Jolt/Physics/Collision/BroadPhase/BroadPhaseQuery.h</key>
 		<data>
-		MPCrga2iDz/NRWF7awbs8F6TZvU=
+		bp9oSi/4+8nyCAnofIEi3yqHk0I=
 		</data>
 		<key>xros-arm64_x86_64-simulator/Headers/Jolt/Physics/Collision/BroadPhase/ObjectVsBroadPhaseLayerFilterMask.h</key>
 		<data>
@@ -8182,7 +8062,7 @@
 		</data>
 		<key>xros-arm64_x86_64-simulator/Headers/Jolt/Physics/Collision/CollideShapeVsShapePerLeaf.h</key>
 		<data>
-		6KQMytcW+n2Zle6j+4Gsbcq+1ck=
+		kEzVMzisIQmvv0t2sFocu+hAXUI=
 		</data>
 		<key>xros-arm64_x86_64-simulator/Headers/Jolt/Physics/Collision/CollideSoftBodyVertexIterator.h</key>
 		<data>
@@ -8190,7 +8070,7 @@
 		</data>
 		<key>xros-arm64_x86_64-simulator/Headers/Jolt/Physics/Collision/CollideSoftBodyVerticesVsTriangles.h</key>
 		<data>
-		64cjgAaf7DLGEynziTui8CAY3PY=
+		v3NcNNF+qbfobx3Cl13eOFie2zs=
 		</data>
 		<key>xros-arm64_x86_64-simulator/Headers/Jolt/Physics/Collision/CollideSphereVsTriangles.h</key>
 		<data>
@@ -8270,7 +8150,7 @@
 		</data>
 		<key>xros-arm64_x86_64-simulator/Headers/Jolt/Physics/Collision/Shape/BoxShape.h</key>
 		<data>
-		DV2EmbgzU0wo66Q8f/JuUzmYpK4=
+		ANj/Q8fjAmyZZhANB38Avu//aLc=
 		</data>
 		<key>xros-arm64_x86_64-simulator/Headers/Jolt/Physics/Collision/Shape/CapsuleShape.h</key>
 		<data>
@@ -8278,7 +8158,7 @@
 		</data>
 		<key>xros-arm64_x86_64-simulator/Headers/Jolt/Physics/Collision/Shape/CompoundShape.h</key>
 		<data>
-		4GYHDLbmW7ZvzBdS91tsgPmkhOg=
+		iNZUd8sRoqILcNW4L5HdVcKWtkA=
 		</data>
 		<key>xros-arm64_x86_64-simulator/Headers/Jolt/Physics/Collision/Shape/CompoundShapeVisitors.h</key>
 		<data>
@@ -8286,7 +8166,7 @@
 		</data>
 		<key>xros-arm64_x86_64-simulator/Headers/Jolt/Physics/Collision/Shape/ConvexHullShape.h</key>
 		<data>
-		LpppeGXsy0/RFMZ6gTA6Gh7JXd4=
+		h/49g3gzM9BRCavqi7vUb71A7BU=
 		</data>
 		<key>xros-arm64_x86_64-simulator/Headers/Jolt/Physics/Collision/Shape/ConvexShape.h</key>
 		<data>
@@ -8314,7 +8194,7 @@
 		</data>
 		<key>xros-arm64_x86_64-simulator/Headers/Jolt/Physics/Collision/Shape/MeshShape.h</key>
 		<data>
-		Nlow74k8Qi/fARhqdUvlGrdcfRk=
+		E/gV6ozyQuT9T5iquMn10kRQP0g=
 		</data>
 		<key>xros-arm64_x86_64-simulator/Headers/Jolt/Physics/Collision/Shape/MutableCompoundShape.h</key>
 		<data>
@@ -8326,7 +8206,7 @@
 		</data>
 		<key>xros-arm64_x86_64-simulator/Headers/Jolt/Physics/Collision/Shape/PlaneShape.h</key>
 		<data>
-		Ydt7WMldu0JSJBJJ9YnvVDvMEbY=
+		bqS9oPxgX5LELCtl92uZQmW833s=
 		</data>
 		<key>xros-arm64_x86_64-simulator/Headers/Jolt/Physics/Collision/Shape/PolyhedronSubmergedVolumeCalculator.h</key>
 		<data>
@@ -8350,7 +8230,7 @@
 		</data>
 		<key>xros-arm64_x86_64-simulator/Headers/Jolt/Physics/Collision/Shape/SphereShape.h</key>
 		<data>
-		cwsKBgPasUPzXxyWGcG3vhSoL/U=
+		f/e2G5d4NWURuIQdIWQYdV+CF1o=
 		</data>
 		<key>xros-arm64_x86_64-simulator/Headers/Jolt/Physics/Collision/Shape/StaticCompoundShape.h</key>
 		<data>
@@ -8398,11 +8278,11 @@
 		</data>
 		<key>xros-arm64_x86_64-simulator/Headers/Jolt/Physics/Collision/TransformedShape.h</key>
 		<data>
-		yO+5DWPKGU/s7D77/pm/TZhSsRg=
+		TMx5+oJN/IEACVCS92AbSwrVknE=
 		</data>
 		<key>xros-arm64_x86_64-simulator/Headers/Jolt/Physics/Constraints/CalculateSolverSteps.h</key>
 		<data>
-		V2fElAktRVZfWg/d5WtqKfHtyNM=
+		yJIH+jHfHf4PCz1rGHFTDtRgneU=
 		</data>
 		<key>xros-arm64_x86_64-simulator/Headers/Jolt/Physics/Constraints/ConeConstraint.h</key>
 		<data>
@@ -8410,11 +8290,11 @@
 		</data>
 		<key>xros-arm64_x86_64-simulator/Headers/Jolt/Physics/Constraints/Constraint.h</key>
 		<data>
-		928Lzzp7wJs48ae0oKXKgoxnF/o=
+		64zOUStV3IpFZWofk/vXNSimIx4=
 		</data>
 		<key>xros-arm64_x86_64-simulator/Headers/Jolt/Physics/Constraints/ConstraintManager.h</key>
 		<data>
-		gVLaPUi16ADpHtg/tWC/24q0kMI=
+		ZZTPkrEHzmDIltdz2duYBwdDsRA=
 		</data>
 		<key>xros-arm64_x86_64-simulator/Headers/Jolt/Physics/Constraints/ConstraintPart/AngleConstraintPart.h</key>
 		<data>
@@ -8450,7 +8330,7 @@
 		</data>
 		<key>xros-arm64_x86_64-simulator/Headers/Jolt/Physics/Constraints/ConstraintPart/RotationEulerConstraintPart.h</key>
 		<data>
-		cnuaIIOvOKY050XyyOm6SF9RTp8=
+		lksRccEpipj5vwiYCg+9+tBz1iE=
 		</data>
 		<key>xros-arm64_x86_64-simulator/Headers/Jolt/Physics/Constraints/ConstraintPart/RotationQuatConstraintPart.h</key>
 		<data>
@@ -8466,7 +8346,7 @@
 		</data>
 		<key>xros-arm64_x86_64-simulator/Headers/Jolt/Physics/Constraints/ContactConstraintManager.h</key>
 		<data>
-		El4XINlGVwhKhBCEJO0aAdRi8E4=
+		0a54wtgM9MSETlf6G5Lq+73jPnU=
 		</data>
 		<key>xros-arm64_x86_64-simulator/Headers/Jolt/Physics/Constraints/DistanceConstraint.h</key>
 		<data>
@@ -8546,11 +8426,11 @@
 		</data>
 		<key>xros-arm64_x86_64-simulator/Headers/Jolt/Physics/IslandBuilder.h</key>
 		<data>
-		aE2/578M9UineUDTPlN1TuRzzFE=
+		lMbsK2wrnecl1UfZlXEjHy8WuIQ=
 		</data>
 		<key>xros-arm64_x86_64-simulator/Headers/Jolt/Physics/LargeIslandSplitter.h</key>
 		<data>
-		WT/OcgSNOO8H/AE3+aWO4B0TdwU=
+		gLopU91A7+TqZuEm267MisnQhdc=
 		</data>
 		<key>xros-arm64_x86_64-simulator/Headers/Jolt/Physics/PhysicsLock.h</key>
 		<data>
@@ -8570,15 +8450,15 @@
 		</data>
 		<key>xros-arm64_x86_64-simulator/Headers/Jolt/Physics/PhysicsSystem.h</key>
 		<data>
-		hjPNQ95Ubg6CYy9RT984iLqWYxs=
+		WkOWwARpcBtcp+ZTCw4w8W75v1M=
 		</data>
 		<key>xros-arm64_x86_64-simulator/Headers/Jolt/Physics/PhysicsUpdateContext.h</key>
 		<data>
-		p+WO2h28mxa46SSDnkZePzyE8iE=
+		1FClBjhEWVMqJ1ePn9b4TVxli2c=
 		</data>
 		<key>xros-arm64_x86_64-simulator/Headers/Jolt/Physics/Ragdoll/Ragdoll.h</key>
 		<data>
-		9vskM4TYNEEcm+oQ4vcTPYoR2n4=
+		/qjxRX2qX7bPjYdw+T4gWlY+5gw=
 		</data>
 		<key>xros-arm64_x86_64-simulator/Headers/Jolt/Physics/SoftBody/SoftBodyContactListener.h</key>
 		<data>
@@ -8586,7 +8466,7 @@
 		</data>
 		<key>xros-arm64_x86_64-simulator/Headers/Jolt/Physics/SoftBody/SoftBodyCreationSettings.h</key>
 		<data>
-		w8G8NlChiS8hu6sgn+TW1i4ozUM=
+		TxLa7Ve/4hdwz1UO326J5aUxGxM=
 		</data>
 		<key>xros-arm64_x86_64-simulator/Headers/Jolt/Physics/SoftBody/SoftBodyManifold.h</key>
 		<data>
@@ -8602,11 +8482,11 @@
 		</data>
 		<key>xros-arm64_x86_64-simulator/Headers/Jolt/Physics/SoftBody/SoftBodySharedSettings.h</key>
 		<data>
-		JkNkqIxr2zOHhKsmtPVJc3sBlc0=
+		N/lEX5OwWVZk6M9720WtkXl0rJ8=
 		</data>
 		<key>xros-arm64_x86_64-simulator/Headers/Jolt/Physics/SoftBody/SoftBodyUpdateContext.h</key>
 		<data>
-		tn8LqcrY01HhGpAQ6UoVB+OD1N0=
+		Os8ubTTN4i9Aa7af4QmXzqo6bec=
 		</data>
 		<key>xros-arm64_x86_64-simulator/Headers/Jolt/Physics/SoftBody/SoftBodyVertex.h</key>
 		<data>
@@ -8634,7 +8514,7 @@
 		</data>
 		<key>xros-arm64_x86_64-simulator/Headers/Jolt/Physics/Vehicle/VehicleCollisionTester.h</key>
 		<data>
-		BKIozepvHKrqaGfvYOwViKDLV4c=
+		EOfXLcX16cM95O14QPYIVxzReog=
 		</data>
 		<key>xros-arm64_x86_64-simulator/Headers/Jolt/Physics/Vehicle/VehicleConstraint.h</key>
 		<data>
@@ -8650,7 +8530,7 @@
 		</data>
 		<key>xros-arm64_x86_64-simulator/Headers/Jolt/Physics/Vehicle/VehicleEngine.h</key>
 		<data>
-		+EtyPOOqxcNdCaurncL/ZR9O8lI=
+		Wt6rbCxYDQi9lNM+DFZMHWxra+0=
 		</data>
 		<key>xros-arm64_x86_64-simulator/Headers/Jolt/Physics/Vehicle/VehicleTrack.h</key>
 		<data>
@@ -8666,7 +8546,7 @@
 		</data>
 		<key>xros-arm64_x86_64-simulator/Headers/Jolt/Physics/Vehicle/WheeledVehicleController.h</key>
 		<data>
-		gdRta6f23g6iQHDIliGD8V4d0aI=
+		1TUPvWb9JAW9l1b+wY+71qDumVs=
 		</data>
 		<key>xros-arm64_x86_64-simulator/Headers/Jolt/RegisterTypes.h</key>
 		<data>
@@ -8718,23 +8598,16 @@
 		</data>
 		<key>xros-arm64_x86_64-simulator/libJolt.a</key>
 		<data>
-		hDYqVWbExoaB/uv7XK9xhDvb38o=
+		Fe3TCj+C8+m1fKchWeROY1l6tZE=
 		</data>
 	</dict>
 	<key>files2</key>
 	<dict>
-		<key>ios-arm64/Headers/Jolt-Module/module.modulemap</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			yqJky2CtVY/DdMGl4oSQRx7Z5S7FuBH4KdD5PyGkQp8=
-			</data>
-		</dict>
 		<key>ios-arm64/Headers/Jolt/AABBTree/AABBTreeBuilder.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			T/pPqMvzXyiIN6mGVzV04tVrCKJHnhiaDZmOqLe8xPk=
+			j/WSoXu0gnRdY9n0h02UJoB2aU8JcTvQ49NTZdZQRqc=
 			</data>
 		</dict>
 		<key>ios-arm64/Headers/Jolt/AABBTree/AABBTreeToBuffer.h</key>
@@ -8762,7 +8635,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Ut+B2rRaqbrMbg9cP9s0p5WbkzldqseUffK+gegu+BQ=
+			i8JIN0n58K4a34iJ8Ysig0Y3sjSjya/SGZdWYXNcHB0=
 			</data>
 		</dict>
 		<key>ios-arm64/Headers/Jolt/Core/ARMNeon.h</key>
@@ -8776,7 +8649,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			astPMjxAKARBSsZbI0HVNRlkdArpcwF8VY9PImwOByM=
+			oXnDgR4G+K7qs5TDIy689NKthn45f556tgpgOX8SScA=
 			</data>
 		</dict>
 		<key>ios-arm64/Headers/Jolt/Core/Atomics.h</key>
@@ -8804,14 +8677,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			kHj5hBo3MxCBSZwuyLC8llbOL22O4KtiPPCWTaPUAtE=
+			+C674j5kdYVBUzuoY8o49rSGeYb/4SwjA8gkXjQT+EA=
 			</data>
 		</dict>
 		<key>ios-arm64/Headers/Jolt/Core/Core.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			M+/ltgElkhihGMtFV2njF0rG5FnKETkMtl6TX1vt4JQ=
+			rBLOXbSn5L2nsbr15kMswkzl2hFSWv07ooBR9139euY=
 			</data>
 		</dict>
 		<key>ios-arm64/Headers/Jolt/Core/FPControlWord.h</key>
@@ -8867,7 +8740,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			gpLNRFDiMSRcDW36jT1b5iT6hr7RVCv9tpqkZ1w18BQ=
+			Tto8Mfsn+vbMHQCeroq3x7kCApxqnkGW/cahw5zc4vE=
 			</data>
 		</dict>
 		<key>ios-arm64/Headers/Jolt/Core/InsertionSort.h</key>
@@ -8944,7 +8817,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			nQhjt0V7rIoOJbUxsfX9h+I0FHgdEc6Iy1slF7vW2fU=
+			5711S3UB7cVJd3uun+8tzNyMahZjb61XZuoy6JjGAAQ=
 			</data>
 		</dict>
 		<key>ios-arm64/Headers/Jolt/Core/Mutex.h</key>
@@ -8972,7 +8845,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			/uKDgTejvpVOsXhlSm1/+JY9sMH5+inw2io/hiKnHmg=
+			JPa7kB2lzE1JrWcSHWYst4kPF9dKtTRv19aDVSAVEIk=
 			</data>
 		</dict>
 		<key>ios-arm64/Headers/Jolt/Core/Profiler.inl</key>
@@ -9021,7 +8894,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			QU9B00Zw0QP0vt7KvEQ8NeoqN9ENrgpA+k4Y5OzDafs=
+			/lRhcI+MXSc1nTBUVm4HlaqzXyeXUvSKsmut51IJ2DY=
 			</data>
 		</dict>
 		<key>ios-arm64/Headers/Jolt/Core/STLLocalAllocator.h</key>
@@ -9105,14 +8978,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			7p2mekiMPybAxEwQtjQSAqDQpkRsBI2YAucpuWGYtOo=
+			+aY7OYkJOUXAK5/mXQCWOjFe/NixgB+BMewerYFQkgc=
 			</data>
 		</dict>
 		<key>ios-arm64/Headers/Jolt/Core/TickCounter.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			6KZushE0vgtrEfP0fTLlE7o0Tl+5BKRF6C+CbjbvKJM=
+			c1kdfBePpwyiarIcgxnwonpj8pkFPr4eGK1yXc/OBQY=
 			</data>
 		</dict>
 		<key>ios-arm64/Headers/Jolt/Core/UnorderedMap.h</key>
@@ -9189,7 +9062,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			QcN7z2tm2sUwvCWO9LrVQaAWUvEUUiCTnq1Qabcb3Us=
+			YtE+Cgw2rH2Dd+JBEIVtNN6FtePPGwgrA0pwhzrdErU=
 			</data>
 		</dict>
 		<key>ios-arm64/Headers/Jolt/Geometry/Ellipse.h</key>
@@ -9497,7 +9370,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			l4pY0hvPSGX33Asx+4mPbUb7wN1AsyEq2LjSGuIcMoA=
+			UOYZvaTACRwYQkgI2dI0DnfE9kH2AV4XvNnAwGCmiD0=
 			</data>
 		</dict>
 		<key>ios-arm64/Headers/Jolt/Math/Vec4.h</key>
@@ -9511,7 +9384,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			KsneOBH4KQdQ/yGPU8rkxRldrb40pAqHUG7RfeTMHSA=
+			f2LeKIZhaiMi4HFb3xw7EbQ5/ijXsOGNoNx3lX7XlhQ=
 			</data>
 		</dict>
 		<key>ios-arm64/Headers/Jolt/Math/Vector.h</key>
@@ -9630,7 +9503,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			J9Zakb9xG/uCc9sDSF22IbjYgn2bXb7P6nxFgslLHrg=
+			VkriefLqKntsSntXY2ZLKvcAz+fOmzDXiAuA6UjOwVc=
 			</data>
 		</dict>
 		<key>ios-arm64/Headers/Jolt/Physics/Body/Body.inl</key>
@@ -9658,7 +9531,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			7p5MUsM7VDX42mZDMnPv4n+b4BRputs4LbzhZRYyfNg=
+			eFSEDHpCcPjJIUfXSFewkNDLMJzUBUPiXXBdsnjAauM=
 			</data>
 		</dict>
 		<key>ios-arm64/Headers/Jolt/Physics/Body/BodyFilter.h</key>
@@ -9679,7 +9552,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			+fG0jhAX0XmxsBydexI2Jct1NRdauQH1RNelhBPVY3I=
+			lhh9Sf/Ubn2W4vU9XFBvnDs4XgGaEUm6OXwJ9JlDCdY=
 			</data>
 		</dict>
 		<key>ios-arm64/Headers/Jolt/Physics/Body/BodyLock.h</key>
@@ -9707,7 +9580,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			FR2NMaEgE3xGlqgbzL7/gy5AubU+JO3YAuKcIHpsMeY=
+			IkTDEoamS1nNjIkkfzkhJJhTVj36Bv4sxpu0t+puOHA=
 			</data>
 		</dict>
 		<key>ios-arm64/Headers/Jolt/Physics/Body/BodyPair.h</key>
@@ -9735,7 +9608,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			7RH2XJj2uVP3FJqtlq8eqdE7GXUCWygHd4eUroNhYmg=
+			zQlpJ5lUusoQHBQg9kpa/XQ8rP40WH3Z+k2IyL4hX9M=
 			</data>
 		</dict>
 		<key>ios-arm64/Headers/Jolt/Physics/Body/MotionProperties.inl</key>
@@ -9784,7 +9657,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			WSdgBbX91bzE3ohb97aV7eUi0Y/89Qecrm0ooeBnSag=
+			xJi4uVoBY2+BUbt0zqd67E1fDAx0k7OAgBul21rJee0=
 			</data>
 		</dict>
 		<key>ios-arm64/Headers/Jolt/Physics/Collision/AABoxCast.h</key>
@@ -9819,7 +9692,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ROdCoQ8MvWLkF9hBKY2ystDtZw9cNAjltOnLG5u2KXs=
+			7R2Jk2HAsL/ZedrvIf/RT5rSJeg4uGkro9is+XPWBts=
 			</data>
 		</dict>
 		<key>ios-arm64/Headers/Jolt/Physics/Collision/BroadPhase/BroadPhaseBruteForce.h</key>
@@ -9861,7 +9734,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ozt4tcWYqfrmw6ZCRFoa5k+8u4cJ02wVRyVbBvkOVtg=
+			TIt+UicY9/vnGdTgC62F5mGyvmzkIF1tCIALMBi/91Y=
 			</data>
 		</dict>
 		<key>ios-arm64/Headers/Jolt/Physics/Collision/BroadPhase/ObjectVsBroadPhaseLayerFilterMask.h</key>
@@ -9938,7 +9811,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			fsl5BTpAeBIymwL30Em365rqHp5ocOCXnC1/HGGk7H0=
+			0QFTEw39UICMAz0UtQRRUDJv5I6pxioaB2O116rBuUU=
 			</data>
 		</dict>
 		<key>ios-arm64/Headers/Jolt/Physics/Collision/CollideSoftBodyVertexIterator.h</key>
@@ -9952,7 +9825,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			XBnByBKUFijATs8R4ReC6wVHU+OAlF1L83qeqMf7FzQ=
+			FYOK7wmInklKg3oplWnhY3CZW5xj/zfX5EikM6hPKbs=
 			</data>
 		</dict>
 		<key>ios-arm64/Headers/Jolt/Physics/Collision/CollideSphereVsTriangles.h</key>
@@ -10092,7 +9965,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			3oz9kbbNZNAAVAg93Q2OvNhVg8rICFWDNQt6ze2s4AQ=
+			FKgtCXbOrVSmrdoh+hT/Yxoi/4c8z7UXHAFTujP18/M=
 			</data>
 		</dict>
 		<key>ios-arm64/Headers/Jolt/Physics/Collision/Shape/CapsuleShape.h</key>
@@ -10106,7 +9979,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			cXLQ9isI39fVidBcAgxfSEKxkM7TEdo5SbS6uU5KiJY=
+			AJ3uXikq/SbSi1Ir0lWdyHipHWiPhFFrOR4Gwd5Mrxo=
 			</data>
 		</dict>
 		<key>ios-arm64/Headers/Jolt/Physics/Collision/Shape/CompoundShapeVisitors.h</key>
@@ -10120,7 +9993,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			adEf2IxcLTd3wcRLTunFQwQA9qCDfPdocaCMFNRgx7A=
+			Kg3ug5lhd3QsZQc6pHOcOLd6GOizB+PjIfJ/HfKX8ZQ=
 			</data>
 		</dict>
 		<key>ios-arm64/Headers/Jolt/Physics/Collision/Shape/ConvexShape.h</key>
@@ -10169,7 +10042,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			a0FX9NdUAB5cGe6ttG6oS2TJaLHjQgi+OTzvWJReWvQ=
+			QedCNGl+AP3eHAWSZezPqGnuldCWEtk/qKB+9IK7OQw=
 			</data>
 		</dict>
 		<key>ios-arm64/Headers/Jolt/Physics/Collision/Shape/MutableCompoundShape.h</key>
@@ -10190,7 +10063,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			HcM/fcN0hehQZ3VqN0plvsoSaV+Q3JHmAwDhc/4U5as=
+			5d6pjDxy0+14jT+1tKVyX/P6PFr8jNGutg/yOIX+C+c=
 			</data>
 		</dict>
 		<key>ios-arm64/Headers/Jolt/Physics/Collision/Shape/PolyhedronSubmergedVolumeCalculator.h</key>
@@ -10232,7 +10105,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			hEC2iCgRjNEY9piUeG/foyk1GzExSvxrBRqS+sgu2qM=
+			9pq2nz/ip6SRGieHCZlA6iSXTOgMXktOqmFjbAOsYZE=
 			</data>
 		</dict>
 		<key>ios-arm64/Headers/Jolt/Physics/Collision/Shape/StaticCompoundShape.h</key>
@@ -10316,14 +10189,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			opxyUMV03CQdOmLKRYyNXofmFDqWrAlnUOvb5UYRPlI=
+			McU42Z9w8QG/DrYY9e0xCKCaQKq0RwSkUg+rLLtbVs8=
 			</data>
 		</dict>
 		<key>ios-arm64/Headers/Jolt/Physics/Constraints/CalculateSolverSteps.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			XczbOi36Wuo9QedSWiw+XfXL9PuUAl0ncDR5Y9yysdA=
+			wDJr1Xwqi6ZN0uzUIDywEcdyIBYYsbS0ktb0xBGtATA=
 			</data>
 		</dict>
 		<key>ios-arm64/Headers/Jolt/Physics/Constraints/ConeConstraint.h</key>
@@ -10337,14 +10210,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			KPaUA055QYM+jRqZ0W89mCAkLO6yfrPgSKvJUzHECLs=
+			NlAZWFm3Hka+jBEnZuPqeBjosMvp0+U6/GOEz7ZixGI=
 			</data>
 		</dict>
 		<key>ios-arm64/Headers/Jolt/Physics/Constraints/ConstraintManager.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			/oTDJw04a/EVq0g+Kj7iK7p4zHYJ8hNKP6Qvqt6WN+w=
+			YWR9Dmvhu/miMMakCyuajX9klg8GhlU4FV90f3GCTqc=
 			</data>
 		</dict>
 		<key>ios-arm64/Headers/Jolt/Physics/Constraints/ConstraintPart/AngleConstraintPart.h</key>
@@ -10407,7 +10280,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			0z8Va1k/vRoSa5gkoa4X/T9hyDRtiO8Ew6FSd6rxMMA=
+			sN6VzCX/H4RVnHN3Vf9bVm/rQweSt1eADOthniY+wYw=
 			</data>
 		</dict>
 		<key>ios-arm64/Headers/Jolt/Physics/Constraints/ConstraintPart/RotationQuatConstraintPart.h</key>
@@ -10435,7 +10308,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			J10lv1jGw4/vAB0h0gOIy/gnrfUUMxMQo4YcxYG8k30=
+			tJvHQbFdIdbJuyCBdoesPwYHF4meziNVsiNZ14lYGvI=
 			</data>
 		</dict>
 		<key>ios-arm64/Headers/Jolt/Physics/Constraints/DistanceConstraint.h</key>
@@ -10575,14 +10448,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			C04nEi53maI7Qo+zxBvP1v7/VZ9i83tZ9W5QgDPBOfk=
+			YXkOFqpNis3xydQBkTfNMXef4zcxthhekNZAUDV6HZM=
 			</data>
 		</dict>
 		<key>ios-arm64/Headers/Jolt/Physics/LargeIslandSplitter.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			M3v2ODTQ+/eeziT9FMTlIixr9WcIVv9urtjZLNFEAZc=
+			qwYeKikYLxaI2oc8Vi7LqOX1JGYkmILHXzaL6wl4KSc=
 			</data>
 		</dict>
 		<key>ios-arm64/Headers/Jolt/Physics/PhysicsLock.h</key>
@@ -10617,21 +10490,21 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			VOGISWEluqj4AuNjdPJMvbElwour6TH0wk0zWxQKlnE=
+			OoqpQSDlCGw+pGq6A6ZuCHvjXaKOaoipuRcl9+JhusI=
 			</data>
 		</dict>
 		<key>ios-arm64/Headers/Jolt/Physics/PhysicsUpdateContext.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Lv3FdjzLL9pzmcozpb+SNLUkq+NrT98w86LCoOIzdlI=
+			RK3SyHDopC3w4H1daEKnDZS+HyVvn0gJafQNd9CiBiw=
 			</data>
 		</dict>
 		<key>ios-arm64/Headers/Jolt/Physics/Ragdoll/Ragdoll.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ZEQpBsURSWzgKZwMKp3E72qv+LmrG3d6+lyO3pULNpI=
+			Zox5jlV+yJ2eorWmrco/fEJFxKfX+by86gKwl4lTSEE=
 			</data>
 		</dict>
 		<key>ios-arm64/Headers/Jolt/Physics/SoftBody/SoftBodyContactListener.h</key>
@@ -10645,7 +10518,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ZVY+RL3FN6of4kz2BDObfe+zHsrY5EGgfSrjtMy/VAE=
+			cCOB3imcMg1q7RacFOY6wRXqPqzSNn4PC5qzd8z/rQE=
 			</data>
 		</dict>
 		<key>ios-arm64/Headers/Jolt/Physics/SoftBody/SoftBodyManifold.h</key>
@@ -10673,14 +10546,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			pN6rDxEulgF4rzHJ9H+Hb6D42bTUax/WvJCMSGsi+dk=
+			7mYX1wFEcNDpN1/j+xsq15PzQL6/MHw0UDiz9PGSuZk=
 			</data>
 		</dict>
 		<key>ios-arm64/Headers/Jolt/Physics/SoftBody/SoftBodyUpdateContext.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			njeK3NaEZbAzrc4m95minWUJiVMwb4DtXUewvmillDQ=
+			NmpHb5vtwwH9EUrDENx+ImoK82Rkf9qktvBEqzajV+k=
 			</data>
 		</dict>
 		<key>ios-arm64/Headers/Jolt/Physics/SoftBody/SoftBodyVertex.h</key>
@@ -10729,7 +10602,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			o8hVIrKXHt7amZEGFIfIYJJQ2pJTEjgpd0gh+Om6+hk=
+			+SFyKl7IlJVpDbb1JSs90DhWOC30X/Q0zexKNwcRUsA=
 			</data>
 		</dict>
 		<key>ios-arm64/Headers/Jolt/Physics/Vehicle/VehicleConstraint.h</key>
@@ -10757,7 +10630,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			PpXNszU2CNn68e7Yh/3/0H4VCHvalGqPT7MEJd+W0FI=
+			sRjFnT2NxhqicZNTKq0oKrqAMIVqcZK9p41KfMFDJFI=
 			</data>
 		</dict>
 		<key>ios-arm64/Headers/Jolt/Physics/Vehicle/VehicleTrack.h</key>
@@ -10785,7 +10658,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Cj0E38N0leA8SpwxJEiaMbDL8K5V2JaS4o8qmGKZ0KU=
+			fjpOnUYVqWcWMDaXOLH1qeRhPZeyeSS6IqvyOVnsRrc=
 			</data>
 		</dict>
 		<key>ios-arm64/Headers/Jolt/RegisterTypes.h</key>
@@ -10876,21 +10749,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			lwAJn2Osiu15r7BBz8ajeZnAwlP+MBoJAMvYyuAghy8=
-			</data>
-		</dict>
-		<key>ios-arm64_x86_64-simulator/Headers/Jolt-Module/module.modulemap</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			yqJky2CtVY/DdMGl4oSQRx7Z5S7FuBH4KdD5PyGkQp8=
+			K/WD239S9Zg/wNXeFlmCt22bHsKXwJSerN7luJO5+k4=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/Headers/Jolt/AABBTree/AABBTreeBuilder.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			T/pPqMvzXyiIN6mGVzV04tVrCKJHnhiaDZmOqLe8xPk=
+			j/WSoXu0gnRdY9n0h02UJoB2aU8JcTvQ49NTZdZQRqc=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/Headers/Jolt/AABBTree/AABBTreeToBuffer.h</key>
@@ -10918,7 +10784,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Ut+B2rRaqbrMbg9cP9s0p5WbkzldqseUffK+gegu+BQ=
+			i8JIN0n58K4a34iJ8Ysig0Y3sjSjya/SGZdWYXNcHB0=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/Headers/Jolt/Core/ARMNeon.h</key>
@@ -10932,7 +10798,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			astPMjxAKARBSsZbI0HVNRlkdArpcwF8VY9PImwOByM=
+			oXnDgR4G+K7qs5TDIy689NKthn45f556tgpgOX8SScA=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/Headers/Jolt/Core/Atomics.h</key>
@@ -10960,14 +10826,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			kHj5hBo3MxCBSZwuyLC8llbOL22O4KtiPPCWTaPUAtE=
+			+C674j5kdYVBUzuoY8o49rSGeYb/4SwjA8gkXjQT+EA=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/Headers/Jolt/Core/Core.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			M+/ltgElkhihGMtFV2njF0rG5FnKETkMtl6TX1vt4JQ=
+			rBLOXbSn5L2nsbr15kMswkzl2hFSWv07ooBR9139euY=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/Headers/Jolt/Core/FPControlWord.h</key>
@@ -11023,7 +10889,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			gpLNRFDiMSRcDW36jT1b5iT6hr7RVCv9tpqkZ1w18BQ=
+			Tto8Mfsn+vbMHQCeroq3x7kCApxqnkGW/cahw5zc4vE=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/Headers/Jolt/Core/InsertionSort.h</key>
@@ -11100,7 +10966,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			nQhjt0V7rIoOJbUxsfX9h+I0FHgdEc6Iy1slF7vW2fU=
+			5711S3UB7cVJd3uun+8tzNyMahZjb61XZuoy6JjGAAQ=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/Headers/Jolt/Core/Mutex.h</key>
@@ -11128,7 +10994,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			/uKDgTejvpVOsXhlSm1/+JY9sMH5+inw2io/hiKnHmg=
+			JPa7kB2lzE1JrWcSHWYst4kPF9dKtTRv19aDVSAVEIk=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/Headers/Jolt/Core/Profiler.inl</key>
@@ -11177,7 +11043,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			QU9B00Zw0QP0vt7KvEQ8NeoqN9ENrgpA+k4Y5OzDafs=
+			/lRhcI+MXSc1nTBUVm4HlaqzXyeXUvSKsmut51IJ2DY=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/Headers/Jolt/Core/STLLocalAllocator.h</key>
@@ -11261,14 +11127,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			7p2mekiMPybAxEwQtjQSAqDQpkRsBI2YAucpuWGYtOo=
+			+aY7OYkJOUXAK5/mXQCWOjFe/NixgB+BMewerYFQkgc=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/Headers/Jolt/Core/TickCounter.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			6KZushE0vgtrEfP0fTLlE7o0Tl+5BKRF6C+CbjbvKJM=
+			c1kdfBePpwyiarIcgxnwonpj8pkFPr4eGK1yXc/OBQY=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/Headers/Jolt/Core/UnorderedMap.h</key>
@@ -11345,7 +11211,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			QcN7z2tm2sUwvCWO9LrVQaAWUvEUUiCTnq1Qabcb3Us=
+			YtE+Cgw2rH2Dd+JBEIVtNN6FtePPGwgrA0pwhzrdErU=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/Headers/Jolt/Geometry/Ellipse.h</key>
@@ -11653,7 +11519,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			l4pY0hvPSGX33Asx+4mPbUb7wN1AsyEq2LjSGuIcMoA=
+			UOYZvaTACRwYQkgI2dI0DnfE9kH2AV4XvNnAwGCmiD0=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/Headers/Jolt/Math/Vec4.h</key>
@@ -11667,7 +11533,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			KsneOBH4KQdQ/yGPU8rkxRldrb40pAqHUG7RfeTMHSA=
+			f2LeKIZhaiMi4HFb3xw7EbQ5/ijXsOGNoNx3lX7XlhQ=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/Headers/Jolt/Math/Vector.h</key>
@@ -11786,7 +11652,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			J9Zakb9xG/uCc9sDSF22IbjYgn2bXb7P6nxFgslLHrg=
+			VkriefLqKntsSntXY2ZLKvcAz+fOmzDXiAuA6UjOwVc=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/Headers/Jolt/Physics/Body/Body.inl</key>
@@ -11814,7 +11680,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			7p5MUsM7VDX42mZDMnPv4n+b4BRputs4LbzhZRYyfNg=
+			eFSEDHpCcPjJIUfXSFewkNDLMJzUBUPiXXBdsnjAauM=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/Headers/Jolt/Physics/Body/BodyFilter.h</key>
@@ -11835,7 +11701,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			+fG0jhAX0XmxsBydexI2Jct1NRdauQH1RNelhBPVY3I=
+			lhh9Sf/Ubn2W4vU9XFBvnDs4XgGaEUm6OXwJ9JlDCdY=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/Headers/Jolt/Physics/Body/BodyLock.h</key>
@@ -11863,7 +11729,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			FR2NMaEgE3xGlqgbzL7/gy5AubU+JO3YAuKcIHpsMeY=
+			IkTDEoamS1nNjIkkfzkhJJhTVj36Bv4sxpu0t+puOHA=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/Headers/Jolt/Physics/Body/BodyPair.h</key>
@@ -11891,7 +11757,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			7RH2XJj2uVP3FJqtlq8eqdE7GXUCWygHd4eUroNhYmg=
+			zQlpJ5lUusoQHBQg9kpa/XQ8rP40WH3Z+k2IyL4hX9M=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/Headers/Jolt/Physics/Body/MotionProperties.inl</key>
@@ -11940,7 +11806,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			WSdgBbX91bzE3ohb97aV7eUi0Y/89Qecrm0ooeBnSag=
+			xJi4uVoBY2+BUbt0zqd67E1fDAx0k7OAgBul21rJee0=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/Headers/Jolt/Physics/Collision/AABoxCast.h</key>
@@ -11975,7 +11841,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ROdCoQ8MvWLkF9hBKY2ystDtZw9cNAjltOnLG5u2KXs=
+			7R2Jk2HAsL/ZedrvIf/RT5rSJeg4uGkro9is+XPWBts=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/Headers/Jolt/Physics/Collision/BroadPhase/BroadPhaseBruteForce.h</key>
@@ -12017,7 +11883,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ozt4tcWYqfrmw6ZCRFoa5k+8u4cJ02wVRyVbBvkOVtg=
+			TIt+UicY9/vnGdTgC62F5mGyvmzkIF1tCIALMBi/91Y=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/Headers/Jolt/Physics/Collision/BroadPhase/ObjectVsBroadPhaseLayerFilterMask.h</key>
@@ -12094,7 +11960,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			fsl5BTpAeBIymwL30Em365rqHp5ocOCXnC1/HGGk7H0=
+			0QFTEw39UICMAz0UtQRRUDJv5I6pxioaB2O116rBuUU=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/Headers/Jolt/Physics/Collision/CollideSoftBodyVertexIterator.h</key>
@@ -12108,7 +11974,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			XBnByBKUFijATs8R4ReC6wVHU+OAlF1L83qeqMf7FzQ=
+			FYOK7wmInklKg3oplWnhY3CZW5xj/zfX5EikM6hPKbs=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/Headers/Jolt/Physics/Collision/CollideSphereVsTriangles.h</key>
@@ -12248,7 +12114,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			3oz9kbbNZNAAVAg93Q2OvNhVg8rICFWDNQt6ze2s4AQ=
+			FKgtCXbOrVSmrdoh+hT/Yxoi/4c8z7UXHAFTujP18/M=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/Headers/Jolt/Physics/Collision/Shape/CapsuleShape.h</key>
@@ -12262,7 +12128,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			cXLQ9isI39fVidBcAgxfSEKxkM7TEdo5SbS6uU5KiJY=
+			AJ3uXikq/SbSi1Ir0lWdyHipHWiPhFFrOR4Gwd5Mrxo=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/Headers/Jolt/Physics/Collision/Shape/CompoundShapeVisitors.h</key>
@@ -12276,7 +12142,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			adEf2IxcLTd3wcRLTunFQwQA9qCDfPdocaCMFNRgx7A=
+			Kg3ug5lhd3QsZQc6pHOcOLd6GOizB+PjIfJ/HfKX8ZQ=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/Headers/Jolt/Physics/Collision/Shape/ConvexShape.h</key>
@@ -12325,7 +12191,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			a0FX9NdUAB5cGe6ttG6oS2TJaLHjQgi+OTzvWJReWvQ=
+			QedCNGl+AP3eHAWSZezPqGnuldCWEtk/qKB+9IK7OQw=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/Headers/Jolt/Physics/Collision/Shape/MutableCompoundShape.h</key>
@@ -12346,7 +12212,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			HcM/fcN0hehQZ3VqN0plvsoSaV+Q3JHmAwDhc/4U5as=
+			5d6pjDxy0+14jT+1tKVyX/P6PFr8jNGutg/yOIX+C+c=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/Headers/Jolt/Physics/Collision/Shape/PolyhedronSubmergedVolumeCalculator.h</key>
@@ -12388,7 +12254,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			hEC2iCgRjNEY9piUeG/foyk1GzExSvxrBRqS+sgu2qM=
+			9pq2nz/ip6SRGieHCZlA6iSXTOgMXktOqmFjbAOsYZE=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/Headers/Jolt/Physics/Collision/Shape/StaticCompoundShape.h</key>
@@ -12472,14 +12338,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			opxyUMV03CQdOmLKRYyNXofmFDqWrAlnUOvb5UYRPlI=
+			McU42Z9w8QG/DrYY9e0xCKCaQKq0RwSkUg+rLLtbVs8=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/Headers/Jolt/Physics/Constraints/CalculateSolverSteps.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			XczbOi36Wuo9QedSWiw+XfXL9PuUAl0ncDR5Y9yysdA=
+			wDJr1Xwqi6ZN0uzUIDywEcdyIBYYsbS0ktb0xBGtATA=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/Headers/Jolt/Physics/Constraints/ConeConstraint.h</key>
@@ -12493,14 +12359,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			KPaUA055QYM+jRqZ0W89mCAkLO6yfrPgSKvJUzHECLs=
+			NlAZWFm3Hka+jBEnZuPqeBjosMvp0+U6/GOEz7ZixGI=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/Headers/Jolt/Physics/Constraints/ConstraintManager.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			/oTDJw04a/EVq0g+Kj7iK7p4zHYJ8hNKP6Qvqt6WN+w=
+			YWR9Dmvhu/miMMakCyuajX9klg8GhlU4FV90f3GCTqc=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/Headers/Jolt/Physics/Constraints/ConstraintPart/AngleConstraintPart.h</key>
@@ -12563,7 +12429,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			0z8Va1k/vRoSa5gkoa4X/T9hyDRtiO8Ew6FSd6rxMMA=
+			sN6VzCX/H4RVnHN3Vf9bVm/rQweSt1eADOthniY+wYw=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/Headers/Jolt/Physics/Constraints/ConstraintPart/RotationQuatConstraintPart.h</key>
@@ -12591,7 +12457,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			J10lv1jGw4/vAB0h0gOIy/gnrfUUMxMQo4YcxYG8k30=
+			tJvHQbFdIdbJuyCBdoesPwYHF4meziNVsiNZ14lYGvI=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/Headers/Jolt/Physics/Constraints/DistanceConstraint.h</key>
@@ -12731,14 +12597,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			C04nEi53maI7Qo+zxBvP1v7/VZ9i83tZ9W5QgDPBOfk=
+			YXkOFqpNis3xydQBkTfNMXef4zcxthhekNZAUDV6HZM=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/Headers/Jolt/Physics/LargeIslandSplitter.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			M3v2ODTQ+/eeziT9FMTlIixr9WcIVv9urtjZLNFEAZc=
+			qwYeKikYLxaI2oc8Vi7LqOX1JGYkmILHXzaL6wl4KSc=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/Headers/Jolt/Physics/PhysicsLock.h</key>
@@ -12773,21 +12639,21 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			VOGISWEluqj4AuNjdPJMvbElwour6TH0wk0zWxQKlnE=
+			OoqpQSDlCGw+pGq6A6ZuCHvjXaKOaoipuRcl9+JhusI=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/Headers/Jolt/Physics/PhysicsUpdateContext.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Lv3FdjzLL9pzmcozpb+SNLUkq+NrT98w86LCoOIzdlI=
+			RK3SyHDopC3w4H1daEKnDZS+HyVvn0gJafQNd9CiBiw=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/Headers/Jolt/Physics/Ragdoll/Ragdoll.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ZEQpBsURSWzgKZwMKp3E72qv+LmrG3d6+lyO3pULNpI=
+			Zox5jlV+yJ2eorWmrco/fEJFxKfX+by86gKwl4lTSEE=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/Headers/Jolt/Physics/SoftBody/SoftBodyContactListener.h</key>
@@ -12801,7 +12667,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ZVY+RL3FN6of4kz2BDObfe+zHsrY5EGgfSrjtMy/VAE=
+			cCOB3imcMg1q7RacFOY6wRXqPqzSNn4PC5qzd8z/rQE=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/Headers/Jolt/Physics/SoftBody/SoftBodyManifold.h</key>
@@ -12829,14 +12695,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			pN6rDxEulgF4rzHJ9H+Hb6D42bTUax/WvJCMSGsi+dk=
+			7mYX1wFEcNDpN1/j+xsq15PzQL6/MHw0UDiz9PGSuZk=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/Headers/Jolt/Physics/SoftBody/SoftBodyUpdateContext.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			njeK3NaEZbAzrc4m95minWUJiVMwb4DtXUewvmillDQ=
+			NmpHb5vtwwH9EUrDENx+ImoK82Rkf9qktvBEqzajV+k=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/Headers/Jolt/Physics/SoftBody/SoftBodyVertex.h</key>
@@ -12885,7 +12751,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			o8hVIrKXHt7amZEGFIfIYJJQ2pJTEjgpd0gh+Om6+hk=
+			+SFyKl7IlJVpDbb1JSs90DhWOC30X/Q0zexKNwcRUsA=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/Headers/Jolt/Physics/Vehicle/VehicleConstraint.h</key>
@@ -12913,7 +12779,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			PpXNszU2CNn68e7Yh/3/0H4VCHvalGqPT7MEJd+W0FI=
+			sRjFnT2NxhqicZNTKq0oKrqAMIVqcZK9p41KfMFDJFI=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/Headers/Jolt/Physics/Vehicle/VehicleTrack.h</key>
@@ -12941,7 +12807,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Cj0E38N0leA8SpwxJEiaMbDL8K5V2JaS4o8qmGKZ0KU=
+			fjpOnUYVqWcWMDaXOLH1qeRhPZeyeSS6IqvyOVnsRrc=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/Headers/Jolt/RegisterTypes.h</key>
@@ -13032,21 +12898,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			EDL9hhULOzJ735U0b7b4Pubm6qEe4hDaiNCVri41U3k=
-			</data>
-		</dict>
-		<key>macos-arm64_x86_64/Headers/Jolt-Module/module.modulemap</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			yqJky2CtVY/DdMGl4oSQRx7Z5S7FuBH4KdD5PyGkQp8=
+			W4cTh/RW+XbwwXmFYQvSdq5AtbFtXpn7rsemIbX13PI=
 			</data>
 		</dict>
 		<key>macos-arm64_x86_64/Headers/Jolt/AABBTree/AABBTreeBuilder.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			T/pPqMvzXyiIN6mGVzV04tVrCKJHnhiaDZmOqLe8xPk=
+			j/WSoXu0gnRdY9n0h02UJoB2aU8JcTvQ49NTZdZQRqc=
 			</data>
 		</dict>
 		<key>macos-arm64_x86_64/Headers/Jolt/AABBTree/AABBTreeToBuffer.h</key>
@@ -13074,7 +12933,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Ut+B2rRaqbrMbg9cP9s0p5WbkzldqseUffK+gegu+BQ=
+			i8JIN0n58K4a34iJ8Ysig0Y3sjSjya/SGZdWYXNcHB0=
 			</data>
 		</dict>
 		<key>macos-arm64_x86_64/Headers/Jolt/Core/ARMNeon.h</key>
@@ -13088,7 +12947,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			astPMjxAKARBSsZbI0HVNRlkdArpcwF8VY9PImwOByM=
+			oXnDgR4G+K7qs5TDIy689NKthn45f556tgpgOX8SScA=
 			</data>
 		</dict>
 		<key>macos-arm64_x86_64/Headers/Jolt/Core/Atomics.h</key>
@@ -13116,14 +12975,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			kHj5hBo3MxCBSZwuyLC8llbOL22O4KtiPPCWTaPUAtE=
+			+C674j5kdYVBUzuoY8o49rSGeYb/4SwjA8gkXjQT+EA=
 			</data>
 		</dict>
 		<key>macos-arm64_x86_64/Headers/Jolt/Core/Core.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			M+/ltgElkhihGMtFV2njF0rG5FnKETkMtl6TX1vt4JQ=
+			rBLOXbSn5L2nsbr15kMswkzl2hFSWv07ooBR9139euY=
 			</data>
 		</dict>
 		<key>macos-arm64_x86_64/Headers/Jolt/Core/FPControlWord.h</key>
@@ -13179,7 +13038,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			gpLNRFDiMSRcDW36jT1b5iT6hr7RVCv9tpqkZ1w18BQ=
+			Tto8Mfsn+vbMHQCeroq3x7kCApxqnkGW/cahw5zc4vE=
 			</data>
 		</dict>
 		<key>macos-arm64_x86_64/Headers/Jolt/Core/InsertionSort.h</key>
@@ -13256,7 +13115,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			nQhjt0V7rIoOJbUxsfX9h+I0FHgdEc6Iy1slF7vW2fU=
+			5711S3UB7cVJd3uun+8tzNyMahZjb61XZuoy6JjGAAQ=
 			</data>
 		</dict>
 		<key>macos-arm64_x86_64/Headers/Jolt/Core/Mutex.h</key>
@@ -13284,7 +13143,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			/uKDgTejvpVOsXhlSm1/+JY9sMH5+inw2io/hiKnHmg=
+			JPa7kB2lzE1JrWcSHWYst4kPF9dKtTRv19aDVSAVEIk=
 			</data>
 		</dict>
 		<key>macos-arm64_x86_64/Headers/Jolt/Core/Profiler.inl</key>
@@ -13333,7 +13192,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			QU9B00Zw0QP0vt7KvEQ8NeoqN9ENrgpA+k4Y5OzDafs=
+			/lRhcI+MXSc1nTBUVm4HlaqzXyeXUvSKsmut51IJ2DY=
 			</data>
 		</dict>
 		<key>macos-arm64_x86_64/Headers/Jolt/Core/STLLocalAllocator.h</key>
@@ -13417,14 +13276,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			7p2mekiMPybAxEwQtjQSAqDQpkRsBI2YAucpuWGYtOo=
+			+aY7OYkJOUXAK5/mXQCWOjFe/NixgB+BMewerYFQkgc=
 			</data>
 		</dict>
 		<key>macos-arm64_x86_64/Headers/Jolt/Core/TickCounter.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			6KZushE0vgtrEfP0fTLlE7o0Tl+5BKRF6C+CbjbvKJM=
+			c1kdfBePpwyiarIcgxnwonpj8pkFPr4eGK1yXc/OBQY=
 			</data>
 		</dict>
 		<key>macos-arm64_x86_64/Headers/Jolt/Core/UnorderedMap.h</key>
@@ -13501,7 +13360,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			QcN7z2tm2sUwvCWO9LrVQaAWUvEUUiCTnq1Qabcb3Us=
+			YtE+Cgw2rH2Dd+JBEIVtNN6FtePPGwgrA0pwhzrdErU=
 			</data>
 		</dict>
 		<key>macos-arm64_x86_64/Headers/Jolt/Geometry/Ellipse.h</key>
@@ -13809,7 +13668,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			l4pY0hvPSGX33Asx+4mPbUb7wN1AsyEq2LjSGuIcMoA=
+			UOYZvaTACRwYQkgI2dI0DnfE9kH2AV4XvNnAwGCmiD0=
 			</data>
 		</dict>
 		<key>macos-arm64_x86_64/Headers/Jolt/Math/Vec4.h</key>
@@ -13823,7 +13682,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			KsneOBH4KQdQ/yGPU8rkxRldrb40pAqHUG7RfeTMHSA=
+			f2LeKIZhaiMi4HFb3xw7EbQ5/ijXsOGNoNx3lX7XlhQ=
 			</data>
 		</dict>
 		<key>macos-arm64_x86_64/Headers/Jolt/Math/Vector.h</key>
@@ -13942,7 +13801,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			J9Zakb9xG/uCc9sDSF22IbjYgn2bXb7P6nxFgslLHrg=
+			VkriefLqKntsSntXY2ZLKvcAz+fOmzDXiAuA6UjOwVc=
 			</data>
 		</dict>
 		<key>macos-arm64_x86_64/Headers/Jolt/Physics/Body/Body.inl</key>
@@ -13970,7 +13829,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			7p5MUsM7VDX42mZDMnPv4n+b4BRputs4LbzhZRYyfNg=
+			eFSEDHpCcPjJIUfXSFewkNDLMJzUBUPiXXBdsnjAauM=
 			</data>
 		</dict>
 		<key>macos-arm64_x86_64/Headers/Jolt/Physics/Body/BodyFilter.h</key>
@@ -13991,7 +13850,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			+fG0jhAX0XmxsBydexI2Jct1NRdauQH1RNelhBPVY3I=
+			lhh9Sf/Ubn2W4vU9XFBvnDs4XgGaEUm6OXwJ9JlDCdY=
 			</data>
 		</dict>
 		<key>macos-arm64_x86_64/Headers/Jolt/Physics/Body/BodyLock.h</key>
@@ -14019,7 +13878,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			FR2NMaEgE3xGlqgbzL7/gy5AubU+JO3YAuKcIHpsMeY=
+			IkTDEoamS1nNjIkkfzkhJJhTVj36Bv4sxpu0t+puOHA=
 			</data>
 		</dict>
 		<key>macos-arm64_x86_64/Headers/Jolt/Physics/Body/BodyPair.h</key>
@@ -14047,7 +13906,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			7RH2XJj2uVP3FJqtlq8eqdE7GXUCWygHd4eUroNhYmg=
+			zQlpJ5lUusoQHBQg9kpa/XQ8rP40WH3Z+k2IyL4hX9M=
 			</data>
 		</dict>
 		<key>macos-arm64_x86_64/Headers/Jolt/Physics/Body/MotionProperties.inl</key>
@@ -14096,7 +13955,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			WSdgBbX91bzE3ohb97aV7eUi0Y/89Qecrm0ooeBnSag=
+			xJi4uVoBY2+BUbt0zqd67E1fDAx0k7OAgBul21rJee0=
 			</data>
 		</dict>
 		<key>macos-arm64_x86_64/Headers/Jolt/Physics/Collision/AABoxCast.h</key>
@@ -14131,7 +13990,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ROdCoQ8MvWLkF9hBKY2ystDtZw9cNAjltOnLG5u2KXs=
+			7R2Jk2HAsL/ZedrvIf/RT5rSJeg4uGkro9is+XPWBts=
 			</data>
 		</dict>
 		<key>macos-arm64_x86_64/Headers/Jolt/Physics/Collision/BroadPhase/BroadPhaseBruteForce.h</key>
@@ -14173,7 +14032,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ozt4tcWYqfrmw6ZCRFoa5k+8u4cJ02wVRyVbBvkOVtg=
+			TIt+UicY9/vnGdTgC62F5mGyvmzkIF1tCIALMBi/91Y=
 			</data>
 		</dict>
 		<key>macos-arm64_x86_64/Headers/Jolt/Physics/Collision/BroadPhase/ObjectVsBroadPhaseLayerFilterMask.h</key>
@@ -14250,7 +14109,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			fsl5BTpAeBIymwL30Em365rqHp5ocOCXnC1/HGGk7H0=
+			0QFTEw39UICMAz0UtQRRUDJv5I6pxioaB2O116rBuUU=
 			</data>
 		</dict>
 		<key>macos-arm64_x86_64/Headers/Jolt/Physics/Collision/CollideSoftBodyVertexIterator.h</key>
@@ -14264,7 +14123,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			XBnByBKUFijATs8R4ReC6wVHU+OAlF1L83qeqMf7FzQ=
+			FYOK7wmInklKg3oplWnhY3CZW5xj/zfX5EikM6hPKbs=
 			</data>
 		</dict>
 		<key>macos-arm64_x86_64/Headers/Jolt/Physics/Collision/CollideSphereVsTriangles.h</key>
@@ -14404,7 +14263,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			3oz9kbbNZNAAVAg93Q2OvNhVg8rICFWDNQt6ze2s4AQ=
+			FKgtCXbOrVSmrdoh+hT/Yxoi/4c8z7UXHAFTujP18/M=
 			</data>
 		</dict>
 		<key>macos-arm64_x86_64/Headers/Jolt/Physics/Collision/Shape/CapsuleShape.h</key>
@@ -14418,7 +14277,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			cXLQ9isI39fVidBcAgxfSEKxkM7TEdo5SbS6uU5KiJY=
+			AJ3uXikq/SbSi1Ir0lWdyHipHWiPhFFrOR4Gwd5Mrxo=
 			</data>
 		</dict>
 		<key>macos-arm64_x86_64/Headers/Jolt/Physics/Collision/Shape/CompoundShapeVisitors.h</key>
@@ -14432,7 +14291,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			adEf2IxcLTd3wcRLTunFQwQA9qCDfPdocaCMFNRgx7A=
+			Kg3ug5lhd3QsZQc6pHOcOLd6GOizB+PjIfJ/HfKX8ZQ=
 			</data>
 		</dict>
 		<key>macos-arm64_x86_64/Headers/Jolt/Physics/Collision/Shape/ConvexShape.h</key>
@@ -14481,7 +14340,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			a0FX9NdUAB5cGe6ttG6oS2TJaLHjQgi+OTzvWJReWvQ=
+			QedCNGl+AP3eHAWSZezPqGnuldCWEtk/qKB+9IK7OQw=
 			</data>
 		</dict>
 		<key>macos-arm64_x86_64/Headers/Jolt/Physics/Collision/Shape/MutableCompoundShape.h</key>
@@ -14502,7 +14361,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			HcM/fcN0hehQZ3VqN0plvsoSaV+Q3JHmAwDhc/4U5as=
+			5d6pjDxy0+14jT+1tKVyX/P6PFr8jNGutg/yOIX+C+c=
 			</data>
 		</dict>
 		<key>macos-arm64_x86_64/Headers/Jolt/Physics/Collision/Shape/PolyhedronSubmergedVolumeCalculator.h</key>
@@ -14544,7 +14403,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			hEC2iCgRjNEY9piUeG/foyk1GzExSvxrBRqS+sgu2qM=
+			9pq2nz/ip6SRGieHCZlA6iSXTOgMXktOqmFjbAOsYZE=
 			</data>
 		</dict>
 		<key>macos-arm64_x86_64/Headers/Jolt/Physics/Collision/Shape/StaticCompoundShape.h</key>
@@ -14628,14 +14487,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			opxyUMV03CQdOmLKRYyNXofmFDqWrAlnUOvb5UYRPlI=
+			McU42Z9w8QG/DrYY9e0xCKCaQKq0RwSkUg+rLLtbVs8=
 			</data>
 		</dict>
 		<key>macos-arm64_x86_64/Headers/Jolt/Physics/Constraints/CalculateSolverSteps.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			XczbOi36Wuo9QedSWiw+XfXL9PuUAl0ncDR5Y9yysdA=
+			wDJr1Xwqi6ZN0uzUIDywEcdyIBYYsbS0ktb0xBGtATA=
 			</data>
 		</dict>
 		<key>macos-arm64_x86_64/Headers/Jolt/Physics/Constraints/ConeConstraint.h</key>
@@ -14649,14 +14508,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			KPaUA055QYM+jRqZ0W89mCAkLO6yfrPgSKvJUzHECLs=
+			NlAZWFm3Hka+jBEnZuPqeBjosMvp0+U6/GOEz7ZixGI=
 			</data>
 		</dict>
 		<key>macos-arm64_x86_64/Headers/Jolt/Physics/Constraints/ConstraintManager.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			/oTDJw04a/EVq0g+Kj7iK7p4zHYJ8hNKP6Qvqt6WN+w=
+			YWR9Dmvhu/miMMakCyuajX9klg8GhlU4FV90f3GCTqc=
 			</data>
 		</dict>
 		<key>macos-arm64_x86_64/Headers/Jolt/Physics/Constraints/ConstraintPart/AngleConstraintPart.h</key>
@@ -14719,7 +14578,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			0z8Va1k/vRoSa5gkoa4X/T9hyDRtiO8Ew6FSd6rxMMA=
+			sN6VzCX/H4RVnHN3Vf9bVm/rQweSt1eADOthniY+wYw=
 			</data>
 		</dict>
 		<key>macos-arm64_x86_64/Headers/Jolt/Physics/Constraints/ConstraintPart/RotationQuatConstraintPart.h</key>
@@ -14747,7 +14606,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			J10lv1jGw4/vAB0h0gOIy/gnrfUUMxMQo4YcxYG8k30=
+			tJvHQbFdIdbJuyCBdoesPwYHF4meziNVsiNZ14lYGvI=
 			</data>
 		</dict>
 		<key>macos-arm64_x86_64/Headers/Jolt/Physics/Constraints/DistanceConstraint.h</key>
@@ -14887,14 +14746,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			C04nEi53maI7Qo+zxBvP1v7/VZ9i83tZ9W5QgDPBOfk=
+			YXkOFqpNis3xydQBkTfNMXef4zcxthhekNZAUDV6HZM=
 			</data>
 		</dict>
 		<key>macos-arm64_x86_64/Headers/Jolt/Physics/LargeIslandSplitter.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			M3v2ODTQ+/eeziT9FMTlIixr9WcIVv9urtjZLNFEAZc=
+			qwYeKikYLxaI2oc8Vi7LqOX1JGYkmILHXzaL6wl4KSc=
 			</data>
 		</dict>
 		<key>macos-arm64_x86_64/Headers/Jolt/Physics/PhysicsLock.h</key>
@@ -14929,21 +14788,21 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			VOGISWEluqj4AuNjdPJMvbElwour6TH0wk0zWxQKlnE=
+			OoqpQSDlCGw+pGq6A6ZuCHvjXaKOaoipuRcl9+JhusI=
 			</data>
 		</dict>
 		<key>macos-arm64_x86_64/Headers/Jolt/Physics/PhysicsUpdateContext.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Lv3FdjzLL9pzmcozpb+SNLUkq+NrT98w86LCoOIzdlI=
+			RK3SyHDopC3w4H1daEKnDZS+HyVvn0gJafQNd9CiBiw=
 			</data>
 		</dict>
 		<key>macos-arm64_x86_64/Headers/Jolt/Physics/Ragdoll/Ragdoll.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ZEQpBsURSWzgKZwMKp3E72qv+LmrG3d6+lyO3pULNpI=
+			Zox5jlV+yJ2eorWmrco/fEJFxKfX+by86gKwl4lTSEE=
 			</data>
 		</dict>
 		<key>macos-arm64_x86_64/Headers/Jolt/Physics/SoftBody/SoftBodyContactListener.h</key>
@@ -14957,7 +14816,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ZVY+RL3FN6of4kz2BDObfe+zHsrY5EGgfSrjtMy/VAE=
+			cCOB3imcMg1q7RacFOY6wRXqPqzSNn4PC5qzd8z/rQE=
 			</data>
 		</dict>
 		<key>macos-arm64_x86_64/Headers/Jolt/Physics/SoftBody/SoftBodyManifold.h</key>
@@ -14985,14 +14844,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			pN6rDxEulgF4rzHJ9H+Hb6D42bTUax/WvJCMSGsi+dk=
+			7mYX1wFEcNDpN1/j+xsq15PzQL6/MHw0UDiz9PGSuZk=
 			</data>
 		</dict>
 		<key>macos-arm64_x86_64/Headers/Jolt/Physics/SoftBody/SoftBodyUpdateContext.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			njeK3NaEZbAzrc4m95minWUJiVMwb4DtXUewvmillDQ=
+			NmpHb5vtwwH9EUrDENx+ImoK82Rkf9qktvBEqzajV+k=
 			</data>
 		</dict>
 		<key>macos-arm64_x86_64/Headers/Jolt/Physics/SoftBody/SoftBodyVertex.h</key>
@@ -15041,7 +14900,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			o8hVIrKXHt7amZEGFIfIYJJQ2pJTEjgpd0gh+Om6+hk=
+			+SFyKl7IlJVpDbb1JSs90DhWOC30X/Q0zexKNwcRUsA=
 			</data>
 		</dict>
 		<key>macos-arm64_x86_64/Headers/Jolt/Physics/Vehicle/VehicleConstraint.h</key>
@@ -15069,7 +14928,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			PpXNszU2CNn68e7Yh/3/0H4VCHvalGqPT7MEJd+W0FI=
+			sRjFnT2NxhqicZNTKq0oKrqAMIVqcZK9p41KfMFDJFI=
 			</data>
 		</dict>
 		<key>macos-arm64_x86_64/Headers/Jolt/Physics/Vehicle/VehicleTrack.h</key>
@@ -15097,7 +14956,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Cj0E38N0leA8SpwxJEiaMbDL8K5V2JaS4o8qmGKZ0KU=
+			fjpOnUYVqWcWMDaXOLH1qeRhPZeyeSS6IqvyOVnsRrc=
 			</data>
 		</dict>
 		<key>macos-arm64_x86_64/Headers/Jolt/RegisterTypes.h</key>
@@ -15188,21 +15047,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Bq5LUX91UmEsJxEpsoiDpYkKjLS4F6TaPEgdXHzgbJk=
-			</data>
-		</dict>
-		<key>tvos-arm64/Headers/Jolt-Module/module.modulemap</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			yqJky2CtVY/DdMGl4oSQRx7Z5S7FuBH4KdD5PyGkQp8=
+			nRaCx6cVu1gjYbkF28vZPD43N0cl1HxhKP45C5V0l1E=
 			</data>
 		</dict>
 		<key>tvos-arm64/Headers/Jolt/AABBTree/AABBTreeBuilder.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			T/pPqMvzXyiIN6mGVzV04tVrCKJHnhiaDZmOqLe8xPk=
+			j/WSoXu0gnRdY9n0h02UJoB2aU8JcTvQ49NTZdZQRqc=
 			</data>
 		</dict>
 		<key>tvos-arm64/Headers/Jolt/AABBTree/AABBTreeToBuffer.h</key>
@@ -15230,7 +15082,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Ut+B2rRaqbrMbg9cP9s0p5WbkzldqseUffK+gegu+BQ=
+			i8JIN0n58K4a34iJ8Ysig0Y3sjSjya/SGZdWYXNcHB0=
 			</data>
 		</dict>
 		<key>tvos-arm64/Headers/Jolt/Core/ARMNeon.h</key>
@@ -15244,7 +15096,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			astPMjxAKARBSsZbI0HVNRlkdArpcwF8VY9PImwOByM=
+			oXnDgR4G+K7qs5TDIy689NKthn45f556tgpgOX8SScA=
 			</data>
 		</dict>
 		<key>tvos-arm64/Headers/Jolt/Core/Atomics.h</key>
@@ -15272,14 +15124,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			kHj5hBo3MxCBSZwuyLC8llbOL22O4KtiPPCWTaPUAtE=
+			+C674j5kdYVBUzuoY8o49rSGeYb/4SwjA8gkXjQT+EA=
 			</data>
 		</dict>
 		<key>tvos-arm64/Headers/Jolt/Core/Core.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			M+/ltgElkhihGMtFV2njF0rG5FnKETkMtl6TX1vt4JQ=
+			rBLOXbSn5L2nsbr15kMswkzl2hFSWv07ooBR9139euY=
 			</data>
 		</dict>
 		<key>tvos-arm64/Headers/Jolt/Core/FPControlWord.h</key>
@@ -15335,7 +15187,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			gpLNRFDiMSRcDW36jT1b5iT6hr7RVCv9tpqkZ1w18BQ=
+			Tto8Mfsn+vbMHQCeroq3x7kCApxqnkGW/cahw5zc4vE=
 			</data>
 		</dict>
 		<key>tvos-arm64/Headers/Jolt/Core/InsertionSort.h</key>
@@ -15412,7 +15264,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			nQhjt0V7rIoOJbUxsfX9h+I0FHgdEc6Iy1slF7vW2fU=
+			5711S3UB7cVJd3uun+8tzNyMahZjb61XZuoy6JjGAAQ=
 			</data>
 		</dict>
 		<key>tvos-arm64/Headers/Jolt/Core/Mutex.h</key>
@@ -15440,7 +15292,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			/uKDgTejvpVOsXhlSm1/+JY9sMH5+inw2io/hiKnHmg=
+			JPa7kB2lzE1JrWcSHWYst4kPF9dKtTRv19aDVSAVEIk=
 			</data>
 		</dict>
 		<key>tvos-arm64/Headers/Jolt/Core/Profiler.inl</key>
@@ -15489,7 +15341,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			QU9B00Zw0QP0vt7KvEQ8NeoqN9ENrgpA+k4Y5OzDafs=
+			/lRhcI+MXSc1nTBUVm4HlaqzXyeXUvSKsmut51IJ2DY=
 			</data>
 		</dict>
 		<key>tvos-arm64/Headers/Jolt/Core/STLLocalAllocator.h</key>
@@ -15573,14 +15425,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			7p2mekiMPybAxEwQtjQSAqDQpkRsBI2YAucpuWGYtOo=
+			+aY7OYkJOUXAK5/mXQCWOjFe/NixgB+BMewerYFQkgc=
 			</data>
 		</dict>
 		<key>tvos-arm64/Headers/Jolt/Core/TickCounter.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			6KZushE0vgtrEfP0fTLlE7o0Tl+5BKRF6C+CbjbvKJM=
+			c1kdfBePpwyiarIcgxnwonpj8pkFPr4eGK1yXc/OBQY=
 			</data>
 		</dict>
 		<key>tvos-arm64/Headers/Jolt/Core/UnorderedMap.h</key>
@@ -15657,7 +15509,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			QcN7z2tm2sUwvCWO9LrVQaAWUvEUUiCTnq1Qabcb3Us=
+			YtE+Cgw2rH2Dd+JBEIVtNN6FtePPGwgrA0pwhzrdErU=
 			</data>
 		</dict>
 		<key>tvos-arm64/Headers/Jolt/Geometry/Ellipse.h</key>
@@ -15965,7 +15817,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			l4pY0hvPSGX33Asx+4mPbUb7wN1AsyEq2LjSGuIcMoA=
+			UOYZvaTACRwYQkgI2dI0DnfE9kH2AV4XvNnAwGCmiD0=
 			</data>
 		</dict>
 		<key>tvos-arm64/Headers/Jolt/Math/Vec4.h</key>
@@ -15979,7 +15831,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			KsneOBH4KQdQ/yGPU8rkxRldrb40pAqHUG7RfeTMHSA=
+			f2LeKIZhaiMi4HFb3xw7EbQ5/ijXsOGNoNx3lX7XlhQ=
 			</data>
 		</dict>
 		<key>tvos-arm64/Headers/Jolt/Math/Vector.h</key>
@@ -16098,7 +15950,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			J9Zakb9xG/uCc9sDSF22IbjYgn2bXb7P6nxFgslLHrg=
+			VkriefLqKntsSntXY2ZLKvcAz+fOmzDXiAuA6UjOwVc=
 			</data>
 		</dict>
 		<key>tvos-arm64/Headers/Jolt/Physics/Body/Body.inl</key>
@@ -16126,7 +15978,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			7p5MUsM7VDX42mZDMnPv4n+b4BRputs4LbzhZRYyfNg=
+			eFSEDHpCcPjJIUfXSFewkNDLMJzUBUPiXXBdsnjAauM=
 			</data>
 		</dict>
 		<key>tvos-arm64/Headers/Jolt/Physics/Body/BodyFilter.h</key>
@@ -16147,7 +15999,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			+fG0jhAX0XmxsBydexI2Jct1NRdauQH1RNelhBPVY3I=
+			lhh9Sf/Ubn2W4vU9XFBvnDs4XgGaEUm6OXwJ9JlDCdY=
 			</data>
 		</dict>
 		<key>tvos-arm64/Headers/Jolt/Physics/Body/BodyLock.h</key>
@@ -16175,7 +16027,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			FR2NMaEgE3xGlqgbzL7/gy5AubU+JO3YAuKcIHpsMeY=
+			IkTDEoamS1nNjIkkfzkhJJhTVj36Bv4sxpu0t+puOHA=
 			</data>
 		</dict>
 		<key>tvos-arm64/Headers/Jolt/Physics/Body/BodyPair.h</key>
@@ -16203,7 +16055,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			7RH2XJj2uVP3FJqtlq8eqdE7GXUCWygHd4eUroNhYmg=
+			zQlpJ5lUusoQHBQg9kpa/XQ8rP40WH3Z+k2IyL4hX9M=
 			</data>
 		</dict>
 		<key>tvos-arm64/Headers/Jolt/Physics/Body/MotionProperties.inl</key>
@@ -16252,7 +16104,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			WSdgBbX91bzE3ohb97aV7eUi0Y/89Qecrm0ooeBnSag=
+			xJi4uVoBY2+BUbt0zqd67E1fDAx0k7OAgBul21rJee0=
 			</data>
 		</dict>
 		<key>tvos-arm64/Headers/Jolt/Physics/Collision/AABoxCast.h</key>
@@ -16287,7 +16139,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ROdCoQ8MvWLkF9hBKY2ystDtZw9cNAjltOnLG5u2KXs=
+			7R2Jk2HAsL/ZedrvIf/RT5rSJeg4uGkro9is+XPWBts=
 			</data>
 		</dict>
 		<key>tvos-arm64/Headers/Jolt/Physics/Collision/BroadPhase/BroadPhaseBruteForce.h</key>
@@ -16329,7 +16181,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ozt4tcWYqfrmw6ZCRFoa5k+8u4cJ02wVRyVbBvkOVtg=
+			TIt+UicY9/vnGdTgC62F5mGyvmzkIF1tCIALMBi/91Y=
 			</data>
 		</dict>
 		<key>tvos-arm64/Headers/Jolt/Physics/Collision/BroadPhase/ObjectVsBroadPhaseLayerFilterMask.h</key>
@@ -16406,7 +16258,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			fsl5BTpAeBIymwL30Em365rqHp5ocOCXnC1/HGGk7H0=
+			0QFTEw39UICMAz0UtQRRUDJv5I6pxioaB2O116rBuUU=
 			</data>
 		</dict>
 		<key>tvos-arm64/Headers/Jolt/Physics/Collision/CollideSoftBodyVertexIterator.h</key>
@@ -16420,7 +16272,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			XBnByBKUFijATs8R4ReC6wVHU+OAlF1L83qeqMf7FzQ=
+			FYOK7wmInklKg3oplWnhY3CZW5xj/zfX5EikM6hPKbs=
 			</data>
 		</dict>
 		<key>tvos-arm64/Headers/Jolt/Physics/Collision/CollideSphereVsTriangles.h</key>
@@ -16560,7 +16412,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			3oz9kbbNZNAAVAg93Q2OvNhVg8rICFWDNQt6ze2s4AQ=
+			FKgtCXbOrVSmrdoh+hT/Yxoi/4c8z7UXHAFTujP18/M=
 			</data>
 		</dict>
 		<key>tvos-arm64/Headers/Jolt/Physics/Collision/Shape/CapsuleShape.h</key>
@@ -16574,7 +16426,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			cXLQ9isI39fVidBcAgxfSEKxkM7TEdo5SbS6uU5KiJY=
+			AJ3uXikq/SbSi1Ir0lWdyHipHWiPhFFrOR4Gwd5Mrxo=
 			</data>
 		</dict>
 		<key>tvos-arm64/Headers/Jolt/Physics/Collision/Shape/CompoundShapeVisitors.h</key>
@@ -16588,7 +16440,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			adEf2IxcLTd3wcRLTunFQwQA9qCDfPdocaCMFNRgx7A=
+			Kg3ug5lhd3QsZQc6pHOcOLd6GOizB+PjIfJ/HfKX8ZQ=
 			</data>
 		</dict>
 		<key>tvos-arm64/Headers/Jolt/Physics/Collision/Shape/ConvexShape.h</key>
@@ -16637,7 +16489,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			a0FX9NdUAB5cGe6ttG6oS2TJaLHjQgi+OTzvWJReWvQ=
+			QedCNGl+AP3eHAWSZezPqGnuldCWEtk/qKB+9IK7OQw=
 			</data>
 		</dict>
 		<key>tvos-arm64/Headers/Jolt/Physics/Collision/Shape/MutableCompoundShape.h</key>
@@ -16658,7 +16510,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			HcM/fcN0hehQZ3VqN0plvsoSaV+Q3JHmAwDhc/4U5as=
+			5d6pjDxy0+14jT+1tKVyX/P6PFr8jNGutg/yOIX+C+c=
 			</data>
 		</dict>
 		<key>tvos-arm64/Headers/Jolt/Physics/Collision/Shape/PolyhedronSubmergedVolumeCalculator.h</key>
@@ -16700,7 +16552,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			hEC2iCgRjNEY9piUeG/foyk1GzExSvxrBRqS+sgu2qM=
+			9pq2nz/ip6SRGieHCZlA6iSXTOgMXktOqmFjbAOsYZE=
 			</data>
 		</dict>
 		<key>tvos-arm64/Headers/Jolt/Physics/Collision/Shape/StaticCompoundShape.h</key>
@@ -16784,14 +16636,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			opxyUMV03CQdOmLKRYyNXofmFDqWrAlnUOvb5UYRPlI=
+			McU42Z9w8QG/DrYY9e0xCKCaQKq0RwSkUg+rLLtbVs8=
 			</data>
 		</dict>
 		<key>tvos-arm64/Headers/Jolt/Physics/Constraints/CalculateSolverSteps.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			XczbOi36Wuo9QedSWiw+XfXL9PuUAl0ncDR5Y9yysdA=
+			wDJr1Xwqi6ZN0uzUIDywEcdyIBYYsbS0ktb0xBGtATA=
 			</data>
 		</dict>
 		<key>tvos-arm64/Headers/Jolt/Physics/Constraints/ConeConstraint.h</key>
@@ -16805,14 +16657,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			KPaUA055QYM+jRqZ0W89mCAkLO6yfrPgSKvJUzHECLs=
+			NlAZWFm3Hka+jBEnZuPqeBjosMvp0+U6/GOEz7ZixGI=
 			</data>
 		</dict>
 		<key>tvos-arm64/Headers/Jolt/Physics/Constraints/ConstraintManager.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			/oTDJw04a/EVq0g+Kj7iK7p4zHYJ8hNKP6Qvqt6WN+w=
+			YWR9Dmvhu/miMMakCyuajX9klg8GhlU4FV90f3GCTqc=
 			</data>
 		</dict>
 		<key>tvos-arm64/Headers/Jolt/Physics/Constraints/ConstraintPart/AngleConstraintPart.h</key>
@@ -16875,7 +16727,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			0z8Va1k/vRoSa5gkoa4X/T9hyDRtiO8Ew6FSd6rxMMA=
+			sN6VzCX/H4RVnHN3Vf9bVm/rQweSt1eADOthniY+wYw=
 			</data>
 		</dict>
 		<key>tvos-arm64/Headers/Jolt/Physics/Constraints/ConstraintPart/RotationQuatConstraintPart.h</key>
@@ -16903,7 +16755,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			J10lv1jGw4/vAB0h0gOIy/gnrfUUMxMQo4YcxYG8k30=
+			tJvHQbFdIdbJuyCBdoesPwYHF4meziNVsiNZ14lYGvI=
 			</data>
 		</dict>
 		<key>tvos-arm64/Headers/Jolt/Physics/Constraints/DistanceConstraint.h</key>
@@ -17043,14 +16895,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			C04nEi53maI7Qo+zxBvP1v7/VZ9i83tZ9W5QgDPBOfk=
+			YXkOFqpNis3xydQBkTfNMXef4zcxthhekNZAUDV6HZM=
 			</data>
 		</dict>
 		<key>tvos-arm64/Headers/Jolt/Physics/LargeIslandSplitter.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			M3v2ODTQ+/eeziT9FMTlIixr9WcIVv9urtjZLNFEAZc=
+			qwYeKikYLxaI2oc8Vi7LqOX1JGYkmILHXzaL6wl4KSc=
 			</data>
 		</dict>
 		<key>tvos-arm64/Headers/Jolt/Physics/PhysicsLock.h</key>
@@ -17085,21 +16937,21 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			VOGISWEluqj4AuNjdPJMvbElwour6TH0wk0zWxQKlnE=
+			OoqpQSDlCGw+pGq6A6ZuCHvjXaKOaoipuRcl9+JhusI=
 			</data>
 		</dict>
 		<key>tvos-arm64/Headers/Jolt/Physics/PhysicsUpdateContext.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Lv3FdjzLL9pzmcozpb+SNLUkq+NrT98w86LCoOIzdlI=
+			RK3SyHDopC3w4H1daEKnDZS+HyVvn0gJafQNd9CiBiw=
 			</data>
 		</dict>
 		<key>tvos-arm64/Headers/Jolt/Physics/Ragdoll/Ragdoll.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ZEQpBsURSWzgKZwMKp3E72qv+LmrG3d6+lyO3pULNpI=
+			Zox5jlV+yJ2eorWmrco/fEJFxKfX+by86gKwl4lTSEE=
 			</data>
 		</dict>
 		<key>tvos-arm64/Headers/Jolt/Physics/SoftBody/SoftBodyContactListener.h</key>
@@ -17113,7 +16965,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ZVY+RL3FN6of4kz2BDObfe+zHsrY5EGgfSrjtMy/VAE=
+			cCOB3imcMg1q7RacFOY6wRXqPqzSNn4PC5qzd8z/rQE=
 			</data>
 		</dict>
 		<key>tvos-arm64/Headers/Jolt/Physics/SoftBody/SoftBodyManifold.h</key>
@@ -17141,14 +16993,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			pN6rDxEulgF4rzHJ9H+Hb6D42bTUax/WvJCMSGsi+dk=
+			7mYX1wFEcNDpN1/j+xsq15PzQL6/MHw0UDiz9PGSuZk=
 			</data>
 		</dict>
 		<key>tvos-arm64/Headers/Jolt/Physics/SoftBody/SoftBodyUpdateContext.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			njeK3NaEZbAzrc4m95minWUJiVMwb4DtXUewvmillDQ=
+			NmpHb5vtwwH9EUrDENx+ImoK82Rkf9qktvBEqzajV+k=
 			</data>
 		</dict>
 		<key>tvos-arm64/Headers/Jolt/Physics/SoftBody/SoftBodyVertex.h</key>
@@ -17197,7 +17049,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			o8hVIrKXHt7amZEGFIfIYJJQ2pJTEjgpd0gh+Om6+hk=
+			+SFyKl7IlJVpDbb1JSs90DhWOC30X/Q0zexKNwcRUsA=
 			</data>
 		</dict>
 		<key>tvos-arm64/Headers/Jolt/Physics/Vehicle/VehicleConstraint.h</key>
@@ -17225,7 +17077,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			PpXNszU2CNn68e7Yh/3/0H4VCHvalGqPT7MEJd+W0FI=
+			sRjFnT2NxhqicZNTKq0oKrqAMIVqcZK9p41KfMFDJFI=
 			</data>
 		</dict>
 		<key>tvos-arm64/Headers/Jolt/Physics/Vehicle/VehicleTrack.h</key>
@@ -17253,7 +17105,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Cj0E38N0leA8SpwxJEiaMbDL8K5V2JaS4o8qmGKZ0KU=
+			fjpOnUYVqWcWMDaXOLH1qeRhPZeyeSS6IqvyOVnsRrc=
 			</data>
 		</dict>
 		<key>tvos-arm64/Headers/Jolt/RegisterTypes.h</key>
@@ -17344,21 +17196,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			rcz6PoIuSRJzrDAiImQqczJHmxoKxu1GKP3BKA5YdH0=
-			</data>
-		</dict>
-		<key>tvos-arm64_x86_64-simulator/Headers/Jolt-Module/module.modulemap</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			yqJky2CtVY/DdMGl4oSQRx7Z5S7FuBH4KdD5PyGkQp8=
+			j4tDj2AKGGhYgOJ5F5Ah56oGpU5B0DxzTuf1ghI+4RE=
 			</data>
 		</dict>
 		<key>tvos-arm64_x86_64-simulator/Headers/Jolt/AABBTree/AABBTreeBuilder.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			T/pPqMvzXyiIN6mGVzV04tVrCKJHnhiaDZmOqLe8xPk=
+			j/WSoXu0gnRdY9n0h02UJoB2aU8JcTvQ49NTZdZQRqc=
 			</data>
 		</dict>
 		<key>tvos-arm64_x86_64-simulator/Headers/Jolt/AABBTree/AABBTreeToBuffer.h</key>
@@ -17386,7 +17231,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Ut+B2rRaqbrMbg9cP9s0p5WbkzldqseUffK+gegu+BQ=
+			i8JIN0n58K4a34iJ8Ysig0Y3sjSjya/SGZdWYXNcHB0=
 			</data>
 		</dict>
 		<key>tvos-arm64_x86_64-simulator/Headers/Jolt/Core/ARMNeon.h</key>
@@ -17400,7 +17245,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			astPMjxAKARBSsZbI0HVNRlkdArpcwF8VY9PImwOByM=
+			oXnDgR4G+K7qs5TDIy689NKthn45f556tgpgOX8SScA=
 			</data>
 		</dict>
 		<key>tvos-arm64_x86_64-simulator/Headers/Jolt/Core/Atomics.h</key>
@@ -17428,14 +17273,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			kHj5hBo3MxCBSZwuyLC8llbOL22O4KtiPPCWTaPUAtE=
+			+C674j5kdYVBUzuoY8o49rSGeYb/4SwjA8gkXjQT+EA=
 			</data>
 		</dict>
 		<key>tvos-arm64_x86_64-simulator/Headers/Jolt/Core/Core.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			M+/ltgElkhihGMtFV2njF0rG5FnKETkMtl6TX1vt4JQ=
+			rBLOXbSn5L2nsbr15kMswkzl2hFSWv07ooBR9139euY=
 			</data>
 		</dict>
 		<key>tvos-arm64_x86_64-simulator/Headers/Jolt/Core/FPControlWord.h</key>
@@ -17491,7 +17336,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			gpLNRFDiMSRcDW36jT1b5iT6hr7RVCv9tpqkZ1w18BQ=
+			Tto8Mfsn+vbMHQCeroq3x7kCApxqnkGW/cahw5zc4vE=
 			</data>
 		</dict>
 		<key>tvos-arm64_x86_64-simulator/Headers/Jolt/Core/InsertionSort.h</key>
@@ -17568,7 +17413,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			nQhjt0V7rIoOJbUxsfX9h+I0FHgdEc6Iy1slF7vW2fU=
+			5711S3UB7cVJd3uun+8tzNyMahZjb61XZuoy6JjGAAQ=
 			</data>
 		</dict>
 		<key>tvos-arm64_x86_64-simulator/Headers/Jolt/Core/Mutex.h</key>
@@ -17596,7 +17441,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			/uKDgTejvpVOsXhlSm1/+JY9sMH5+inw2io/hiKnHmg=
+			JPa7kB2lzE1JrWcSHWYst4kPF9dKtTRv19aDVSAVEIk=
 			</data>
 		</dict>
 		<key>tvos-arm64_x86_64-simulator/Headers/Jolt/Core/Profiler.inl</key>
@@ -17645,7 +17490,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			QU9B00Zw0QP0vt7KvEQ8NeoqN9ENrgpA+k4Y5OzDafs=
+			/lRhcI+MXSc1nTBUVm4HlaqzXyeXUvSKsmut51IJ2DY=
 			</data>
 		</dict>
 		<key>tvos-arm64_x86_64-simulator/Headers/Jolt/Core/STLLocalAllocator.h</key>
@@ -17729,14 +17574,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			7p2mekiMPybAxEwQtjQSAqDQpkRsBI2YAucpuWGYtOo=
+			+aY7OYkJOUXAK5/mXQCWOjFe/NixgB+BMewerYFQkgc=
 			</data>
 		</dict>
 		<key>tvos-arm64_x86_64-simulator/Headers/Jolt/Core/TickCounter.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			6KZushE0vgtrEfP0fTLlE7o0Tl+5BKRF6C+CbjbvKJM=
+			c1kdfBePpwyiarIcgxnwonpj8pkFPr4eGK1yXc/OBQY=
 			</data>
 		</dict>
 		<key>tvos-arm64_x86_64-simulator/Headers/Jolt/Core/UnorderedMap.h</key>
@@ -17813,7 +17658,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			QcN7z2tm2sUwvCWO9LrVQaAWUvEUUiCTnq1Qabcb3Us=
+			YtE+Cgw2rH2Dd+JBEIVtNN6FtePPGwgrA0pwhzrdErU=
 			</data>
 		</dict>
 		<key>tvos-arm64_x86_64-simulator/Headers/Jolt/Geometry/Ellipse.h</key>
@@ -18121,7 +17966,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			l4pY0hvPSGX33Asx+4mPbUb7wN1AsyEq2LjSGuIcMoA=
+			UOYZvaTACRwYQkgI2dI0DnfE9kH2AV4XvNnAwGCmiD0=
 			</data>
 		</dict>
 		<key>tvos-arm64_x86_64-simulator/Headers/Jolt/Math/Vec4.h</key>
@@ -18135,7 +17980,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			KsneOBH4KQdQ/yGPU8rkxRldrb40pAqHUG7RfeTMHSA=
+			f2LeKIZhaiMi4HFb3xw7EbQ5/ijXsOGNoNx3lX7XlhQ=
 			</data>
 		</dict>
 		<key>tvos-arm64_x86_64-simulator/Headers/Jolt/Math/Vector.h</key>
@@ -18254,7 +18099,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			J9Zakb9xG/uCc9sDSF22IbjYgn2bXb7P6nxFgslLHrg=
+			VkriefLqKntsSntXY2ZLKvcAz+fOmzDXiAuA6UjOwVc=
 			</data>
 		</dict>
 		<key>tvos-arm64_x86_64-simulator/Headers/Jolt/Physics/Body/Body.inl</key>
@@ -18282,7 +18127,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			7p5MUsM7VDX42mZDMnPv4n+b4BRputs4LbzhZRYyfNg=
+			eFSEDHpCcPjJIUfXSFewkNDLMJzUBUPiXXBdsnjAauM=
 			</data>
 		</dict>
 		<key>tvos-arm64_x86_64-simulator/Headers/Jolt/Physics/Body/BodyFilter.h</key>
@@ -18303,7 +18148,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			+fG0jhAX0XmxsBydexI2Jct1NRdauQH1RNelhBPVY3I=
+			lhh9Sf/Ubn2W4vU9XFBvnDs4XgGaEUm6OXwJ9JlDCdY=
 			</data>
 		</dict>
 		<key>tvos-arm64_x86_64-simulator/Headers/Jolt/Physics/Body/BodyLock.h</key>
@@ -18331,7 +18176,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			FR2NMaEgE3xGlqgbzL7/gy5AubU+JO3YAuKcIHpsMeY=
+			IkTDEoamS1nNjIkkfzkhJJhTVj36Bv4sxpu0t+puOHA=
 			</data>
 		</dict>
 		<key>tvos-arm64_x86_64-simulator/Headers/Jolt/Physics/Body/BodyPair.h</key>
@@ -18359,7 +18204,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			7RH2XJj2uVP3FJqtlq8eqdE7GXUCWygHd4eUroNhYmg=
+			zQlpJ5lUusoQHBQg9kpa/XQ8rP40WH3Z+k2IyL4hX9M=
 			</data>
 		</dict>
 		<key>tvos-arm64_x86_64-simulator/Headers/Jolt/Physics/Body/MotionProperties.inl</key>
@@ -18408,7 +18253,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			WSdgBbX91bzE3ohb97aV7eUi0Y/89Qecrm0ooeBnSag=
+			xJi4uVoBY2+BUbt0zqd67E1fDAx0k7OAgBul21rJee0=
 			</data>
 		</dict>
 		<key>tvos-arm64_x86_64-simulator/Headers/Jolt/Physics/Collision/AABoxCast.h</key>
@@ -18443,7 +18288,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ROdCoQ8MvWLkF9hBKY2ystDtZw9cNAjltOnLG5u2KXs=
+			7R2Jk2HAsL/ZedrvIf/RT5rSJeg4uGkro9is+XPWBts=
 			</data>
 		</dict>
 		<key>tvos-arm64_x86_64-simulator/Headers/Jolt/Physics/Collision/BroadPhase/BroadPhaseBruteForce.h</key>
@@ -18485,7 +18330,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ozt4tcWYqfrmw6ZCRFoa5k+8u4cJ02wVRyVbBvkOVtg=
+			TIt+UicY9/vnGdTgC62F5mGyvmzkIF1tCIALMBi/91Y=
 			</data>
 		</dict>
 		<key>tvos-arm64_x86_64-simulator/Headers/Jolt/Physics/Collision/BroadPhase/ObjectVsBroadPhaseLayerFilterMask.h</key>
@@ -18562,7 +18407,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			fsl5BTpAeBIymwL30Em365rqHp5ocOCXnC1/HGGk7H0=
+			0QFTEw39UICMAz0UtQRRUDJv5I6pxioaB2O116rBuUU=
 			</data>
 		</dict>
 		<key>tvos-arm64_x86_64-simulator/Headers/Jolt/Physics/Collision/CollideSoftBodyVertexIterator.h</key>
@@ -18576,7 +18421,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			XBnByBKUFijATs8R4ReC6wVHU+OAlF1L83qeqMf7FzQ=
+			FYOK7wmInklKg3oplWnhY3CZW5xj/zfX5EikM6hPKbs=
 			</data>
 		</dict>
 		<key>tvos-arm64_x86_64-simulator/Headers/Jolt/Physics/Collision/CollideSphereVsTriangles.h</key>
@@ -18716,7 +18561,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			3oz9kbbNZNAAVAg93Q2OvNhVg8rICFWDNQt6ze2s4AQ=
+			FKgtCXbOrVSmrdoh+hT/Yxoi/4c8z7UXHAFTujP18/M=
 			</data>
 		</dict>
 		<key>tvos-arm64_x86_64-simulator/Headers/Jolt/Physics/Collision/Shape/CapsuleShape.h</key>
@@ -18730,7 +18575,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			cXLQ9isI39fVidBcAgxfSEKxkM7TEdo5SbS6uU5KiJY=
+			AJ3uXikq/SbSi1Ir0lWdyHipHWiPhFFrOR4Gwd5Mrxo=
 			</data>
 		</dict>
 		<key>tvos-arm64_x86_64-simulator/Headers/Jolt/Physics/Collision/Shape/CompoundShapeVisitors.h</key>
@@ -18744,7 +18589,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			adEf2IxcLTd3wcRLTunFQwQA9qCDfPdocaCMFNRgx7A=
+			Kg3ug5lhd3QsZQc6pHOcOLd6GOizB+PjIfJ/HfKX8ZQ=
 			</data>
 		</dict>
 		<key>tvos-arm64_x86_64-simulator/Headers/Jolt/Physics/Collision/Shape/ConvexShape.h</key>
@@ -18793,7 +18638,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			a0FX9NdUAB5cGe6ttG6oS2TJaLHjQgi+OTzvWJReWvQ=
+			QedCNGl+AP3eHAWSZezPqGnuldCWEtk/qKB+9IK7OQw=
 			</data>
 		</dict>
 		<key>tvos-arm64_x86_64-simulator/Headers/Jolt/Physics/Collision/Shape/MutableCompoundShape.h</key>
@@ -18814,7 +18659,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			HcM/fcN0hehQZ3VqN0plvsoSaV+Q3JHmAwDhc/4U5as=
+			5d6pjDxy0+14jT+1tKVyX/P6PFr8jNGutg/yOIX+C+c=
 			</data>
 		</dict>
 		<key>tvos-arm64_x86_64-simulator/Headers/Jolt/Physics/Collision/Shape/PolyhedronSubmergedVolumeCalculator.h</key>
@@ -18856,7 +18701,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			hEC2iCgRjNEY9piUeG/foyk1GzExSvxrBRqS+sgu2qM=
+			9pq2nz/ip6SRGieHCZlA6iSXTOgMXktOqmFjbAOsYZE=
 			</data>
 		</dict>
 		<key>tvos-arm64_x86_64-simulator/Headers/Jolt/Physics/Collision/Shape/StaticCompoundShape.h</key>
@@ -18940,14 +18785,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			opxyUMV03CQdOmLKRYyNXofmFDqWrAlnUOvb5UYRPlI=
+			McU42Z9w8QG/DrYY9e0xCKCaQKq0RwSkUg+rLLtbVs8=
 			</data>
 		</dict>
 		<key>tvos-arm64_x86_64-simulator/Headers/Jolt/Physics/Constraints/CalculateSolverSteps.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			XczbOi36Wuo9QedSWiw+XfXL9PuUAl0ncDR5Y9yysdA=
+			wDJr1Xwqi6ZN0uzUIDywEcdyIBYYsbS0ktb0xBGtATA=
 			</data>
 		</dict>
 		<key>tvos-arm64_x86_64-simulator/Headers/Jolt/Physics/Constraints/ConeConstraint.h</key>
@@ -18961,14 +18806,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			KPaUA055QYM+jRqZ0W89mCAkLO6yfrPgSKvJUzHECLs=
+			NlAZWFm3Hka+jBEnZuPqeBjosMvp0+U6/GOEz7ZixGI=
 			</data>
 		</dict>
 		<key>tvos-arm64_x86_64-simulator/Headers/Jolt/Physics/Constraints/ConstraintManager.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			/oTDJw04a/EVq0g+Kj7iK7p4zHYJ8hNKP6Qvqt6WN+w=
+			YWR9Dmvhu/miMMakCyuajX9klg8GhlU4FV90f3GCTqc=
 			</data>
 		</dict>
 		<key>tvos-arm64_x86_64-simulator/Headers/Jolt/Physics/Constraints/ConstraintPart/AngleConstraintPart.h</key>
@@ -19031,7 +18876,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			0z8Va1k/vRoSa5gkoa4X/T9hyDRtiO8Ew6FSd6rxMMA=
+			sN6VzCX/H4RVnHN3Vf9bVm/rQweSt1eADOthniY+wYw=
 			</data>
 		</dict>
 		<key>tvos-arm64_x86_64-simulator/Headers/Jolt/Physics/Constraints/ConstraintPart/RotationQuatConstraintPart.h</key>
@@ -19059,7 +18904,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			J10lv1jGw4/vAB0h0gOIy/gnrfUUMxMQo4YcxYG8k30=
+			tJvHQbFdIdbJuyCBdoesPwYHF4meziNVsiNZ14lYGvI=
 			</data>
 		</dict>
 		<key>tvos-arm64_x86_64-simulator/Headers/Jolt/Physics/Constraints/DistanceConstraint.h</key>
@@ -19199,14 +19044,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			C04nEi53maI7Qo+zxBvP1v7/VZ9i83tZ9W5QgDPBOfk=
+			YXkOFqpNis3xydQBkTfNMXef4zcxthhekNZAUDV6HZM=
 			</data>
 		</dict>
 		<key>tvos-arm64_x86_64-simulator/Headers/Jolt/Physics/LargeIslandSplitter.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			M3v2ODTQ+/eeziT9FMTlIixr9WcIVv9urtjZLNFEAZc=
+			qwYeKikYLxaI2oc8Vi7LqOX1JGYkmILHXzaL6wl4KSc=
 			</data>
 		</dict>
 		<key>tvos-arm64_x86_64-simulator/Headers/Jolt/Physics/PhysicsLock.h</key>
@@ -19241,21 +19086,21 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			VOGISWEluqj4AuNjdPJMvbElwour6TH0wk0zWxQKlnE=
+			OoqpQSDlCGw+pGq6A6ZuCHvjXaKOaoipuRcl9+JhusI=
 			</data>
 		</dict>
 		<key>tvos-arm64_x86_64-simulator/Headers/Jolt/Physics/PhysicsUpdateContext.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Lv3FdjzLL9pzmcozpb+SNLUkq+NrT98w86LCoOIzdlI=
+			RK3SyHDopC3w4H1daEKnDZS+HyVvn0gJafQNd9CiBiw=
 			</data>
 		</dict>
 		<key>tvos-arm64_x86_64-simulator/Headers/Jolt/Physics/Ragdoll/Ragdoll.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ZEQpBsURSWzgKZwMKp3E72qv+LmrG3d6+lyO3pULNpI=
+			Zox5jlV+yJ2eorWmrco/fEJFxKfX+by86gKwl4lTSEE=
 			</data>
 		</dict>
 		<key>tvos-arm64_x86_64-simulator/Headers/Jolt/Physics/SoftBody/SoftBodyContactListener.h</key>
@@ -19269,7 +19114,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ZVY+RL3FN6of4kz2BDObfe+zHsrY5EGgfSrjtMy/VAE=
+			cCOB3imcMg1q7RacFOY6wRXqPqzSNn4PC5qzd8z/rQE=
 			</data>
 		</dict>
 		<key>tvos-arm64_x86_64-simulator/Headers/Jolt/Physics/SoftBody/SoftBodyManifold.h</key>
@@ -19297,14 +19142,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			pN6rDxEulgF4rzHJ9H+Hb6D42bTUax/WvJCMSGsi+dk=
+			7mYX1wFEcNDpN1/j+xsq15PzQL6/MHw0UDiz9PGSuZk=
 			</data>
 		</dict>
 		<key>tvos-arm64_x86_64-simulator/Headers/Jolt/Physics/SoftBody/SoftBodyUpdateContext.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			njeK3NaEZbAzrc4m95minWUJiVMwb4DtXUewvmillDQ=
+			NmpHb5vtwwH9EUrDENx+ImoK82Rkf9qktvBEqzajV+k=
 			</data>
 		</dict>
 		<key>tvos-arm64_x86_64-simulator/Headers/Jolt/Physics/SoftBody/SoftBodyVertex.h</key>
@@ -19353,7 +19198,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			o8hVIrKXHt7amZEGFIfIYJJQ2pJTEjgpd0gh+Om6+hk=
+			+SFyKl7IlJVpDbb1JSs90DhWOC30X/Q0zexKNwcRUsA=
 			</data>
 		</dict>
 		<key>tvos-arm64_x86_64-simulator/Headers/Jolt/Physics/Vehicle/VehicleConstraint.h</key>
@@ -19381,7 +19226,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			PpXNszU2CNn68e7Yh/3/0H4VCHvalGqPT7MEJd+W0FI=
+			sRjFnT2NxhqicZNTKq0oKrqAMIVqcZK9p41KfMFDJFI=
 			</data>
 		</dict>
 		<key>tvos-arm64_x86_64-simulator/Headers/Jolt/Physics/Vehicle/VehicleTrack.h</key>
@@ -19409,7 +19254,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Cj0E38N0leA8SpwxJEiaMbDL8K5V2JaS4o8qmGKZ0KU=
+			fjpOnUYVqWcWMDaXOLH1qeRhPZeyeSS6IqvyOVnsRrc=
 			</data>
 		</dict>
 		<key>tvos-arm64_x86_64-simulator/Headers/Jolt/RegisterTypes.h</key>
@@ -19500,21 +19345,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			H7RQZ7DVunj8tSkmM6VrZVNzhST0/7CcWIjDho6cNxA=
-			</data>
-		</dict>
-		<key>xros-arm64/Headers/Jolt-Module/module.modulemap</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			yqJky2CtVY/DdMGl4oSQRx7Z5S7FuBH4KdD5PyGkQp8=
+			F1GVBdEhgo8u7Bm8LtJ8oUePWdVvP7ILRYP57yz2imM=
 			</data>
 		</dict>
 		<key>xros-arm64/Headers/Jolt/AABBTree/AABBTreeBuilder.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			T/pPqMvzXyiIN6mGVzV04tVrCKJHnhiaDZmOqLe8xPk=
+			j/WSoXu0gnRdY9n0h02UJoB2aU8JcTvQ49NTZdZQRqc=
 			</data>
 		</dict>
 		<key>xros-arm64/Headers/Jolt/AABBTree/AABBTreeToBuffer.h</key>
@@ -19542,7 +19380,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Ut+B2rRaqbrMbg9cP9s0p5WbkzldqseUffK+gegu+BQ=
+			i8JIN0n58K4a34iJ8Ysig0Y3sjSjya/SGZdWYXNcHB0=
 			</data>
 		</dict>
 		<key>xros-arm64/Headers/Jolt/Core/ARMNeon.h</key>
@@ -19556,7 +19394,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			astPMjxAKARBSsZbI0HVNRlkdArpcwF8VY9PImwOByM=
+			oXnDgR4G+K7qs5TDIy689NKthn45f556tgpgOX8SScA=
 			</data>
 		</dict>
 		<key>xros-arm64/Headers/Jolt/Core/Atomics.h</key>
@@ -19584,14 +19422,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			kHj5hBo3MxCBSZwuyLC8llbOL22O4KtiPPCWTaPUAtE=
+			+C674j5kdYVBUzuoY8o49rSGeYb/4SwjA8gkXjQT+EA=
 			</data>
 		</dict>
 		<key>xros-arm64/Headers/Jolt/Core/Core.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			M+/ltgElkhihGMtFV2njF0rG5FnKETkMtl6TX1vt4JQ=
+			rBLOXbSn5L2nsbr15kMswkzl2hFSWv07ooBR9139euY=
 			</data>
 		</dict>
 		<key>xros-arm64/Headers/Jolt/Core/FPControlWord.h</key>
@@ -19647,7 +19485,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			gpLNRFDiMSRcDW36jT1b5iT6hr7RVCv9tpqkZ1w18BQ=
+			Tto8Mfsn+vbMHQCeroq3x7kCApxqnkGW/cahw5zc4vE=
 			</data>
 		</dict>
 		<key>xros-arm64/Headers/Jolt/Core/InsertionSort.h</key>
@@ -19724,7 +19562,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			nQhjt0V7rIoOJbUxsfX9h+I0FHgdEc6Iy1slF7vW2fU=
+			5711S3UB7cVJd3uun+8tzNyMahZjb61XZuoy6JjGAAQ=
 			</data>
 		</dict>
 		<key>xros-arm64/Headers/Jolt/Core/Mutex.h</key>
@@ -19752,7 +19590,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			/uKDgTejvpVOsXhlSm1/+JY9sMH5+inw2io/hiKnHmg=
+			JPa7kB2lzE1JrWcSHWYst4kPF9dKtTRv19aDVSAVEIk=
 			</data>
 		</dict>
 		<key>xros-arm64/Headers/Jolt/Core/Profiler.inl</key>
@@ -19801,7 +19639,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			QU9B00Zw0QP0vt7KvEQ8NeoqN9ENrgpA+k4Y5OzDafs=
+			/lRhcI+MXSc1nTBUVm4HlaqzXyeXUvSKsmut51IJ2DY=
 			</data>
 		</dict>
 		<key>xros-arm64/Headers/Jolt/Core/STLLocalAllocator.h</key>
@@ -19885,14 +19723,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			7p2mekiMPybAxEwQtjQSAqDQpkRsBI2YAucpuWGYtOo=
+			+aY7OYkJOUXAK5/mXQCWOjFe/NixgB+BMewerYFQkgc=
 			</data>
 		</dict>
 		<key>xros-arm64/Headers/Jolt/Core/TickCounter.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			6KZushE0vgtrEfP0fTLlE7o0Tl+5BKRF6C+CbjbvKJM=
+			c1kdfBePpwyiarIcgxnwonpj8pkFPr4eGK1yXc/OBQY=
 			</data>
 		</dict>
 		<key>xros-arm64/Headers/Jolt/Core/UnorderedMap.h</key>
@@ -19969,7 +19807,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			QcN7z2tm2sUwvCWO9LrVQaAWUvEUUiCTnq1Qabcb3Us=
+			YtE+Cgw2rH2Dd+JBEIVtNN6FtePPGwgrA0pwhzrdErU=
 			</data>
 		</dict>
 		<key>xros-arm64/Headers/Jolt/Geometry/Ellipse.h</key>
@@ -20277,7 +20115,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			l4pY0hvPSGX33Asx+4mPbUb7wN1AsyEq2LjSGuIcMoA=
+			UOYZvaTACRwYQkgI2dI0DnfE9kH2AV4XvNnAwGCmiD0=
 			</data>
 		</dict>
 		<key>xros-arm64/Headers/Jolt/Math/Vec4.h</key>
@@ -20291,7 +20129,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			KsneOBH4KQdQ/yGPU8rkxRldrb40pAqHUG7RfeTMHSA=
+			f2LeKIZhaiMi4HFb3xw7EbQ5/ijXsOGNoNx3lX7XlhQ=
 			</data>
 		</dict>
 		<key>xros-arm64/Headers/Jolt/Math/Vector.h</key>
@@ -20410,7 +20248,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			J9Zakb9xG/uCc9sDSF22IbjYgn2bXb7P6nxFgslLHrg=
+			VkriefLqKntsSntXY2ZLKvcAz+fOmzDXiAuA6UjOwVc=
 			</data>
 		</dict>
 		<key>xros-arm64/Headers/Jolt/Physics/Body/Body.inl</key>
@@ -20438,7 +20276,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			7p5MUsM7VDX42mZDMnPv4n+b4BRputs4LbzhZRYyfNg=
+			eFSEDHpCcPjJIUfXSFewkNDLMJzUBUPiXXBdsnjAauM=
 			</data>
 		</dict>
 		<key>xros-arm64/Headers/Jolt/Physics/Body/BodyFilter.h</key>
@@ -20459,7 +20297,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			+fG0jhAX0XmxsBydexI2Jct1NRdauQH1RNelhBPVY3I=
+			lhh9Sf/Ubn2W4vU9XFBvnDs4XgGaEUm6OXwJ9JlDCdY=
 			</data>
 		</dict>
 		<key>xros-arm64/Headers/Jolt/Physics/Body/BodyLock.h</key>
@@ -20487,7 +20325,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			FR2NMaEgE3xGlqgbzL7/gy5AubU+JO3YAuKcIHpsMeY=
+			IkTDEoamS1nNjIkkfzkhJJhTVj36Bv4sxpu0t+puOHA=
 			</data>
 		</dict>
 		<key>xros-arm64/Headers/Jolt/Physics/Body/BodyPair.h</key>
@@ -20515,7 +20353,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			7RH2XJj2uVP3FJqtlq8eqdE7GXUCWygHd4eUroNhYmg=
+			zQlpJ5lUusoQHBQg9kpa/XQ8rP40WH3Z+k2IyL4hX9M=
 			</data>
 		</dict>
 		<key>xros-arm64/Headers/Jolt/Physics/Body/MotionProperties.inl</key>
@@ -20564,7 +20402,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			WSdgBbX91bzE3ohb97aV7eUi0Y/89Qecrm0ooeBnSag=
+			xJi4uVoBY2+BUbt0zqd67E1fDAx0k7OAgBul21rJee0=
 			</data>
 		</dict>
 		<key>xros-arm64/Headers/Jolt/Physics/Collision/AABoxCast.h</key>
@@ -20599,7 +20437,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ROdCoQ8MvWLkF9hBKY2ystDtZw9cNAjltOnLG5u2KXs=
+			7R2Jk2HAsL/ZedrvIf/RT5rSJeg4uGkro9is+XPWBts=
 			</data>
 		</dict>
 		<key>xros-arm64/Headers/Jolt/Physics/Collision/BroadPhase/BroadPhaseBruteForce.h</key>
@@ -20641,7 +20479,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ozt4tcWYqfrmw6ZCRFoa5k+8u4cJ02wVRyVbBvkOVtg=
+			TIt+UicY9/vnGdTgC62F5mGyvmzkIF1tCIALMBi/91Y=
 			</data>
 		</dict>
 		<key>xros-arm64/Headers/Jolt/Physics/Collision/BroadPhase/ObjectVsBroadPhaseLayerFilterMask.h</key>
@@ -20718,7 +20556,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			fsl5BTpAeBIymwL30Em365rqHp5ocOCXnC1/HGGk7H0=
+			0QFTEw39UICMAz0UtQRRUDJv5I6pxioaB2O116rBuUU=
 			</data>
 		</dict>
 		<key>xros-arm64/Headers/Jolt/Physics/Collision/CollideSoftBodyVertexIterator.h</key>
@@ -20732,7 +20570,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			XBnByBKUFijATs8R4ReC6wVHU+OAlF1L83qeqMf7FzQ=
+			FYOK7wmInklKg3oplWnhY3CZW5xj/zfX5EikM6hPKbs=
 			</data>
 		</dict>
 		<key>xros-arm64/Headers/Jolt/Physics/Collision/CollideSphereVsTriangles.h</key>
@@ -20872,7 +20710,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			3oz9kbbNZNAAVAg93Q2OvNhVg8rICFWDNQt6ze2s4AQ=
+			FKgtCXbOrVSmrdoh+hT/Yxoi/4c8z7UXHAFTujP18/M=
 			</data>
 		</dict>
 		<key>xros-arm64/Headers/Jolt/Physics/Collision/Shape/CapsuleShape.h</key>
@@ -20886,7 +20724,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			cXLQ9isI39fVidBcAgxfSEKxkM7TEdo5SbS6uU5KiJY=
+			AJ3uXikq/SbSi1Ir0lWdyHipHWiPhFFrOR4Gwd5Mrxo=
 			</data>
 		</dict>
 		<key>xros-arm64/Headers/Jolt/Physics/Collision/Shape/CompoundShapeVisitors.h</key>
@@ -20900,7 +20738,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			adEf2IxcLTd3wcRLTunFQwQA9qCDfPdocaCMFNRgx7A=
+			Kg3ug5lhd3QsZQc6pHOcOLd6GOizB+PjIfJ/HfKX8ZQ=
 			</data>
 		</dict>
 		<key>xros-arm64/Headers/Jolt/Physics/Collision/Shape/ConvexShape.h</key>
@@ -20949,7 +20787,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			a0FX9NdUAB5cGe6ttG6oS2TJaLHjQgi+OTzvWJReWvQ=
+			QedCNGl+AP3eHAWSZezPqGnuldCWEtk/qKB+9IK7OQw=
 			</data>
 		</dict>
 		<key>xros-arm64/Headers/Jolt/Physics/Collision/Shape/MutableCompoundShape.h</key>
@@ -20970,7 +20808,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			HcM/fcN0hehQZ3VqN0plvsoSaV+Q3JHmAwDhc/4U5as=
+			5d6pjDxy0+14jT+1tKVyX/P6PFr8jNGutg/yOIX+C+c=
 			</data>
 		</dict>
 		<key>xros-arm64/Headers/Jolt/Physics/Collision/Shape/PolyhedronSubmergedVolumeCalculator.h</key>
@@ -21012,7 +20850,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			hEC2iCgRjNEY9piUeG/foyk1GzExSvxrBRqS+sgu2qM=
+			9pq2nz/ip6SRGieHCZlA6iSXTOgMXktOqmFjbAOsYZE=
 			</data>
 		</dict>
 		<key>xros-arm64/Headers/Jolt/Physics/Collision/Shape/StaticCompoundShape.h</key>
@@ -21096,14 +20934,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			opxyUMV03CQdOmLKRYyNXofmFDqWrAlnUOvb5UYRPlI=
+			McU42Z9w8QG/DrYY9e0xCKCaQKq0RwSkUg+rLLtbVs8=
 			</data>
 		</dict>
 		<key>xros-arm64/Headers/Jolt/Physics/Constraints/CalculateSolverSteps.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			XczbOi36Wuo9QedSWiw+XfXL9PuUAl0ncDR5Y9yysdA=
+			wDJr1Xwqi6ZN0uzUIDywEcdyIBYYsbS0ktb0xBGtATA=
 			</data>
 		</dict>
 		<key>xros-arm64/Headers/Jolt/Physics/Constraints/ConeConstraint.h</key>
@@ -21117,14 +20955,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			KPaUA055QYM+jRqZ0W89mCAkLO6yfrPgSKvJUzHECLs=
+			NlAZWFm3Hka+jBEnZuPqeBjosMvp0+U6/GOEz7ZixGI=
 			</data>
 		</dict>
 		<key>xros-arm64/Headers/Jolt/Physics/Constraints/ConstraintManager.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			/oTDJw04a/EVq0g+Kj7iK7p4zHYJ8hNKP6Qvqt6WN+w=
+			YWR9Dmvhu/miMMakCyuajX9klg8GhlU4FV90f3GCTqc=
 			</data>
 		</dict>
 		<key>xros-arm64/Headers/Jolt/Physics/Constraints/ConstraintPart/AngleConstraintPart.h</key>
@@ -21187,7 +21025,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			0z8Va1k/vRoSa5gkoa4X/T9hyDRtiO8Ew6FSd6rxMMA=
+			sN6VzCX/H4RVnHN3Vf9bVm/rQweSt1eADOthniY+wYw=
 			</data>
 		</dict>
 		<key>xros-arm64/Headers/Jolt/Physics/Constraints/ConstraintPart/RotationQuatConstraintPart.h</key>
@@ -21215,7 +21053,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			J10lv1jGw4/vAB0h0gOIy/gnrfUUMxMQo4YcxYG8k30=
+			tJvHQbFdIdbJuyCBdoesPwYHF4meziNVsiNZ14lYGvI=
 			</data>
 		</dict>
 		<key>xros-arm64/Headers/Jolt/Physics/Constraints/DistanceConstraint.h</key>
@@ -21355,14 +21193,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			C04nEi53maI7Qo+zxBvP1v7/VZ9i83tZ9W5QgDPBOfk=
+			YXkOFqpNis3xydQBkTfNMXef4zcxthhekNZAUDV6HZM=
 			</data>
 		</dict>
 		<key>xros-arm64/Headers/Jolt/Physics/LargeIslandSplitter.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			M3v2ODTQ+/eeziT9FMTlIixr9WcIVv9urtjZLNFEAZc=
+			qwYeKikYLxaI2oc8Vi7LqOX1JGYkmILHXzaL6wl4KSc=
 			</data>
 		</dict>
 		<key>xros-arm64/Headers/Jolt/Physics/PhysicsLock.h</key>
@@ -21397,21 +21235,21 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			VOGISWEluqj4AuNjdPJMvbElwour6TH0wk0zWxQKlnE=
+			OoqpQSDlCGw+pGq6A6ZuCHvjXaKOaoipuRcl9+JhusI=
 			</data>
 		</dict>
 		<key>xros-arm64/Headers/Jolt/Physics/PhysicsUpdateContext.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Lv3FdjzLL9pzmcozpb+SNLUkq+NrT98w86LCoOIzdlI=
+			RK3SyHDopC3w4H1daEKnDZS+HyVvn0gJafQNd9CiBiw=
 			</data>
 		</dict>
 		<key>xros-arm64/Headers/Jolt/Physics/Ragdoll/Ragdoll.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ZEQpBsURSWzgKZwMKp3E72qv+LmrG3d6+lyO3pULNpI=
+			Zox5jlV+yJ2eorWmrco/fEJFxKfX+by86gKwl4lTSEE=
 			</data>
 		</dict>
 		<key>xros-arm64/Headers/Jolt/Physics/SoftBody/SoftBodyContactListener.h</key>
@@ -21425,7 +21263,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ZVY+RL3FN6of4kz2BDObfe+zHsrY5EGgfSrjtMy/VAE=
+			cCOB3imcMg1q7RacFOY6wRXqPqzSNn4PC5qzd8z/rQE=
 			</data>
 		</dict>
 		<key>xros-arm64/Headers/Jolt/Physics/SoftBody/SoftBodyManifold.h</key>
@@ -21453,14 +21291,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			pN6rDxEulgF4rzHJ9H+Hb6D42bTUax/WvJCMSGsi+dk=
+			7mYX1wFEcNDpN1/j+xsq15PzQL6/MHw0UDiz9PGSuZk=
 			</data>
 		</dict>
 		<key>xros-arm64/Headers/Jolt/Physics/SoftBody/SoftBodyUpdateContext.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			njeK3NaEZbAzrc4m95minWUJiVMwb4DtXUewvmillDQ=
+			NmpHb5vtwwH9EUrDENx+ImoK82Rkf9qktvBEqzajV+k=
 			</data>
 		</dict>
 		<key>xros-arm64/Headers/Jolt/Physics/SoftBody/SoftBodyVertex.h</key>
@@ -21509,7 +21347,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			o8hVIrKXHt7amZEGFIfIYJJQ2pJTEjgpd0gh+Om6+hk=
+			+SFyKl7IlJVpDbb1JSs90DhWOC30X/Q0zexKNwcRUsA=
 			</data>
 		</dict>
 		<key>xros-arm64/Headers/Jolt/Physics/Vehicle/VehicleConstraint.h</key>
@@ -21537,7 +21375,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			PpXNszU2CNn68e7Yh/3/0H4VCHvalGqPT7MEJd+W0FI=
+			sRjFnT2NxhqicZNTKq0oKrqAMIVqcZK9p41KfMFDJFI=
 			</data>
 		</dict>
 		<key>xros-arm64/Headers/Jolt/Physics/Vehicle/VehicleTrack.h</key>
@@ -21565,7 +21403,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Cj0E38N0leA8SpwxJEiaMbDL8K5V2JaS4o8qmGKZ0KU=
+			fjpOnUYVqWcWMDaXOLH1qeRhPZeyeSS6IqvyOVnsRrc=
 			</data>
 		</dict>
 		<key>xros-arm64/Headers/Jolt/RegisterTypes.h</key>
@@ -21656,21 +21494,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			LlzgTacwzntpPi8cBYTGxY3EnQvsbgsR3xbs+ryefws=
-			</data>
-		</dict>
-		<key>xros-arm64_x86_64-simulator/Headers/Jolt-Module/module.modulemap</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			yqJky2CtVY/DdMGl4oSQRx7Z5S7FuBH4KdD5PyGkQp8=
+			wiD8ddHw3Twatn1d0ZsdTkSKzhQNB4wV7qxCqgxC8Y0=
 			</data>
 		</dict>
 		<key>xros-arm64_x86_64-simulator/Headers/Jolt/AABBTree/AABBTreeBuilder.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			T/pPqMvzXyiIN6mGVzV04tVrCKJHnhiaDZmOqLe8xPk=
+			j/WSoXu0gnRdY9n0h02UJoB2aU8JcTvQ49NTZdZQRqc=
 			</data>
 		</dict>
 		<key>xros-arm64_x86_64-simulator/Headers/Jolt/AABBTree/AABBTreeToBuffer.h</key>
@@ -21698,7 +21529,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Ut+B2rRaqbrMbg9cP9s0p5WbkzldqseUffK+gegu+BQ=
+			i8JIN0n58K4a34iJ8Ysig0Y3sjSjya/SGZdWYXNcHB0=
 			</data>
 		</dict>
 		<key>xros-arm64_x86_64-simulator/Headers/Jolt/Core/ARMNeon.h</key>
@@ -21712,7 +21543,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			astPMjxAKARBSsZbI0HVNRlkdArpcwF8VY9PImwOByM=
+			oXnDgR4G+K7qs5TDIy689NKthn45f556tgpgOX8SScA=
 			</data>
 		</dict>
 		<key>xros-arm64_x86_64-simulator/Headers/Jolt/Core/Atomics.h</key>
@@ -21740,14 +21571,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			kHj5hBo3MxCBSZwuyLC8llbOL22O4KtiPPCWTaPUAtE=
+			+C674j5kdYVBUzuoY8o49rSGeYb/4SwjA8gkXjQT+EA=
 			</data>
 		</dict>
 		<key>xros-arm64_x86_64-simulator/Headers/Jolt/Core/Core.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			M+/ltgElkhihGMtFV2njF0rG5FnKETkMtl6TX1vt4JQ=
+			rBLOXbSn5L2nsbr15kMswkzl2hFSWv07ooBR9139euY=
 			</data>
 		</dict>
 		<key>xros-arm64_x86_64-simulator/Headers/Jolt/Core/FPControlWord.h</key>
@@ -21803,7 +21634,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			gpLNRFDiMSRcDW36jT1b5iT6hr7RVCv9tpqkZ1w18BQ=
+			Tto8Mfsn+vbMHQCeroq3x7kCApxqnkGW/cahw5zc4vE=
 			</data>
 		</dict>
 		<key>xros-arm64_x86_64-simulator/Headers/Jolt/Core/InsertionSort.h</key>
@@ -21880,7 +21711,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			nQhjt0V7rIoOJbUxsfX9h+I0FHgdEc6Iy1slF7vW2fU=
+			5711S3UB7cVJd3uun+8tzNyMahZjb61XZuoy6JjGAAQ=
 			</data>
 		</dict>
 		<key>xros-arm64_x86_64-simulator/Headers/Jolt/Core/Mutex.h</key>
@@ -21908,7 +21739,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			/uKDgTejvpVOsXhlSm1/+JY9sMH5+inw2io/hiKnHmg=
+			JPa7kB2lzE1JrWcSHWYst4kPF9dKtTRv19aDVSAVEIk=
 			</data>
 		</dict>
 		<key>xros-arm64_x86_64-simulator/Headers/Jolt/Core/Profiler.inl</key>
@@ -21957,7 +21788,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			QU9B00Zw0QP0vt7KvEQ8NeoqN9ENrgpA+k4Y5OzDafs=
+			/lRhcI+MXSc1nTBUVm4HlaqzXyeXUvSKsmut51IJ2DY=
 			</data>
 		</dict>
 		<key>xros-arm64_x86_64-simulator/Headers/Jolt/Core/STLLocalAllocator.h</key>
@@ -22041,14 +21872,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			7p2mekiMPybAxEwQtjQSAqDQpkRsBI2YAucpuWGYtOo=
+			+aY7OYkJOUXAK5/mXQCWOjFe/NixgB+BMewerYFQkgc=
 			</data>
 		</dict>
 		<key>xros-arm64_x86_64-simulator/Headers/Jolt/Core/TickCounter.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			6KZushE0vgtrEfP0fTLlE7o0Tl+5BKRF6C+CbjbvKJM=
+			c1kdfBePpwyiarIcgxnwonpj8pkFPr4eGK1yXc/OBQY=
 			</data>
 		</dict>
 		<key>xros-arm64_x86_64-simulator/Headers/Jolt/Core/UnorderedMap.h</key>
@@ -22125,7 +21956,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			QcN7z2tm2sUwvCWO9LrVQaAWUvEUUiCTnq1Qabcb3Us=
+			YtE+Cgw2rH2Dd+JBEIVtNN6FtePPGwgrA0pwhzrdErU=
 			</data>
 		</dict>
 		<key>xros-arm64_x86_64-simulator/Headers/Jolt/Geometry/Ellipse.h</key>
@@ -22433,7 +22264,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			l4pY0hvPSGX33Asx+4mPbUb7wN1AsyEq2LjSGuIcMoA=
+			UOYZvaTACRwYQkgI2dI0DnfE9kH2AV4XvNnAwGCmiD0=
 			</data>
 		</dict>
 		<key>xros-arm64_x86_64-simulator/Headers/Jolt/Math/Vec4.h</key>
@@ -22447,7 +22278,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			KsneOBH4KQdQ/yGPU8rkxRldrb40pAqHUG7RfeTMHSA=
+			f2LeKIZhaiMi4HFb3xw7EbQ5/ijXsOGNoNx3lX7XlhQ=
 			</data>
 		</dict>
 		<key>xros-arm64_x86_64-simulator/Headers/Jolt/Math/Vector.h</key>
@@ -22566,7 +22397,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			J9Zakb9xG/uCc9sDSF22IbjYgn2bXb7P6nxFgslLHrg=
+			VkriefLqKntsSntXY2ZLKvcAz+fOmzDXiAuA6UjOwVc=
 			</data>
 		</dict>
 		<key>xros-arm64_x86_64-simulator/Headers/Jolt/Physics/Body/Body.inl</key>
@@ -22594,7 +22425,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			7p5MUsM7VDX42mZDMnPv4n+b4BRputs4LbzhZRYyfNg=
+			eFSEDHpCcPjJIUfXSFewkNDLMJzUBUPiXXBdsnjAauM=
 			</data>
 		</dict>
 		<key>xros-arm64_x86_64-simulator/Headers/Jolt/Physics/Body/BodyFilter.h</key>
@@ -22615,7 +22446,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			+fG0jhAX0XmxsBydexI2Jct1NRdauQH1RNelhBPVY3I=
+			lhh9Sf/Ubn2W4vU9XFBvnDs4XgGaEUm6OXwJ9JlDCdY=
 			</data>
 		</dict>
 		<key>xros-arm64_x86_64-simulator/Headers/Jolt/Physics/Body/BodyLock.h</key>
@@ -22643,7 +22474,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			FR2NMaEgE3xGlqgbzL7/gy5AubU+JO3YAuKcIHpsMeY=
+			IkTDEoamS1nNjIkkfzkhJJhTVj36Bv4sxpu0t+puOHA=
 			</data>
 		</dict>
 		<key>xros-arm64_x86_64-simulator/Headers/Jolt/Physics/Body/BodyPair.h</key>
@@ -22671,7 +22502,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			7RH2XJj2uVP3FJqtlq8eqdE7GXUCWygHd4eUroNhYmg=
+			zQlpJ5lUusoQHBQg9kpa/XQ8rP40WH3Z+k2IyL4hX9M=
 			</data>
 		</dict>
 		<key>xros-arm64_x86_64-simulator/Headers/Jolt/Physics/Body/MotionProperties.inl</key>
@@ -22720,7 +22551,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			WSdgBbX91bzE3ohb97aV7eUi0Y/89Qecrm0ooeBnSag=
+			xJi4uVoBY2+BUbt0zqd67E1fDAx0k7OAgBul21rJee0=
 			</data>
 		</dict>
 		<key>xros-arm64_x86_64-simulator/Headers/Jolt/Physics/Collision/AABoxCast.h</key>
@@ -22755,7 +22586,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ROdCoQ8MvWLkF9hBKY2ystDtZw9cNAjltOnLG5u2KXs=
+			7R2Jk2HAsL/ZedrvIf/RT5rSJeg4uGkro9is+XPWBts=
 			</data>
 		</dict>
 		<key>xros-arm64_x86_64-simulator/Headers/Jolt/Physics/Collision/BroadPhase/BroadPhaseBruteForce.h</key>
@@ -22797,7 +22628,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ozt4tcWYqfrmw6ZCRFoa5k+8u4cJ02wVRyVbBvkOVtg=
+			TIt+UicY9/vnGdTgC62F5mGyvmzkIF1tCIALMBi/91Y=
 			</data>
 		</dict>
 		<key>xros-arm64_x86_64-simulator/Headers/Jolt/Physics/Collision/BroadPhase/ObjectVsBroadPhaseLayerFilterMask.h</key>
@@ -22874,7 +22705,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			fsl5BTpAeBIymwL30Em365rqHp5ocOCXnC1/HGGk7H0=
+			0QFTEw39UICMAz0UtQRRUDJv5I6pxioaB2O116rBuUU=
 			</data>
 		</dict>
 		<key>xros-arm64_x86_64-simulator/Headers/Jolt/Physics/Collision/CollideSoftBodyVertexIterator.h</key>
@@ -22888,7 +22719,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			XBnByBKUFijATs8R4ReC6wVHU+OAlF1L83qeqMf7FzQ=
+			FYOK7wmInklKg3oplWnhY3CZW5xj/zfX5EikM6hPKbs=
 			</data>
 		</dict>
 		<key>xros-arm64_x86_64-simulator/Headers/Jolt/Physics/Collision/CollideSphereVsTriangles.h</key>
@@ -23028,7 +22859,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			3oz9kbbNZNAAVAg93Q2OvNhVg8rICFWDNQt6ze2s4AQ=
+			FKgtCXbOrVSmrdoh+hT/Yxoi/4c8z7UXHAFTujP18/M=
 			</data>
 		</dict>
 		<key>xros-arm64_x86_64-simulator/Headers/Jolt/Physics/Collision/Shape/CapsuleShape.h</key>
@@ -23042,7 +22873,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			cXLQ9isI39fVidBcAgxfSEKxkM7TEdo5SbS6uU5KiJY=
+			AJ3uXikq/SbSi1Ir0lWdyHipHWiPhFFrOR4Gwd5Mrxo=
 			</data>
 		</dict>
 		<key>xros-arm64_x86_64-simulator/Headers/Jolt/Physics/Collision/Shape/CompoundShapeVisitors.h</key>
@@ -23056,7 +22887,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			adEf2IxcLTd3wcRLTunFQwQA9qCDfPdocaCMFNRgx7A=
+			Kg3ug5lhd3QsZQc6pHOcOLd6GOizB+PjIfJ/HfKX8ZQ=
 			</data>
 		</dict>
 		<key>xros-arm64_x86_64-simulator/Headers/Jolt/Physics/Collision/Shape/ConvexShape.h</key>
@@ -23105,7 +22936,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			a0FX9NdUAB5cGe6ttG6oS2TJaLHjQgi+OTzvWJReWvQ=
+			QedCNGl+AP3eHAWSZezPqGnuldCWEtk/qKB+9IK7OQw=
 			</data>
 		</dict>
 		<key>xros-arm64_x86_64-simulator/Headers/Jolt/Physics/Collision/Shape/MutableCompoundShape.h</key>
@@ -23126,7 +22957,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			HcM/fcN0hehQZ3VqN0plvsoSaV+Q3JHmAwDhc/4U5as=
+			5d6pjDxy0+14jT+1tKVyX/P6PFr8jNGutg/yOIX+C+c=
 			</data>
 		</dict>
 		<key>xros-arm64_x86_64-simulator/Headers/Jolt/Physics/Collision/Shape/PolyhedronSubmergedVolumeCalculator.h</key>
@@ -23168,7 +22999,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			hEC2iCgRjNEY9piUeG/foyk1GzExSvxrBRqS+sgu2qM=
+			9pq2nz/ip6SRGieHCZlA6iSXTOgMXktOqmFjbAOsYZE=
 			</data>
 		</dict>
 		<key>xros-arm64_x86_64-simulator/Headers/Jolt/Physics/Collision/Shape/StaticCompoundShape.h</key>
@@ -23252,14 +23083,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			opxyUMV03CQdOmLKRYyNXofmFDqWrAlnUOvb5UYRPlI=
+			McU42Z9w8QG/DrYY9e0xCKCaQKq0RwSkUg+rLLtbVs8=
 			</data>
 		</dict>
 		<key>xros-arm64_x86_64-simulator/Headers/Jolt/Physics/Constraints/CalculateSolverSteps.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			XczbOi36Wuo9QedSWiw+XfXL9PuUAl0ncDR5Y9yysdA=
+			wDJr1Xwqi6ZN0uzUIDywEcdyIBYYsbS0ktb0xBGtATA=
 			</data>
 		</dict>
 		<key>xros-arm64_x86_64-simulator/Headers/Jolt/Physics/Constraints/ConeConstraint.h</key>
@@ -23273,14 +23104,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			KPaUA055QYM+jRqZ0W89mCAkLO6yfrPgSKvJUzHECLs=
+			NlAZWFm3Hka+jBEnZuPqeBjosMvp0+U6/GOEz7ZixGI=
 			</data>
 		</dict>
 		<key>xros-arm64_x86_64-simulator/Headers/Jolt/Physics/Constraints/ConstraintManager.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			/oTDJw04a/EVq0g+Kj7iK7p4zHYJ8hNKP6Qvqt6WN+w=
+			YWR9Dmvhu/miMMakCyuajX9klg8GhlU4FV90f3GCTqc=
 			</data>
 		</dict>
 		<key>xros-arm64_x86_64-simulator/Headers/Jolt/Physics/Constraints/ConstraintPart/AngleConstraintPart.h</key>
@@ -23343,7 +23174,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			0z8Va1k/vRoSa5gkoa4X/T9hyDRtiO8Ew6FSd6rxMMA=
+			sN6VzCX/H4RVnHN3Vf9bVm/rQweSt1eADOthniY+wYw=
 			</data>
 		</dict>
 		<key>xros-arm64_x86_64-simulator/Headers/Jolt/Physics/Constraints/ConstraintPart/RotationQuatConstraintPart.h</key>
@@ -23371,7 +23202,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			J10lv1jGw4/vAB0h0gOIy/gnrfUUMxMQo4YcxYG8k30=
+			tJvHQbFdIdbJuyCBdoesPwYHF4meziNVsiNZ14lYGvI=
 			</data>
 		</dict>
 		<key>xros-arm64_x86_64-simulator/Headers/Jolt/Physics/Constraints/DistanceConstraint.h</key>
@@ -23511,14 +23342,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			C04nEi53maI7Qo+zxBvP1v7/VZ9i83tZ9W5QgDPBOfk=
+			YXkOFqpNis3xydQBkTfNMXef4zcxthhekNZAUDV6HZM=
 			</data>
 		</dict>
 		<key>xros-arm64_x86_64-simulator/Headers/Jolt/Physics/LargeIslandSplitter.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			M3v2ODTQ+/eeziT9FMTlIixr9WcIVv9urtjZLNFEAZc=
+			qwYeKikYLxaI2oc8Vi7LqOX1JGYkmILHXzaL6wl4KSc=
 			</data>
 		</dict>
 		<key>xros-arm64_x86_64-simulator/Headers/Jolt/Physics/PhysicsLock.h</key>
@@ -23553,21 +23384,21 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			VOGISWEluqj4AuNjdPJMvbElwour6TH0wk0zWxQKlnE=
+			OoqpQSDlCGw+pGq6A6ZuCHvjXaKOaoipuRcl9+JhusI=
 			</data>
 		</dict>
 		<key>xros-arm64_x86_64-simulator/Headers/Jolt/Physics/PhysicsUpdateContext.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Lv3FdjzLL9pzmcozpb+SNLUkq+NrT98w86LCoOIzdlI=
+			RK3SyHDopC3w4H1daEKnDZS+HyVvn0gJafQNd9CiBiw=
 			</data>
 		</dict>
 		<key>xros-arm64_x86_64-simulator/Headers/Jolt/Physics/Ragdoll/Ragdoll.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ZEQpBsURSWzgKZwMKp3E72qv+LmrG3d6+lyO3pULNpI=
+			Zox5jlV+yJ2eorWmrco/fEJFxKfX+by86gKwl4lTSEE=
 			</data>
 		</dict>
 		<key>xros-arm64_x86_64-simulator/Headers/Jolt/Physics/SoftBody/SoftBodyContactListener.h</key>
@@ -23581,7 +23412,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ZVY+RL3FN6of4kz2BDObfe+zHsrY5EGgfSrjtMy/VAE=
+			cCOB3imcMg1q7RacFOY6wRXqPqzSNn4PC5qzd8z/rQE=
 			</data>
 		</dict>
 		<key>xros-arm64_x86_64-simulator/Headers/Jolt/Physics/SoftBody/SoftBodyManifold.h</key>
@@ -23609,14 +23440,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			pN6rDxEulgF4rzHJ9H+Hb6D42bTUax/WvJCMSGsi+dk=
+			7mYX1wFEcNDpN1/j+xsq15PzQL6/MHw0UDiz9PGSuZk=
 			</data>
 		</dict>
 		<key>xros-arm64_x86_64-simulator/Headers/Jolt/Physics/SoftBody/SoftBodyUpdateContext.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			njeK3NaEZbAzrc4m95minWUJiVMwb4DtXUewvmillDQ=
+			NmpHb5vtwwH9EUrDENx+ImoK82Rkf9qktvBEqzajV+k=
 			</data>
 		</dict>
 		<key>xros-arm64_x86_64-simulator/Headers/Jolt/Physics/SoftBody/SoftBodyVertex.h</key>
@@ -23665,7 +23496,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			o8hVIrKXHt7amZEGFIfIYJJQ2pJTEjgpd0gh+Om6+hk=
+			+SFyKl7IlJVpDbb1JSs90DhWOC30X/Q0zexKNwcRUsA=
 			</data>
 		</dict>
 		<key>xros-arm64_x86_64-simulator/Headers/Jolt/Physics/Vehicle/VehicleConstraint.h</key>
@@ -23693,7 +23524,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			PpXNszU2CNn68e7Yh/3/0H4VCHvalGqPT7MEJd+W0FI=
+			sRjFnT2NxhqicZNTKq0oKrqAMIVqcZK9p41KfMFDJFI=
 			</data>
 		</dict>
 		<key>xros-arm64_x86_64-simulator/Headers/Jolt/Physics/Vehicle/VehicleTrack.h</key>
@@ -23721,7 +23552,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Cj0E38N0leA8SpwxJEiaMbDL8K5V2JaS4o8qmGKZ0KU=
+			fjpOnUYVqWcWMDaXOLH1qeRhPZeyeSS6IqvyOVnsRrc=
 			</data>
 		</dict>
 		<key>xros-arm64_x86_64-simulator/Headers/Jolt/RegisterTypes.h</key>
@@ -23812,7 +23643,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			IfgrevMbZVTBlQccYl0cQ3M/s4Wtr6/Cf6ek3W1ITyA=
+			kADQ5LWtw5aRmkxNSfkgsmuUV0jLUdK4uGA6PNqudlw=
 			</data>
 		</dict>
 	</dict>

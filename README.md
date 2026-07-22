@@ -18,6 +18,7 @@ This package includes a port of JoltPhysics compiled for Apple platforms, distri
 - Distributed as an **XCFramework** via Swift Package Manager
 - Compatible with **C++17** and higher
 - Ready for integration into C++ projects
+- Compiled with Metal compute support (shaders located in the JoltShaders target)
 
 
 ## Integration

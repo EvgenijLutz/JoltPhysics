@@ -6,16 +6,20 @@ import PackageDescription
 let package = Package(
     name: "JoltPhysics",
     platforms: [
-        .macOS(.v10_13),
-        .iOS(.v12),
-        .tvOS(.v12),
-        //.watchOS(.v8),
-        .visionOS(.v1),
+        .macOS(.v26),
+        .iOS(.v26),
+        .tvOS(.v26),
+        //.watchOS(.v26),
+        .visionOS(.v26),
     ],
     products: [
         .library(
             name: "Jolt",
             targets: ["Jolt"]
+        ),
+        .library(
+            name: "JoltShaders",
+            targets: ["JoltShaders"]
         ),
         .library(
             name: "JoltExample",
@@ -28,9 +32,15 @@ let package = Package(
             path: "Binaries/Jolt.xcframework"
         ),
         .target(
+            // Packaging a Metal renderer
+            // https://developer.apple.com/documentation/technotes/tn3133-packaging-a-renderer
+            name: "JoltShaders",
+        ),
+        .target(
             name: "JoltExample",
             dependencies: [
-                .target(name: "Jolt")
+                .target(name: "Jolt"),
+                .target(name: "JoltShaders")
             ]
         )
 

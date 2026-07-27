@@ -24,6 +24,14 @@ let package = Package(
         .library(
             name: "JoltExample",
             targets: ["JoltExample"]
+        ),
+        .library(
+            name: "JoltPhysicsExtensions",
+            targets: ["JoltPhysicsExtensions"]
+        ),
+        .library(
+            name: "JoltPhysics",
+            targets: ["JoltPhysics"]
         )
     ],
     targets: [
@@ -35,12 +43,33 @@ let package = Package(
             // Packaging a Metal renderer
             // https://developer.apple.com/documentation/technotes/tn3133-packaging-a-renderer
             name: "JoltShaders",
+            dependencies: [
+                .target(name: "Jolt")
+            ]
         ),
         .target(
             name: "JoltExample",
             dependencies: [
                 .target(name: "Jolt"),
                 .target(name: "JoltShaders")
+            ]
+        ),
+        .target(
+            name: "JoltPhysicsExtensions",
+            dependencies: [
+                .target(name: "Jolt"),
+                .target(name: "JoltShaders")
+            ]
+        ),
+        .target(
+            name: "JoltPhysics",
+            dependencies: [
+                .target(name: "Jolt"),
+                .target(name: "JoltShaders"),
+                .target(name: "JoltPhysicsExtensions")
+            ],
+            swiftSettings: [
+                .interoperabilityMode(.Cxx)
             ]
         )
 

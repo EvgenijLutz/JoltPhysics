@@ -101,8 +101,8 @@ kernel void HairUpdateStrands(constant type_gContext& gContext [[buffer(0)]], de
         bool _164;
         if (_158)
         {
-            bool _161 = false;
-            bool _162 = true;
+            //bool _161 = false;
+            //bool _162 = true;
             _164 = _139 == 0u;
         }
         else
@@ -208,8 +208,8 @@ kernel void HairUpdateStrands(constant type_gContext& gContext [[buffer(0)]], de
             bool _286;
             if (_158)
             {
-                bool _283 = false;
-                bool _284 = true;
+                //bool _283 = false;
+                //bool _284 = true;
                 _286 = _266 == 0u;
             }
             else

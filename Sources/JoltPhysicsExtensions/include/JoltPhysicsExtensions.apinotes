@@ -1,0 +1,15 @@
+Name: JoltPhysicsExtensions
+
+Tags:
+- Name: RefTest
+  SwiftImportAs: reference
+  SwiftReleaseOp: RefTestRelease
+  SwiftRetainOp: RefTestRetain
+  
+Namespaces:
+- Name: JPH
+  Tags:
+  - Name: ComputeSystem
+    SwiftImportAs: reference
+    SwiftReleaseOp: ComputeSystemRelease
+    SwiftRetainOp: ComputeSystemRetain

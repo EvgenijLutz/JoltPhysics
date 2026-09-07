@@ -8,3 +8,4 @@
 #pragma once
 
 #include <JoltPhysicsExtensions/JoltUmbrella.hpp>
+#include <JoltPhysicsExtensions/JPHExtensions.hpp>

@@ -1,0 +1,4 @@
+module JoltPhysicsExtensions {
+  umbrella header "JoltPhysicsExtensions/JoltPhysicsExtensions.hpp"
+  export *
+}

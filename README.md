@@ -1,6 +1,6 @@
 #  JoltPhysics
 
-This repository provides a precompiled **JoltPhysics** (built with the Distribution configuration) library packaged as an **XCFramework** for the latest releases of **macOS**, **iOS**, **tvOS**, and **visionOS**.  
+Precompiled [JoltPhysics](https://github.com/jrouwe/JoltPhysics) library (built with the Distribution configuration) packaged as an **XCFramework** for the latest releases of **macOS**, **iOS**, **tvOS**, and **visionOS**.  
 It enables easy integration of the high-performance **Jolt Physics Engine** into native Apple platform projects, including those built with Swift, Objective-C, or C++. Other platforms like Windows, Linux, Android, WASM are expected to be also included in the future when [Binary Static Library Dependencies](https://github.com/swiftlang/swift-evolution/blob/main/proposals/0482-swiftpm-static-library-binary-target-non-apple-platforms.md) will be implemented.
 
 ## About JoltPhysics

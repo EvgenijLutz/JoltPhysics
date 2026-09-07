@@ -59,6 +59,10 @@ let package = Package(
             dependencies: [
                 .target(name: "Jolt"),
                 .target(name: "JoltShaders")
+            ],
+            // If not defined, the modulemap and apinotes will be ignored
+            swiftSettings: [
+                .interoperabilityMode(.Cxx)
             ]
         ),
         .target(

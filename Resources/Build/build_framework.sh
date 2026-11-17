@@ -1,6 +1,10 @@
 #!/bin/bash
 
+# Change SDK versions in this script to SDKs available in current xcode version. Run this command to get the list of available SDKs:
+# xcodebuild -showsdks
+# Build the framework:
 # bash build_framework.sh
+
 
 # Distribute a Metal renderer in a Swift package
 # https://developer.apple.com/documentation/technotes/tn3133-packaging-a-renderer
@@ -12,7 +16,7 @@
 # Exit on any error
 set -e
 
-cd JoltPhysics-5.6.0
+cd JoltPhysics-5.7.0
 
 cd Build
 
@@ -20,19 +24,19 @@ cd Build
 # Build for macOS
 cmake -S . -B XCode_MacOS -GXcode -D"CMAKE_OSX_ARCHITECTURES=x86_64;arm64" -DINTERPROCEDURAL_OPTIMIZATION=OFF -DGENERATE_DEBUG_SYMBOLS=OFF -DJPH_USE_CPU_COMPUTE=OFF -DJPH_USE_DX12=NO -DJPH_USE_VK=NO -DJPH_USE_MTL=ON
 cd XCode_MacOS
-xcodebuild -project JoltPhysics.xcodeproj -target Jolt -configuration Distribution -sdk macosx26.5 MACOSX_DEPLOYMENT_TARGET=26.0
+xcodebuild -project JoltPhysics.xcodeproj -target Jolt -configuration Distribution -sdk macosx27.2 MACOSX_DEPLOYMENT_TARGET=26.0
 cd ..
 
 
 # Build for iOS
 cmake -S . -B XCode_iOS -GXcode -DTARGET_HELLO_WORLD=OFF -DTARGET_PERFORMANCE_TEST=OFF -DCMAKE_SYSTEM_NAME=iOS -DINTERPROCEDURAL_OPTIMIZATION=OFF -DGENERATE_DEBUG_SYMBOLS=OFF -DJPH_USE_CPU_COMPUTE=OFF -DJPH_USE_DX12=NO -DJPH_USE_VK=NO -DJPH_USE_MTL=ON
 cd XCode_iOS
-xcodebuild -project JoltPhysics.xcodeproj -target Jolt -configuration Distribution -sdk iphoneos26.5 IPHONEOS_DEPLOYMENT_TARGET=26.0
-xcodebuild -project JoltPhysics.xcodeproj -target Jolt -configuration Distribution -sdk iphonesimulator26.5 IPHONEOS_DEPLOYMENT_TARGET=26.0
-xcodebuild -project JoltPhysics.xcodeproj -target Jolt -configuration Distribution -sdk appletvos26.5 TVOS_DEPLOYMENT_TARGET=26.0
-xcodebuild -project JoltPhysics.xcodeproj -target Jolt -configuration Distribution -sdk appletvsimulator26.5 TVOS_DEPLOYMENT_TARGET=26.0
-xcodebuild -project JoltPhysics.xcodeproj -target Jolt -configuration Distribution -sdk xros26.5 XROS_DEPLOYMENT_TARGET=26.0
-xcodebuild -project JoltPhysics.xcodeproj -target Jolt -configuration Distribution -sdk xrsimulator26.5 XROS_DEPLOYMENT_TARGET=26.0
+xcodebuild -project JoltPhysics.xcodeproj -target Jolt -configuration Distribution -sdk iphoneos27.2 IPHONEOS_DEPLOYMENT_TARGET=26.0
+xcodebuild -project JoltPhysics.xcodeproj -target Jolt -configuration Distribution -sdk iphonesimulator27.2 IPHONEOS_DEPLOYMENT_TARGET=26.0
+xcodebuild -project JoltPhysics.xcodeproj -target Jolt -configuration Distribution -sdk appletvos27.2 TVOS_DEPLOYMENT_TARGET=26.0
+xcodebuild -project JoltPhysics.xcodeproj -target Jolt -configuration Distribution -sdk appletvsimulator27.2 TVOS_DEPLOYMENT_TARGET=26.0
+xcodebuild -project JoltPhysics.xcodeproj -target Jolt -configuration Distribution -sdk xros27.2 XROS_DEPLOYMENT_TARGET=26.0
+xcodebuild -project JoltPhysics.xcodeproj -target Jolt -configuration Distribution -sdk xrsimulator27.2 XROS_DEPLOYMENT_TARGET=26.0
 cd ..
 
 

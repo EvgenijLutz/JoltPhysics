@@ -7,8 +7,12 @@
 
 #pragma once
 
-#include <JoltPhysicsExtensions/JoltUmbrella.hpp>
+#include "ExtHeaderStart.hpp"
+#include <Jolt/Jolt.h>
+#include <Jolt/Compute/ComputeSystem.h>
+#include <Jolt/Core/STLAllocator.h>
 #include <string>
+#include "ExtHeaderEnd.hpp"
 
 
 #if defined __cplusplus
@@ -27,12 +31,12 @@ public:
 };
 
 
-void RefTestRetain(RefTest* value);
-void RefTestRelease(RefTest* value);
+void RefTestRetain(RefTest* _Nonnull value);
+void RefTestRelease(RefTest* _Nonnull value);
 
 
-void ComputeSystemRetain(JPH::ComputeSystem* computeSystem);
-void ComputeSystemRelease(JPH::ComputeSystem* computeSystem);
+void JoltExt_ComputeSystemRetain(JPH::ComputeSystem* _Nonnull computeSystem);
+void JoltExt_ComputeSystemRelease(JPH::ComputeSystem* _Nonnull computeSystem);
 
 
 namespace JPHExtensions {

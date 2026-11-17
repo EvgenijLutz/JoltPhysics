@@ -30,20 +30,20 @@ void RefTest::Release() {
 }
 
 
-void RefTestRetain(RefTest* value) {
+void RefTestRetain(RefTest* _Nonnull value) {
     value->Retain();
 }
-void RefTestRelease(RefTest* value) {
+void RefTestRelease(RefTest* _Nonnull value) {
     value->Release();
 }
 
 
 
 
-void ComputeSystemRetain(JPH::ComputeSystem* computeSystem) {
+void JoltExt_ComputeSystemRetain(JPH::ComputeSystem* _Nonnull computeSystem) {
     computeSystem->AddRef();
 }
 
-void ComputeSystemRelease(JPH::ComputeSystem* computeSystem) {
+void JoltExt_ComputeSystemRelease(JPH::ComputeSystem* _Nonnull computeSystem) {
     computeSystem->Release();
 }

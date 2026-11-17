@@ -1,3 +1,5 @@
+#pragma clang diagnostic ignored "-Wmissing-prototypes"
+
 #include <metal_stdlib>
 #include <simd/simd.h>
 
@@ -24,6 +26,12 @@ struct type_gContext
     float4 cDeltaTransform[4];
     float4 cScalpToHead[4];
     float4 cDeltaTransformQuat;
+};
+
+struct type_gIterationContext
+{
+    float cAccumulatedDeltaTime;
+    float cIterationFraction;
 };
 
 struct type_StructuredBuffer_v3float
@@ -58,56 +66,89 @@ struct type_RWStructuredBuffer_JPH_HairVelocity
     JPH_HairVelocity _m0[1];
 };
 
-kernel void HairTeleport(constant type_gContext& gContext [[buffer(0)]], device type_StructuredBuffer_v3float& gInitialPositions [[buffer(1)]], device type_StructuredBuffer_uint& gInitialBishops [[buffer(2)]], device type_RWStructuredBuffer_JPH_HairPosition& gPositions [[buffer(3)]], device type_RWStructuredBuffer_JPH_HairVelocity& gVelocities [[buffer(4)]], uint3 gl_GlobalInvocationID [[thread_position_in_grid]])
+struct JPH_HairPosition_1
 {
-    do
+    float3 mPosition;
+    float4 mRotation;
+};
+
+struct JPH_HairVelocity_1
+{
+    float3 mVelocity;
+    float3 mAngularVelocity;
+};
+
+static inline __attribute__((always_inline))
+float4 JPH_QuatDecompress(thread const uint& inValue)
+{
+    // Warning: Unused variable
+    //float cOneOverSqrt2 = 0.707106769084930419921875;
+    uint cNumBits = 9u;
+    uint cMask = 511u;
+    // Warning: Unused variable
+    //uint cMaxValue = 510u;
+    int cHalfMaxValue = 255;
+    float cScale = 0.0027729677967727184295654296875;
+    float3 v3 = float3(float(int(inValue & cMask) - cHalfMaxValue), float(int((inValue >> (cNumBits & 31u)) & cMask) - cHalfMaxValue), float(uint(int(inValue >> ((2u * cNumBits) & 31u))) & cMask) - 255.0) * cScale;
+    float4 v = float4(v3, sqrt(precise::max(1.0 - dot(v3, v3), 0.0)));
+    if ((inValue & 2147483648u) != 0u)
     {
-        if (gl_GlobalInvocationID.x >= gContext.cNumVertices)
+        v = -v;
+    }
+    uint max_element = (inValue >> (29u & 31u)) & 3u;
+    float4 temp_var_ternary;
+    if (max_element == 0u)
+    {
+        temp_var_ternary = v.wxyz;
+    }
+    else
+    {
+        float4 temp_var_ternary_1;
+        if (max_element == 1u)
         {
-            break;
-        }
-        float3 _87 = float3(float(int(gInitialBishops._m0[gl_GlobalInvocationID.x] & 511u) - 255), float(int((gInitialBishops._m0[gl_GlobalInvocationID.x] >> 9u) & 511u) - 255), float((gInitialBishops._m0[gl_GlobalInvocationID.x] >> 18u) & 511u) - 255.0) * 0.0027729677967727184295654296875;
-        float4 _95 = float4(_87, sqrt(precise::max(1.0 - dot(_87, _87), 0.0)));
-        float4 _101;
-        if ((gInitialBishops._m0[gl_GlobalInvocationID.x] & 2147483648u) != 0u)
-        {
-            _101 = -_95;
-        }
-        else
-        {
-            _101 = _95;
-        }
-        uint _103 = (gInitialBishops._m0[gl_GlobalInvocationID.x] >> 29u) & 3u;
-        float4 _121;
-        if (_103 == 0u)
-        {
-            _121 = _101.wxyz;
+            temp_var_ternary_1 = v.xwyz;
         }
         else
         {
-            float4 _120;
-            if (_103 == 1u)
+            float4 temp_var_ternary_2;
+            if (max_element == 2u)
             {
-                _120 = _101.xwyz;
+                temp_var_ternary_2 = v.xywz;
             }
             else
             {
-                float4 _119;
-                if (_103 == 2u)
-                {
-                    _119 = _101.xywz;
-                }
-                else
-                {
-                    _119 = _101;
-                }
-                _120 = _119;
+                temp_var_ternary_2 = v;
             }
-            _121 = _120;
+            temp_var_ternary_1 = temp_var_ternary_2;
         }
-        gPositions._m0[gl_GlobalInvocationID.x] = JPH_HairPosition{ float3(gInitialPositions._m0[gl_GlobalInvocationID.x]), _121 };
-        gVelocities._m0[gl_GlobalInvocationID.x] = JPH_HairVelocity{ float3(0.0), float3(0.0) };
-        break;
-    } while(false);
+        temp_var_ternary = temp_var_ternary_1;
+    }
+    v = temp_var_ternary;
+    return v;
+}
+
+static inline __attribute__((always_inline))
+void src_main(thread const uint3& tid, constant type_gContext& gContext, device type_StructuredBuffer_v3float& gInitialPositions, device type_StructuredBuffer_uint& gInitialBishops, device type_RWStructuredBuffer_JPH_HairPosition& gPositions, device type_RWStructuredBuffer_JPH_HairVelocity& gVelocities)
+{
+    uint vtx = tid.x;
+    if (vtx >= gContext.cNumVertices)
+    {
+        return;
+    }
+    JPH_HairPosition_1 pos;
+    pos.mPosition = float3(gInitialPositions._m0[vtx]);
+    uint param_var_inValue = gInitialBishops._m0[vtx];
+    pos.mRotation = JPH_QuatDecompress(param_var_inValue);
+    gPositions._m0[vtx] = JPH_HairPosition{ pos.mPosition, pos.mRotation };
+    JPH_HairVelocity_1 vel;
+    vel.mVelocity = float3(0.0);
+    vel.mAngularVelocity = float3(0.0);
+    gVelocities._m0[vtx] = JPH_HairVelocity{ vel.mVelocity, vel.mAngularVelocity };
+}
+
+kernel void HairTeleport(constant type_gContext& gContext [[buffer(0)]], device type_StructuredBuffer_v3float& gInitialPositions [[buffer(1)]], device type_StructuredBuffer_uint& gInitialBishops [[buffer(2)]], device type_RWStructuredBuffer_JPH_HairPosition& gPositions [[buffer(3)]], device type_RWStructuredBuffer_JPH_HairVelocity& gVelocities [[buffer(4)]], uint3 gl_GlobalInvocationID [[thread_position_in_grid]])
+{
+    uint3 param_var_tid = gl_GlobalInvocationID;
+    src_main(param_var_tid, gContext, gInitialPositions, gInitialBishops, gPositions, gVelocities);
 }
 

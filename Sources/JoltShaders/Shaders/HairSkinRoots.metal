@@ -1,7 +1,51 @@
+#pragma clang diagnostic ignored "-Wmissing-prototypes"
+#pragma clang diagnostic ignored "-Wmissing-braces"
+
 #include <metal_stdlib>
 #include <simd/simd.h>
 
 using namespace metal;
+
+template<typename T, size_t Num>
+struct spvUnsafeArray
+{
+    T elements[Num ? Num : 1];
+    
+    thread T& operator [] (size_t pos) thread
+    {
+        return elements[pos];
+    }
+    constexpr const thread T& operator [] (size_t pos) const thread
+    {
+        return elements[pos];
+    }
+    
+    device T& operator [] (size_t pos) device
+    {
+        return elements[pos];
+    }
+    constexpr const device T& operator [] (size_t pos) const device
+    {
+        return elements[pos];
+    }
+    
+    constexpr const constant T& operator [] (size_t pos) const constant
+    {
+        return elements[pos];
+    }
+    
+    threadgroup T& operator [] (size_t pos) threadgroup
+    {
+        return elements[pos];
+    }
+    constexpr const threadgroup T& operator [] (size_t pos) const threadgroup
+    {
+        return elements[pos];
+    }
+};
+
+// Warning: Unused variable
+//constant float4 _46 = {};
 
 struct type_gContext
 {
@@ -24,6 +68,12 @@ struct type_gContext
     float4 cDeltaTransform[4];
     float4 cScalpToHead[4];
     float4 cDeltaTransformQuat;
+};
+
+struct type_gIterationContext
+{
+    float cAccumulatedDeltaTime;
+    float cIterationFraction;
 };
 
 struct JPH_HairSkinPoint
@@ -71,174 +121,200 @@ struct type_RWStructuredBuffer_JPH_HairGlobalPoseTransform
     JPH_HairGlobalPoseTransform _m0[1];
 };
 
+struct JPH_HairSkinPoint_1
+{
+    uint mTriangleIndex;
+    float mU;
+    float mV;
+    uint mToBishop;
+};
+
+struct JPH_HairPosition_1
+{
+    float3 mPosition;
+    float4 mRotation;
+};
+
+struct JPH_HairGlobalPoseTransform_1
+{
+    float3 mPosition;
+    float4 mRotation;
+};
+
+static inline __attribute__((always_inline))
+float3 JPH_Mat44Mul3x3Vec3(thread const spvUnsafeArray<float4, 4>& inLHS, thread const float3& inRHS)
+{
+    return ((inLHS[0].xyz * inRHS.x) + (inLHS[1].xyz * inRHS.y)) + (inLHS[2].xyz * inRHS.z);
+}
+
+static inline __attribute__((always_inline))
+float4 JPH_QuatFromMat33(thread const float3& inCol0, thread const float3& inCol1, thread const float3& inCol2)
+{
+    float tr = (inCol0.x + inCol1.y) + inCol2.z;
+    if (tr >= 0.0)
+    {
+        float s = sqrt(tr + 1.0);
+        float is = 0.5 / s;
+        return float4((inCol1.z - inCol2.y) * is, (inCol2.x - inCol0.z) * is, (inCol0.y - inCol1.x) * is, 0.5 * s);
+    }
+    else
+    {
+        bool temp_var_logical = false;
+        if (inCol0.x > inCol1.y)
+        {
+            temp_var_logical = inCol0.x > inCol2.z;
+        }
+        if (temp_var_logical)
+        {
+            float s_1 = sqrt((inCol0.x - (inCol1.y + inCol2.z)) + 1.0);
+            float is_1 = 0.5 / s_1;
+            return float4(0.5 * s_1, (inCol1.x + inCol0.y) * is_1, (inCol0.z + inCol2.x) * is_1, (inCol1.z - inCol2.y) * is_1);
+        }
+        else
+        {
+            if (inCol1.y > inCol2.z)
+            {
+                float s_2 = sqrt((inCol1.y - (inCol2.z + inCol0.x)) + 1.0);
+                float is_2 = 0.5 / s_2;
+                return float4((inCol1.x + inCol0.y) * is_2, 0.5 * s_2, (inCol2.y + inCol1.z) * is_2, (inCol2.x - inCol0.z) * is_2);
+            }
+            else
+            {
+                float s_3 = sqrt((inCol2.z - (inCol0.x + inCol1.y)) + 1.0);
+                float is_3 = 0.5 / s_3;
+                return float4((inCol0.z + inCol2.x) * is_3, (inCol2.y + inCol1.z) * is_3, 0.5 * s_3, (inCol0.y - inCol1.x) * is_3);
+            }
+        }
+    }
+}
+
+static inline __attribute__((always_inline))
+float4 JPH_QuatDecompress(thread const uint& inValue)
+{
+    // Warning: Unused variable
+    //float cOneOverSqrt2 = 0.707106769084930419921875;
+    uint cNumBits = 9u;
+    uint cMask = 511u;
+    // Warning: Unused variable
+    //uint cMaxValue = 510u;
+    int cHalfMaxValue = 255;
+    float cScale = 0.0027729677967727184295654296875;
+    float3 v3 = float3(float(int(inValue & cMask) - cHalfMaxValue), float(int((inValue >> (cNumBits & 31u)) & cMask) - cHalfMaxValue), float(uint(int(inValue >> ((2u * cNumBits) & 31u))) & cMask) - 255.0) * cScale;
+    float4 v = float4(v3, sqrt(precise::max(1.0 - dot(v3, v3), 0.0)));
+    if ((inValue & 2147483648u) != 0u)
+    {
+        v = -v;
+    }
+    uint max_element = (inValue >> (29u & 31u)) & 3u;
+    float4 temp_var_ternary;
+    if (max_element == 0u)
+    {
+        temp_var_ternary = v.wxyz;
+    }
+    else
+    {
+        float4 temp_var_ternary_1;
+        if (max_element == 1u)
+        {
+            temp_var_ternary_1 = v.xwyz;
+        }
+        else
+        {
+            float4 temp_var_ternary_2;
+            if (max_element == 2u)
+            {
+                temp_var_ternary_2 = v.xywz;
+            }
+            else
+            {
+                temp_var_ternary_2 = v;
+            }
+            temp_var_ternary_1 = temp_var_ternary_2;
+        }
+        temp_var_ternary = temp_var_ternary_1;
+    }
+    v = temp_var_ternary;
+    return v;
+}
+
+static inline __attribute__((always_inline))
+float4 JPH_QuatMulQuat(thread const float4& inLHS, thread const float4& inRHS)
+{
+    float x = (((inLHS.w * inRHS.x) + (inLHS.x * inRHS.w)) + (inLHS.y * inRHS.z)) - (inLHS.z * inRHS.y);
+    float y = (((inLHS.w * inRHS.y) - (inLHS.x * inRHS.z)) + (inLHS.y * inRHS.w)) + (inLHS.z * inRHS.x);
+    float z = (((inLHS.w * inRHS.z) + (inLHS.x * inRHS.y)) - (inLHS.y * inRHS.x)) + (inLHS.z * inRHS.w);
+    float w = (((inLHS.w * inRHS.w) - (inLHS.x * inRHS.x)) - (inLHS.y * inRHS.y)) - (inLHS.z * inRHS.z);
+    return float4(x, y, z, w);
+}
+
+static inline __attribute__((always_inline))
+float4 JPH_QuatConjugate(thread const float4& inRotation)
+{
+    return float4(-inRotation.x, -inRotation.y, -inRotation.z, inRotation.w);
+}
+
+static inline __attribute__((always_inline))
+float3 JPH_QuatMulVec3(thread const float4& inLHS, thread const float3& inRHS)
+{
+    float3 v_xyz = inLHS.xyz;
+    float3 v_yzx = inLHS.yzx;
+    float3 q_cross_p = ((inRHS.yzx * v_xyz) - (v_yzx * inRHS)).yzx;
+    float3 q_cross_q_cross_p = ((q_cross_p.yzx * v_xyz) - (v_yzx * q_cross_p)).yzx;
+    float3 v = (q_cross_p * inLHS.w) + q_cross_q_cross_p;
+    return inRHS + (v + v);
+}
+
+static inline __attribute__((always_inline))
+void src_main(thread const uint3& tid, constant type_gContext& gContext, device type_StructuredBuffer_JPH_HairSkinPoint& gSkinPoints, device type_StructuredBuffer_v3float& gScalpVertices, device type_StructuredBuffer_uint& gScalpTriangles, device type_StructuredBuffer_v3float& gInitialPositions, device type_StructuredBuffer_uint& gInitialBishops, device type_RWStructuredBuffer_JPH_HairPosition& gPositions, device type_RWStructuredBuffer_JPH_HairGlobalPoseTransform& gGlobalPoseTransforms)
+{
+    uint strand_idx = tid.x;
+    if (strand_idx >= gContext.cNumStrands)
+    {
+        return;
+    }
+    JPH_HairSkinPoint_1 sp = JPH_HairSkinPoint_1{ gSkinPoints._m0[strand_idx].mTriangleIndex, gSkinPoints._m0[strand_idx].mU, gSkinPoints._m0[strand_idx].mV, gSkinPoints._m0[strand_idx].mToBishop };
+    uint tri_idx = sp.mTriangleIndex * 3u;
+    spvUnsafeArray<float4, 4> _155 = spvUnsafeArray<float4, 4>({ gContext.cScalpToHead[0], gContext.cScalpToHead[1], gContext.cScalpToHead[2], gContext.cScalpToHead[3] });
+    spvUnsafeArray<float4, 4> param_var_inLHS = _155;
+    float3 param_var_inRHS = float3(gScalpVertices._m0[gScalpTriangles._m0[tri_idx + 0u]]);
+    float3 v0 = JPH_Mat44Mul3x3Vec3(param_var_inLHS, param_var_inRHS);
+    spvUnsafeArray<float4, 4> _172 = spvUnsafeArray<float4, 4>({ gContext.cScalpToHead[0], gContext.cScalpToHead[1], gContext.cScalpToHead[2], gContext.cScalpToHead[3] });
+    spvUnsafeArray<float4, 4> param_var_inLHS_1 = _172;
+    float3 param_var_inRHS_1 = float3(gScalpVertices._m0[gScalpTriangles._m0[tri_idx + 1u]]);
+    float3 v1 = JPH_Mat44Mul3x3Vec3(param_var_inLHS_1, param_var_inRHS_1);
+    spvUnsafeArray<float4, 4> _187 = spvUnsafeArray<float4, 4>({ gContext.cScalpToHead[0], gContext.cScalpToHead[1], gContext.cScalpToHead[2], gContext.cScalpToHead[3] });
+    spvUnsafeArray<float4, 4> param_var_inLHS_2 = _187;
+    float3 param_var_inRHS_2 = float3(gScalpVertices._m0[gScalpTriangles._m0[tri_idx + 2u]]);
+    float3 v2 = JPH_Mat44Mul3x3Vec3(param_var_inLHS_2, param_var_inRHS_2);
+    JPH_HairPosition_1 root;
+    root.mPosition = (((v0 * sp.mU) + (v1 * sp.mV)) + (v2 * ((1.0 - sp.mU) - sp.mV))) + gContext.cScalpToHead[3].xyz;
+    float3 tangent = fast::normalize(v1 - v0);
+    float3 normal = fast::normalize(cross(tangent, v2 - v0));
+    float3 binormal = cross(tangent, normal);
+    float3 param_var_inCol0 = normal;
+    float3 param_var_inCol1 = binormal;
+    float3 param_var_inCol2 = tangent;
+    float4 triangle_basis = JPH_QuatFromMat33(param_var_inCol0, param_var_inCol1, param_var_inCol2);
+    float4 param_var_inLHS_3 = triangle_basis;
+    uint param_var_inValue = sp.mToBishop;
+    float4 param_var_inRHS_3 = JPH_QuatDecompress(param_var_inValue);
+    root.mRotation = JPH_QuatMulQuat(param_var_inLHS_3, param_var_inRHS_3);
+    gPositions._m0[strand_idx] = JPH_HairPosition{ root.mPosition, root.mRotation };
+    float4 param_var_inLHS_4 = root.mRotation;
+    uint param_var_inValue_1 = gInitialBishops._m0[strand_idx];
+    float4 param_var_inRotation = JPH_QuatDecompress(param_var_inValue_1);
+    float4 param_var_inRHS_4 = JPH_QuatConjugate(param_var_inRotation);
+    JPH_HairGlobalPoseTransform_1 transform;
+    transform.mRotation = JPH_QuatMulQuat(param_var_inLHS_4, param_var_inRHS_4);
+    float4 param_var_inLHS_5 = transform.mRotation;
+    float3 param_var_inRHS_5 = float3(gInitialPositions._m0[strand_idx]);
+    transform.mPosition = root.mPosition - JPH_QuatMulVec3(param_var_inLHS_5, param_var_inRHS_5);
+    gGlobalPoseTransforms._m0[strand_idx] = JPH_HairGlobalPoseTransform{ transform.mPosition, transform.mRotation };
+}
+
 kernel void HairSkinRoots(constant type_gContext& gContext [[buffer(0)]], device type_StructuredBuffer_JPH_HairSkinPoint& gSkinPoints [[buffer(1)]], device type_StructuredBuffer_v3float& gScalpVertices [[buffer(2)]], device type_StructuredBuffer_uint& gScalpTriangles [[buffer(3)]], device type_StructuredBuffer_v3float& gInitialPositions [[buffer(4)]], device type_StructuredBuffer_uint& gInitialBishops [[buffer(5)]], device type_RWStructuredBuffer_JPH_HairPosition& gPositions [[buffer(6)]], device type_RWStructuredBuffer_JPH_HairGlobalPoseTransform& gGlobalPoseTransforms [[buffer(7)]], uint3 gl_GlobalInvocationID [[thread_position_in_grid]])
 {
-    do
-    {
-        if (gl_GlobalInvocationID.x >= gContext.cNumStrands)
-        {
-            break;
-        }
-        float _86 = gSkinPoints._m0[gl_GlobalInvocationID.x].mU;
-        float _88 = gSkinPoints._m0[gl_GlobalInvocationID.x].mV;
-        uint _91 = gSkinPoints._m0[gl_GlobalInvocationID.x].mTriangleIndex * 3u;
-        float3 _113 = ((gContext.cScalpToHead[0u].xyz * gScalpVertices._m0[gScalpTriangles._m0[_91]][0]) + (gContext.cScalpToHead[1u].xyz * gScalpVertices._m0[gScalpTriangles._m0[_91]][1])) + (gContext.cScalpToHead[2u].xyz * gScalpVertices._m0[gScalpTriangles._m0[_91]][2]);
-        uint _114 = _91 + 1u;
-        float3 _126 = ((gContext.cScalpToHead[0u].xyz * gScalpVertices._m0[gScalpTriangles._m0[_114]][0]) + (gContext.cScalpToHead[1u].xyz * gScalpVertices._m0[gScalpTriangles._m0[_114]][1])) + (gContext.cScalpToHead[2u].xyz * gScalpVertices._m0[gScalpTriangles._m0[_114]][2]);
-        uint _127 = _91 + 2u;
-        float3 _139 = ((gContext.cScalpToHead[0u].xyz * gScalpVertices._m0[gScalpTriangles._m0[_127]][0]) + (gContext.cScalpToHead[1u].xyz * gScalpVertices._m0[gScalpTriangles._m0[_127]][1])) + (gContext.cScalpToHead[2u].xyz * gScalpVertices._m0[gScalpTriangles._m0[_127]][2]);
-        float3 _150 = (((_113 * _86) + (_126 * _88)) + (_139 * ((1.0 - _86) - _88))) + gContext.cScalpToHead[3].xyz;
-        float3 _152 = fast::normalize(_126 - _113);
-        float3 _155 = fast::normalize(cross(_152, _139 - _113));
-        float3 _156 = cross(_152, _155);
-        float4 _253;
-        do
-        {
-            float _159 = _155.x;
-            float _160 = _156.y;
-            float _161 = _159 + _160;
-            float _162 = _152.z;
-            float _163 = _161 + _162;
-            if (_163 >= 0.0)
-            {
-                float _237 = sqrt(_163 + 1.0);
-                float _238 = 0.5 / _237;
-                _253 = float4((_156.z - _152.y) * _238, (_152.x - _155.z) * _238, (_155.y - _156.x) * _238, 0.5 * _237);
-                break;
-            }
-            else
-            {
-                bool _172;
-                if (_159 > _160)
-                {
-                    _172 = _159 > _162;
-                }
-                else
-                {
-                    _172 = false;
-                }
-                if (_172)
-                {
-                    float _220 = sqrt((_159 - (_160 + _162)) + 1.0);
-                    float _221 = 0.5 / _220;
-                    _253 = float4(0.5 * _220, (_156.x + _155.y) * _221, (_155.z + _152.x) * _221, (_156.z - _152.y) * _221);
-                    break;
-                }
-                else
-                {
-                    if (_160 > _162)
-                    {
-                        float _201 = sqrt((_160 - (_162 + _159)) + 1.0);
-                        float _202 = 0.5 / _201;
-                        _253 = float4((_156.x + _155.y) * _202, 0.5 * _201, (_152.y + _156.z) * _202, (_152.x - _155.z) * _202);
-                        break;
-                    }
-                    else
-                    {
-                        float _182 = sqrt((_162 - _161) + 1.0);
-                        float _183 = 0.5 / _182;
-                        _253 = float4((_155.z + _152.x) * _183, (_152.y + _156.z) * _183, 0.5 * _182, (_155.y - _156.x) * _183);
-                        break;
-                    }
-                    break; // unreachable workaround
-                }
-                break; // unreachable workaround
-            }
-            break; // unreachable workaround
-        } while(false);
-        float3 _268 = float3(float(int(gSkinPoints._m0[gl_GlobalInvocationID.x].mToBishop & 511u) - 255), float(int((gSkinPoints._m0[gl_GlobalInvocationID.x].mToBishop >> 9u) & 511u) - 255), float((gSkinPoints._m0[gl_GlobalInvocationID.x].mToBishop >> 18u) & 511u) - 255.0) * 0.0027729677967727184295654296875;
-        float4 _276 = float4(_268, sqrt(precise::max(1.0 - dot(_268, _268), 0.0)));
-        float4 _282;
-        if ((gSkinPoints._m0[gl_GlobalInvocationID.x].mToBishop & 2147483648u) != 0u)
-        {
-            _282 = -_276;
-        }
-        else
-        {
-            _282 = _276;
-        }
-        uint _284 = (gSkinPoints._m0[gl_GlobalInvocationID.x].mToBishop >> 29u) & 3u;
-        float4 _302;
-        if (_284 == 0u)
-        {
-            _302 = _282.wxyz;
-        }
-        else
-        {
-            float4 _300;
-            if (_284 == 1u)
-            {
-                _300 = _282.xwyz;
-            }
-            else
-            {
-                float4 _298;
-                if (_284 == 2u)
-                {
-                    _298 = _282.xywz;
-                }
-                else
-                {
-                    _298 = _282;
-                }
-                _300 = _298;
-            }
-            _302 = _300;
-        }
-        float _317 = (((_253.w * _302.x) + (_253.x * _302.w)) + (_253.y * _302.z)) - (_253.z * _302.y);
-        float _324 = (((_253.w * _302.y) - (_253.x * _302.z)) + (_253.y * _302.w)) + (_253.z * _302.x);
-        float _331 = (((_253.w * _302.z) + (_253.x * _302.y)) - (_253.y * _302.x)) + (_253.z * _302.w);
-        float _338 = (((_253.w * _302.w) - (_253.x * _302.x)) - (_253.y * _302.y)) - (_253.z * _302.z);
-        gPositions._m0[gl_GlobalInvocationID.x] = JPH_HairPosition{ _150, float4(_317, _324, _331, _338) };
-        float3 _358 = float3(float(int(gInitialBishops._m0[gl_GlobalInvocationID.x] & 511u) - 255), float(int((gInitialBishops._m0[gl_GlobalInvocationID.x] >> 9u) & 511u) - 255), float((gInitialBishops._m0[gl_GlobalInvocationID.x] >> 18u) & 511u) - 255.0) * 0.0027729677967727184295654296875;
-        float4 _366 = float4(_358, sqrt(precise::max(1.0 - dot(_358, _358), 0.0)));
-        float4 _372;
-        if ((gInitialBishops._m0[gl_GlobalInvocationID.x] & 2147483648u) != 0u)
-        {
-            _372 = -_366;
-        }
-        else
-        {
-            _372 = _366;
-        }
-        uint _374 = (gInitialBishops._m0[gl_GlobalInvocationID.x] >> 29u) & 3u;
-        float4 _392;
-        if (_374 == 0u)
-        {
-            _392 = _372.wxyz;
-        }
-        else
-        {
-            float4 _390;
-            if (_374 == 1u)
-            {
-                _390 = _372.xwyz;
-            }
-            else
-            {
-                float4 _388;
-                if (_374 == 2u)
-                {
-                    _388 = _372.xywz;
-                }
-                else
-                {
-                    _388 = _372;
-                }
-                _390 = _388;
-            }
-            _392 = _390;
-        }
-        float _394 = -_392.x;
-        float _396 = -_392.y;
-        float _398 = -_392.z;
-        float _427 = (((_338 * _392.w) - (_317 * _394)) - (_324 * _396)) - (_331 * _398);
-        float4 _428 = float4((((_338 * _394) + (_317 * _392.w)) + (_324 * _398)) - (_331 * _396), (((_338 * _396) - (_317 * _398)) + (_324 * _392.w)) + (_331 * _394), (((_338 * _398) + (_317 * _396)) - (_324 * _394)) + (_331 * _392.w), _427);
-        float3 _436 = (float3(gInitialPositions._m0[gl_GlobalInvocationID.x][1], gInitialPositions._m0[gl_GlobalInvocationID.x][2], gInitialPositions._m0[gl_GlobalInvocationID.x][0]) * _428.xyz) - (_428.yzx * float3(gInitialPositions._m0[gl_GlobalInvocationID.x]));
-        float3 _437 = _436.yzx;
-        float3 _444 = (_437 * _427) + ((_436.zxy * _428.xyz) - (_428.yzx * _437)).yzx;
-        gGlobalPoseTransforms._m0[gl_GlobalInvocationID.x] = JPH_HairGlobalPoseTransform{ _150 - (float3(gInitialPositions._m0[gl_GlobalInvocationID.x]) + (_444 + _444)), _428 };
-        break;
-    } while(false);
+    uint3 param_var_tid = gl_GlobalInvocationID;
+    src_main(param_var_tid, gContext, gSkinPoints, gScalpVertices, gScalpTriangles, gInitialPositions, gInitialBishops, gPositions, gGlobalPoseTransforms);
 }
 

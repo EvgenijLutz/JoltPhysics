@@ -1,4 +1,4 @@
-// swift-tools-version: 6.3
+// swift-tools-version: 6.4
 // The swift-tools-version declares the minimum version of Swift required to build this package.
 
 import PackageDescription
@@ -9,6 +9,7 @@ let package = Package(
         .macOS(.v26),
         .iOS(.v26),
         .tvOS(.v26),
+        // Does not compile on watchOS :(
         //.watchOS(.v26),
         .visionOS(.v26),
     ],
@@ -59,6 +60,20 @@ let package = Package(
             dependencies: [
                 .target(name: "Jolt"),
                 .target(name: "JoltShaders")
+            ],
+            cSettings: [
+                .enableWarning("all"),
+                .enableWarning("extra"),
+                .enableWarning("implicit-fallthrough"),
+                .enableWarning("int-conversion"),
+                .enableWarning("pointer-to-int-cast")
+            ],
+            cxxSettings: [
+                .enableWarning("all"),
+                .enableWarning("extra"),
+                .enableWarning("implicit-fallthrough"),
+                .enableWarning("int-conversion"),
+                .enableWarning("pointer-to-int-cast")
             ],
             // If not defined, the modulemap and apinotes will be ignored
             swiftSettings: [

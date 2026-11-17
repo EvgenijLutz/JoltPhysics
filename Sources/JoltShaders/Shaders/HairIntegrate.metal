@@ -95,80 +95,73 @@ kernel void HairIntegrate(constant type_gContext& gContext [[buffer(0)]], device
 {
     do
     {
-        uint _92 = gl_GlobalInvocationID.x + gContext.cNumStrands;
-        if (_92 >= gContext.cNumVertices)
+        uint _107 = gl_GlobalInvocationID.x + gContext.cNumStrands;
+        if (_107 >= gContext.cNumVertices)
         {
             break;
         }
-        if ((gVerticesFixed._m0[_92 >> 5u] & (1u << (_92 & 31u))) != 0u)
+        if ((gVerticesFixed._m0[_107 >> 5u] & (1u << (_107 & 31u))) != 0u)
         {
             break;
         }
-        uint _107 = _92 % gContext.cNumStrands;
-        uint _110 = gStrandMaterialIndex._m0[_107 >> 2u];
-        uint _115 = (_110 >> (((_107 & 3u) << 3u) & 31u)) & 255u;
-        float4 _117 = gMaterials._m0[_115].mGravityFactor;
-        float4 _119 = gMaterials._m0[_115].mGridVelocityFactor;
-        uint _121 = gMaterials._m0[_115].mEnableGrid;
-        float _123 = gMaterials._m0[_115].mExpLinearDampingDeltaTime;
-        float _125 = gMaterials._m0[_115].mExpAngularDampingDeltaTime;
-        float _127 = gMaterials._m0[_115].mGridDensityForceFactor;
-        uint _130 = gStrandFractions._m0[_92 >> 2u];
-        float _137 = float((_130 >> (((_92 & 3u) << 3u) & 31u)) & 255u) * 0.0039215688593685626983642578125;
-        float3 _140 = float3(gPositions._m0[_92].mPosition);
-        float4 _142 = float4(gPositions._m0[_92].mRotation);
-        float3 _144 = float3(gVelocities._m0[_92].mVelocity);
-        float3 _146 = float3(gVelocities._m0[_92].mAngularVelocity);
-        gPreviousPositions._m0[_92] = JPH_HairPosition{ _140, _142 };
-        float3 _348;
+        uint _124 = _107 % gContext.cNumStrands;
+        uint _127 = gStrandMaterialIndex._m0[_124 >> 2u];
+        uint _132 = (_127 >> (((_124 & 3u) << 3u) & 31u)) & 255u;
+        float4 _135 = gMaterials._m0[_132].mGravityFactor;
+        float4 _137 = gMaterials._m0[_132].mGridVelocityFactor;
+        uint _139 = gMaterials._m0[_132].mEnableGrid;
+        float _141 = gMaterials._m0[_132].mExpLinearDampingDeltaTime;
+        float _143 = gMaterials._m0[_132].mExpAngularDampingDeltaTime;
+        float _145 = gMaterials._m0[_132].mGridDensityForceFactor;
+        uint _148 = gStrandFractions._m0[_107 >> 2u];
+        float _155 = float((_148 >> (((_107 & 3u) << 3u) & 31u)) & 255u) * 0.0039215688593685626983642578125;
+        float3 _158 = float3(gPositions._m0[_107].mPosition);
+        float4 _160 = float4(gPositions._m0[_107].mRotation);
+        float3 _163 = float3(gVelocities._m0[_107].mVelocity);
+        float3 _165 = float3(gVelocities._m0[_107].mAngularVelocity);
+        gPreviousPositions._m0[_107] = JPH_HairPosition{ _158, _160 };
+        float3 _492;
         do
         {
-            if (_121 == 0u)
+            if (_139 == 0u)
             {
-                _348 = _144;
+                _492 = _163;
                 break;
             }
-            float3 _163 = precise::min(precise::max(_140 - float3(gContext.cGridOffset), float3(0.0)) * float3(gContext.cGridScale), float3(gContext.cGridSizeMin1));
-            uint3 _167 = min(uint3(_163), uint3(gContext.cGridSizeMin2));
-            float3 _169 = _163 - float3(_167);
-            float3 _170 = float3(1.0) - _169;
-            uint _183 = (_167.x + (_167.y * gContext.cGridStride[1])) + (_167.z * gContext.cGridStride[2]);
-            uint _184 = _183 + 1u;
-            uint _186 = _183 + gContext.cGridStride[1];
-            uint _187 = _186 + 1u;
-            float _191 = _170.x;
-            float _192 = _170.y;
-            float _193 = _191 * _192;
-            float _194 = _170.z;
-            float _200 = _169.x;
-            float _201 = _200 * _192;
-            float _208 = _169.y;
-            float _209 = _191 * _208;
-            float _216 = _200 * _208;
-            uint _221 = _183 + gContext.cGridStride[2];
-            float _225 = _169.z;
-            uint _229 = _184 + gContext.cGridStride[2];
-            uint _236 = _186 + gContext.cGridStride[2];
-            uint _243 = _187 + gContext.cGridStride[2];
-            float3 _260 = _144 + ((((((((((gVelocityAndDensity._m0[_183].xyz * (_193 * _194)) + (gVelocityAndDensity._m0[_184].xyz * (_201 * _194))) + (gVelocityAndDensity._m0[_186].xyz * (_209 * _194))) + (gVelocityAndDensity._m0[_187].xyz * (_216 * _194))) + (gVelocityAndDensity._m0[_221].xyz * (_193 * _225))) + (gVelocityAndDensity._m0[_229].xyz * (_201 * _225))) + (gVelocityAndDensity._m0[_236].xyz * (_209 * _225))) + (gVelocityAndDensity._m0[_243].xyz * (_216 * _225))) - _144) * precise::min(_119.w, precise::max(_119.z, _119.y + (_137 * _119.x))));
-            float _265 = ((device float*)&gVelocityAndDensity._m0[_183])[3] - gNeutralDensity._m0[_183];
-            float _270 = ((device float*)&gVelocityAndDensity._m0[_184])[3] - gNeutralDensity._m0[_184];
-            float _275 = ((device float*)&gVelocityAndDensity._m0[_186])[3] - gNeutralDensity._m0[_186];
-            float _280 = ((device float*)&gVelocityAndDensity._m0[_187])[3] - gNeutralDensity._m0[_187];
-            float _285 = ((device float*)&gVelocityAndDensity._m0[_221])[3] - gNeutralDensity._m0[_221];
-            float _290 = ((device float*)&gVelocityAndDensity._m0[_229])[3] - gNeutralDensity._m0[_229];
-            float _295 = ((device float*)&gVelocityAndDensity._m0[_236])[3] - gNeutralDensity._m0[_236];
-            float _300 = ((device float*)&gVelocityAndDensity._m0[_243])[3] - gNeutralDensity._m0[_243];
-            float3 _347 = _260 + ((float3(((((_192 * _194) * (_265 - _270)) + ((_208 * _194) * (_275 - _280))) + ((_192 * _225) * (_285 - _290))) + ((_208 * _225) * (_295 - _300)), ((((_191 * _194) * (_265 - _275)) + ((_200 * _194) * (_270 - _280))) + ((_191 * _225) * (_285 - _295))) + ((_200 * _225) * (_290 - _300)), (((_193 * (_265 - _285)) + (_201 * (_270 - _290))) + (_209 * (_275 - _295))) + (_216 * (_280 - _300))) * _127) * gContext.cDeltaTime);
-            _348 = _347;
+            float3 _182 = precise::min(precise::max(_158 - float3(gContext.cGridOffset), float3(0.0)) * float3(gContext.cGridScale), float3(gContext.cGridSizeMin1));
+            uint3 _186 = min(uint3(_182), uint3(gContext.cGridSizeMin2));
+            float3 _188 = _182 - float3(_186);
+            float3 _96 = _188;
+            float3 _97 = float3(1.0) - _188;
+            uint3 _98 = uint3(gContext.cGridStride);
+            uint3 _99 = _186;
+            uint _205 = (_99.x + (_99.y * gContext.cGridStride[1])) + (_99.z * gContext.cGridStride[2]);
+            uint _206 = _205 + 1u;
+            uint _209 = _205 + _98.y;
+            uint _210 = _209 + 1u;
+            float3 _293 = (((((gVelocityAndDensity._m0[_205].xyz * ((_97.x * _97.y) * _97.z)) + (gVelocityAndDensity._m0[_206].xyz * ((_96.x * _97.y) * _97.z))) + (gVelocityAndDensity._m0[_209].xyz * ((_97.x * _96.y) * _97.z))) + (gVelocityAndDensity._m0[_210].xyz * ((_96.x * _96.y) * _97.z))) + (gVelocityAndDensity._m0[_205 + _98.z].xyz * ((_97.x * _97.y) * _96.z))) + (gVelocityAndDensity._m0[_206 + _98.z].xyz * ((_96.x * _97.y) * _96.z));
+            float4 _100 = _137;
+            float _345 = ((device float*)&gVelocityAndDensity._m0[_205])[3] - gNeutralDensity._m0[_205];
+            float _350 = ((device float*)&gVelocityAndDensity._m0[_206])[3] - gNeutralDensity._m0[_206];
+            float _355 = ((device float*)&gVelocityAndDensity._m0[_209])[3] - gNeutralDensity._m0[_209];
+            float _360 = ((device float*)&gVelocityAndDensity._m0[_210])[3] - gNeutralDensity._m0[_210];
+            uint _363 = _205 + _98.z;
+            float _368 = ((device float*)&gVelocityAndDensity._m0[_363])[3] - gNeutralDensity._m0[_363];
+            uint _371 = _206 + _98.z;
+            float _376 = ((device float*)&gVelocityAndDensity._m0[_371])[3] - gNeutralDensity._m0[_371];
+            uint _379 = _209 + _98.z;
+            float _384 = ((device float*)&gVelocityAndDensity._m0[_379])[3] - gNeutralDensity._m0[_379];
+            uint _387 = _210 + _98.z;
+            float _392 = ((device float*)&gVelocityAndDensity._m0[_387])[3] - gNeutralDensity._m0[_387];
+            float3 _487 = float3(((((_97.y * _97.z) * (_345 - _350)) + ((_96.y * _97.z) * (_355 - _360))) + ((_97.y * _96.z) * (_368 - _376))) + ((_96.y * _96.z) * (_384 - _392)), ((((_97.x * _97.z) * (_345 - _355)) + ((_96.x * _97.z) * (_350 - _360))) + ((_97.x * _96.z) * (_368 - _384))) + ((_96.x * _96.z) * (_376 - _392)), ((((_97.x * _97.y) * (_345 - _368)) + ((_96.x * _97.y) * (_350 - _376))) + ((_97.x * _96.y) * (_355 - _384))) + ((_96.x * _96.y) * (_360 - _392))) * _145;
+            _492 = (_163 + ((((_293 + (gVelocityAndDensity._m0[_209 + _98.z].xyz * ((_97.x * _96.y) * _96.z))) + (gVelocityAndDensity._m0[_210 + _98.z].xyz * ((_96.x * _96.y) * _96.z))) - _163) * precise::min(_100.w, precise::max(_100.z, _100.y + (_155 * _100.x))))) + (_487 * gContext.cDeltaTime);
             break;
         } while(false);
-        float3 _362 = _146 * _125;
-        float _367 = _362.x;
-        float _370 = _362.y;
-        float _374 = _362.z;
-        float _378 = -_367;
-        gPositions._m0[_92] = JPH_HairPosition{ _140 + (((_348 + (float3(gContext.cSubStepGravity) * precise::min(_117.w, precise::max(_117.z, _117.y + (_137 * _117.x))))) * _123) * gContext.cDeltaTime), fast::normalize(_142 + (float4(((_367 * _142.w) + (_370 * _142.z)) - (_374 * _142.y), ((_378 * _142.z) + (_370 * _142.w)) + (_374 * _142.x), ((_367 * _142.y) - (_370 * _142.x)) + (_374 * _142.w), ((_378 * _142.x) - (_370 * _142.y)) - (_374 * _142.z)) * gContext.cHalfDeltaTime)) };
+        float4 _93 = _135;
+        float3 _94 = _165 * _143;
+        float4 _95 = _160;
+        float4 _588 = float4(((_94.x * _95.w) + (_94.y * _95.z)) - (_94.z * _95.y), (((-_94.x) * _95.z) + (_94.y * _95.w)) + (_94.z * _95.x), ((_94.x * _95.y) - (_94.y * _95.x)) + (_94.z * _95.w), (((-_94.x) * _95.x) - (_94.y * _95.y)) - (_94.z * _95.z)) * gContext.cHalfDeltaTime;
+        gPositions._m0[_107] = JPH_HairPosition{ _158 + (((_492 + (float3(gContext.cSubStepGravity) * precise::min(_93.w, precise::max(_93.z, _93.y + (_155 * _93.x))))) * _141) * gContext.cDeltaTime), fast::normalize(_160 + _588) };
         break;
     } while(false);
 }

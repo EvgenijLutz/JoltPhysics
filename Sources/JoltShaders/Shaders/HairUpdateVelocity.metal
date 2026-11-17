@@ -131,151 +131,156 @@ struct type_RWStructuredBuffer_JPH_HairVelocity
     JPH_HairVelocity _m0[1];
 };
 
-constant float _99 = {};
+constant float _107 = {};
 
 kernel void HairUpdateVelocity(constant type_gContext& gContext [[buffer(0)]], constant type_gIterationContext& gIterationContext [[buffer(1)]], device type_StructuredBuffer_uint& gVerticesFixed [[buffer(2)]], device type_StructuredBuffer_uint& gStrandFractions [[buffer(3)]], device type_StructuredBuffer_v3float& gInitialPositions [[buffer(4)]], device type_StructuredBuffer_uint& gInitialBishops [[buffer(5)]], device type_StructuredBuffer_uint& gStrandMaterialIndex [[buffer(6)]], device type_StructuredBuffer_JPH_HairMaterial& gMaterials [[buffer(7)]], device type_StructuredBuffer_JPH_HairPosition& gPreviousPositions [[buffer(8)]], device type_StructuredBuffer_JPH_HairGlobalPoseTransform& gGlobalPoseTransforms [[buffer(9)]], device type_StructuredBuffer_JPH_HairCollisionShape& gCollisionShapes [[buffer(10)]], device type_StructuredBuffer_JPH_HairCollisionPlane& gCollisionPlanes [[buffer(11)]], device type_RWStructuredBuffer_JPH_HairPosition& gPositions [[buffer(12)]], device type_RWStructuredBuffer_JPH_HairVelocity& gVelocities [[buffer(13)]], uint3 gl_GlobalInvocationID [[thread_position_in_grid]])
 {
     do
     {
-        uint _107 = gl_GlobalInvocationID.x + gContext.cNumStrands;
-        if (_107 >= gContext.cNumVertices)
+        uint _125 = gl_GlobalInvocationID.x + gContext.cNumStrands;
+        if (_125 >= gContext.cNumVertices)
         {
             break;
         }
-        if ((gVerticesFixed._m0[_107 >> 5u] & (1u << (_107 & 31u))) != 0u)
+        if ((gVerticesFixed._m0[_125 >> 5u] & (1u << (_125 & 31u))) != 0u)
         {
             break;
         }
-        uint _122 = _107 % gContext.cNumStrands;
-        uint _130 = (gStrandMaterialIndex._m0[_122 >> 2u] >> (((_122 & 3u) << 3u) & 31u)) & 255u;
-        float _154 = float((gStrandFractions._m0[_107 >> 2u] >> (((_107 & 3u) << 3u) & 31u)) & 255u) * 0.0039215688593685626983642578125;
-        float3 _173 = float3(float(int(gInitialBishops._m0[_107] & 511u) - 255), float(int((gInitialBishops._m0[_107] >> 9u) & 511u) - 255), float((gInitialBishops._m0[_107] >> 18u) & 511u) - 255.0) * 0.0027729677967727184295654296875;
-        float4 _181 = float4(_173, sqrt(precise::max(1.0 - dot(_173, _173), 0.0)));
-        float4 _187;
-        if ((gInitialBishops._m0[_107] & 2147483648u) != 0u)
+        uint _142 = _125 % gContext.cNumStrands;
+        uint _150 = (gStrandMaterialIndex._m0[_142 >> 2u] >> (((_142 & 3u) << 3u) & 31u)) & 255u;
+        float _175 = float((gStrandFractions._m0[_125 >> 2u] >> (((_125 & 3u) << 3u) & 31u)) & 255u) * 0.0039215688593685626983642578125;
+        float3 _194 = float3(float(int(gInitialBishops._m0[_125] & 511u) - 255), float(int((gInitialBishops._m0[_125] >> 9u) & 511u) - 255), float((gInitialBishops._m0[_125] >> 18u) & 511u) - 255.0) * 0.0027729677967727184295654296875;
+        float4 _202 = float4(_194, sqrt(precise::max(1.0 - dot(_194, _194), 0.0)));
+        float4 _208;
+        if ((gInitialBishops._m0[_125] & 2147483648u) != 0u)
         {
-            _187 = -_181;
+            _208 = -_202;
         }
         else
         {
-            _187 = _181;
+            _208 = _202;
         }
-        uint _189 = (gInitialBishops._m0[_107] >> 29u) & 3u;
-        float4 _207;
-        if (_189 == 0u)
+        uint _210 = (gInitialBishops._m0[_125] >> 29u) & 3u;
+        float4 _228;
+        if (_210 == 0u)
         {
-            _207 = _187.wxyz;
+            _228 = _208.wxyz;
         }
         else
         {
-            float4 _206;
-            if (_189 == 1u)
+            float4 _227;
+            if (_210 == 1u)
             {
-                _206 = _187.xwyz;
+                _227 = _208.xwyz;
             }
             else
             {
-                float4 _205;
-                if (_189 == 2u)
+                float4 _226;
+                if (_210 == 2u)
                 {
-                    _205 = _187.xywz;
+                    _226 = _208.xywz;
                 }
                 else
                 {
-                    _205 = _187;
+                    _226 = _208;
                 }
-                _206 = _205;
+                _227 = _226;
             }
-            _207 = _206;
+            _228 = _227;
         }
-        float _228 = precise::min(gMaterials._m0[_130].mSkinGlobalPose.w, precise::max(gMaterials._m0[_130].mSkinGlobalPose.z, gMaterials._m0[_130].mSkinGlobalPose.y + (_154 * gMaterials._m0[_130].mSkinGlobalPose.x)));
-        float3 _234 = (float3(gInitialPositions._m0[_107][1], gInitialPositions._m0[_107][2], gInitialPositions._m0[_107][0]) * float3(gGlobalPoseTransforms._m0[_122].mRotation[0], gGlobalPoseTransforms._m0[_122].mRotation[1], gGlobalPoseTransforms._m0[_122].mRotation[2])) - (float3(gGlobalPoseTransforms._m0[_122].mRotation[1], gGlobalPoseTransforms._m0[_122].mRotation[2], gGlobalPoseTransforms._m0[_122].mRotation[0]) * float3(gInitialPositions._m0[_107]));
-        float3 _235 = _234.yzx;
-        float3 _243 = (_235 * gGlobalPoseTransforms._m0[_122].mRotation[3]) + ((_234.zxy * float3(gGlobalPoseTransforms._m0[_122].mRotation[0], gGlobalPoseTransforms._m0[_122].mRotation[1], gGlobalPoseTransforms._m0[_122].mRotation[2])) - (float3(gGlobalPoseTransforms._m0[_122].mRotation[1], gGlobalPoseTransforms._m0[_122].mRotation[2], gGlobalPoseTransforms._m0[_122].mRotation[0]) * _235)).yzx;
-        float _296 = precise::min(gMaterials._m0[_130].mGlobalPose.w, precise::max(gMaterials._m0[_130].mGlobalPose.z, gMaterials._m0[_130].mGlobalPose.y + (_154 * gMaterials._m0[_130].mGlobalPose.x)));
-        float3 _299 = float3(gPositions._m0[_107].mPosition) + (((float3(gInitialPositions._m0[_107]) + (((float3(gGlobalPoseTransforms._m0[_122].mPosition) + (float3(gInitialPositions._m0[_107]) + (_243 + _243))) - float3(gInitialPositions._m0[_107])) * _228)) - float3(gPositions._m0[_107].mPosition)) * _296);
-        float4 _303 = fast::normalize(float4(gPositions._m0[_107].mRotation) + (((_207 + ((float4((((gGlobalPoseTransforms._m0[_122].mRotation[3] * _207.x) + (gGlobalPoseTransforms._m0[_122].mRotation[0] * _207.w)) + (gGlobalPoseTransforms._m0[_122].mRotation[1] * _207.z)) - (gGlobalPoseTransforms._m0[_122].mRotation[2] * _207.y), (((gGlobalPoseTransforms._m0[_122].mRotation[3] * _207.y) - (gGlobalPoseTransforms._m0[_122].mRotation[0] * _207.z)) + (gGlobalPoseTransforms._m0[_122].mRotation[1] * _207.w)) + (gGlobalPoseTransforms._m0[_122].mRotation[2] * _207.x), (((gGlobalPoseTransforms._m0[_122].mRotation[3] * _207.z) + (gGlobalPoseTransforms._m0[_122].mRotation[0] * _207.y)) - (gGlobalPoseTransforms._m0[_122].mRotation[1] * _207.x)) + (gGlobalPoseTransforms._m0[_122].mRotation[2] * _207.w), (((gGlobalPoseTransforms._m0[_122].mRotation[3] * _207.w) - (gGlobalPoseTransforms._m0[_122].mRotation[0] * _207.x)) - (gGlobalPoseTransforms._m0[_122].mRotation[1] * _207.y)) - (gGlobalPoseTransforms._m0[_122].mRotation[2] * _207.z)) - _207) * _228)) - float4(gPositions._m0[_107].mRotation)) * _296));
-        float3 _308 = (_299 - float3(gPreviousPositions._m0[_107].mPosition)) / float3(gContext.cDeltaTime);
-        float _310 = -gPreviousPositions._m0[_107].mRotation[0];
-        float _312 = -gPreviousPositions._m0[_107].mRotation[1];
-        float _314 = -gPreviousPositions._m0[_107].mRotation[2];
-        float _316 = _303.w;
-        float _318 = _303.x;
-        float _321 = _303.y;
-        float _324 = _303.z;
-        float3 _345 = float4((((_316 * _310) + (_318 * gPreviousPositions._m0[_107].mRotation[3])) + (_321 * _314)) - (_324 * _312), (((_316 * _312) - (_318 * _314)) + (_321 * gPreviousPositions._m0[_107].mRotation[3])) + (_324 * _310), (((_316 * _314) + (_318 * _312)) - (_321 * _310)) + (_324 * gPreviousPositions._m0[_107].mRotation[3]), _99).xyz * gContext.cTwoDivDeltaTime;
-        float3 _409;
-        float3 _410;
-        if (gMaterials._m0[_130].mEnableCollision != 0u)
+        float4 _114 = gMaterials._m0[_150].mSkinGlobalPose;
+        float _255 = precise::min(_114.w, precise::max(_114.z, _114.y + (_175 * _114.x)));
+        float4 _115 = float4(gGlobalPoseTransforms._m0[_142].mRotation);
+        float3 _261 = (float3(gInitialPositions._m0[_125][1], gInitialPositions._m0[_125][2], gInitialPositions._m0[_125][0]) * float3(gGlobalPoseTransforms._m0[_142].mRotation[0], gGlobalPoseTransforms._m0[_142].mRotation[1], gGlobalPoseTransforms._m0[_142].mRotation[2])) - (float3(gGlobalPoseTransforms._m0[_142].mRotation[1], gGlobalPoseTransforms._m0[_142].mRotation[2], gGlobalPoseTransforms._m0[_142].mRotation[0]) * float3(gInitialPositions._m0[_125]));
+        float3 _262 = _261.yzx;
+        float3 _271 = (_262 * _115.w) + ((_261.zxy * float3(gGlobalPoseTransforms._m0[_142].mRotation[0], gGlobalPoseTransforms._m0[_142].mRotation[1], gGlobalPoseTransforms._m0[_142].mRotation[2])) - (float3(gGlobalPoseTransforms._m0[_142].mRotation[1], gGlobalPoseTransforms._m0[_142].mRotation[2], gGlobalPoseTransforms._m0[_142].mRotation[0]) * _262)).yzx;
+        float4 _116 = float4(gGlobalPoseTransforms._m0[_142].mRotation);
+        float4 _117 = _228;
+        float4 _371 = float4((((_116.w * _117.x) + (_116.x * _117.w)) + (_116.y * _117.z)) - (_116.z * _117.y), (((_116.w * _117.y) - (_116.x * _117.z)) + (_116.y * _117.w)) + (_116.z * _117.x), (((_116.w * _117.z) + (_116.x * _117.y)) - (_116.y * _117.x)) + (_116.z * _117.w), (((_116.w * _117.w) - (_116.x * _117.x)) - (_116.y * _117.y)) - (_116.z * _117.z)) - _228;
+        float4 _118 = gMaterials._m0[_150].mGlobalPose;
+        float _385 = precise::min(_118.w, precise::max(_118.z, _118.y + (_175 * _118.x)));
+        float3 _388 = float3(gPositions._m0[_125].mPosition) + (((float3(gInitialPositions._m0[_125]) + (((float3(gGlobalPoseTransforms._m0[_142].mPosition) + (float3(gInitialPositions._m0[_125]) + (_271 + _271))) - float3(gInitialPositions._m0[_125])) * _255)) - float3(gPositions._m0[_125].mPosition)) * _385);
+        float4 _392 = fast::normalize(float4(gPositions._m0[_125].mRotation) + (((_228 + (_371 * _255)) - float4(gPositions._m0[_125].mRotation)) * _385));
+        float3 _397 = (_388 - float3(gPreviousPositions._m0[_125].mPosition)) / float3(gContext.cDeltaTime);
+        float4 _109 = _392;
+        float4 _110 = float4(gPreviousPositions._m0[_125].mRotation);
+        float4 _111 = float4(-_110.x, -_110.y, -_110.z, _110.w);
+        float3 _480 = float4((((_109.w * _111.x) + (_109.x * _111.w)) + (_109.y * _111.z)) - (_109.z * _111.y), (((_109.w * _111.y) - (_109.x * _111.z)) + (_109.y * _111.w)) + (_109.z * _111.x), (((_109.w * _111.z) + (_109.x * _111.y)) - (_109.y * _111.x)) + (_109.z * _111.w), _107).xyz;
+        float3 _483 = _480 * gContext.cTwoDivDeltaTime;
+        float3 _557;
+        float3 _558;
+        if (gMaterials._m0[_150].mEnableCollision != 0u)
         {
-            float _356 = dot(_299, float3(gCollisionPlanes._m0[_107].mPlane[0], gCollisionPlanes._m0[_107].mPlane[1], gCollisionPlanes._m0[_107].mPlane[2])) + gCollisionPlanes._m0[_107].mPlane[3];
-            float3 _367 = float3(gCollisionShapes._m0[gCollisionPlanes._m0[_107].mShapeIndex].mLinearVelocity) + cross(float3(gCollisionShapes._m0[gCollisionPlanes._m0[_107].mShapeIndex].mAngularVelocity), (_299 - (float3(gCollisionPlanes._m0[_107].mPlane[0], gCollisionPlanes._m0[_107].mPlane[1], gCollisionPlanes._m0[_107].mPlane[2]) * _356)) - float3(gCollisionShapes._m0[gCollisionPlanes._m0[_107].mShapeIndex].mCenterOfMass));
-            float _381 = ((dot(_367, float3(gCollisionPlanes._m0[_107].mPlane[0], gCollisionPlanes._m0[_107].mPlane[1], gCollisionPlanes._m0[_107].mPlane[2])) * gIterationContext.cAccumulatedDeltaTime) - _356) + precise::min(gMaterials._m0[_130].mHairRadius.w, precise::max(gMaterials._m0[_130].mHairRadius.z, gMaterials._m0[_130].mHairRadius.y + (_154 * gMaterials._m0[_130].mHairRadius.x)));
-            float3 _407;
-            float3 _408;
-            if (_381 > 0.0)
+            float4 _112 = float4(gCollisionPlanes._m0[_125].mPlane);
+            float _496 = dot(_388, float3(gCollisionPlanes._m0[_125].mPlane[0], gCollisionPlanes._m0[_125].mPlane[1], gCollisionPlanes._m0[_125].mPlane[2])) + _112.w;
+            float3 _509 = float3(gCollisionShapes._m0[gCollisionPlanes._m0[_125].mShapeIndex].mLinearVelocity) + cross(float3(gCollisionShapes._m0[gCollisionPlanes._m0[_125].mShapeIndex].mAngularVelocity), (_388 - (float3(gCollisionPlanes._m0[_125].mPlane[0], gCollisionPlanes._m0[_125].mPlane[1], gCollisionPlanes._m0[_125].mPlane[2]) * _496)) - float3(gCollisionShapes._m0[gCollisionPlanes._m0[_125].mShapeIndex].mCenterOfMass));
+            float4 _113 = gMaterials._m0[_150].mHairRadius;
+            float _527 = ((dot(_509, float3(gCollisionPlanes._m0[_125].mPlane[0], gCollisionPlanes._m0[_125].mPlane[1], gCollisionPlanes._m0[_125].mPlane[2])) * gIterationContext.cAccumulatedDeltaTime) - _496) + precise::min(_113.w, precise::max(_113.z, _113.y + (_175 * _113.x)));
+            float3 _555;
+            float3 _556;
+            if (_527 > 0.0)
             {
-                float3 _387 = _308 - _367;
-                float _388 = dot(float3(gCollisionPlanes._m0[_107].mPlane[0], gCollisionPlanes._m0[_107].mPlane[1], gCollisionPlanes._m0[_107].mPlane[2]), _387);
-                float3 _406;
-                if (_388 < 0.0)
+                float3 _533 = _397 - _509;
+                float _534 = dot(float3(gCollisionPlanes._m0[_125].mPlane[0], gCollisionPlanes._m0[_125].mPlane[1], gCollisionPlanes._m0[_125].mPlane[2]), _533);
+                float3 _554;
+                if (_534 < 0.0)
                 {
-                    float3 _392 = float3(gCollisionPlanes._m0[_107].mPlane[0], gCollisionPlanes._m0[_107].mPlane[1], gCollisionPlanes._m0[_107].mPlane[2]) * _388;
-                    float3 _393 = _387 - _392;
-                    float _394 = length(_393);
-                    float3 _404;
-                    if (_394 > 0.0)
+                    float3 _538 = float3(gCollisionPlanes._m0[_125].mPlane[0], gCollisionPlanes._m0[_125].mPlane[1], gCollisionPlanes._m0[_125].mPlane[2]) * _534;
+                    float3 _539 = _533 - _538;
+                    float _540 = length(_539);
+                    float3 _552;
+                    if (_540 > 0.0)
                     {
-                        _404 = _308 - (_393 * precise::min((gMaterials._m0[_130].mFriction * _381) / (_394 * gContext.cDeltaTime), 1.0));
+                        _552 = _397 - (_539 * precise::min((gMaterials._m0[_150].mFriction * _527) / (_540 * gContext.cDeltaTime), 1.0));
                     }
                     else
                     {
-                        _404 = _308;
+                        _552 = _397;
                     }
-                    _406 = _404 - _392;
+                    _554 = _552 - _538;
                 }
                 else
                 {
-                    _406 = _308;
+                    _554 = _397;
                 }
-                _407 = _299 + (float3(gCollisionPlanes._m0[_107].mPlane[0], gCollisionPlanes._m0[_107].mPlane[1], gCollisionPlanes._m0[_107].mPlane[2]) * _381);
-                _408 = _406;
+                _555 = _388 + (float3(gCollisionPlanes._m0[_125].mPlane[0], gCollisionPlanes._m0[_125].mPlane[1], gCollisionPlanes._m0[_125].mPlane[2]) * _527);
+                _556 = _554;
             }
             else
             {
-                _407 = _299;
-                _408 = _308;
+                _555 = _388;
+                _556 = _397;
             }
-            _409 = _407;
-            _410 = _408;
+            _557 = _555;
+            _558 = _556;
         }
         else
         {
-            _409 = _299;
-            _410 = _308;
+            _557 = _388;
+            _558 = _397;
         }
-        float _411 = dot(_410, _410);
-        float3 _418;
-        if (_411 > gMaterials._m0[_130].mMaxLinearVelocitySq)
+        float _559 = dot(_558, _558);
+        float3 _566;
+        if (_559 > gMaterials._m0[_150].mMaxLinearVelocitySq)
         {
-            _418 = _410 * sqrt(gMaterials._m0[_130].mMaxLinearVelocitySq / _411);
+            _566 = _558 * sqrt(gMaterials._m0[_150].mMaxLinearVelocitySq / _559);
         }
         else
         {
-            _418 = _410;
+            _566 = _558;
         }
-        float _419 = dot(_345, _345);
-        float3 _426;
-        if (_419 > gMaterials._m0[_130].mMaxAngularVelocitySq)
+        float _567 = dot(_483, _483);
+        float3 _574;
+        if (_567 > gMaterials._m0[_150].mMaxAngularVelocitySq)
         {
-            _426 = _345 * sqrt(gMaterials._m0[_130].mMaxAngularVelocitySq / _419);
+            _574 = _483 * sqrt(gMaterials._m0[_150].mMaxAngularVelocitySq / _567);
         }
         else
         {
-            _426 = _345;
+            _574 = _483;
         }
-        gPositions._m0[_107] = JPH_HairPosition{ _409, _303 };
-        gVelocities._m0[_107] = JPH_HairVelocity{ _418, _426 };
+        gPositions._m0[_125] = JPH_HairPosition{ _557, _392 };
+        gVelocities._m0[_125] = JPH_HairVelocity{ _566, _574 };
         break;
     } while(false);
 }

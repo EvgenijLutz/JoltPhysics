@@ -7,16 +7,7 @@
 
 #pragma once
 
-#if !defined NDEBUG
-# define undef_NDEBUG // undef NDEBUG at the end of the file
-# define NDEBUG
-#endif
-
-#if !defined JPH_OBJECT_STREAM
-# define JPH_OBJECT_STREAM
-#endif
-
-#define JPH_USE_MTL 1
+#include "ExtHeaderStart.hpp"
 
 
 #include <Jolt/Jolt.h>
@@ -157,12 +148,13 @@
 //#include <Jolt/Compute/ComputeShader.h>
 #endif
 
-#if defined(JPH_USE_MTL)
-//#include <Jolt/Compute/MTL/ComputeBufferMTL.h>
-//#include <Jolt/Compute/MTL/ComputeSystemMTL.h>
-//#include <Jolt/Compute/MTL/ComputeSystemMTLImpl.h>
-//#include <Jolt/Compute/MTL/ComputeShaderMTL.h>
-//#include <Jolt/Compute/MTL/ComputeQueueMTL.h>
+// Jolt was compiled with ARC disabled in Objective-C code
+#if defined(JPH_USE_MTL) && defined(__OBJC__) && (!__has_feature(objc_arc))
+#include <Jolt/Compute/MTL/ComputeBufferMTL.h>
+#include <Jolt/Compute/MTL/ComputeSystemMTL.h>
+#include <Jolt/Compute/MTL/ComputeSystemMTLImpl.h>
+#include <Jolt/Compute/MTL/ComputeShaderMTL.h>
+#include <Jolt/Compute/MTL/ComputeQueueMTL.h>
 #endif
 
 #include <Jolt/Physics/Hair/Hair.h>
@@ -454,7 +446,4 @@
 #endif
 
 
-#if defined undef_NDEBUG
-#  undef undef_NDEBUG
-#  undef NDEBUG
-#endif
+#include "ExtHeaderEnd.hpp"

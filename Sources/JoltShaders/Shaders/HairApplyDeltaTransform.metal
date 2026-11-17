@@ -85,27 +85,26 @@ kernel void HairApplyDeltaTransform(constant type_gContext& gContext [[buffer(0)
 {
     do
     {
-        uint _67 = gl_GlobalInvocationID.x + gContext.cNumStrands;
-        if (_67 >= gContext.cNumVertices)
+        uint _80 = gl_GlobalInvocationID.x + gContext.cNumStrands;
+        if (_80 >= gContext.cNumVertices)
         {
             break;
         }
-        if ((gVerticesFixed._m0[_67 >> 5u] & (1u << (_67 & 31u))) != 0u)
+        if ((gVerticesFixed._m0[_80 >> 5u] & (1u << (_80 & 31u))) != 0u)
         {
             break;
         }
-        uint _82 = _67 % gContext.cNumStrands;
-        uint _90 = (gStrandMaterialIndex._m0[_82 >> 2u] >> (((_82 & 3u) << 3u) & 31u)) & 255u;
-        float3 _110 = float3(gVelocities._m0[_67].mVelocity);
-        float3 _112 = float3(gVelocities._m0[_67].mAngularVelocity);
-        float _120 = precise::min(gMaterials._m0[_90].mWorldTransformInfluence.w, precise::max(gMaterials._m0[_90].mWorldTransformInfluence.z, gMaterials._m0[_90].mWorldTransformInfluence.y + ((float((gStrandFractions._m0[_67 >> 2u] >> (((_67 & 3u) << 3u) & 31u)) & 255u) * 0.0039215688593685626983642578125) * gMaterials._m0[_90].mWorldTransformInfluence.x)));
-        float4 _150 = (gContext.cDeltaTransformQuat * _120) + float4(0.0, 0.0, 0.0, 1.0 - _120);
-        float _151 = _150.w;
-        float _154 = _150.x;
-        float _158 = _150.y;
-        float _162 = _150.z;
-        gPositions._m0[_67] = JPH_HairPosition{ float3(gPositions._m0[_67].mPosition) + ((((((gContext.cDeltaTransform[0u].xyz * gPositions._m0[_67].mPosition[0]) + (gContext.cDeltaTransform[1u].xyz * gPositions._m0[_67].mPosition[1])) + (gContext.cDeltaTransform[2u].xyz * gPositions._m0[_67].mPosition[2])) + gContext.cDeltaTransform[3u].xyz) - float3(gPositions._m0[_67].mPosition)) * _120), fast::normalize(float4((((_151 * gPositions._m0[_67].mRotation[0]) + (_154 * gPositions._m0[_67].mRotation[3])) + (_158 * gPositions._m0[_67].mRotation[2])) - (_162 * gPositions._m0[_67].mRotation[1]), (((_151 * gPositions._m0[_67].mRotation[1]) - (_154 * gPositions._m0[_67].mRotation[2])) + (_158 * gPositions._m0[_67].mRotation[3])) + (_162 * gPositions._m0[_67].mRotation[0]), (((_151 * gPositions._m0[_67].mRotation[2]) + (_154 * gPositions._m0[_67].mRotation[1])) - (_158 * gPositions._m0[_67].mRotation[0])) + (_162 * gPositions._m0[_67].mRotation[3]), (((_151 * gPositions._m0[_67].mRotation[3]) - (_154 * gPositions._m0[_67].mRotation[0])) - (_158 * gPositions._m0[_67].mRotation[1])) - (_162 * gPositions._m0[_67].mRotation[2]))) };
-        gVelocities._m0[_67] = JPH_HairVelocity{ ((gContext.cDeltaTransform[0u].xyz * _110.x) + (gContext.cDeltaTransform[1u].xyz * _110.y)) + (gContext.cDeltaTransform[2u].xyz * _110.z), ((gContext.cDeltaTransform[0u].xyz * _112.x) + (gContext.cDeltaTransform[1u].xyz * _112.y)) + (gContext.cDeltaTransform[2u].xyz * _112.z) };
+        uint _97 = _80 % gContext.cNumStrands;
+        float4 _68 = gMaterials._m0[(gStrandMaterialIndex._m0[_97 >> 2u] >> (((_97 & 3u) << 3u) & 31u)) & 255u].mWorldTransformInfluence;
+        float _140 = precise::min(_68.w, precise::max(_68.z, _68.y + ((float((gStrandFractions._m0[_80 >> 2u] >> (((_80 & 3u) << 3u) & 31u)) & 255u) * 0.0039215688593685626983642578125) * _68.x)));
+        float3 _69 = float3(gPositions._m0[_80].mPosition);
+        float4 _70 = (gContext.cDeltaTransformQuat * _140) + float4(0.0, 0.0, 0.0, 1.0 - _140);
+        float4 _71 = float4(gPositions._m0[_80].mRotation);
+        float4 _268 = fast::normalize(float4((((_70.w * _71.x) + (_70.x * _71.w)) + (_70.y * _71.z)) - (_70.z * _71.y), (((_70.w * _71.y) - (_70.x * _71.z)) + (_70.y * _71.w)) + (_70.z * _71.x), (((_70.w * _71.z) + (_70.x * _71.y)) - (_70.y * _71.x)) + (_70.z * _71.w), (((_70.w * _71.w) - (_70.x * _71.x)) - (_70.y * _71.y)) - (_70.z * _71.z)));
+        float3 _72 = float3(gVelocities._m0[_80].mVelocity);
+        float3 _73 = float3(gVelocities._m0[_80].mAngularVelocity);
+        gPositions._m0[_80] = JPH_HairPosition{ float3(gPositions._m0[_80].mPosition) + ((((((gContext.cDeltaTransform[0u].xyz * _69.x) + (gContext.cDeltaTransform[1u].xyz * _69.y)) + (gContext.cDeltaTransform[2u].xyz * _69.z)) + gContext.cDeltaTransform[3u].xyz) - float3(gPositions._m0[_80].mPosition)) * _140), _268 };
+        gVelocities._m0[_80] = JPH_HairVelocity{ ((gContext.cDeltaTransform[0u].xyz * _72.x) + (gContext.cDeltaTransform[1u].xyz * _72.y)) + (gContext.cDeltaTransform[2u].xyz * _72.z), ((gContext.cDeltaTransform[0u].xyz * _73.x) + (gContext.cDeltaTransform[1u].xyz * _73.y)) + (gContext.cDeltaTransform[2u].xyz * _73.z) };
         break;
     } while(false);
 }

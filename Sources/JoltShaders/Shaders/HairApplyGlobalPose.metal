@@ -90,63 +90,69 @@ kernel void HairApplyGlobalPose(constant type_gContext& gContext [[buffer(0)]], 
 {
     do
     {
-        uint _78 = gl_GlobalInvocationID.x + gContext.cNumStrands;
-        if (_78 >= gContext.cNumVertices)
+        uint _89 = gl_GlobalInvocationID.x + gContext.cNumStrands;
+        if (_89 >= gContext.cNumVertices)
         {
             break;
         }
-        if ((gVerticesFixed._m0[_78 >> 5u] & (1u << (_78 & 31u))) != 0u)
+        if ((gVerticesFixed._m0[_89 >> 5u] & (1u << (_89 & 31u))) != 0u)
         {
             break;
         }
-        uint _93 = _78 % gContext.cNumStrands;
-        uint _101 = (gStrandMaterialIndex._m0[_93 >> 2u] >> (((_93 & 3u) << 3u) & 31u)) & 255u;
-        float _115 = float((gStrandFractions._m0[_78 >> 2u] >> (((_78 & 3u) << 3u) & 31u)) & 255u) * 0.0039215688593685626983642578125;
-        float3 _134 = float3(float(int(gInitialBishops._m0[_78] & 511u) - 255), float(int((gInitialBishops._m0[_78] >> 9u) & 511u) - 255), float((gInitialBishops._m0[_78] >> 18u) & 511u) - 255.0) * 0.0027729677967727184295654296875;
-        float4 _142 = float4(_134, sqrt(precise::max(1.0 - dot(_134, _134), 0.0)));
-        float4 _148;
-        if ((gInitialBishops._m0[_78] & 2147483648u) != 0u)
+        uint _106 = _89 % gContext.cNumStrands;
+        uint _114 = (gStrandMaterialIndex._m0[_106 >> 2u] >> (((_106 & 3u) << 3u) & 31u)) & 255u;
+        float _129 = float((gStrandFractions._m0[_89 >> 2u] >> (((_89 & 3u) << 3u) & 31u)) & 255u) * 0.0039215688593685626983642578125;
+        float3 _148 = float3(float(int(gInitialBishops._m0[_89] & 511u) - 255), float(int((gInitialBishops._m0[_89] >> 9u) & 511u) - 255), float((gInitialBishops._m0[_89] >> 18u) & 511u) - 255.0) * 0.0027729677967727184295654296875;
+        float4 _156 = float4(_148, sqrt(precise::max(1.0 - dot(_148, _148), 0.0)));
+        float4 _162;
+        if ((gInitialBishops._m0[_89] & 2147483648u) != 0u)
         {
-            _148 = -_142;
+            _162 = -_156;
         }
         else
         {
-            _148 = _142;
+            _162 = _156;
         }
-        uint _150 = (gInitialBishops._m0[_78] >> 29u) & 3u;
-        float4 _168;
-        if (_150 == 0u)
+        uint _164 = (gInitialBishops._m0[_89] >> 29u) & 3u;
+        float4 _182;
+        if (_164 == 0u)
         {
-            _168 = _148.wxyz;
+            _182 = _162.wxyz;
         }
         else
         {
-            float4 _167;
-            if (_150 == 1u)
+            float4 _181;
+            if (_164 == 1u)
             {
-                _167 = _148.xwyz;
+                _181 = _162.xwyz;
             }
             else
             {
-                float4 _166;
-                if (_150 == 2u)
+                float4 _180;
+                if (_164 == 2u)
                 {
-                    _166 = _148.xywz;
+                    _180 = _162.xywz;
                 }
                 else
                 {
-                    _166 = _148;
+                    _180 = _162;
                 }
-                _167 = _166;
+                _181 = _180;
             }
-            _168 = _167;
+            _182 = _181;
         }
-        float _180 = precise::min(gMaterials._m0[_101].mSkinGlobalPose.w, precise::max(gMaterials._m0[_101].mSkinGlobalPose.z, gMaterials._m0[_101].mSkinGlobalPose.y + (_115 * gMaterials._m0[_101].mSkinGlobalPose.x)));
-        float3 _186 = (float3(gInitialPositions._m0[_78][1], gInitialPositions._m0[_78][2], gInitialPositions._m0[_78][0]) * float3(gGlobalPoseTransforms._m0[_93].mRotation[0], gGlobalPoseTransforms._m0[_93].mRotation[1], gGlobalPoseTransforms._m0[_93].mRotation[2])) - (float3(gGlobalPoseTransforms._m0[_93].mRotation[1], gGlobalPoseTransforms._m0[_93].mRotation[2], gGlobalPoseTransforms._m0[_93].mRotation[0]) * float3(gInitialPositions._m0[_78]));
-        float3 _187 = _186.yzx;
-        float3 _195 = (_187 * gGlobalPoseTransforms._m0[_93].mRotation[3]) + ((_186.zxy * float3(gGlobalPoseTransforms._m0[_93].mRotation[0], gGlobalPoseTransforms._m0[_93].mRotation[1], gGlobalPoseTransforms._m0[_93].mRotation[2])) - (float3(gGlobalPoseTransforms._m0[_93].mRotation[1], gGlobalPoseTransforms._m0[_93].mRotation[2], gGlobalPoseTransforms._m0[_93].mRotation[0]) * _187)).yzx;
-        float _248 = precise::min(gMaterials._m0[_101].mGlobalPose.w, precise::max(gMaterials._m0[_101].mGlobalPose.z, gMaterials._m0[_101].mGlobalPose.y + (_115 * gMaterials._m0[_101].mGlobalPose.x)));
-        gPositions._m0[_78] = JPH_HairPosition{ (float3(gInitialPositions._m0[_78]) + (((float3(gGlobalPoseTransforms._m0[_93].mPosition) + (float3(gInitialPositions._m0[_78]) + (_195 + _195))) - float3(gInitialPositions._m0[_78])) * _180)) * _248, fast::normalize((_168 + ((float4((((gGlobalPoseTransforms._m0[_93].mRotation[3] * _168.x) + (gGlobalPoseTransforms._m0[_93].mRotation[0] * _168.w)) + (gGlobalPoseTransforms._m0[_93].mRotation[1] * _168.z)) - (gGlobalPoseTransforms._m0[_93].mRotation[2] * _168.y), (((gGlobalPoseTransforms._m0[_93].mRotation[3] * _168.y) - (gGlobalPoseTransforms._m0[_93].mRotation[0] * _168.z)) + (gGlobalPoseTransforms._m0[_93].mRotation[1] * _168.w)) + (gGlobalPoseTransforms._m0[_93].mRotation[2] * _168.x), (((gGlobalPoseTransforms._m0[_93].mRotation[3] * _168.z) + (gGlobalPoseTransforms._m0[_93].mRotation[0] * _168.y)) - (gGlobalPoseTransforms._m0[_93].mRotation[1] * _168.x)) + (gGlobalPoseTransforms._m0[_93].mRotation[2] * _168.w), (((gGlobalPoseTransforms._m0[_93].mRotation[3] * _168.w) - (gGlobalPoseTransforms._m0[_93].mRotation[0] * _168.x)) - (gGlobalPoseTransforms._m0[_93].mRotation[1] * _168.y)) - (gGlobalPoseTransforms._m0[_93].mRotation[2] * _168.z)) - _168) * _180)) * _248) };
+        float4 _78 = gMaterials._m0[_114].mSkinGlobalPose;
+        float _199 = precise::min(_78.w, precise::max(_78.z, _78.y + (_129 * _78.x)));
+        float4 _79 = float4(gGlobalPoseTransforms._m0[_106].mRotation);
+        float3 _205 = (float3(gInitialPositions._m0[_89][1], gInitialPositions._m0[_89][2], gInitialPositions._m0[_89][0]) * float3(gGlobalPoseTransforms._m0[_106].mRotation[0], gGlobalPoseTransforms._m0[_106].mRotation[1], gGlobalPoseTransforms._m0[_106].mRotation[2])) - (float3(gGlobalPoseTransforms._m0[_106].mRotation[1], gGlobalPoseTransforms._m0[_106].mRotation[2], gGlobalPoseTransforms._m0[_106].mRotation[0]) * float3(gInitialPositions._m0[_89]));
+        float3 _206 = _205.yzx;
+        float3 _215 = (_206 * _79.w) + ((_205.zxy * float3(gGlobalPoseTransforms._m0[_106].mRotation[0], gGlobalPoseTransforms._m0[_106].mRotation[1], gGlobalPoseTransforms._m0[_106].mRotation[2])) - (float3(gGlobalPoseTransforms._m0[_106].mRotation[1], gGlobalPoseTransforms._m0[_106].mRotation[2], gGlobalPoseTransforms._m0[_106].mRotation[0]) * _206)).yzx;
+        float4 _80 = float4(gGlobalPoseTransforms._m0[_106].mRotation);
+        float4 _81 = _182;
+        float4 _315 = float4((((_80.w * _81.x) + (_80.x * _81.w)) + (_80.y * _81.z)) - (_80.z * _81.y), (((_80.w * _81.y) - (_80.x * _81.z)) + (_80.y * _81.w)) + (_80.z * _81.x), (((_80.w * _81.z) + (_80.x * _81.y)) - (_80.y * _81.x)) + (_80.z * _81.w), (((_80.w * _81.w) - (_80.x * _81.x)) - (_80.y * _81.y)) - (_80.z * _81.z)) - _182;
+        float4 _82 = gMaterials._m0[_114].mGlobalPose;
+        float _329 = precise::min(_82.w, precise::max(_82.z, _82.y + (_129 * _82.x)));
+        gPositions._m0[_89] = JPH_HairPosition{ (float3(gInitialPositions._m0[_89]) + (((float3(gGlobalPoseTransforms._m0[_106].mPosition) + (float3(gInitialPositions._m0[_89]) + (_215 + _215))) - float3(gInitialPositions._m0[_89])) * _199)) * _329, fast::normalize((_182 + (_315 * _199)) * _329) };
         break;
     } while(false);
 }

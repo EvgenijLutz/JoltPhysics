@@ -11,5 +11,5 @@ Namespaces:
   Tags:
   - Name: ComputeSystem
     SwiftImportAs: reference
-    SwiftReleaseOp: ComputeSystemRelease
-    SwiftRetainOp: ComputeSystemRetain
+    SwiftReleaseOp: JoltExt_ComputeSystemRelease
+    SwiftRetainOp: JoltExt_ComputeSystemRetain

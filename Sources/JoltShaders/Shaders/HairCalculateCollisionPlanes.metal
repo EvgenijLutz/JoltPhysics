@@ -1,3 +1,5 @@
+#pragma clang diagnostic ignored "-Wmissing-prototypes"
+
 #include <metal_stdlib>
 #include <simd/simd.h>
 
@@ -24,6 +26,12 @@ struct type_gContext
     float4 cDeltaTransform[4];
     float4 cScalpToHead[4];
     float4 cDeltaTransformQuat;
+};
+
+struct type_gIterationContext
+{
+    float cAccumulatedDeltaTime;
+    float cIterationFraction;
 };
 
 struct JPH_HairPosition
@@ -63,136 +71,145 @@ struct type_RWStructuredBuffer_JPH_HairCollisionPlane
     JPH_HairCollisionPlane _m0[1];
 };
 
-kernel void HairCalculateCollisionPlanes(constant type_gContext& gContext [[buffer(0)]], device type_StructuredBuffer_JPH_HairPosition& gPositions [[buffer(1)]], device type_StructuredBuffer_v4float& gShapePlanes [[buffer(2)]], device type_StructuredBuffer_v3float& gShapeVertices [[buffer(3)]], device type_StructuredBuffer_uint& gShapeIndices [[buffer(4)]], device type_RWStructuredBuffer_JPH_HairCollisionPlane& gCollisionPlanes [[buffer(5)]], uint3 gl_GlobalInvocationID [[thread_position_in_grid]])
+struct JPH_HairCollisionPlane_1
 {
-    do
+    float4 mPlane;
+    uint mShapeIndex;
+};
+
+static inline __attribute__((always_inline))
+float JPH_PlaneSignedDistance(thread const float4& inPlane, thread const float3& inPoint)
+{
+    return dot(inPoint, inPlane.xyz) + inPlane.w;
+}
+
+static inline __attribute__((always_inline))
+float3 JPH_PlaneGetNormal(thread const float4& inPlane)
+{
+    return inPlane.xyz;
+}
+
+static inline __attribute__((always_inline))
+float3 JPH_GetClosestPointOnLine(thread const float3& inA, thread const float3& inAB)
+{
+    float v = fast::clamp((-dot(inA, inAB)) / dot(inAB, inAB), 0.0, 1.0);
+    return inA + (inAB * v);
+}
+
+static inline __attribute__((always_inline))
+float4 JPH_PlaneFromPointAndNormal(thread const float3& inPoint, thread const float3& inNormal)
+{
+    return float4(inNormal, -dot(inNormal, inPoint));
+}
+
+static inline __attribute__((always_inline))
+void src_main(thread const uint3& tid, constant type_gContext& gContext, device type_StructuredBuffer_JPH_HairPosition& gPositions, device type_StructuredBuffer_v4float& gShapePlanes, device type_StructuredBuffer_v3float& gShapeVertices, device type_StructuredBuffer_uint& gShapeIndices, device type_RWStructuredBuffer_JPH_HairCollisionPlane& gCollisionPlanes)
+{
+    uint vtx = tid.x + gContext.cNumStrands;
+    if (vtx >= gContext.cNumVertices)
     {
-        uint _65 = gl_GlobalInvocationID.x + gContext.cNumStrands;
-        if (_65 >= gContext.cNumVertices)
+        return;
+    }
+    float3 pos = float3(gPositions._m0[vtx].mPosition);
+    JPH_HairCollisionPlane_1 collision_plane;
+    collision_plane.mPlane = float4(1.0, 0.0, 0.0, 1000000.0);
+    collision_plane.mShapeIndex = 0u;
+    float largest_penetration = -1000000.0;
+    uint current_idx = 0u;
+    uint current_plane = 0u;
+    float3 temp_var_ternary;
+    for (uint current_shape_idx = 0u; true; current_shape_idx++)
+    {
+        float max_distance = -1000000.0;
+        float3 max_plane_normal = float3(0.0);
+        uint max_plane_face_info = 0u;
+        uint _138 = current_idx;
+        current_idx = _138 + 1u;
+        uint nf = gShapeIndices._m0[_138];
+        if (nf == 0u)
         {
             break;
         }
-        float4 _81;
-        uint _83;
-        _81 = float4(1.0, 0.0, 0.0, 1000000.0);
-        _83 = 0u;
-        float _78;
-        uint _84;
-        uint _80;
-        float4 _82;
-        uint _86;
-        uint _74 = 0u;
-        float _77 = -1000000.0;
-        uint _79 = 0u;
-        uint _85 = 0u;
-        for (;;)
+        for (uint f = 0u; f < nf; f++)
         {
-            if (gShapeIndices._m0[_79] == 0u)
+            uint _153 = current_plane;
+            current_plane = _153 + 1u;
+            float4 plane = gShapePlanes._m0[_153];
+            float4 param_var_inPlane = plane;
+            float3 param_var_inPoint = pos;
+            float _distance = JPH_PlaneSignedDistance(param_var_inPlane, param_var_inPoint);
+            if (_distance > max_distance)
             {
-                break;
+                max_distance = _distance;
+                float4 param_var_inPlane_1 = plane;
+                max_plane_normal = JPH_PlaneGetNormal(param_var_inPlane_1);
+                max_plane_face_info = current_idx;
             }
-            uint _100;
-            float _102;
-            float3 _104;
-            _80 = _79 + 1u;
-            _86 = _85;
-            _100 = 0u;
-            _102 = -1000000.0;
-            _104 = float3(0.0);
-            for (uint _106 = 0u; _106 < gShapeIndices._m0[_79]; )
-            {
-                float _115 = dot(float3(gPositions._m0[_65].mPosition), gShapePlanes._m0[_86].xyz) + gShapePlanes._m0[_86].w;
-                bool _116 = _115 > _102;
-                uint _101 = _116 ? _80 : _100;
-                _80 += 2u;
-                _86++;
-                _100 = _101;
-                _102 = _116 ? _115 : _102;
-                _104 = select(_104, gShapePlanes._m0[_86].xyz, bool3(_116));
-                _106++;
-                continue;
-            }
-            float3 _119 = _104 * (-_102);
-            bool _120 = _102 > 0.0;
-            float3 _168;
-            if (_120)
-            {
-                uint _125 = _100 + 1u;
-                float3 _137;
-                float3 _139;
-                _137 = float3(gShapeVertices._m0[gShapeIndices._m0[gShapeIndices._m0[_125] - 1u]]);
-                _139 = _119;
-                float3 _138;
-                float _135;
-                float3 _140;
-                float _134 = 999999995904.0;
-                uint _141 = gShapeIndices._m0[_100];
-                for (; _141 < gShapeIndices._m0[_125]; _134 = _135, _137 = _138, _139 = _140, _141++)
-                {
-                    _138 = float3(gShapeVertices._m0[gShapeIndices._m0[_141]]);
-                    float3 _149 = _138 - _137;
-                    float3 _150 = _137 - float3(gPositions._m0[_65].mPosition);
-                    if (dot(cross(_149, _104), _150) <= 0.0)
-                    {
-                        float3 _162 = _150 + (_149 * fast::clamp((-dot(_150, _149)) / dot(_149, _149), 0.0, 1.0));
-                        float _163 = dot(_162, _162);
-                        bool _164 = _163 < _134;
-                        _135 = _164 ? _163 : _134;
-                        _140 = select(_139, _162, bool3(_164));
-                    }
-                    else
-                    {
-                        _135 = _134;
-                        _140 = _139;
-                    }
-                }
-                _168 = _139;
-            }
-            else
-            {
-                _168 = _119;
-            }
-            float3 _169 = -_168;
-            float _170 = length(_169);
-            float _175;
-            if (_120)
-            {
-                _175 = -_170;
-            }
-            else
-            {
-                _175 = _170;
-            }
-            bool _178 = _175 > _77;
-            if (_178)
-            {
-                float3 _187;
-                if (_170 > 0.0)
-                {
-                    _187 = select(_168, _169, bool3(_120)) / float3(_170);
-                }
-                else
-                {
-                    _187 = _104;
-                }
-                _82 = float4(_187, -dot(_187, float3(gPositions._m0[_65].mPosition) + _168));
-            }
-            else
-            {
-                _82 = _81;
-            }
-            _78 = _178 ? _175 : _77;
-            _84 = _178 ? _74 : _83;
-            _74++;
-            _77 = _78;
-            _79 = _80;
-            _81 = _82;
-            _83 = _84;
-            _85 = _86;
-            continue;
+            current_idx += 2u;
         }
-        gCollisionPlanes._m0[_65] = JPH_HairCollisionPlane{ _81, _83 };
-        break;
-    } while(false);
+        float3 closest_point = max_plane_normal * (-max_distance);
+        bool is_outside = max_distance > 0.0;
+        if (is_outside)
+        {
+            float closest_point_dist_sq = 999999995904.0;
+            uint vi_end = gShapeIndices._m0[max_plane_face_info + 1u];
+            float3 p1 = float3(gShapeVertices._m0[gShapeIndices._m0[vi_end - 1u]]);
+            for (uint vi = gShapeIndices._m0[max_plane_face_info]; vi < vi_end; vi++)
+            {
+                float3 p2 = float3(gShapeVertices._m0[gShapeIndices._m0[vi]]);
+                float3 p1_p2 = p2 - p1;
+                float3 p1_pos = p1 - pos;
+                float3 edge_normal = cross(p1_p2, max_plane_normal);
+                if (dot(edge_normal, p1_pos) <= 0.0)
+                {
+                    float3 param_var_inA = p1_pos;
+                    float3 param_var_inAB = p1_p2;
+                    float3 closest = JPH_GetClosestPointOnLine(param_var_inA, param_var_inAB);
+                    float distance_sq = dot(closest, closest);
+                    if (distance_sq < closest_point_dist_sq)
+                    {
+                        closest_point_dist_sq = distance_sq;
+                        closest_point = closest;
+                    }
+                }
+                p1 = p2;
+            }
+        }
+        float3 normal = -closest_point;
+        float normal_length = length(normal);
+        float penetration = normal_length;
+        if (is_outside)
+        {
+            penetration = -penetration;
+        }
+        else
+        {
+            normal = -normal;
+        }
+        if (penetration > largest_penetration)
+        {
+            if (normal_length > 0.0)
+            {
+                temp_var_ternary = normal / float3(normal_length);
+            }
+            else
+            {
+                temp_var_ternary = max_plane_normal;
+            }
+            normal = temp_var_ternary;
+            float3 param_var_inPoint_1 = pos + closest_point;
+            float3 param_var_inNormal = normal;
+            collision_plane.mPlane = JPH_PlaneFromPointAndNormal(param_var_inPoint_1, param_var_inNormal);
+            collision_plane.mShapeIndex = current_shape_idx;
+            largest_penetration = penetration;
+        }
+    }
+    gCollisionPlanes._m0[vtx] = JPH_HairCollisionPlane{ collision_plane.mPlane, collision_plane.mShapeIndex };
+}
+
+kernel void HairCalculateCollisionPlanes(constant type_gContext& gContext [[buffer(0)]], device type_StructuredBuffer_JPH_HairPosition& gPositions [[buffer(1)]], device type_StructuredBuffer_v4float& gShapePlanes [[buffer(2)]], device type_StructuredBuffer_v3float& gShapeVertices [[buffer(3)]], device type_StructuredBuffer_uint& gShapeIndices [[buffer(4)]], device type_RWStructuredBuffer_JPH_HairCollisionPlane& gCollisionPlanes [[buffer(5)]], uint3 gl_GlobalInvocationID [[thread_position_in_grid]])
+{
+    uint3 param_var_tid = gl_GlobalInvocationID;
+    src_main(param_var_tid, gContext, gPositions, gShapePlanes, gShapeVertices, gShapeIndices, gCollisionPlanes);
 }
 

@@ -88,231 +88,263 @@ kernel void HairUpdateStrands(constant type_gContext& gContext [[buffer(0)]], de
         {
             break;
         }
-        uint _95 = gl_GlobalInvocationID.x >> 2u;
-        uint _100 = ((gl_GlobalInvocationID.x & 3u) << 3u) & 31u;
-        uint _102 = (gStrandVertexCounts._m0[_95] >> _100) & 255u;
-        uint _106 = (gStrandMaterialIndex._m0[_95] >> _100) & 255u;
-        float _124 = ((gVerticesFixed._m0[gl_GlobalInvocationID.x >> 5u] & (1u << (gl_GlobalInvocationID.x & 31u))) != 0u) ? 0.0 : 1.0;
-        uint _133 = gl_GlobalInvocationID.x + gContext.cNumStrands;
-        uint _139 = gVerticesFixed._m0[_133 >> 5u] & (1u << (_133 & 31u));
-        float _141 = (_139 != 0u) ? 0.0 : 1.0;
-        float _151 = float((gStrandFractions._m0[_133 >> 2u] >> (((_133 & 3u) << 3u) & 31u)) & 255u) * 0.0039215688593685626983642578125;
-        bool _158 = gMaterials._m0[_106].mEnableLRA != 0u;
-        bool _164;
-        if (_158)
+        uint _121 = (gStrandVertexCounts._m0[gl_GlobalInvocationID.x >> 2u] >> (((gl_GlobalInvocationID.x & 3u) << 3u) & 31u)) & 255u;
+        uint _129 = (gStrandMaterialIndex._m0[gl_GlobalInvocationID.x >> 2u] >> (((gl_GlobalInvocationID.x & 3u) << 3u) & 31u)) & 255u;
+        float _151;
+        if ((gVerticesFixed._m0[gl_GlobalInvocationID.x >> 5u] & (1u << (gl_GlobalInvocationID.x & 31u))) != 0u)
         {
-            //bool _161 = false;
-            //bool _162 = true;
-            _164 = _139 == 0u;
+            _151 = 0.0;
         }
         else
         {
-            _164 = false;
+            _151 = 1.0;
         }
-        float3 _179;
-        if (_164)
+        uint _163 = gl_GlobalInvocationID.x + gContext.cNumStrands;
+        float _174;
+        if ((gVerticesFixed._m0[_163 >> 5u] & (1u << (_163 & 31u))) != 0u)
         {
-            float3 _167 = float3(gPositions._m0[_133].mPosition) - float3(gInitialPositions._m0[gl_GlobalInvocationID.x]);
-            float _168 = dot(_167, _167);
-            float3 _178;
-            if (_168 > (gInitialLengths._m0[gl_GlobalInvocationID.x] * gInitialLengths._m0[gl_GlobalInvocationID.x]))
-            {
-                _178 = float3(gInitialPositions._m0[gl_GlobalInvocationID.x]) + ((_167 * gInitialLengths._m0[gl_GlobalInvocationID.x]) / float3(sqrt(_168)));
-            }
-            else
-            {
-                _178 = float3(gPositions._m0[_133].mPosition);
-            }
-            _179 = _178;
+            _174 = 0.0;
         }
         else
         {
-            _179 = float3(gPositions._m0[_133].mPosition);
+            _174 = 1.0;
         }
-        float _180 = gInitialLengths._m0[gl_GlobalInvocationID.x] + gInitialLengths._m0[_133];
-        float4 _189;
-        float3 _197;
-        uint _199;
-        float3 _201;
-        float4 _203;
-        _189 = float4(gPositions._m0[_133].mRotation);
-        _197 = _179;
-        _199 = gl_GlobalInvocationID.x;
-        _201 = float3(gPositions._m0[gl_GlobalInvocationID.x].mPosition);
-        _203 = float4(gPositions._m0[gl_GlobalInvocationID.x].mRotation);
-        float _183;
-        float4 _190;
-        float _191;
-        float _192;
-        float _194;
-        uint _196;
-        uint _200;
-        float3 _198;
-        float3 _202;
-        float4 _204;
-        float _182 = _151;
-        float _185 = _124;
-        float _186 = _141;
-        float _187 = gInitialLengths._m0[gl_GlobalInvocationID.x];
-        float _188 = gInitialLengths._m0[_133];
-        float _193 = _180;
-        uint _195 = _133;
-        uint _205 = 2u;
-        for (; _205 < _102; _182 = _183, _185 = _186, _187 = _188, _189 = _190, _186 = _191, _188 = _192, _193 = _194, _195 = _196, _197 = _198, _199 = _200, _201 = _202, _203 = _204, _205++)
+        float _184 = float((gStrandFractions._m0[_163 >> 2u] >> (((_163 & 3u) << 3u) & 31u)) & 255u) * 0.0039215688593685626983642578125;
+        bool _196;
+        if (gMaterials._m0[_129].mEnableLRA != 0u)
         {
-            float3 _226 = float3(float(int(gOmega0s._m0[_195] & 511u) - 255), float(int((gOmega0s._m0[_195] >> 9u) & 511u) - 255), float((gOmega0s._m0[_195] >> 18u) & 511u) - 255.0) * 0.0027729677967727184295654296875;
-            float4 _234 = float4(_226, sqrt(precise::max(1.0 - dot(_226, _226), 0.0)));
-            float4 _240;
-            if ((gOmega0s._m0[_195] & 2147483648u) != 0u)
+            _196 = _174 > 0.0;
+        }
+        else
+        {
+            _196 = false;
+        }
+        float3 _211;
+        if (_196)
+        {
+            float3 _199 = float3(gPositions._m0[_163].mPosition) - float3(gInitialPositions._m0[gl_GlobalInvocationID.x]);
+            float _200 = dot(_199, _199);
+            float3 _210;
+            if (_200 > (gInitialLengths._m0[gl_GlobalInvocationID.x] * gInitialLengths._m0[gl_GlobalInvocationID.x]))
             {
-                _240 = -_234;
+                _210 = float3(gInitialPositions._m0[gl_GlobalInvocationID.x]) + ((_199 * gInitialLengths._m0[gl_GlobalInvocationID.x]) / float3(sqrt(_200)));
             }
             else
             {
-                _240 = _234;
+                _210 = float3(gPositions._m0[_163].mPosition);
             }
-            uint _242 = (gOmega0s._m0[_195] >> 29u) & 3u;
-            float4 _260;
-            if (_242 == 0u)
+            _211 = _210;
+        }
+        else
+        {
+            _211 = float3(gPositions._m0[_163].mPosition);
+        }
+        float _212 = gInitialLengths._m0[gl_GlobalInvocationID.x] + gInitialLengths._m0[_163];
+        float4 _221;
+        float3 _229;
+        uint _231;
+        float3 _233;
+        float4 _235;
+        _221 = float4(gPositions._m0[_163].mRotation);
+        _229 = _211;
+        _231 = gl_GlobalInvocationID.x;
+        _233 = float3(gPositions._m0[gl_GlobalInvocationID.x].mPosition);
+        _235 = float4(gPositions._m0[gl_GlobalInvocationID.x].mRotation);
+        float _215;
+        float4 _222;
+        float _224;
+        float _226;
+        uint _228;
+        uint _232;
+        float _223;
+        float3 _230;
+        float3 _234;
+        float4 _236;
+        float _214 = _184;
+        float _217 = _151;
+        float _218 = _174;
+        float _219 = gInitialLengths._m0[gl_GlobalInvocationID.x];
+        float _220 = gInitialLengths._m0[_163];
+        float _225 = _212;
+        uint _227 = _163;
+        uint _237 = 2u;
+        for (; _237 < _121; _214 = _215, _217 = _218, _219 = _220, _221 = _222, _218 = _223, _220 = _224, _225 = _226, _227 = _228, _229 = _230, _231 = _232, _233 = _234, _235 = _236, _237++)
+        {
+            float3 _258 = float3(float(int(gOmega0s._m0[_227] & 511u) - 255), float(int((gOmega0s._m0[_227] >> 9u) & 511u) - 255), float((gOmega0s._m0[_227] >> 18u) & 511u) - 255.0) * 0.0027729677967727184295654296875;
+            float4 _266 = float4(_258, sqrt(precise::max(1.0 - dot(_258, _258), 0.0)));
+            float4 _272;
+            if ((gOmega0s._m0[_227] & 2147483648u) != 0u)
             {
-                _260 = _240.wxyz;
+                _272 = -_266;
             }
             else
             {
-                float4 _259;
-                if (_242 == 1u)
+                _272 = _266;
+            }
+            uint _274 = (gOmega0s._m0[_227] >> 29u) & 3u;
+            float4 _292;
+            if (_274 == 0u)
+            {
+                _292 = _272.wxyz;
+            }
+            else
+            {
+                float4 _291;
+                if (_274 == 1u)
                 {
-                    _259 = _240.xwyz;
+                    _291 = _272.xwyz;
                 }
                 else
                 {
-                    float4 _258;
-                    if (_242 == 2u)
+                    float4 _290;
+                    if (_274 == 2u)
                     {
-                        _258 = _240.xywz;
+                        _290 = _272.xywz;
                     }
                     else
                     {
-                        _258 = _240;
+                        _290 = _272;
                     }
-                    _259 = _258;
+                    _291 = _290;
                 }
-                _260 = _259;
+                _292 = _291;
             }
-            _196 = _195 + gContext.cNumStrands;
-            uint _266 = gVerticesFixed._m0[_196 >> 5u] & (1u << (_196 & 31u));
-            _191 = (_266 != 0u) ? 0.0 : 1.0;
-            _183 = float((gStrandFractions._m0[_196 >> 2u] >> (((_196 & 3u) << 3u) & 31u)) & 255u) * 0.0039215688593685626983642578125;
-            _192 = gInitialLengths._m0[_196];
-            _190 = float4(gPositions._m0[_196].mRotation);
-            bool _286;
-            if (_158)
+            _228 = _227 + gContext.cNumStrands;
+            if ((gVerticesFixed._m0[_228 >> 5u] & (1u << (_228 & 31u))) != 0u)
             {
-                //bool _283 = false;
-                //bool _284 = true;
-                _286 = _266 == 0u;
+                _223 = 0.0;
             }
             else
             {
-                _286 = false;
+                _223 = 1.0;
             }
-            float3 _301;
-            if (_286)
+            _215 = float((gStrandFractions._m0[_228 >> 2u] >> (((_228 & 3u) << 3u) & 31u)) & 255u) * 0.0039215688593685626983642578125;
+            _224 = gInitialLengths._m0[_228];
+            _222 = float4(gPositions._m0[_228].mRotation);
+            bool _323;
+            if (gMaterials._m0[_129].mEnableLRA != 0u)
             {
-                float3 _289 = float3(gPositions._m0[_196].mPosition) - float3(gInitialPositions._m0[gl_GlobalInvocationID.x]);
-                float _290 = dot(_289, _289);
-                float3 _300;
-                if (_290 > (_193 * _193))
+                _323 = _223 > 0.0;
+            }
+            else
+            {
+                _323 = false;
+            }
+            float3 _338;
+            if (_323)
+            {
+                float3 _326 = float3(gPositions._m0[_228].mPosition) - float3(gInitialPositions._m0[gl_GlobalInvocationID.x]);
+                float _327 = dot(_326, _326);
+                float3 _337;
+                if (_327 > (_225 * _225))
                 {
-                    _300 = float3(gInitialPositions._m0[gl_GlobalInvocationID.x]) + ((_289 * _193) / float3(sqrt(_290)));
+                    _337 = float3(gInitialPositions._m0[gl_GlobalInvocationID.x]) + ((_326 * _225) / float3(sqrt(_327)));
                 }
                 else
                 {
-                    _300 = float3(gPositions._m0[_196].mPosition);
+                    _337 = float3(gPositions._m0[_228].mPosition);
                 }
-                _301 = _300;
+                _338 = _337;
             }
             else
             {
-                _301 = float3(gPositions._m0[_196].mPosition);
+                _338 = float3(gPositions._m0[_228].mPosition);
             }
-            _194 = _193 + _192;
-            float _302 = precise::min(_186, _191);
-            float _303 = _302 / gMaterials._m0[_106].mInertiaMultiplier;
-            float _307 = ((_186 + _191) + (4.0 * _303)) + gMaterials._m0[_106].mStretchComplianceInvDeltaTimeSq;
-            float4 _364;
-            float3 _365;
-            if (_307 >= 9.9999999600419720025001879548654e-13)
+            _226 = _225 + _224;
+            float _340 = precise::min(_218, _223) / gMaterials._m0[_129].mInertiaMultiplier;
+            float _344 = ((_218 + _223) + (4.0 * _340)) + gMaterials._m0[_129].mStretchComplianceInvDeltaTimeSq;
+            float4 _467;
+            float3 _468;
+            if (_344 >= 9.9999999600419720025001879548654e-13)
             {
-                float3 _328 = ((_301 - _197) - ((((_189.xyz * (_189.z + _189.z)) + (float3(_189.y, -_189.x, _189.w) * (_189.w + _189.w))) - float3(0.0, 0.0, 1.0)) * _188)) / float3(_307);
-                float _333 = -_189.y;
-                float _334 = -_189.w;
-                float _335 = _328.x;
-                float _337 = _328.y;
-                float _340 = _328.z;
-                _198 = _301 - (_328 * _191);
-                _364 = fast::normalize(_189 + (float4(((_335 * _189.z) + (_337 * _334)) - (_340 * _189.x), ((_335 * _189.w) + (_337 * _189.z)) + (_340 * _333), ((_335 * _189.x) - (_337 * _333)) + (_340 * _189.z), ((_335 * _189.y) - (_337 * _189.x)) - (_340 * _334)) * ((2.0 * _303) / _188)));
-                _365 = _197 + (_328 * _186);
+                float4 _101 = _221;
+                float4 _102 = _221;
+                float3 _375 = ((_338 - _229) - ((((_221.xyz * (_102.z + _102.z)) + (float3(_102.y, -_102.x, _102.w) * (_102.w + _102.w))) - float3(0.0, 0.0, 1.0)) * _220)) / float3(_344);
+                float3 _103 = _375;
+                float4 _104 = float4(-_101.y, _101.x, -_101.w, _101.z);
+                float4 _464 = float4(((_103.x * _104.w) + (_103.y * _104.z)) - (_103.z * _104.y), (((-_103.x) * _104.z) + (_103.y * _104.w)) + (_103.z * _104.x), ((_103.x * _104.y) - (_103.y * _104.x)) + (_103.z * _104.w), (((-_103.x) * _104.x) - (_103.y * _104.y)) - (_103.z * _104.z)) * ((2.0 * _340) / _220);
+                float4 _465 = _221 + _464;
+                _101 = _465;
+                _230 = _338 - (_375 * _223);
+                _467 = fast::normalize(_465);
+                _468 = _229 + (_375 * _218);
             }
             else
             {
-                _198 = _301;
-                _364 = _189;
-                _365 = _197;
+                _230 = _338;
+                _467 = _221;
+                _468 = _229;
             }
-            float _366 = precise::min(_185, _186);
-            float _367 = _366 / gMaterials._m0[_106].mInertiaMultiplier;
-            float _371 = ((_185 + _186) + (4.0 * _367)) + gMaterials._m0[_106].mStretchComplianceInvDeltaTimeSq;
-            float3 _428;
-            float4 _429;
-            if (_371 >= 9.9999999600419720025001879548654e-13)
+            float _470 = precise::min(_217, _218) / gMaterials._m0[_129].mInertiaMultiplier;
+            float _474 = ((_217 + _218) + (4.0 * _470)) + gMaterials._m0[_129].mStretchComplianceInvDeltaTimeSq;
+            float3 _597;
+            float4 _598;
+            if (_474 >= 9.9999999600419720025001879548654e-13)
             {
-                float3 _392 = ((_365 - _201) - ((((_203.xyz * (_203.z + _203.z)) + (float3(_203.y, -_203.x, _203.w) * (_203.w + _203.w))) - float3(0.0, 0.0, 1.0)) * _187)) / float3(_371);
-                float _397 = -_203.y;
-                float _398 = -_203.w;
-                float _399 = _392.x;
-                float _401 = _392.y;
-                float _404 = _392.z;
-                _202 = _365 - (_392 * _186);
-                _428 = _201 + (_392 * _185);
-                _429 = fast::normalize(_203 + (float4(((_399 * _203.z) + (_401 * _398)) - (_404 * _203.x), ((_399 * _203.w) + (_401 * _203.z)) + (_404 * _397), ((_399 * _203.x) - (_401 * _397)) + (_404 * _203.z), ((_399 * _203.y) - (_401 * _203.x)) - (_404 * _398)) * ((2.0 * _367) / _187)));
+                float4 _97 = _235;
+                float4 _98 = _235;
+                float3 _505 = ((_468 - _233) - ((((_235.xyz * (_98.z + _98.z)) + (float3(_98.y, -_98.x, _98.w) * (_98.w + _98.w))) - float3(0.0, 0.0, 1.0)) * _219)) / float3(_474);
+                float3 _99 = _505;
+                float4 _100 = float4(-_97.y, _97.x, -_97.w, _97.z);
+                float4 _594 = float4(((_99.x * _100.w) + (_99.y * _100.z)) - (_99.z * _100.y), (((-_99.x) * _100.z) + (_99.y * _100.w)) + (_99.z * _100.x), ((_99.x * _100.y) - (_99.y * _100.x)) + (_99.z * _100.w), (((-_99.x) * _100.x) - (_99.y * _100.y)) - (_99.z * _100.z)) * ((2.0 * _470) / _219);
+                float4 _595 = _235 + _594;
+                _97 = _595;
+                _234 = _468 - (_505 * _218);
+                _597 = _233 + (_505 * _217);
+                _598 = fast::normalize(_595);
             }
             else
             {
-                _202 = _365;
-                _428 = _201;
-                _429 = _203;
+                _234 = _468;
+                _597 = _233;
+                _598 = _235;
             }
-            float4 _85 = gMaterials._m0[_106].mBendComplianceMultiplier;
-            float _432 = _366 / (gMaterials._m0[_106].mInertiaMultiplier * (_187 * _187));
-            float _435 = _302 / (gMaterials._m0[_106].mInertiaMultiplier * (_188 * _188));
-            float _436 = _182 * 3.0;
-            uint _437 = uint(_436);
-            float _439 = _436 - float(_437);
-            float _451 = (_432 + _435) + (gMaterials._m0[_106].mBendComplianceInvDeltaTimeSq * ((_85[_437] * (1.0 - _439)) + (_85[_437 + 1u] * _439)));
-            float4 _557;
-            if (_451 >= 9.9999999600419720025001879548654e-13)
+            float4 _88 = gMaterials._m0[_129].mBendComplianceMultiplier;
+            float _602 = precise::min(_217, _218) / (gMaterials._m0[_129].mInertiaMultiplier * (_219 * _219));
+            float _606 = precise::min(_218, _223) / (gMaterials._m0[_129].mInertiaMultiplier * (_220 * _220));
+            float _607 = _214 * 3.0;
+            uint _608 = uint(_607);
+            float _610 = _607 - float(_608);
+            float _622 = (_602 + _606) + (gMaterials._m0[_129].mBendComplianceInvDeltaTimeSq * ((_88[_608] * (1.0 - _610)) + (_88[_608 + 1u] * _610)));
+            float4 _936;
+            if (_622 >= 9.9999999600419720025001879548654e-13)
             {
-                float _456 = -_429.x;
-                float _458 = -_429.y;
-                float _460 = -_429.z;
-                float4 _494 = float4((((_429.w * _364.x) + (_456 * _364.w)) + (_458 * _364.z)) - (_460 * _364.y), (((_429.w * _364.y) - (_456 * _364.z)) + (_458 * _364.w)) + (_460 * _364.x), (((_429.w * _364.z) + (_456 * _364.y)) - (_458 * _364.x)) + (_460 * _364.w), (((_429.w * _364.w) - (_456 * _364.x)) - (_458 * _364.y)) - (_460 * _364.z));
-                float4 _495 = _494 - _260;
-                float4 _496 = _494 + _260;
-                float4 _503 = select(_495, _496, bool4(dot(_496, _496) < dot(_495, _495))) / float4(_451);
-                _204 = fast::normalize(_364 - (float4(((_429.w * _503.x) + (_429.y * _503.z)) - (_429.z * _503.y), ((_429.w * _503.y) - (_429.x * _503.z)) + (_429.z * _503.x), ((_429.w * _503.z) + (_429.x * _503.y)) - (_429.y * _503.x), ((-(_429.x * _503.x)) - (_429.y * _503.y)) - (_429.z * _503.z)) * _435));
-                _557 = fast::normalize(_429 + (float4(((_364.w * _503.x) + (_364.y * _503.z)) - (_364.z * _503.y), ((_364.w * _503.y) - (_364.x * _503.z)) + (_364.z * _503.x), ((_364.w * _503.z) + (_364.x * _503.y)) - (_364.y * _503.x), ((-(_364.x * _503.x)) - (_364.y * _503.y)) - (_364.z * _503.z)) * _432));
+                float4 _89 = _598;
+                float4 _90 = float4(-_89.x, -_89.y, -_89.z, _89.w);
+                float4 _91 = _467;
+                float4 _730 = float4((((_90.w * _91.x) + (_90.x * _91.w)) + (_90.y * _91.z)) - (_90.z * _91.y), (((_90.w * _91.y) - (_90.x * _91.z)) + (_90.y * _91.w)) + (_90.z * _91.x), (((_90.w * _91.z) + (_90.x * _91.y)) - (_90.y * _91.x)) + (_90.z * _91.w), (((_90.w * _91.w) - (_90.x * _91.x)) - (_90.y * _91.y)) - (_90.z * _91.z));
+                float4 _731 = _730 - _292;
+                float4 _732 = _730 + _292;
+                float4 _739;
+                if (dot(_732, _732) < dot(_731, _731))
+                {
+                    _739 = _732;
+                }
+                else
+                {
+                    _739 = _731;
+                }
+                float4 _92 = _739 / float4(_622);
+                _92.w = 0.0;
+                float4 _93 = _598;
+                float4 _94 = _92;
+                float4 _837 = float4((((_93.w * _94.x) + (_93.x * _94.w)) + (_93.y * _94.z)) - (_93.z * _94.y), (((_93.w * _94.y) - (_93.x * _94.z)) + (_93.y * _94.w)) + (_93.z * _94.x), (((_93.w * _94.z) + (_93.x * _94.y)) - (_93.y * _94.x)) + (_93.z * _94.w), (((_93.w * _94.w) - (_93.x * _94.x)) - (_93.y * _94.y)) - (_93.z * _94.z)) * _606;
+                float4 _95 = _467;
+                float4 _96 = _92;
+                float4 _931 = float4((((_95.w * _96.x) + (_95.x * _96.w)) + (_95.y * _96.z)) - (_95.z * _96.y), (((_95.w * _96.y) - (_95.x * _96.z)) + (_95.y * _96.w)) + (_95.z * _96.x), (((_95.w * _96.z) + (_95.x * _96.y)) - (_95.y * _96.x)) + (_95.z * _96.w), (((_95.w * _96.w) - (_95.x * _96.x)) - (_95.y * _96.y)) - (_95.z * _96.z)) * _602;
+                _236 = fast::normalize(_467 - _837);
+                _936 = fast::normalize(_598 + _931);
             }
             else
             {
-                _204 = _364;
-                _557 = _429;
+                _236 = _467;
+                _936 = _598;
             }
-            gPositions._m0[_199] = JPH_HairPosition{ _428, _557 };
-            _200 = _199 + gContext.cNumStrands;
+            gPositions._m0[_231] = JPH_HairPosition{ _597, _936 };
+            _232 = _231 + gContext.cNumStrands;
         }
-        gPositions._m0[_199] = JPH_HairPosition{ _201, _203 };
-        gPositions._m0[_199 + gContext.cNumStrands] = JPH_HairPosition{ _197, _203 };
+        gPositions._m0[_231] = JPH_HairPosition{ _233, _235 };
+        gPositions._m0[_231 + gContext.cNumStrands] = JPH_HairPosition{ _229, _235 };
         break;
     } while(false);
 }

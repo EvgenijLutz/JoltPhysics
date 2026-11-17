@@ -1,3 +1,5 @@
+#pragma clang diagnostic ignored "-Wmissing-prototypes"
+
 #include <metal_stdlib>
 #include <simd/simd.h>
 
@@ -26,21 +28,31 @@ struct type_gContext
     float4 cDeltaTransformQuat;
 };
 
+struct type_gIterationContext
+{
+    float cAccumulatedDeltaTime;
+    float cIterationFraction;
+};
+
 struct type_RWStructuredBuffer_v4int
 {
     int4 _m0[1];
 };
 
+static inline __attribute__((always_inline))
+void src_main(thread const uint3& tid, constant type_gContext& gContext, device type_RWStructuredBuffer_v4int& gVelocityAndDensity)
+{
+    uint index = tid.x;
+    if (index >= gContext.cNumGridPoints)
+    {
+        return;
+    }
+    gVelocityAndDensity._m0[index] = int4(0);
+}
+
 kernel void HairGridClear(constant type_gContext& gContext [[buffer(0)]], device type_RWStructuredBuffer_v4int& gVelocityAndDensity [[buffer(1)]], uint3 gl_GlobalInvocationID [[thread_position_in_grid]])
 {
-    do
-    {
-        if (gl_GlobalInvocationID.x >= gContext.cNumGridPoints)
-        {
-            break;
-        }
-        gVelocityAndDensity._m0[gl_GlobalInvocationID.x] = int4(0);
-        break;
-    } while(false);
+    uint3 param_var_tid = gl_GlobalInvocationID;
+    src_main(param_var_tid, gContext, gVelocityAndDensity);
 }
 

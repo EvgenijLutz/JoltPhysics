@@ -1,3 +1,5 @@
+#pragma clang diagnostic ignored "-Wmissing-prototypes"
+
 #include <metal_stdlib>
 #include <simd/simd.h>
 
@@ -26,36 +28,39 @@ struct type_gContext
     float4 cDeltaTransformQuat;
 };
 
+struct type_gIterationContext
+{
+    float cAccumulatedDeltaTime;
+    float cIterationFraction;
+};
+
 struct type_RWStructuredBuffer_v4int
 {
     int4 _m0[1];
 };
 
+static inline __attribute__((always_inline))
+void src_main(thread const uint3& tid, constant type_gContext& gContext, device type_RWStructuredBuffer_v4int& gVelocityAndDensity)
+{
+    uint index = tid.x;
+    if (index >= gContext.cNumGridPoints)
+    {
+        return;
+    }
+    float4 v = float4(gVelocityAndDensity._m0[index]) * 0.0009765625;
+    float density = v.w;
+    if (density > 9.9999999600419720025001879548654e-13)
+    {
+        v.x /= density;
+        v.y /= density;
+        v.z /= density;
+    }
+    gVelocityAndDensity._m0[index] = as_type<int4>(v);
+}
+
 kernel void HairGridNormalize(constant type_gContext& gContext [[buffer(0)]], device type_RWStructuredBuffer_v4int& gVelocityAndDensity [[buffer(1)]], uint3 gl_GlobalInvocationID [[thread_position_in_grid]])
 {
-    do
-    {
-        if (gl_GlobalInvocationID.x >= gContext.cNumGridPoints)
-        {
-            break;
-        }
-        float4 _43 = float4(gVelocityAndDensity._m0[gl_GlobalInvocationID.x]) * 0.0009765625;
-        float _44 = _43.w;
-        float4 _57;
-        if (_44 > 9.9999999600419720025001879548654e-13)
-        {
-            float4 _50 = _43;
-            _50.x = _43.x / _44;
-            _50.y = _43.y / _44;
-            _50.z = _43.z / _44;
-            _57 = _50;
-        }
-        else
-        {
-            _57 = _43;
-        }
-        gVelocityAndDensity._m0[gl_GlobalInvocationID.x] = as_type<int4>(_57);
-        break;
-    } while(false);
+    uint3 param_var_tid = gl_GlobalInvocationID;
+    src_main(param_var_tid, gContext, gVelocityAndDensity);
 }
 

@@ -43,7 +43,7 @@ namespace JPHExtensions {
 
 std::string JPHStringToCxxString(const JPH::String& string);
 
-void initializeComputeSystem(JPH::ComputeSystem& computeSystem);
+void connectDefaultComputeSystemMetalShaderLoader(JPH::ComputeSystem& computeSystem);
 
 }
 

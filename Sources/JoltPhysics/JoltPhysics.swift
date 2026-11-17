@@ -38,7 +38,7 @@ public extension JPH.ComputeSystem {
         }
         
         let computeSystem = result.__GetUnsafe().pointee.pointee
-        JPHExtensions.initializeComputeSystem(computeSystem)
+        JPHExtensions.connectDefaultComputeSystemMetalShaderLoader(computeSystem)
         
         return computeSystem
     }

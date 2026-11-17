@@ -16,9 +16,9 @@ std::string JPHStringToCxxString(const JPH::String& string) {
 }
 
 
-void initializeComputeSystem(JPH::ComputeSystem& computeSystem) {
+void connectDefaultComputeSystemMetalShaderLoader(JPH::ComputeSystem& computeSystem) {
     // Provide Metal library loader
-    computeSystem.mShaderLoader = [](const char*, JPH::Array<JPH::uint8>& outData, JPH::String& outError) -> bool {
+    computeSystem.mShaderLoader = [](const char* /* file name is unused */, JPH::Array<JPH::uint8>& outData, JPH::String& outError) -> bool {
         // The GetJoltShadersBundle function is a helper function that returns a bundle containing the compiled Jolt compute shaders
         auto bundle = GetJoltShadersBundle();
         NSURL* url = [bundle URLForResource:@"default" withExtension:@"metallib"];
@@ -33,7 +33,7 @@ void initializeComputeSystem(JPH::ComputeSystem& computeSystem) {
         NSError* error = nil;
         NSData* data = [NSData dataWithContentsOfURL:url options:0 error:&error];
         if (data == nil) {
-            const char *description = error.localizedDescription.UTF8String;
+            const char* description = error.localizedDescription.UTF8String;
             outError = description != nullptr ? description : "Failed to read default.metallib";
             return false;
         }
